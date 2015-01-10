@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2014-12-21 00:38+0100\n"
+"PO-Revision-Date: 2015-01-10 21:10+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.1\n"
-"X-Poedit-Bookmarks: 71,90,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 71,90,103,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -604,21 +604,25 @@ msgstr ""
 "$ <userinput>sudo apt-get install <replaceable>package</replaceable>/wheezy-backports</userinput>\n"
 "$ <userinput>sudo apt-get install -t wheezy-backports <replaceable>package</replaceable></userinput>\n"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Repositories for <emphasis role=\"distribution\">Testing</emphasis>/<emphasis role=\"distribution\">Unstable</emphasis> Users"
-msgstr ""
+msgstr "Repozytoria dla użytkowników <emphasis role=\"distribution\">Testowej</emphasis>/<emphasis role=\"distribution\">Niestabilnej</emphasis>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here is a standard <filename>sources.list</filename> for a system running the <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis> version of Debian:"
-msgstr ""
+msgstr "Poniżej jest standardowy plik <filename>sources.list</filename> dla systemu działającego pod kontrolą <emphasis role=\"distribution\">Testowej</emphasis> lub <emphasis role=\"distribution\">Niestabilnej</emphasis> wersji Debiana:"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<filename>/etc/apt/sources.list</filename> file for users of Debian <emphasis role=\"distribution\">Testing</emphasis>/<emphasis role=\"distribution\">Unstable</emphasis>"
-msgstr ""
+msgstr "plik <filename>/etc/apt/sources.list</filename> dla użytkowników <emphasis role=\"distribution\">Testowego</emphasis>/<emphasis role=\"distribution\">Niestabilnego</emphasis> Debiana"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -641,46 +645,73 @@ msgid ""
 "deb-src http://security.debian.org/ stable/updates main contrib non-free\n"
 "deb-src http://security.debian.org/ testing/updates main contrib non-free\n"
 msgstr ""
+"\n"
+"# Niestabilny\n"
+"deb http://ftp.debian.org/debian unstable main contrib non-free\n"
+"deb-src http://ftp.debian.org/debian unstable main contrib non-free\n"
+"\n"
+"# Testowy\n"
+"deb http://ftp.debian.org/debian testing main contrib non-free\n"
+"deb-src http://ftp.debian.org/debian testing main contrib non-free\n"
+"\n"
+"# Stabilny\n"
+"deb http://ftp.debian.org/debian stable main contrib non-free\n"
+"deb-src http://ftp.debian.org/debian stable main contrib non-free\n"
+"\n"
+"# Aktualizacje bezpieczeństwa\n"
+"deb http://security.debian.org/ stable/updates main contrib non-free\n"
+"deb http://security.debian.org/ testing/updates main contrib non-free\n"
+"deb-src http://security.debian.org/ stable/updates main contrib non-free\n"
+"deb-src http://security.debian.org/ testing/updates main contrib non-free\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "With this <filename>sources.list</filename> file APT will install packages from <emphasis role=\"distribution\">Unstable</emphasis>. If that is not desired, use the <literal>APT::Default-Release</literal> setting (see <xref linkend=\"sect.apt-upgrade\" />) to instruct APT to pick packages from another distribution (most likely <emphasis role=\"distribution\">Testing</emphasis> in this case)."
-msgstr ""
+msgstr "Używając tego pliku <filename>sources.list</filename> APT będzie instalował pakiety z wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>. Jeżeli nie jest to pożądane, należy użyć ustawienia <literal>APT::Default-Release</literal> (patrz <xref linkend=\"sect.apt-upgrade\" />), które poinstruuje APTa, aby wybierał pakiety z innej dystrybucji (w tym przypadku najprawdopodobniej <emphasis role=\"distribution\">Testowej</emphasis>)."
 
+# mateunho
 #. Tag: para
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "There are good reasons to include all those repositories, even though a single one should be enough. <emphasis role=\"distribution\">Testing</emphasis> users will appreciate the possibility to cherry-pick a fixed package from <emphasis role=\"distribution\">Unstable</emphasis> when the version in <emphasis role=\"distribution\">Testing</emphasis> is affected by an annoying bug. On the opposite, <emphasis role=\"distribution\">Unstable</emphasis> users bitten by unexpected regressions have the possibility to downgrade packages to their (supposedly working) <emphasis role=\"distribution\">Testing</emphasis> version."
-msgstr ""
+msgstr "Istnieją uzasadnione przyczyny, aby załączyć wszystkie te repozytoria, mimo że jedno powinno wystarczyć. Użytkownicy <emphasis role=\"distribution\">Testowego</emphasis> docenią możliwość wybrania naprawionych pakietów z <emphasis role=\"distribution\">Niestabilnego</emphasis> kiedy wersja w <emphasis role=\"distribution\">Testowym</emphasis> jest obarczona denerwującym błędem. Z drugiej strony, użytkownicy <emphasis role=\"distribution\">Niestabilnego</emphasis> nadgryzieni przez niespodziewane regresje mają możliwość pobrania starszych pakietów dla (rzekomo działającej) wersji <emphasis role=\"distribution\">Testowej</emphasis>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The inclusion of <emphasis role=\"distribution\">Stable</emphasis> is more debatable but it often gives access to some packages which have been removed from the development versions. It also ensures that you get the latest updates for packages which have not been modified since the last stable release."
-msgstr ""
+msgstr "Załączenie <emphasis role=\"distribution\">Stabilnego</emphasis> jest bardziej dyskusyjne, ale zazwyczaj daje dostęp to pakietów, które zostały usunięte z wersji deweloperskich. Zapewnia również dostęp do najnowszych aktualizacji pakietów, które nie zostały zmodyfikowane od ostatniego stabilnego wydania."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "The <emphasis role=\"distribution\">Experimental</emphasis> Repository"
-msgstr ""
+msgstr "Repozytorium <emphasis role=\"distribution\">Eksperymentalne</emphasis>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"distribution\">Experimental</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"distribution\">Eksperymentalne</emphasis></primary>"
 
+# mateunho
+# ref: http://pl.wikipedia.org/wiki/Cykl_%C5%BCycia_programu
 #. Tag: para
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "The archive of <emphasis role=\"distribution\">Experimental</emphasis> packages is present on all Debian mirrors, and contains packages which are not in the <emphasis role=\"distribution\">Unstable</emphasis> version yet because of their substandard quality — they are often software development versions or pre-versions (alpha, beta, release candidate…). A package can also be sent there after undergoing subsequent changes which can generate problems. The maintainer then tries to uncover them thanks to advanced users who can manage important issues. After this first stage, the package is moved into <emphasis role=\"distribution\">Unstable</emphasis>, where it reaches a much larger audience and where it will be tested in much more detail."
-msgstr ""
+msgstr "Archiwum pakietów <emphasis role=\"distribution\">Eksperymentalnych</emphasis> jest dostępne na każdym serwerze lustrzanym Debiana i zawiera pakiety, które jeszcze nie są w wersji <emphasis role=\"distribution\">Niestabilnej</emphasis> z powodu na ich niską jakość — jest to zazwyczaj oprogramowanie w wersji deweloperskiej lub wstępnej (alfa, beta, kandydat do wydania…). Pakiet może być tam również wysłany po przejściu pewnych zmian, które mogą spowodować problemy. Wtedy zarządca stara się je odkryć korzystając z pomocy zaawansowanych użytkowników, którzy dają sobie radę z trudnymi zadaniami. Po tym etapie pakiet jest przeniesiony do <emphasis role=\"distribution\">Niestabilnego</emphasis>, gdzie dociera do znacznie szerszego grona odbiorców i będzie dużo skrupulatniej przetestowany."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"distribution\">Experimental</emphasis> is generally used by users who do not mind breaking their system and then repairing it. This distribution gives the possibility to import a package which a user wants to try or use as the need arises. That is exactly how Debian approaches it, since adding it in APT's <filename>sources.list</filename> file does not lead to the systematic use of its packages. The line to be added is:"
-msgstr ""
+msgstr "<emphasis role=\"distribution\">Eksperymentalne</emphasis> jest używane głównie przez użytkowników, którym nie przeszkadza ciągłe psucie i naprawianie ich systemu. Taki podział pozwala w razie potrzeby na zaimportowanie pakietu, którego użytkownik chciałby wypróbować lub używać. Jest to również standardowe podejściem Debiana z nim związane, ponieważ dodanie go w pliku APTa <filename>sources.list</filename> nie powoduje systematycznego korzystania z jego pakietów. Linia, którą należy dodać to:"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid "deb http://ftp.debian.org/debian experimental main contrib non-free\n"
-msgstr ""
+msgstr "deb http://ftp.debian.org/debian experimental main contrib non-free\n"
 
 #. Tag: title
 #, no-c-format
