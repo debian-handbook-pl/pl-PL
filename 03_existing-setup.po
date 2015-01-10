@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2014-11-28 16:18+0100\n"
+"PO-Revision-Date: 2015-01-10 20:26+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/03_existing-setup/pl/>\n"
@@ -116,16 +116,16 @@ msgid ""
 "supports RPCs (Remote Procedure Calls). Version 4 is a rewrite that can "
 "provide a domain controller compatible with Active Directory."
 msgstr ""
-"2 wersja Samby zachowuje się jak Windows NT serwer (autentykacja, plików, "
-"kolejek wydruku, pobierania sterowników do drukarki, DFS, itp.) 3 wersja "
-"pracuje z Active Directory, dodaje interoperacyjność z kontroli domen NT4, "
-"wspiera RPC ( Remote Procedure Calls)0 (zdalnych wywołan procedur). 4 wersja "
-"jest kopią, która może zapewniać kontroler domeny z Active Directory. "
+"2 wersja Samby zachowuje się jak Windows NT serwer (uwierzytelnianie, "
+"plików, kolejek wydruku, pobierania sterowników do drukarki, DFS, itp.) 3 "
+"wersja pracuje z Active Directory, dodaje interoperacyjność z kontroli domen "
+"NT4, wspiera RPC ( Remote Procedure Calls)0 (zdalnych wywołan procedur). 4 "
+"wersja jest kopią, która może zapewniać kontroler domeny z Active Directory. "
 
 #. Tag: title
 #, no-c-format
 msgid "Integration with Mac OS machines"
-msgstr ""
+msgstr "Integracja z maszynami Mac OS"
 
 #. Tag: indexterm
 #, fuzzy, no-c-format
@@ -155,6 +155,11 @@ msgid ""
 "Zeroconf protocol suite. Debian includes another implementation, called "
 "Avahi, which provides the same functionality."
 msgstr ""
+"Maszyny Mac OS dostarczają i mogą używać serwisów takich jak pliki serwerowe "
+"i współdzielnie drukarki. Te usługi są opublikowane w lokalnej sieci, co "
+"pozwala innym maszynom na wykrywanie i używanie bez żadnych manualnych "
+"konfiguracji, używając implementacji Bonjour z protokołu ZeroConf. Debian "
+"zawiera inne implementacje, nazywane Avahi, które dostarcza te same funkcje."
 
 #. Tag: indexterm
 #, fuzzy, no-c-format
@@ -176,6 +181,10 @@ msgid ""
 "(AppleShare) protocol as well as the required notifications so that the "
 "servers can be autodiscovered by the Mac OSX clients."
 msgstr ""
+"Z drugiej strony, Netatalk daemon  moze być użyty do dostarczania plików "
+"serverowych do Mac OSX przez internet. To implementuje protokół "
+"AFP(AppleShare) i wymagane notyfikacje, żeby server mógł automatycznie "
+"wykrywalny przez użytkowników Mac OSX"
 
 #. Tag: indexterm
 #, fuzzy, no-c-format
@@ -193,11 +202,18 @@ msgid ""
 "server and print queues, as well as time server (clock synchronization). Its "
 "router function allows interconnection with AppleTalk networks."
 msgstr ""
+"Starsze wersje mac OS ( przed Mac OSX) wykorzystywały w sieci inny protokół "
+"nazywany AppleTalk. W środowiskach obejmujących maszyny z wykorzystaniem "
+"tego protokołu, Netatalk również dostarcza protokół AppleTalk (w "
+"rzeczywistości, tak zaczęła się reimplementacja tego protokołu.) To zapewnia "
+"operacje na plikach serwerowych i  kolejkach drukowania jak i serwer czasu "
+"(synchronizacja czasu). Funkcja routera umożliwia wzajemne połączenia z "
+"sieci AppleTalk."
 
 #. Tag: title
 #, no-c-format
 msgid "Integration with Other Linux/Unix Machines"
-msgstr ""
+msgstr "Integracja z innymi maszyn Linux / Unix"
 
 #. Tag: para
 #, no-c-format
@@ -207,16 +223,21 @@ msgid ""
 "directories. The BSD printing layer, used by most Unix systems, also allows "
 "sharing of print queues."
 msgstr ""
+"Wreszcie, NFS i NIS, obydwa załączone , gwarantujją interakcję z systemem "
+"Unix. NFS zapewnia funkcjonalność plików serwera, w momencie kiedy NIS "
+"tworzy katalogi użytkowników. Warstwa drukowania BSD, używana przez "
+"większość systemów unixowych, umożliwia również dzielenie się kolejek "
+"wydruku."
 
 #. Tag: title
 #, no-c-format
 msgid "Coexistence of Debian with MacOS, Windows and Unix systems"
-msgstr ""
+msgstr "Współistnienie Debiana z systemami MacOS, Windowsem i Unixem."
 
 #. Tag: title
 #, no-c-format
 msgid "How To Migrate"
-msgstr ""
+msgstr "Jak migrować"
 
 #. Tag: indexterm
 #, no-c-format
@@ -230,11 +251,16 @@ msgid ""
 "must be planned and executed according to the plan. This principle applies "
 "whatever the operating system used."
 msgstr ""
+"W celu zapewnienia ciągłości usług, każda migracja na komputerze musi być "
+"zaplanowana i realizowana zgodnie z planem. Zasada ta ma zastosowanie bez "
+"względu na używany system operacyjny."
 
 #. Tag: title
 #, no-c-format
 msgid "Survey and Identify Services"
 msgstr ""
+"Usługi badania i identyfikacji      //////////////////     Ankieta i "
+"identyfikacje usług  //////////////////// KTÓRE ????? SPRAWDŹCIE /////////"
 
 #. Tag: para
 #, no-c-format
@@ -245,6 +271,10 @@ msgid ""
 "they exist will at least allow you to decide what to do with them, rather "
 "than delete them haphazardly."
 msgstr ""
+"Tak proste, jak się wydaje, ten krok jest niezbędny. Dobry administrator zna "
+"rolę każdego serwera, ale takie role mogą się zmienić, a czasem doświadczeni "
+"użytkownicy  mogą mieć zainstalowane dziwne usługi. Wiedza o ich istnienu "
+"pozwoli ci zdecydować co z nimi zrobić, a nie usunąć je przypadkowo."
 
 #. Tag: para
 #, no-c-format
@@ -255,11 +285,16 @@ msgid ""
 "migration, which they will come across again after the migration to Debian; "
 "Libre Office and the Mozilla suite are the best examples here."
 msgstr ""
+"W tym celu dobrze jest poinformować użytkowników o projekcie przed migracją "
+"serwera. Zaangażowanie ich w projekcie, może być przydatne w instalacji  "
+"najbardziej znanych  bezpłatnych  programów na ich komputerach przed "
+"migracją, co natkną się ponownie po migracji do Debiana; Libre Office i "
+"Mozilla Suite są najlepszymi przykładami tutaj."
 
 #. Tag: title
 #, no-c-format
 msgid "Network and Processes"
-msgstr ""
+msgstr "Sieć i Procesy"
 
 #. Tag: para
 #, no-c-format
@@ -270,6 +305,11 @@ msgid ""
 "without even requiring to log in to it. Simply call the following command on "
 "another machine connected to the same network:"
 msgstr ""
+"<indexterm> <primary> <command> nmap </ command> </ primary> </ indexterm> "
+"The <command> nmap </ command> Narzędzie (w pakiecie o tej samej nazwie) "
+"będą szybko identyfikować usługi internetowe hostowane przez maszyne "
+"sieciową, nawet bez konieczności logowania się do niego. Wystarczy wywołać "
+"pod następujące polecenie na innym komputerze podłączonym do tej samej sieci:"
 
 #. Tag: screen
 #, no-c-format
@@ -287,6 +327,18 @@ msgid ""
 "Nmap done: 1 IP address (1 host up) scanned in 0.13 seconds</"
 "computeroutput>\n"
 msgstr ""
+"\n"
+"<computeroutput>$ </computeroutput><userinput>nmap mirwiz</userinput>\n"
+"<computeroutput>Starting Nmap 6.00 ( http://nmap.org ) at 2012-12-17 11:34 "
+"CET\n"
+"Nmap scan report for mirwiz (192.168.1.104)\n"
+"Host is up (0.0037s latency).\n"
+"Not shown: 999 closed ports\n"
+"PORT   STATE SERVICE\n"
+"22/tcp open  ssh\n"
+"\n"
+"Nmap done: 1 IP address (1 host up) scanned in 0.13 seconds</"
+"computeroutput>\n"
 
 #. Tag: title
 #, no-c-format
@@ -294,6 +346,8 @@ msgid ""
 "<emphasis>ALTERNATIVE</emphasis> Use <command>netstat</command> to find the "
 "list of available services"
 msgstr ""
+"<emphasis>ALTERNATIVE</emphasis> Użyj <command>netstat</command> aby znależć "
+"listę dostępnych usług."
 
 #. Tag: para
 #, no-c-format
@@ -303,11 +357,15 @@ msgid ""
 "running programs are listening. This facilitates identification of services "
 "offered on the network."
 msgstr ""
+"Na komputerze z systemem Linux, <polecenie> netstat -tupan </ command> "
+"wyświetli listę aktywnych i oczekujących sesji TCP, jak i UDP, na którym "
+"uruchomione programy są słuchane. Ułatwia to identyfikację oferowanych w "
+"sieci usług."
 
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> IPv6"
-msgstr ""
+msgstr "<emphasis>Idąc dalej  </emphasis> IPv6"
 
 #. Tag: para
 #, no-c-format
@@ -318,6 +376,11 @@ msgid ""
 "<command>ip</command>. The convention is that this behavior is enabled by "
 "the <parameter>-6</parameter> command-line option."
 msgstr ""
+"Niektóre komendy sieciowe mogą pracować zarówno z IPv4 (zazwyczaj domyślne) "
+"lub z IPv6. Należą do nich <command> nmap </ command> i <command> netstat </ "
+"command> polecenia, ale również inne, takie jak <command> route</ command> "
+"lub <command> ip </ command>.Konwencja opisuje zachowanie jest włączona "
+"przez <parametr> -6 </ parametrów> opcja wiersza polecenia."
 
 #. Tag: para
 #, no-c-format
@@ -474,11 +537,17 @@ msgid ""
 "instructive, since this raises questions on the reasons for not using the "
 "corresponding Debian package, if such a package exists."
 msgstr ""
+"Podobnie, warto przeanalizować zawartość pliku <filename> / usr / local / </ "
+"filename> katalogu, w którym są programy zainstalowane i skompilowane "
+"manulanie. Listowanie oprogramowania zainstalowanego w ten sposób jest "
+"pouczająca, ponieważ rodzi to pytania dotyczące powodów nie używania "
+"odpowiedniego pakietu Debiana, jżeli  takie pakiety istnieją."
 
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>QUICK LOOK</emphasis> <emphasis role=\"pkg\">cruft</emphasis>"
 msgstr ""
+"<emphasis>QUICK LOOK</emphasis> <emphasis role=\"pkg\">cruft</emphasis>"
 
 #. Tag: para
 #, no-c-format
@@ -489,6 +558,12 @@ msgid ""
 "legitimate files (files generated by Debian packages, or generated "
 "configuration files not managed by <command>dpkg</command>, etc.)."
 msgstr ""
+"The <emphasis role=\"pkg\">cruft</emphasis> Pakietowe propozycje listy "
+"dostępnych plików ,które nie są własnością żadnego  pakietu. To ma jakieś "
+"filtry (mniej lub bardziej skuteczne,w zależności od tego jak bardzo jest "
+"aktualne), aby uniknąć zgłaszania niektórych uzasadnionych plików (pliki "
+"generowane przez pakiety Debiana lub wygenerowane pliki konfiguracyjne nie "
+"są zarządzane przez<command> dpkg </ command>, itp)."
 
 #. Tag: para
 #, no-c-format
@@ -496,11 +571,13 @@ msgid ""
 "Be careful to not blindly delete everything that <command>cruft</command> "
 "might list!"
 msgstr ""
+"Uważaj aby nie usunąć wszystkiego<polecenie> śmieci </ command> może "
+"wylistować!"
 
 #. Tag: title
 #, no-c-format
 msgid "Installing Debian"
-msgstr ""
+msgstr "Instaluje Debiana"
 
 #. Tag: para
 #, no-c-format
@@ -508,11 +585,13 @@ msgid ""
 "Once all the required information on the current server is known, we can "
 "shut it down and begin to install Debian on it."
 msgstr ""
+"Gdy wszystkie wymagane informacje na bieżącym serwerze są znane, możemy go "
+"zamknąć i rozpocząć instalację  Debiana."
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>architecture</primary>"
-msgstr ""
+msgstr "<primary>archtektura</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -522,6 +601,10 @@ msgid ""
 "were usually i386). In other cases, we can narrow down the possibilities "
 "according to the previously used system."
 msgstr ""
+"Aby wybrać odpowiednią wersję, musimy znać architekturę komputera. Jeśli "
+"jest to w miarę nowy PC,  jest to bardzo prawdopodobne iż będzie to amd64 "
+"(starszymi komputery były zazwyczaj i386). W innych przypadkach, możemy "
+"zawęzić możliwości zgodnie z poprzednio używanego systemu."
 
 #. Tag: para
 #, no-c-format
@@ -531,71 +614,75 @@ msgid ""
 "documentation for the computer is the most reliable source to find this "
 "information."
 msgstr ""
+"<xref linkend=\"tab-corresp\" xrefstyle=\"select: label nopage\" /> nie jest "
+"wyczerpująca, ale może być pomocne. W każdym przypadku, oryginalna "
+"dokumentacja dla komputera jest najbardziej wiarygodnym źródłem, aby znaleźć "
+"te informacje."
 
 #. Tag: title
 #, no-c-format
 msgid "Matching operating system and architecture"
-msgstr ""
+msgstr "Dopasowanie systemu operacyjnego i architektury."
 
 #. Tag: entry
 #, no-c-format
 msgid "Operating System"
-msgstr ""
+msgstr "system operacyjny"
 
 #. Tag: entry
 #, no-c-format
 msgid "Architecture(s)"
-msgstr ""
+msgstr "Architektur(a/y)"
 
 #. Tag: entry
 #, no-c-format
 msgid "DEC Unix (OSF/1)"
-msgstr ""
+msgstr "DEC Unix (OSF/1)"
 
 #. Tag: entry
 #, no-c-format
 msgid "alpha, mipsel"
-msgstr ""
+msgstr "alpha, mipsel"
 
 #. Tag: entry
 #, no-c-format
 msgid "HP Unix"
-msgstr ""
+msgstr "HP Unix"
 
 #. Tag: entry
 #, no-c-format
 msgid "ia64, hppa"
-msgstr ""
+msgstr "ia64, hppa"
 
 #. Tag: entry
 #, no-c-format
 msgid "IBM AIX"
-msgstr ""
+msgstr "IBM AIX"
 
 #. Tag: entry
 #, no-c-format
 msgid "powerpc"
-msgstr ""
+msgstr "zaslianie komputera"
 
 #. Tag: entry
 #, no-c-format
 msgid "Irix"
-msgstr ""
+msgstr "Irix"
 
 #. Tag: entry
 #, no-c-format
 msgid "mips"
-msgstr ""
+msgstr "mips"
 
 #. Tag: entry
 #, no-c-format
 msgid "Mac OS"
-msgstr ""
+msgstr "Mac OS"
 
 #. Tag: entry
 #, no-c-format
 msgid "amd64, powerpc, i386, m68k"
-msgstr ""
+msgstr "amd64, powerpc, i386, m68k"
 
 #. Tag: entry
 #, no-c-format
