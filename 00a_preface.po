@@ -5,14 +5,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-01-09 23:12+0100\n"
+"PO-Revision-Date: 2015-01-31 20:36+0100\n"
 "Last-Translator: Anna Fałek <annldz@onet.eu>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -21,6 +21,25 @@ msgstr ""
 msgid "Preface"
 msgstr "Przedmowa"
 
+# mateunho
+# "Debian to bardzo udany system operacyjny..." -> raczej jako "bardzo popularny" (biorąc pod uwagę francuską wersję)
+# "...wbrew pozorom i powszechnemu przekonaniu wielu ludzi..." -> w oryginale nie ma "widespread belief", raczej jako "znacznie więcej, niż większość ludzi zdaje sobie sprawę"
+# " W czasie swojego powstawania..." -> tutaj niezrozumienie tekstu, chodzi o czas pisania książki/podręcznika
+# "...Debian był..." -> nieprawidłowy czas: "Debian jest"
+# "...najbardziej popularną..." -> "najpopularniejszą"
+# "...,ponad 10%..." -> brakująca spacja po przecinku
+# "...10% sieci działało..." -> nieprawidłowy czas, powinien być tereźniejszy
+# "...działało w oparciu o Debiana..." -> może "jest hostowane na serwerach z Debianem"?
+# "...ile stron nie odwiedziłbyś dzisiaj gdyby nie Debian..." -> może "do ilu stron nie miałbyś dzisiaj dostępu, gdyby nie Debian"?
+# "Jeśli chodzi o bardziej wyjątkowe..." -> może "Jednym z bardziej wyjątkowych"
+# "...Debian jest systemem wybranym przez Międzynaro..." -> raczej "Debian jest używany na Międzyn..."
+# "...Międzynarodową Stację Kosmiczną." -> dodałbym skrót na końcu "...Międzynarodową Stację Kosmiczną (ISS)."
+# "...pracę astronautów MKS, na przykład dzięki portalowi NASA..." -> zgodnie z powyższym "pracę astronautów ISS lub aktywność NASA na portalach społecznościowych"
+# "...międzynarodowej organizacji" -> zmieniłbym szyk na bardziej polskie "organizacji międzynarodowej"
+# "Zarówno działanie samo w sobie jak i posty o nim..." -> raczej "Zarówno samo ich działanie jak i posty o ich pracy"
+# "...były prawdopodobnie zasługą Debiana" -> tutaj niezrozumienie tekstu "made possible", przatłumaczyłbym raczej jako "były możliwe dzięki Debianowi"
+# "...i jego orbicie" -> może "i na jego orbicie"
+# poza tym widziałem podwójne spacje oraz brak spacji po niektórych przecinkach
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -54,6 +73,22 @@ msgstr ""
 "codziennie  Debiana do realizacji swoich zadań, dostarczając usługi milionom "
 "ludzi na całym świecie...i jego orbicie!"
 
+# mateunho
+# "...funkcjonalny..." -> raczej "pełen funkcjonalności" lub "przepełniony funkcjami"
+# "Debian to wizja wolności, z której  w świecie gdzie coraz więcej codziennych obowiązków opiera się na oprogramowaniu, ludzie powinni się cieszyć." -> nieprawidłowy szyk oraz drobne poprawki "Debian jest wizją wolności, z której ludzie powinni się cieszyć, w świecie gdzie coraz więcej codziennych obowiązków zależy od oprogramowania."
+# "Debian powstał..." -> może dosłownie "Debian zrodził się"
+# "...kardynalną zasadę..." -> raczej "podstawową ideę"
+# "...wolnego oprogramowania..." -> to piszemy wielkimi literami "Wolnego Oprogramowania"
+# "..., nie odwrotnie" -> ", a nie na odwrót"
+# "...w zakresie oprogramowania..." -> raczej "z zakresu programowania"
+# "...wszystkimi programami, których potrzebują" -> może "każdym oprogramowaniem, którego potrzebują"
+# "Nie istotne jest..." -> może "Nie ma znaczenia to,"
+# "...wysyłanie obrazków z kotami przez Internet..." -> raczej "publikowanie zdjęć kociaków w sieci"
+# "...czy do potencjalnie..." -> wyrzuciłbym to środkowe "do"
+# "...kontrole" -> "kontrolę"
+# "...mieć możliwość delegowania wyznaczonym przez siebie, zaufanym osobom..." -> raczej "mieć możliwość przekazania, wyznaczonym przez siebie, zaufanym ludziom"
+# "... w swoim imieniu urządzeń opartych na oprogramowaniu" -> raczej "urządzeń wykorzystujących to oprogramowanie"
+# podwójne spacje
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -90,6 +125,19 @@ msgstr ""
 "osobom audytu lub modyfikacji w swoim imieniu urządzeń opartych na "
 "oprogramowaniu."
 
+# mateunho
+# "W kwestii uzyskania..." -> niezrozumienie tekstu, "W dążeniu do osiągnięcia"
+# "...kontroli ludzi nad maszynami..." -> raczej "kontroli maszyn przez ludzi"
+# "..darmowe systemy..." -> z kontektu "Wolne systemy"
+# "...kontrolować maszyny..." -> raczej prościej: "komputera"
+# "...całkowicie darmowego..." -> "całkowicie Wolnego"
+# "Przez ponad 20 lat, Debian..." -> "Od ponad 20 lat Debian"
+# "...jak i wizję wolnego oprogramowania..." -> "jak i promuje wizję Wolnego Oprogramowania"
+# "Dzięki temu, ustawił poprzeczkę wysoko..." -> "W ten sposób Debian bardzo wysoko ustawił poprzeczkę"
+# "Na przykład, decyzje Debiana w sprawie..." -> "Decyzje Debiana w zakresie"
+# "...są stale sprawdzane przez..." -> "są często wykorzystywane jako odniesienie"
+# "...projekty wolnego oprogramowania" -> "projekty Wolnego Oprogramowania"
+# "...decydujące czy..." -> "przy podejmowaniu decyzji, czy"
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -117,6 +165,20 @@ msgstr ""
 "projekty wolnego oprogramowania, decydujące czy coś można uznać za "
 "\"wystarczająco wolne\" czy nie."
 
+# mateunho
+# "Jednakże, przedstawienie tej politycznej wizji, nie..." -> może "Jednakże ta polityczna wizja nie"
+# "...wolnego oprogramowania..." -> wielka litera
+# "...<emphasis>zamkniętych</emphasis>..." -> w kontekście "otwarty"/"zamknięty" jest ok, ale jeżeli wcześniej używamy "Wolny", to przeciwieństwem jest "własnościowy"
+# "...głównym motorem napędzającym rozwój projektu..." -> kreatywne, podoba mi się :)
+# "...jego zadań..." -> raczej "jego działań"
+# "Debian jest inny" -> brzmi trochę negatywnie, raczej "Debian sie wyróżnia"
+# "Jego wolontariusze w tym czasie, podzielili" -> brakuje kluczowych słów Debian Project, może "W ramach Projektu Debian, wolontariusze podzielili"
+# "...by Debian mógł funkcjonować i się rozwijać" -> tu liczę na więcej kreatywności, bo w oryginale jest fajnie, a u nas grzecznie i nudno, może "by utrzymać Debiana w doskonałej formie" (chociaż to też jest przeciętne)
+# "...do zagadnień prawnych..." -> bardziej mi pasuje "do kwestii prawnych", ale nie będę sie o to kłócił :P
+# "...prawnych, nie wspominając..." -> brakuje trzech kropek "prawnych, ... nie wspominając"
+# "...konfekcjonowaniu oprogramowania..." -> tu licze na mniej kreatywności :P, zdecydowanie "pakietowaniu oprogramowania"
+# "Uczestnicy projektu..." -> tu będą zmiany globalne, bo "contributor" do tej pory było tłumaczone jako "współpracownik", ale prawdopodobnie będzie spolszczone jako "kontrybutor", tymczasem zostawiłbym jako "Współpracownicy Debiana zajmują się nimi wszystkimi"
+# nadmiarowa spacja na końcu ostatniego zdania
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -152,6 +214,19 @@ msgstr ""
 "konfekcjonowaniu oprogramowania i rozwijaniu go! Uczestnicy projektu "
 "sprawują pieczę nad każdym z tym zagadnień. "
 
+# mateunho
+# "...jest zapotrzebowanie i poleganie Debiana na..." -> "jest to, że Debian potrzebuje i polega na"
+# "...na różnorodnej społeczności..." -> może "na zróżnicowanej społeczności"
+# "...które sobie wymyślisz..." -> to nie "come up with", tylko "imagine", więc sugeruję "które sobie wyobrazisz"
+# "...wykorzystana w projekcie i użyta do jego ulepszenia" -> raczej "może być wykorzystana przez Debiana przyczyniając się do ulepszenia projektu"
+# "...komercyjnych interesów..." -> zmieniłbym szyk na bardziej polski i ewentualnie zastanowiłbym się, czy nie napisać "interesów handlowych" zamiast komercyjnych
+# "...firm- ..." -> brak spacji przed myślnikiem, a poza tym sam znak różni sie od oryginalnego - proszę skopiować z tekstu źródłowego
+# "...przedsięwzięcia na które..." -> brak przecinka oraz wcześniej w tym zdaniu były "interesy", więc tak powinno zostać, czyli "interesów, na które"
+# "...poręczenia ,..." -> niepotrzebna spacja przed przecinkiem
+# "...są zawsze  związane..." -> podwójna spacja, nieprawidłowy czas - powinien być przyszły, raczej "że zawsze będą związane"
+# "...świadczy wiele..." -> "świadczy aż zbyt wiele"
+# "...przykładów nowinek technicznych..." -> niezrozumienie tekstu (?), raczej "wiadomości ze świata technologii"
+# nadmiarowa spacja na końcu ostatniego zdania
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -174,6 +249,26 @@ msgstr ""
 "promowaniem kontroli ludzi nad maszynami, o czym świadczy wiele ostatnich "
 "przykładów nowinek technicznych. "
 
+# mateunho
+# "...dotyczący unikalności..." -> nieprawidłowy czas, powinien być teraźniejszy, raczej "przyczynia się do unikalności"
+# "...sposób w jaki..." -> brakuje przecinka po "sposób"
+# "...eksperyment społeczny funkcjonuje" -> raczej "eksperyment społeczny jest prowadzony"
+# "Pomimo biurokratycznego folkloru..." -> mniej dosłownie, bardziej czytane między słowami "Pomimo powszechnego postrzegania bycia biurokratycznym"
+# "...projektu, ale ludzie..." -> raczej "projektu. Niemniej jednak ludzie"
+# "...za nie, nie są ograniczeni w swojej pracy..." -> niepotrzebny przecinek, raczej "za nie mają wolną rękę w podejmowaniu decyzji"
+# "...robić, jak..." -> zamiast przecinka wrzuciłbym "lub"
+# "... jak dana rzecz zostanie wykonana..." -> brakuje słowa kluczowego Debian, może "jak coś jest wykonane w Debianie"
+# "...musisz spróbować swoich sił..." -> raczej "musisz stanąć w pierwszym szeregu"
+# "...merytokracji- ..." -> brak spacji i niewłaściwy myślnik
+# "...do-ocracy..." -> przemyśleć i zaproponować fajne tłumaczenie, albo zostawić jak jest
+# "...jest bardzo inspirująca dla współuczestników" -> raczej "daje duże możliwości współpracownikom"
+# "...około tysiąca..." -> zostawiamy liczbę jak w oryginale "około 1000"
+# "...Projektu Debiana..." -> "Projektu Debian"
+# "...jak i kilka..." -> raczej "oraz kilka"
+# "...współuczestników..." -> "współpracowników"
+# "Bez wątpienia Debian..." -> "Nie jest więc zaskoczeniem, że Debian"
+# "...największy projekt..." -> raczej "największy w historii projekt"
+# "...wolnego oprogramowania..." -> wielka litera
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -211,6 +306,27 @@ msgstr ""
 "Debian jest trafnie uznawany za największy projekt wolnego oprogramowania "
 "prowadzony przez społeczność."
 
+# mateunho
+# "...dość unikalny" -> raczej "zupełnie unikalny"
+# "...które do..." -> literówka
+# "...istnieje 300 aktywnych..." -> "istnieje około 300 aktywnych"
+# "...wolnego oprogramowania" -> wielka litera
+# "... nich(około..." -> brakująca spacja
+# "...pochodnymi <emphasis>Debiana</emphasis>..." -> z znacznikach powinno być tłumaczone słowo "<emphasis>pochodnymi</emphasis> Debiana"
+# "...użytkowników-zazwyczaj..." -> nieprawidłowy myślnik
+# "...pakietów-i..." -> jak wyżej
+# "...i przystosowały się do..." -> ", przystosowywane do"
+# "...i w rezultacie wypuszczenie produktu..." -> "i wydane jako końcowy produkt"
+# "...wolne oprogramowanie..." -> wielkie litery
+# "...nowym użytkownikom..." -> "nowym użytkownikom oraz współpracownikom"
+# "...pochodnym dystrybucjom..." -> odwrócony szyk brzmi lepiej
+# "...w którym obecnie nareszcie wolne oprogramowanie może rywalizować z oprogramowaniem prawnie zastrzeżonym..." -> można prościej "Wolne Oprogramowanie w końcu rywalizuje z własnościowym"
+# "...na polach, które historycznie uznawane były za trudne do podbicia..." -> można prościej "na polach historycznie uznawanych za trudne do podbicia"
+# "...wdrożenie dużych desktopowych systemów" -> "duże wdrożenia desktopowe"
+# "...jest korzeniem..." -> dosłownie "stanowi korzeń" lub "jest źródłem"
+# "...większego ekosystemu..." -> "największego w historii ekosystemu"
+# "...nawet jeśli..." -> może "nawet jeżeli" (?)
+# "...pracy Debiana.      ..." -> "owoców pracy społeczności Debiana." (bez spacji po kropce na końcu zdania)
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -253,6 +369,23 @@ msgstr ""
 "i nawet jeśli twój dostawca nie poinformował cię o tym, możliwe, że właśnie "
 "teraz korzystasz z pracy Debiana.      "
 
+# mateunho
+# "...cyfrowej wolności..." -> "cyfrowych wolności
+# "...od dawna zauważył..." -> "od dawna uznaje"
+# "... operacyjnego, potrzeba..." -> niepotrzebny przecinek
+# "...potrzeba rozprowadzać..." -> "rozprowadzane jest"
+# "...software:..." -> hmm (?), tego tu nie ma
+# "...oprogramowanie integralne" -> raczej "oprogramowanie układowe"
+# " Jak zastosować do tego wolość <emphasis>oprogramowania</emphasis>?" -> "Jak stosować wolności <emphasis>oprogramowania</emphasis> do tych materiałów?"
+# "...inne wymagania..." -> "inne kryteria"
+# "...czy sprowadzić wszystkie materiały do tego samego wysokiego poziomu wolności?" -> może "czy wprowadzić ten sam wysoki poziom wolności dla wszystkich materiałów?"
+# "...zadecydował aby wszystkie..." -> "wybrał ostatnią opcję: wszystkie"
+# "...przyniosła znaczące efekty..." -> może "ma bardzo szerokie implikacje"
+# "...ze nie możemy dostarczać..." -> literówka, może "że nie możemy rozprowadzać"
+# "...oprogramowania integralnego..." -> jak wcześniej
+# "...oprawy graficznej sprzecznego z ideą wolnego oprogramowania, nie wspominając o użytkowaniu w kontekście handlowym..." -> "prac graficznych, które nie mogą być używane komercyjnie"
+# "...które nie będą mogły być modyfikowane aby..." -> "które nie moga być modyfikowane, aby"
+# "...nadszerpnięciu(tak jak to głosi folklor publicystów)..." -> "matowieniu (jak głosi gwara wydawnicza)"
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -288,6 +421,22 @@ msgstr ""
 "modyfikowane aby uniknąć nadszerpnięciu(tak jak to głosi folklor "
 "publicystów) reputacji autora/publicysty."
 
+# mateunho
+# "...książka<emphasis>..." -> brakująca spacja
+# "...w obronie wolności..." -> jest ok, ale dodałbym w nawiasie tekst źródłowy, bo nie każdy zrozumie kontekst
+# "...które pomagały..." -> może "które pomagałyby"
+# "Ale to także znaczyło, ironicznie..." -> "Jak na ironię to oznacza również"
+# "...że mięliśmy..." -> literówka
+# "...też mało tego typu materiału..." -> może "mało tego typu materiałów"
+# "...dostarczać jako część Debiana" -> może "rozprowadzać razem z Debianem"
+# "..., która ma naprawić to niedociągnięcie" -> może "w odpowiedzi na ten niedostatek"
+# "Możesz <command>apt-get install</command> tą książkę..." -> "Możesz użyć komendy <command>apt-get install</command>, aby zainstalować tą książkę"
+# "...stworzyć jej inną dystrybucje..." -> raczej "przygotować zmodyfikowaną wersję"
+# "...zgłosić raport błędów i ich poprawki..." -> "zgłaszać błędy i poprawki do niej"
+# "Ludzie, którzy współtworzyli tą książkę..." -> raczej, zgodnie z konwencją ""Zarządcy" tej książki", ale może zmienimy to globalnie na "opiekunowie"
+# "...-będący także jej autorami- ..." -> nieprawidłowe myślniki
+# "...tej darmowej książki..." -> "tej Wolnej książki"
+# nadmiarowe spacje na końcu ostatniego zdania
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -327,6 +476,8 @@ msgstr ""
 "odpowiedzialności za ważne części Debiana. Poprzez publikacje tej darmowej "
 "książki kolejny raz przysłużyli się społeczności Debiana.  "
 
+# mateunho
+# według mnie to by było coś takiego "Mamy nadzieję, że tak bardzo jak nam spodoba Ci się ten fundament Wolnego czytania na temat Debiana.
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -341,6 +492,9 @@ msgstr ""
 msgid "November 2013"
 msgstr "Listopad 2013"
 
+# mateunho
+# "...and..." -> powinno być "i"
+# "...Debian 2013-obecnie)" -> prościej "Debian od 2013)"
 #. Tag: para
 #, no-c-format
 msgid ""
