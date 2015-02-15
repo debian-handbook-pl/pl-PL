@@ -1,6 +1,6 @@
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-	The Debian Administrator's Handbook - Polish translation
+    The Debian Administrator's Handbook - Podręcznik Administratora Debiana
 
 
     coordinator:    Mateusz Kacprzak <mateusz.kacprzak@yandex.com>
@@ -17,5 +17,14 @@
                     Mikołaj Szczuraszek (reviewer)
                     Tomasz Kaczmarek
 
+
+    Polish translation is maintained using git version control system.
+    The official repository (updated each month or so) is:
+        alioth.debian.org/projects/debian-handbook
+    daily progress can be found on team's repository:
+        github.com/debian-handbook-pl
+
+    If you want to join the team feel free to contact either the coordinator,
+    chief translator or chief reviewer.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
