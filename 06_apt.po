@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-01-24 22:42+0100\n"
+"PO-Revision-Date: 2015-03-08 12:19+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 71,90,103,116,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 71,90,103,116,132,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -794,24 +794,22 @@ msgstr "Nowy serwis (wprowadzony w kwietniu 2010) może być użyty do \"podró�
 #. Tag: title
 #, no-c-format
 msgid "Caching Proxy for Debian Packages"
-msgstr ""
+msgstr "Cache'ujący Serwer Proxy dla Pakietów Debiana"
 
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>source of packages</primary>"
+#, no-c-format
 msgid "<primary>proxy cache</primary>"
-msgstr "<primary>źródło pakietów</primary>"
+msgstr "<primary>proxy cache</primary>"
 
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>source of packages</primary>"
+#, no-c-format
 msgid "<primary>cache, proxy</primary>"
-msgstr "<primary>źródło pakietów</primary>"
+msgstr "<primary>cache, proxy</primary>"
 
 #. Tag: para
 #, no-c-format
 msgid "When an entire network of machines is configured to use the same remote server to download the same updated packages, any administrator knows that it would be beneficial to have an intermediate proxy acting as a network-local cache (see sidebar <xref linkend=\"sidebar.cache\" />)."
-msgstr ""
+msgstr "Kiedy cała sieć maszyn jest skonfigurowana, aby używać tego samego zdalnego serwera w celu pobierania tych samych zaktualizowanych pakiety, każdy administrator wie, że korzystnie byłoby mieć pośredni serwer proxy działający jako lokalny cache (spójrz na fiszkę <xref linkend=\"sidebar.cache\" />)."
 
 #. Tag: para
 #, no-c-format
@@ -821,12 +819,12 @@ msgstr ""
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">apt-cacher</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">apt-cacher</emphasis></primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">apt-cacher-ng</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">apt-cacher-ng</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -836,7 +834,7 @@ msgstr ""
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">approx</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">approx</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -869,17 +867,17 @@ msgstr ""
 #. Tag: title
 #, no-c-format
 msgid "<command>aptitude</command> and <command>apt-get</command> Commands"
-msgstr ""
+msgstr "Komendy <command>aptitude</command> i <command>apt-get</command>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-get</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-get</command></primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude</command></primary>"
 
 #. Tag: para
 #, no-c-format
