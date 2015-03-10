@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-08 12:19+0100\n"
+"PO-Revision-Date: 2015-03-10 20:14+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 71,90,103,116,132,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 71,90,103,116,138,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -785,6 +785,7 @@ msgstr "<emphasis>IDĄĆ DALEJ</emphasis> Stare wersje pakietów: <literal>snaps
 msgid "<primary><literal>snapshot.debian.org</literal></primary>"
 msgstr "<primary><literal>snapshot.debian.org</literal></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "A new service (introduced in April 2010) can be used to “go backwards in time” and to find an old version of a package. It can be used for example to identify which version of a package introduced a regression, and more concretely, to come back to the former version while waiting for the regression fix."
@@ -796,51 +797,61 @@ msgstr "Nowy serwis (wprowadzony w kwietniu 2010) może być użyty do \"podró�
 msgid "Caching Proxy for Debian Packages"
 msgstr "Cache'ujący Serwer Proxy dla Pakietów Debiana"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>proxy cache</primary>"
 msgstr "<primary>proxy cache</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>cache, proxy</primary>"
 msgstr "<primary>cache, proxy</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "When an entire network of machines is configured to use the same remote server to download the same updated packages, any administrator knows that it would be beneficial to have an intermediate proxy acting as a network-local cache (see sidebar <xref linkend=\"sidebar.cache\" />)."
 msgstr "Kiedy cała sieć maszyn jest skonfigurowana, aby używać tego samego zdalnego serwera w celu pobierania tych samych zaktualizowanych pakiety, każdy administrator wie, że korzystnie byłoby mieć pośredni serwer proxy działający jako lokalny cache (spójrz na fiszkę <xref linkend=\"sidebar.cache\" />)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "You can configure APT to use a \"standard\" proxy (see <xref linkend=\"sect.apt-config\" /> for the APT side, and <xref linkend=\"sect.http-ftp-proxy\" /> for the proxy side), but the Debian ecosystem offers better options to solve this problem. The dedicated software presented in this section are smarter than a plain proxy cache because they can rely on the specific structure of APT repositories (for instance they know when individual files are obsolete or not, and thus adjust the time during which they are kept)."
-msgstr ""
+msgstr "Można skonfigurować APT, żeby używał \"standardowego\" proxy (spójrz na fiszkę <xref linkend=\"sect.apt-config\" /> dotyczącą APTa i <xref linkend=\"sect.http-ftp-proxy\" /> dotyczące proxy), ale ekosystem Debiana oferuje lepsze rozwiązania tego problemu. Przeznaczone do tego oprogramowanie, zaprezentowane w tej sekcji, jest lepsze od zwykłego proxy, ponieważ może używać specyficznej struktury repozytorium APTa (np.: wie, czy konkretne pliki są przestarzałe, czy nie i odpowiednio dopasowuje czas ich przetrzymywania)."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">apt-cacher</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">apt-cacher</emphasis></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">apt-cacher-ng</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">apt-cacher-ng</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"pkg\">apt-cacher</emphasis> and <emphasis role=\"pkg\">apt-cacher-ng</emphasis> work like usual proxy cache servers. APT's <filename>sources.list</filename> is left unchanged, but APT is configured to use them as proxy for outgoing requests."
-msgstr ""
+msgstr "<emphasis role=\"pkg\">apt-cacher</emphasis> i <emphasis role=\"pkg\">apt-cacher-ng</emphasis> działają jak zwykłe cache serwery proxy. Plik <filename>sources.list</filename> nie jest zmieniany, ale APT jest skonfigurowany, aby używać ich jako proxy dla wychodzących zapytań."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">approx</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">approx</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"pkg\">approx</emphasis>, on the other hand, acts like an HTTP server that “mirrors” any number of remote repositories in its top-level URLs. The mapping between those top-level directories and the remote URLs of the repositories is stored in <filename>/etc/approx/approx.conf</filename>:"
-msgstr ""
+msgstr "Z kolei <emphasis role=\"pkg\">approx</emphasis> działa jako serwer HTTP odzwierciedlając dowolną liczbę zdalnych repozytoriów pod jego adresami URL najwyższego poziomu. Mapowanie pomiędzy tymi katalogami najwyższego poziomu, a zdalnymi URLami repozytoriów jest przechowywane w pliku <filename>/etc/approx/approx.conf</filename>:"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -849,12 +860,18 @@ msgid ""
 "debian   http://ftp.debian.org/debian\n"
 "security http://security.debian.org\n"
 msgstr ""
+"\n"
+"# &lt;nazwa&gt; &lt;adres-bazowy-repozytorium&gt;\n"
+"debian   http://ftp.debian.org/debian\n"
+"security http://security.debian.org\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"pkg\">approx</emphasis> runs by default on port 9999 via inetd (see <xref linkend=\"sect.inetd\" />) and requires the users to adjust their <filename>sources.list</filename> file to point to the approx server:"
-msgstr ""
+msgstr "<emphasis role=\"pkg\">approx</emphasis> domyślnie działa na porcie 9999 przez inetd (spójrz na fiszkę <xref linkend=\"sect.inetd\" />) i wymaga od użytkownika, aby dopasować plik <filename>sources.list</filename>, żeby wskazywał serwer approx:"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -863,51 +880,65 @@ msgid ""
 "deb http://apt.falcot.com:9999/debian wheezy main contrib non-free\n"
 "      "
 msgstr ""
+"# Przykładowy plik sources.list wskazujący lokalny serwer approx\n"
+"deb http://apt.falcot.com:9999/security wheezy/updates main contrib non-free\n"
+"deb http://apt.falcot.com:9999/debian wheezy main contrib non-free\n"
+"      "
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<command>aptitude</command> and <command>apt-get</command> Commands"
 msgstr "Komendy <command>aptitude</command> i <command>apt-get</command>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-get</command></primary>"
 msgstr "<primary><command>apt-get</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude</command></primary>"
 msgstr "<primary><command>aptitude</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "APT is a vast project, whose original plans included a graphical interface. It is based on a library which contains the core application, and <command>apt-get</command> is the first front end — command-line based — which was developed within the project."
-msgstr ""
+msgstr "APT jest szeroko zakrojonym projektem, który w swoich planach zakładał interfejs graficzny. Bazuje na bibliotece, która zawiera rdzeń aplikacji, a <command>apt-get</command> jest pierwszym konsolowym front-endem stworzonym w ramach tego projektu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Numerous other graphical interfaces then appeared as external projects: <command>synaptic</command>, <command>aptitude</command> (which includes both a text mode interface and a graphical one — even if not complete yet), <command>wajig</command>, etc. The most recommended interface, <command>apt-get</command>, is the one used during the installation of Debian, and the one that we will use in the examples given in this section. Note however that <command>aptitude</command>'s command-line syntax is very similar. When there are major differences between <command>apt-get</command> and <command>aptitude</command>, these differences will be detailed."
-msgstr ""
+msgstr "Później pojawiło się wiele innych interfejsów graficznych tworzonych jako zewnętrzne projekty: <command>synaptic</command>, <command>aptitude</command> (który zawiera zarówno interfejs konsolowy i graficzny — nawet jeżeli jeszcze nie w pełni kompletny), <command>wajig</command>, etc. Najczęściej polecanym interfejsem, <command>apt-get</command>, jest ten używany podczas instalacji Debiana, który będzie również używany w przykładach poniższej sekcji. Zauważ jednak, że konsolowa składnia <command>aptitude</command> jest bardzo podobna. Miejsca, gdzie występują znaczące różnice pomiędzy <command>apt-get</command> i <command>aptitude</command>, zostaną szerzej opisane i wyjaśnione."
 
+# mateunho
+# kiepsko brzmi -> czekam na lepsze propozycje
 #. Tag: title
 #, no-c-format
 msgid "Initialization"
-msgstr ""
+msgstr "Inicjalizacja"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "For any work with APT, the list of available packages needs to be updated; this can be done simply through <command>apt-get update</command>. Depending on the speed of your connection, the operation can take a while since it involves downloading a certain number of <filename>Packages</filename>/<filename>Sources</filename>/<filename>Translation-<replaceable>language-code</replaceable></filename> files, which have gradually become bigger and bigger as Debian has developed (at least 10 MB of data for the <literal>main</literal> section). Of course, installing from a CD-ROM set does not require any downloading — in this case, the operation is very fast."
-msgstr ""
+msgstr "Do każdej pracy z APTem trzeba zaktualizować listę dostępnych pakietów; może to zrobić przez wpisanie <command>apt-get update</command>. Zależnie od dostępnej prędkości połączenia, operacja ta może chwilę zająć, ponieważ składa się na nią pobieranie pewnej liczby plików <filename>Pakietów</filename>/<filename>Źródeł</filename>/<filename>Tłumaczeń-<replaceable>language-code</replaceable></filename>, które stopniowo stawały się coraz większe razem z rozwojem Debiana (przynajmniej 10MB danych dla sekcji <literal>main</literal>). Oczywiście podczas instalacji z płyt CD-ROM nie jest wymagane żadne pobieranie — w takim przypadku ta operacja jest bardzo szybka."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-get update</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-get update</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude update</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude update</command></primary>"
 
 #. Tag: title
 #, no-c-format
