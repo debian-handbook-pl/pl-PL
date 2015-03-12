@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-11 18:05+0100\n"
+"PO-Revision-Date: 2015-03-12 20:23+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 71,90,103,116,174,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 71,90,103,174,190,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1182,86 +1182,101 @@ msgstr "<emphasis>IDĄC DALEJ</emphasis> Mechanizm cache plików <filename>.deb<
 msgid "APT keeps a copy of each downloaded <filename>.deb</filename> file in the directory <filename>/var/cache/apt/archives/</filename>. In case of frequent updates, this directory can quickly take a lot of disk space with several versions of each package; you should regularly sort through them. Two commands can be used: <command>apt-get clean</command> entirely empties the directory; <command>apt-get autoclean</command> only removes packages which cannot be downloaded (because they have disappeared from the Debian mirror) and are therefore clearly useless (the configuration parameter <literal>APT::Clean-Installed</literal> can prevent the removal of <filename>.deb</filename> files that are currently installed)."
 msgstr "APT przechowuje kopię każdego pobranego pliku <filename>.deb</filename> w katalogu <filename>/var/cache/apt/archives/</filename>. W przypadku częstych aktualizacji, ten katalog może zająć dużo miejsca na dysku, zawierając kilka wersji każdego pakietu; należy go regularnie porządkować. W tym celu można użyć dwóch komend: <command>apt-get clean</command> zupełnie czyści ten katalog; <command>apt-get autoclean</command> usuwa jedynie pakiety, których nie można już pobrać (ponieważ zniknęły w serwera lustrzanego Debiana) i są zwyczajnie bezużyteczne (parametr konfiguracyjny <literal>APT::Clean-Installed</literal> zapobiega usuwaniu plików <filename>.deb</filename>, które są aktualnie zainstalowane)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "System Upgrade"
-msgstr ""
+msgstr "Modernizacja systemu"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>upgrade</primary><secondary>system upgrade</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>upgrade</primary><secondary>system upgrade</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-get upgrade</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-get upgrade</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude safe-upgrade</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude safe-upgrade</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Regular upgrades are recommended, because they include the latest security updates. To upgrade, use <command>apt-get upgrade</command> or <command>aptitude safe-upgrade</command> (of course after <command>apt-get update</command>). This command looks for installed packages which can be upgraded without removing any packages. In other words, the goal is to ensure the least intrusive upgrade possible. <command>apt-get</command> is slightly more demanding than <command>aptitude</command> because it will refuse to install packages which were not installed beforehand."
-msgstr ""
+msgstr "Zaleca się regularne modernizacje, ponieważ zawierają one najnowsze aktualizacje dotyczące bezpieczeństwa. W celu modernizacji należy użyć <command>apt-get upgrade</command> lub <command>aptitude safe-upgrade</command> ()oczywiście po <command>apt-get update</command>). Ta komenda wyszukuje pakiety, które mogą zostać zmodernizowane bez usuwania innych pakietów. Innymi słowy, celem jest zapewnienie jak najmniej inwazyjnej modernizacji. <command>apt-get</command> jest nieco bardziej restrykcyjny niż <command>aptitude</command>, ponieważ nie zezwoli na instalację pakietów, które nie były zainstalowane wcześniej."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> Incremental upgrade"
-msgstr ""
+msgstr "<emphasis>WSKAZÓWKA</emphasis> Modernizacja przyrostowa"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "As we explained earlier, the aim of the <command>apt-get update</command> command is to download for each package source the corresponding <filename>Packages</filename> (or <filename>Sources</filename>) file. However, even after a <command>bzip2</command> compression, these files can remain rather large (the <filename>Packages.bz2</filename> for the <foreignphrase>main</foreignphrase> section of <emphasis role=\"distribution\">Wheezy</emphasis> takes more than 5 MB). If you wish to upgrade regularly, these downloads can take up a lot of time."
-msgstr ""
+msgstr "Jak zostało wyjaśnione wcześniej, celem komendy <command>apt-get update</command> jest pobranie dla każdego źródła pakietów jego odpowiedniego pliku <filename>Pakiety</filename> (lub <filename>Źródła</filename>). Jednakże nawet po kompresji <command>bzip2</command> te pliki mogą być dość duże (plik <filename>Pakiety.bz2</filename> dla sekcji <foreignphrase>main</foreignphrase> wydania <emphasis role=\"distribution\">Wheezy</emphasis> zajmuje więcej niż 5 MB). Jeżeli chcesz regularnie dokonywać modernizacji, to pobieranie może zabierać dużo czasu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To speed up the process APT can download “diff” files containing the changes since the previous update, as opposed to the entire file. To achieve this, official Debian mirrors distribute different files which list the differences between one version of the <filename>Packages</filename> file and the following version. They are generated at each update of the archives and a history of one week is kept. Each of these “diff” files only takes a few dozen kilobytes for <emphasis role=\"distribution\">Unstable</emphasis>, so that the amount of data downloaded by a weekly <command>aptitude update</command> is often divided by 10. For distributions like <emphasis role=\"distribution\">Stable</emphasis> and <emphasis role=\"distribution\">Testing</emphasis>, which change less, the gain is even more noticeable."
-msgstr ""
+msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", zawierające zmiany od poprzedniej aktualizacji, zamiast całego pliku. Aby to osiągnąć, oficjalne serwery lustrzane Debiana rozprowadzają różne pliki zawierające listę różnic pomiędzy jedną wersją pliku <filename>Pakiety</filename> i jej następną wersją. Są one tworzone przy każdej aktualizacji archiwów i przetrzymywane do tygodnia wstecz. Każdy z plików \"diff\" zajmuje tylko kilka kilobajtów dla wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>, więc ilość danych pobieranych podczas cotygodniowego <command>aptitude update</command> jest zazwyczaj 10 razy mniejsza. Dla dystrybucji takich jak <emphasis role=\"distribution\">Stabilna</emphasis> i <emphasis role=\"distribution\">Testowa</emphasis>, które podlegają mniejszym zmianom, ten zysk jest nawet bardziej zauważalny."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "However, it can sometimes be of interest to force the download of the entire <filename>Packages</filename> file, especially when the last upgrade is very old and when the mechanism of incremental differences would not contribute much. This can also be interesting when network access is very fast but when the processor of the machine to upgrade is rather slow, since the time saved on the download is more than lost when the computer calculates the new versions of these files (starting with the older versions and applying the downloaded differences). To do that, you can use the configuration parameter <literal>Acquire::Pdiffs</literal> and set it to <literal>false</literal>."
-msgstr ""
+msgstr "Jednakże czasami pobranie całego pliku <filename>Packages</filename> jest pożądane, zwłaszcza jeżeli ostatnia modernizacja była bardzo dawno temu i mechanizm przyrostów różnicowych niewiele by wniósł. Może być to również interesujące w przypadku posiadania bardzo szybkiego połączenia z siecią w połączeniu ze stosunkowo wolnym procesorem modernizowanej maszyny, ponieważ więcej czasu będzie zaoszczędzone na pobieraniu w porównaniu z obliczaniem nowych wersji tych plików (zaczynając od starszych wersji i aplikując kolejne różnice). W tym celu należy użyć parametru konfiguracyjnego <literal>Acquire::Pdiffs</literal> ustawionego na <literal>false</literal>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>apt-get</command> will generally select the most recent version number (except for packages from <emphasis role=\"distribution\">Experimental</emphasis> and <emphasis role=\"distribution\">stable-backports</emphasis>, which are ignored by default whatever their version number). If you specified <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis> in your <filename>sources.list</filename>, <command>apt-get upgrade</command> will switch most of your <emphasis role=\"distribution\">Stable</emphasis> system to <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis>, which might not be what you intended."
-msgstr ""
+msgstr "<command>apt-get</command> zazwyczaj wybierze najnowszy numer wersji (z wyjątkiem pakietów z <emphasis role=\"distribution\">Experymentalnego</emphasis> i <emphasis role=\"distribution\">stable-backports</emphasis>, które są domyślnie ignorowane bez względu na numer wersji). Jeżeli plik <filename>sources.list</filename> zawiera wpisy dla <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>, to <command>apt-get upgrade</command> zamieni większość Twojego <emphasis role=\"distribution\">Stabilnego</emphasis> systemu na <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>, co niekoniecznie było w zamyśle."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To tell <command>apt-get</command> to use a specific distribution when searching for upgraded packages, you need to use the <literal>-t</literal> or <literal>--target-release</literal> option, followed by the name of the distribution you want (for example: <command>apt-get -t stable upgrade</command>). To avoid specifying this option every time you use <command>apt-get</command>, you can add <literal>APT::Default-Release \"stable\";</literal> in the file <filename>/etc/apt/apt.conf.d/local</filename>."
-msgstr ""
+msgstr "Aby wskazać, żeby <command>apt-get</command> używał konkretnej dystrybucji w czasie wyszukiwania zmodernizowanych pakietów, należy użyć opcji <literal>-t</literal> lub <literal>--target-release</literal>, po której wpisać nazwę danej dystrybucji (na przykład: <command>apt-get -t stable upgrade</command>). Aby oszczędzić sobie wpisywania tej opcji za każdym razem użycia <command>apt-get</command>, można dodać wpis <literal>APT::Default-Release \"stable\";</literal> w pliku <filename>/etc/apt/apt.conf.d/local</filename>."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-get dist-upgrade</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-get dist-upgrade</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude dist-upgrade</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude dist-upgrade</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude full-upgrade</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude full-upgrade</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "For more important upgrades, such as the change from one major Debian version to the next, you need to use <command>apt-get dist-upgrade</command> (“distribution upgrade”). With this instruction, <command>apt-get</command> will complete the upgrade even if it has to remove some obsolete packages or install new dependencies. This is also the command used by users who work daily with the Debian <emphasis role=\"distribution\">Unstable</emphasis> release and follow its evolution day by day. It is so simple that it hardly needs explanation: APT's reputation is based on this great functionality."
-msgstr ""
+msgstr "W celu ważniejszych modernizacji, takich jak zmiana na następną wersję Debiana, należy użyć <command>apt-get dist-upgrade</command> (\"modernizacja dystrybucji\"). Używając tej instrukcji <command>apt-get</command> dokona całkowitej modernizacji, nawet jeżeli będzie musiał usunąć przestarzałe pakiety lub zainstalować nowe zależności. Poza tym jest to komenda stosowana na co dzień przez użytkowników wydania Debiana <emphasis role=\"distribution\">Niestabilnego</emphasis>, która podąża za jego ewolucją z dnia na dzień. To jest tak proste, że mówi samo za siebie: reputacja APTa została zbudowana na tej genialnej funkcjonalności."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>aptitude full-upgrade</command> is <command>aptitude</command>'s corresponding command although <command>dist-upgrade</command> is also recognized (but deprecated)."
-msgstr ""
+msgstr "<command>aptitude full-upgrade</command> jest odpowiednikiem dla <command>aptitude</command>, jednakże <command>dist-upgrade</command> jest również rozpoznawane (ale przestarzałe)."
 
 #. Tag: title
 #, no-c-format
