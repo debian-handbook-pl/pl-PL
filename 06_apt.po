@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-12 20:23+0100\n"
+"PO-Revision-Date: 2015-03-15 17:08+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 71,90,103,174,190,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 71,90,103,174,231,213,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1278,122 +1278,143 @@ msgstr "W celu ważniejszych modernizacji, takich jak zmiana na następną wersj
 msgid "<command>aptitude full-upgrade</command> is <command>aptitude</command>'s corresponding command although <command>dist-upgrade</command> is also recognized (but deprecated)."
 msgstr "<command>aptitude full-upgrade</command> jest odpowiednikiem dla <command>aptitude</command>, jednakże <command>dist-upgrade</command> jest również rozpoznawane (ale przestarzałe)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Configuration Options"
-msgstr ""
+msgstr "Opcje konfiguracyjne"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary>configuration</secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary>configuration</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>apt.conf.d/</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>apt.conf.d/</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>/etc/apt/apt.conf.d/</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/apt/apt.conf.d/</filename></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Besides the configuration elements already mentioned, it is possible to configure certain aspects of APT by adding directives in a file of the <filename>/etc/apt/apt.conf.d/</filename> directory. Remember for instance that it is possible for APT to tell <command>dpkg</command> to ignore file conflict errors by specifying <literal>DPkg::Options { \"--force-overwrite\"; }</literal>."
-msgstr ""
+msgstr "Poza wymienionymi wcześniej elementami konfiguracyjnymi, możliwa jest konfiguracja pewnych aspektów działania APTa poprzez dodanie instrukcji w pliku katalogu <filename>/etc/apt/apt.conf.d/</filename>. Przypomnijmy na przykład, że APT może poinstruować <command>dpkg</command>, aby ignorował błędy kolizji plików przez dodanie instrukcji <literal>DPkg::Options { \"--force-overwrite\"; }</literal>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "If the Web can only be accessed through a proxy, add a line like <literal>Acquire::http::proxy \"http://<replaceable>yourproxy</replaceable>:3128\"</literal>. For an FTP proxy, write <literal>Acquire::ftp::proxy \"ftp://<replaceable>yourproxy</replaceable>\"</literal>. To discover more configuration options, read the <citerefentry><refentrytitle>apt.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page with the <command>man apt.conf</command> command (for details on manual pages, see <xref linkend=\"sect.manual-pages\" />)."
-msgstr ""
+msgstr "Jeżeli dostęp do sieci jest możliwy jedynie przez proxy, należy dodać linię podobną do <literal>Acquire::http::proxy \"http://<replaceable>twojeproxy</replaceable>:3128\"</literal>. Dla proxy FTP należy wpisać <literal>Acquire::ftp::proxy \"ftp://<replaceable>twojeproxy</replaceable>\"</literal>. Więcej opcji konfiguracyjnych można znaleźć na stronach pomocy <citerefentry><refentrytitle>apt.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> za pomocą komendy <command>man apt.conf</command> (szczegóły korzystania ze stron pomocy można znaleźć w <xref linkend=\"sect.manual-pages\" />)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Directories ending in <filename>.d</filename>"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Katalogi zakończone na <filename>.d</filename>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>.d</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>.d</filename></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Directories with a <filename>.d</filename> suffix are used more and more often. Each directory represents a configuration file which is split over multiple files. In this sense, all of the files in <filename>/etc/apt/apt.conf.d/</filename> are instructions for the configuration of APT. APT includes them in alphabetical order, so that the last ones can modify a configuration element defined in one of the first ones."
-msgstr ""
+msgstr "Katalogi zakończone przyrostkiem <filename>.d</filename> są coraz częściej stosowane. Każdy katalog zawiera ustawienia konfiguracyjne podzielone pomiędzy wiele plików. W związku z tym wszystkie pliki w katalogu <filename>/etc/apt/apt.conf.d/</filename> to instrukcje konfiguracji APTa. APT uwzględnia je w kolejności alfabetycznej, tak więc ostatnie z nich mogą modyfikować element konfiguracyjny zdefiniowany w jednym z pierwszych."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "This structure brings some flexibility to the machine administrator and to the package maintainers. Indeed, the administrator can easily modify the configuration of the software by adding a ready-made file in the directory in question without having to change an existing file. Package maintainers use the same approach when they need to adapt the configuration of another software to ensure that it perfectly co-exists with theirs. The Debian policy explicitly forbids modifying configuration files of other packages — only users are allowed to do this. Remember that during a package upgrade, the user gets to choose the version of the configuration file that should be kept when a modification has been detected. Any external modification of the file would trigger that request, which would disturb the administrator, who is sure not to have changed anything."
-msgstr ""
+msgstr "Taka struktura zapewnia pewną elastyczność administratorowi maszyny oraz zarządcom pakietów. Rzeczywiście, administrator może z łatwością zmienić konfigurację oprogramowania dodając w tym katalogu przygotowany wcześniej plik, bez konieczności modyfikacji istniejących. Zarządcy pakietów używają tego samego podejścia kiedy muszą dopasować konfigurację innego oprogramowania, aby zapewnić ich bezproblemowe współistnienie. Polityka Debiana wyraźnie zakazuje modyfikacji plików konfiguracyjnych innych pakietów — tylko użytkownik ma takie prawo. Przypomnijmy, że podczas modernizacji pakietu użytkownik otrzymuje wybór, którą wersję pliku konfiguracyjnego należy zatrzymać w przypadku wykrycia zmian. Wszelkie zewnętrzne zmiany w pliku uruchomiłyby takie zapytanie, które zastanowiłoby administratora przekonanego o tym, że nic nie zmieniał."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Without a <filename>.d</filename> directory, it is impossible for an external package to change the settings of a program without modifying its configuration file. Instead it must invite the user to do it himself and lists the operations to be done in the file <filename>/usr/share/doc/<replaceable>package</replaceable>/README.Debian</filename>."
-msgstr ""
+msgstr "Bez katalogu <filename>.d</filename>, zewnętrzne pakiety nie mają możliwości zmiany ustawień programu bez modyfikacji jego pliku konfiguracyjnego. W takim przypadku musi poprosić użytkownika o zrobienie tego samemu i wylistować możliwe instrukcje w pliku <filename>/usr/share/doc/<replaceable>pakiet</replaceable>/README.Debian</filename>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Depending on the application, the <filename>.d</filename> directory is used directly or managed by an external script which will concatenate all the files to create the configuration file itself. It is important to execute the script after any change in that directory so that the most recent modifications are taken into account. In the same way, it is important not to work directly in the configuration file created automatically, since everything would be lost at the next execution of the script. The chosen method (<filename>.d</filename> directory used directly or a file generated from that directory) is usually dictated by implementation constraints, but in both cases the gains in terms of configuration flexibility more than make up for the small complications that they entail. The Exim 4 mail server is an example of the generated file method: it can be configured through several files (<filename>/etc/exim4/conf.d/*</filename>) which are concatenated into <filename>/var/lib/exim4/config.autogenerated</filename> by the <command>update-exim4.conf</command> command."
-msgstr ""
+msgstr "W zależności od aplikacji katalog <filename>.d</filename> jest używany bezpośrednio lub zarządzany przez zewnętrzy skrypt, który scali wszystkie pliki w celu stworzenia końcowej konfiguracji. Ważne jest, aby uruchamiać ten skrypt po każdej zmianie w tym katalogu tak, aby najnowsze zmiany były brane pod uwagę. Tak samo ważne jest, aby nie pracować bezpośrednio z plikiem utworzonym automatycznie, ponieważ wszystkie zmiany zostaną utracone po ponownym uruchomieniu skryptu. Wybrana metoda (katalog <filename>.d</filename> używany bezpośrednio lub plik utworzony na jego podstawie) jest zazwyczaj podyktowana przez ograniczenia implementacyjne, ale w obu przypadkach zyski z elastyczności konfiguracji przeważają nad komplikacjami związanymi z jej obsługą. Serwer poczty Exim 4 jest przykładem metody tworzenia pliku: może być skonfigurowany przez kilka plików (<filename>/etc/exim4/conf.d/*</filename>), które są scalone w <filename>/var/lib/exim4/config.autogenerated</filename> przy użyciu komendy <command>update-exim4.conf</command>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Managing Package Priorities"
-msgstr ""
+msgstr "Zarządzanie Priorytetami Pakietów"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "One of the most important aspects in the configuration of APT is the management of the priorities associated with each package source. For instance, you might want to extend one distribution with one or two newer packages from <emphasis role=\"distribution\">Testing</emphasis>, <emphasis role=\"distribution\">Unstable</emphasis> or <emphasis role=\"distribution\">Experimental</emphasis>. It is possible to assign a priority to each available package (the same package can have several priorities depending on its version or the distribution providing it). These priorities will influence APT's behavior: for each package, it will always select the version with the highest priority (except if this version is older than the installed one and if its priority is less than 1000)."
-msgstr ""
+msgstr "Jednym z najważniejszych aspektów w konfiguracji APTa jest zarządzanie priorytetami związanymi z każdym ze źródeł pakietów. Przykładowo, chciałbyś rozszerzyć dystrybucję o jeden lub dwa nowsze pakiety z <emphasis role=\"distribution\">Testowego</emphasis>, <emphasis role=\"distribution\">Niestabilnego</emphasis> lub <emphasis role=\"distribution\">Eksperymentalnego</emphasis>. Możliwe jest przypisanie priorytetu do każdego dostępnego pakietu (ten sam pakiet może mieć wiele priorytetów, zależnie od jego wersji lub dystrybucji, z której pochodzi). Priorytety wpływają bowiem na zachowanie APTa: dla każdego pakietu zawsze zostanie wybrana wersja z najwyższym priorytetem (z wyjątkiem przypadku, gdy jego wersja jest starsza niż zainstalowana i jego priorytet jest mniejszy niż 1000)."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary><foreignphrase>pinning</foreignphrase></secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary><foreignphrase>pinning</foreignphrase></secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>source of packages</primary>"
+#, no-c-format
 msgid "<primary>pinning, APT pinning</primary>"
-msgstr "<primary>źródło pakietów</primary>"
+msgstr "<primary>pinning, APT pinning</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>priority</secondary>"
-msgstr ""
+msgstr "<primary>package</primary><secondary>priority</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>priority</primary><secondary>package priority</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>priority</primary><secondary>package priority</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary>preferences</secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary>preferences</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>preferences</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>preferences</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>/etc/apt/preferences</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/apt/preferences</filename></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "APT defines several default priorities. Each installed package version has a priority of 100. A non-installed version has a priority of 500 by default, but it can jump to 990 if it is part of the target release (defined with the <literal>-t</literal> command-line option or the <literal>APT::Default-Release</literal> configuration directive)."
-msgstr ""
+msgstr "APT definiuje kilka domyślnych priorytetów. Każda zainstalowana wersja pakietu ma priorytet 100. Niezainstalowana wersja pakietu ma domyślnie priorytet 500, ale może zostać podniesiony do 990 jeżeli jest częścią wydania docelowego (zdefiniowanego opcją <literal>-t</literal> lub instrukcja konfiguracyjną <literal>APT::Default-Release</literal>)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "You can modify the priorities by adding entries in the <filename>/etc/apt/preferences</filename> file with the names of the affected packages, their version, their origin and their new priority."
-msgstr ""
+msgstr "Można zmodyfikować priorytety dodając w pliku <filename>/etc/apt/preferences</filename> wpisy z nazwami danych pakietów, ich wersją, źródłem i nowym priorytetem."
 
 #. Tag: para
 #, no-c-format
@@ -1410,16 +1431,18 @@ msgstr ""
 msgid "When APT checks <filename>/etc/apt/preferences</filename>, it first takes into account the most specific entries (often those specifying the concerned package), then the more generic ones (including for example all the packages of a distribution). If several generic entries exist, the first match is used. The available selection criteria include the package's name and the source providing it. Every package source is identified by the information contained in a <filename>Release</filename> file that APT downloads together with the <filename>Packages</filename> files. It specifies the origin (usually “Debian” for the packages of official mirrors, but it can also be a person's or an organization's name for third-parties repositories). It also gives the name of the distribution (usually <emphasis role=\"distribution\">Stable</emphasis>, <emphasis role=\"distribution\">Testing</emphasis>, <emphasis role=\"distribution\">Unstable</emphasis> or <emphasis role=\"distribution\">Experimental</emphasis> for the standard distributions provided by Debian) together with its version (for example 5.0 for Debian <emphasis role=\"distribution\">Lenny</emphasis>). Let's have a look at its syntax through some realistic case studies of this mechanism."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>SPECIFIC CASE</emphasis> Priority of <emphasis role=\"distribution\">experimental</emphasis>"
-msgstr ""
+msgstr "<emphasis>SZCZEGÓLNY PRZYPADEK</emphasis> Priorytet <emphasis role=\"distribution\">eksperymentalnego</emphasis>"
 
 #. Tag: para
 #, no-c-format
 msgid "If you listed <emphasis role=\"distribution\">Experimental</emphasis> in your <filename>sources.list</filename> file, the corresponding packages will almost never be installed because their default APT priority is 1. This is of course a specific case, designed to keep users from installing <emphasis role=\"distribution\">Experimental</emphasis> packages by mistake. The packages can only be installed by typing <command>aptitude install <replaceable>package</replaceable>/experimental</command> — users typing this command can only be aware of the risks that they take. It is still possible (though <emphasis>not</emphasis> recommended) to treat packages of <emphasis role=\"distribution\">Experimental</emphasis> like those of other distributions by giving them a priority of 500. This is done with a specific entry in <filename>/etc/apt/preferences</filename>:"
 msgstr ""
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1427,12 +1450,17 @@ msgid ""
 "Pin: release a=experimental\n"
 "Pin-Priority: 500\n"
 msgstr ""
+"Package: *\n"
+"Pin: release a=experimental\n"
+"Pin-Priority: 500\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Let's suppose that you only want to use packages from the stable version of Debian. Those provided in other versions should not be installed except if explicitly requested. You could write the following entries in the <filename>/etc/apt/preferences</filename> file:"
-msgstr ""
+msgstr "Załóżmy, że chcesz używać tylko pakietów ze stabilnej wersji Debiana. Te dostarczane w innych wersjach nie powinny być instalowane, chyba że na bezpośrednie żądanie. Mógłbyś dodać następujące wpisy w pliku <filename>/etc/apt/preferences</filename>:"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1444,17 +1472,27 @@ msgid ""
 "Pin: release o=Debian\n"
 "Pin-Priority: -10\n"
 msgstr ""
+"Package: *\n"
+"Pin: release a=stable\n"
+"Pin-Priority: 900\n"
+"\n"
+"Package: *\n"
+"Pin: release o=Debian\n"
+"Pin-Priority: -10\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<literal>a=stable</literal> defines the name of the selected distribution. <literal>o=Debian</literal> limits the scope to packages whose origin is “Debian”."
-msgstr ""
+msgstr "<literal>a=stable</literal> definiuje nazwę wybranej dystrybucji. <literal>o=Debian</literal> ogranicza zakres pakietów do tych, których źródłem jest \"Debian\"."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Let's now assume that you have a server with several local programs depending on the version 5.14 of Perl and that you want to ensure that upgrades will not install another version of it. You could use this entry:"
-msgstr ""
+msgstr "Załóżmy, że masz serwer z kilkoma lokalnymi programami zależnymi od wersji 5.14 Perla i chcesz upewnić się, że modernizacje nie zainstalują innej jego wersji. Możesz użyć takiego wpisu:"
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1462,37 +1500,47 @@ msgid ""
 "Pin: version 5.14*\n"
 "Pin-Priority: 1001\n"
 msgstr ""
+"Package: perl\n"
+"Pin: version 5.14*\n"
+"Pin-Priority: 1001\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The reference documentation for this configuration file is available in the manual page <citerefentry><refentrytitle>apt_preferences</refentrytitle><manvolnum>5</manvolnum></citerefentry>, which you can display with <command>man apt_preferences</command>."
-msgstr ""
+msgstr "Referencyjna dokumentacja dla tego pliku konfiguracyjnego jest dostępna na stronach pomocy <citerefentry><refentrytitle>apt_preferences</refentrytitle><manvolnum>5</manvolnum></citerefentry>, które można wyświetlić za pomocą <command>man apt_preferences</command>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> Comments in <filename>/etc/apt/preferences</filename>"
-msgstr ""
+msgstr "<emphasis>WSKAZÓWKA</emphasis> Komentarze w pliku <filename>/etc/apt/preferences</filename>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Explanation</literal></primary>"
-msgstr ""
+msgstr "<primary><literal>Explanation</literal></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Pin</literal></primary>"
-msgstr ""
+msgstr "<primary><literal>Pin</literal></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Pin-Priority</literal></primary>"
-msgstr ""
+msgstr "<primary><literal>Pin-Priority</literal></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "There is no official syntax to put comments in the <filename>/etc/apt/preferences</filename> file, but some textual descriptions can be provided by putting one or more “<literal>Explanation</literal>” fields at the start of each entry:"
-msgstr ""
+msgstr "Nie istnieje oficjalna składnia do umieszczania komentarzy w pliku <filename>/etc/apt/preferences</filename>, ale można wprowadzić pewne opisy tekstowe przez dodanie jednego lub więcej pól “<literal>Explanation</literal>” na początku każdego wpisu."
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1502,6 +1550,11 @@ msgid ""
 "Pin: release a=experimental\n"
 "Pin-Priority: 500\n"
 msgstr ""
+"Explanation: Pakiet xserver-xorg-video-intel dostarczony\n"
+"Explanation: w eksparymentalnym może być bezpiecznie używany\n"
+"Package: xserver-xorg-video-intel\n"
+"Pin: release a=experimental\n"
+"Pin-Priority: 500\n"
 
 #. Tag: title
 #, no-c-format
