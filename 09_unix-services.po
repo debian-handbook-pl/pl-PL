@@ -245,8 +245,11 @@ msgstr ""
 "inittab</filename>. Pierwszy uruchamiany program(który nawiązuje do kroku "
 "<emphasis>sysinit</emphasis> ) jest to  <command>/etc/init.d/rcS</command>, "
 "skrypt, który uruchamia wszystkie programy w <filename>/etc/rcS.d/</"
-"filename></primary></indexterm> <indexterm><primary><filename>rcS.d</"
-"filename></primary></indexterm>"
+"filename>. <indexterm><primary><filename>/etc/init.d/rcS</filename></"
+"primary></indexterm> <indexterm><primary><filename>rcS</filename></primary></"
+"indexterm> <indexterm><primary><filename>/etc/init.d/rcS.d/</filename></"
+"primary></indexterm> <indexterm><primary><filename>rcS.d</filename></"
+"primary></indexterm>"
 
 #. Tag: para
 #, no-c-format
