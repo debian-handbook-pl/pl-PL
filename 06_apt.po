@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-15 17:08+0100\n"
+"PO-Revision-Date: 2015-03-17 23:40+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -1556,10 +1556,11 @@ msgstr ""
 "Pin: release a=experimental\n"
 "Pin-Priority: 500\n"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Working with Several Distributions"
-msgstr ""
+msgstr "Praca z Kilkoma Dystrybucjami"
 
 #. Tag: para
 #, no-c-format
@@ -1586,10 +1587,11 @@ msgstr ""
 msgid "Everything centers around the fact that APT only considers packages of higher or equal version than the installed one (assuming that <filename>/etc/apt/preferences</filename> has not been used to force priorities higher than 1000 for some packages)."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> <command>apt-cache policy</command>"
-msgstr ""
+msgstr "<emphasis>WSKAZÓWKA</emphasis> <command>apt-cache policy</command>"
 
 #. Tag: para
 #, no-c-format
@@ -1606,6 +1608,7 @@ msgstr ""
 msgid "Let's take the example of another package whose version 2 has been installed from <emphasis role=\"distribution\">Testing</emphasis>. Version 1 is available in <emphasis role=\"distribution\">Stable</emphasis> and version 3 in <emphasis role=\"distribution\">Unstable</emphasis>. Version 1 (of priority 990 — thus lower than 1000) is discarded because it is lower than the installed version. This only leaves version 2 and 3, both of priority 500. Faced with this alternative, APT selects the newest version, the one from <emphasis role=\"distribution\">Unstable</emphasis>.If you don't want a package installed from <emphasis role=\"distribution\">Testing</emphasis> to migrate to <emphasis role=\"distribution\">Unstable</emphasis>, you have to assign a priority lower than 500 (490 for example) to packages coming from <emphasis role=\"distribution\">Unstable</emphasis>. You can modify <filename>/etc/apt/preferences</filename> to this effect:"
 msgstr ""
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1613,6 +1616,9 @@ msgid ""
 "Pin: release a=unstable\n"
 "Pin-Priority: 490\n"
 msgstr ""
+"Package: *\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 490\n"
 
 #. Tag: title
 #, no-c-format
@@ -1629,39 +1635,40 @@ msgstr ""
 msgid "With this information, when packages are removed, the package managers can compute a list of automatic packages that are no longer needed (because there's no “manually installed” packages depending on them). <command>apt-get autoremove</command> will get rid of those packages. <command>aptitude</command> does not have this command because it removes them automatically as soon as they are identified. Both programs include a clear message listing the affected packages."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>lzma</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-mark auto</command></primary>"
-msgstr "<primary><command>lzma</command></primary>"
+msgstr "<primary><command>apt-mark auto</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>lzma</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-mark manual</command></primary>"
-msgstr "<primary><command>lzma</command></primary>"
+msgstr "<primary><command>apt-mark manual</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>lzma</command></primary>"
+#, no-c-format
 msgid "<primary><command>aptitude markauto</command></primary>"
-msgstr "<primary><command>lzma</command></primary>"
+msgstr "<primary><command>aptitude markauto</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>lzma</command></primary>"
+#, no-c-format
 msgid "<primary><command>aptitude unmarkauto</command></primary>"
-msgstr "<primary><command>lzma</command></primary>"
+msgstr "<primary><command>aptitude unmarkauto</command></primary>"
 
 #. Tag: para
 #, no-c-format
 msgid "It is a good habit to mark as automatic any package that you don't need directly so that they are automatically removed when they aren't necessary anymore. <command>apt-mark auto <replaceable>package</replaceable></command> will mark the given package as automatic whereas <command>apt-mark manual <replaceable>package</replaceable></command> does the opposite. <command>aptitude markauto</command> and <command>aptitude unmarkauto</command> work in the same way although they offer more features for marking many packages at once (see <xref linkend=\"sect.aptitude\" />). The console-based interactive interface of <command>aptitude</command> also makes it easy to review the “automatic flag” on many packages."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>aptitude why</command></primary>"
-msgstr ""
+msgstr "<primary><command>aptitude why</command></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1677,22 +1684,23 @@ msgid ""
 "      "
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>ALTERNATIVE</emphasis> <command>deborphan</command> and <command>debfoster</command>"
-msgstr ""
+msgstr "<emphasis>ALTERNATYWA</emphasis> <command>deborphan</command> i <command>debfoster</command>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>bzip2</command></primary>"
+#, no-c-format
 msgid "<primary><command>deborphan</command></primary>"
-msgstr "<primary><command>bzip2</command></primary>"
+msgstr "<primary><command>deborphan</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>xz</command></primary>"
+#, no-c-format
 msgid "<primary><command>debfoster</command></primary>"
-msgstr "<primary><command>xz</command></primary>"
+msgstr "<primary><command>debfoster</command></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1709,45 +1717,52 @@ msgstr ""
 msgid "<command>debfoster</command> has a more elaborate approach, very similar to APT's one: it maintains a list of packages that have been explicitly installed, and remembers what packages are really required between each invocation. If new packages appear on the system and if <command>debfoster</command> doesn't know them as required packages, they will be shown on the screen together with a list of their dependencies. The program then offers a choice: remove the package (possibly together with those that depend on it), mark it as explicitly required, or ignore it temporarily."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "The <command>apt-cache</command> Command"
-msgstr ""
+msgstr "Komenda <command>apt-cache</command>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-cache</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-cache</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary>package search</secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary>package search</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary>header display</secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary>header display</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>search of packages</primary>"
-msgstr ""
+msgstr "<primary>search of packages</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>search</secondary>"
-msgstr ""
+msgstr "<primary>package</primary><secondary>search</secondary>"
 
 #. Tag: para
 #, no-c-format
 msgid "The <command>apt-cache</command> command can display much of the information stored in APT's internal database. This information is a sort of cache since it is gathered from the different sources listed in the <filename>sources.list</filename> file. This happens during the <command>apt-get update</command> operation."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>VOCABULARY</emphasis> Cache"
-msgstr ""
+msgstr "<emphasis>SŁOWNIK</emphasis> Cache"
 
 #. Tag: para
 #, no-c-format
@@ -1759,50 +1774,52 @@ msgstr ""
 msgid "In the case of APT, the reference <filename>Packages</filename> files are those located on Debian mirrors. That said, it would be very ineffective to go through the network for every search that we might want to do in the database of available packages. That is why APT stores a copy of those files (in <filename>/var/lib/apt/lists/</filename>) and searches are done within those local files. Similarly, <filename>/var/cache/apt/archives/</filename> contains a cache of already downloaded packages to avoid downloading them again if you need to reinstall them after a removal."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-cache show</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>apt-cache show</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-cache search</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>apt-cache search</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>aptitude show</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>aptitude show</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>aptitude search</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>aptitude search</command></primary>"
 
 #. Tag: para
 #, no-c-format
 msgid "The <command>apt-cache</command> command can do keyword-based package searches with <command>apt-cache search <replaceable>keyword</replaceable></command>. It can also display the headers of the package's available versions with <command>apt-cache show <replaceable>package</replaceable></command>. This command provides the package's description, its dependencies, the name of its maintainer, etc. Note that <command>aptitude search</command> and <command>aptitude show</command> work in the same way."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>ALTERNATIVE</emphasis> <command>axi-cache</command>"
-msgstr ""
+msgstr "<emphasis>ALTERNATYWA</emphasis> <command>axi-cache</command>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>xz</command></primary>"
+#, no-c-format
 msgid "<primary><command>axi-cache</command></primary>"
-msgstr "<primary><command>xz</command></primary>"
+msgstr "<primary><command>axi-cache</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">apt-xapian-index</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">apt-xapian-index</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1834,23 +1851,23 @@ msgid ""
 "      "
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-cache policy</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>apt-cache policy</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>lzma</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-cache dumpavail</command></primary>"
-msgstr "<primary><command>lzma</command></primary>"
+msgstr "<primary><command>apt-cache dumpavail</command></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><command>gzip</command></primary>"
+#, no-c-format
 msgid "<primary><command>apt-cache pkgnames</command></primary>"
-msgstr "<primary><command>gzip</command></primary>"
+msgstr "<primary><command>apt-cache pkgnames</command></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1862,45 +1879,50 @@ msgstr ""
 msgid "Frontends: <command>aptitude</command>, <command>synaptic</command>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>synaptic</command></primary>"
-msgstr ""
+msgstr "<primary><command>synaptic</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>APT</primary><secondary>interfaces</secondary>"
-msgstr ""
+msgstr "<primary>APT</primary><secondary>interfaces</secondary>"
 
 #. Tag: para
 #, no-c-format
 msgid "APT is a C++ program whose code mainly resides in the <command>libapt-pkg</command> shared library. Using a shared library facilitates the creation of user interfaces (front-ends), since the code contained in the library can easily be reused. Historically, <command>apt-get</command> was only designed as a test front-end for <command>libapt-pkg</command> but its success tends to obscure this fact."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<command>aptitude</command>"
-msgstr ""
+msgstr "<command>aptitude</command>"
 
 #. Tag: para
 #, no-c-format
 msgid "<command>aptitude</command> is an interactive program that can be used in semi-graphical mode on the console. You can browse the list of installed and available packages, look up all the available information, and select packages to install or remove. The program is designed specifically to be used by administrators, so that its default behaviors are much more intelligent than <command>apt-get</command>'s, and its interface much easier to understand."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "The <command>aptitude</command> package manager"
-msgstr ""
+msgstr "Menedżer pakietów <command>aptitude</command>"
 
 #. Tag: para
 #, no-c-format
 msgid "When it starts, <command>aptitude</command> shows a list of packages sorted by state (installed, non-installed, or installed but not available on the mirrors — other sections display tasks, virtual packages, and new packages that appeared recently on mirrors). To facilitate thematic browsing, other views are available. In all cases, <command>aptitude</command> displays a list combining categories and packages on the screen. Categories are organized through a tree structure, whose branches can respectively be unfolded or closed with the <keycombo><keycap>Enter</keycap></keycombo>, <keycombo><keycap>[</keycap></keycombo> and <keycombo><keycap>]</keycap></keycombo> keys. <keycombo><keycap>+</keycap></keycombo> should be used to mark a package for installation, <keycombo><keycap>-</keycap></keycombo> to mark it for removal and <keycombo><keycap>_</keycap></keycombo> to purge it (note than these keys can also be used for categories, in which case the corresponding actions will be applied to all the packages of the category). <keycombo><keycap>u</keycap></keycombo> updates the lists of available packages and <keycombo action=\"simul\"><keycap>Shift</keycap><keycap>u</keycap></keycombo> prepares a global system upgrade. <keycombo><keycap>g</keycap></keycombo> switches to a summary view of the requested changes (and typing <keycombo><keycap>g</keycap></keycombo> again will apply the changes), and <keycombo><keycap>q</keycap></keycombo> quits the current view. If you are in the initial view, this will effectively close <command>aptitude</command>."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>DOCUMENTATION</emphasis> <command>aptitude</command>"
-msgstr ""
+msgstr "<emphasis>DOKUMENTACJA</emphasis> <command>aptitude</command>"
 
 #. Tag: para
 #, no-c-format
@@ -1917,10 +1939,11 @@ msgstr ""
 msgid "Managing the “automatic flag” of Debian packages (see <xref linkend=\"sect.automatic-tracking\" />) is a breeze with <command>aptitude</command>. It is possible to browse the list of installed packages and mark packages as automatic with <keycombo action=\"simul\"><keycap>Shift</keycap> <keycap>m</keycap></keycombo> or to remove the mark with the <keycombo><keycap>m</keycap></keycombo> key. “Automatic packages” are tagged with an “A” in the list of packages. This feature also offers a simple way to visualize the packages in use on a machine, without all the libraries and dependencies that you don't really care about. The related pattern that can be used with <keycombo><keycap>l</keycap></keycombo> (to activate the filter mode) is <literal>~i!~M</literal>. It specifies that you only want to see installed packages (<literal>~i</literal>) not marked as automatic (<literal>!~M</literal>)."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TOOL</emphasis> Using <command>aptitude</command> on the command-line interface"
-msgstr ""
+msgstr "<emphasis>NARZĘDZIE</emphasis> Używanie <command>aptitude</command> w linii komend"
 
 #. Tag: para
 #, no-c-format
@@ -1997,53 +2020,57 @@ msgstr ""
 msgid "Beware, this logfile only contains a summary of operations performed by <command>aptitude</command>. If other front-ends (or even <command>dpkg</command> itself) are occasionally used, then <command>aptitude</command>'s log will only contain a partial view of the operations, so you can't rely on it to build a trustworthy history of the system."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<command>synaptic</command>"
-msgstr ""
+msgstr "<command>synaptic</command>"
 
 #. Tag: para
 #, no-c-format
 msgid "<command>synaptic</command> is a graphical package manager for Debian which features a clean and efficient graphical interface based on GTK+/GNOME. Its many ready-to-use filters give fast access to newly available packages, installed packages, upgradable packages, obsolete packages and so on. If you browse through these lists, you can select the operations to be done on the packages (install, upgrade, remove, purge); these operations are not performed immediately, but put into a task list. A single click on a button then validates the operations, and they are performed in one go."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<command>synaptic</command> package manager"
-msgstr ""
+msgstr "Menedżer pakietów <command>synaptic</command>"
 
 #. Tag: title
 #, no-c-format
 msgid "Checking Package Authenticity"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>authenticity check</secondary>"
-msgstr ""
+msgstr "<primary>package</primary><secondary>authenticity check</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>seal</secondary>"
-msgstr ""
+msgstr "<primary>package</primary><secondary>seal</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>package</primary><secondary>signature</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>package</primary><secondary>signature</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>signature</primary><secondary>package signature</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>signature</primary><secondary>package signature</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>authentication</primary><secondary>package authentication</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>authentication</primary><secondary>package authentication</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2055,27 +2082,29 @@ msgstr ""
 msgid "The seal works with a chain of cryptographical hashes and a signature. The signed file is the <filename>Release</filename> file, provided by the Debian mirrors. It contains a list of the <filename>Packages</filename> files (including their compressed forms, <filename>Packages.gz</filename> and <filename>Packages.bz2</filename>, and the incremental versions), along with their MD5, SHA1 and SHA256 hashes, which ensures that the files haven't been tampered with. These <filename>Packages</filename> files contain a list of the Debian packages available on the mirror, along with their hashes, which ensures in turn that the contents of the packages themselves haven't been altered either."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>apt-key</command></primary>"
-msgstr ""
+msgstr "<primary><command>apt-key</command></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">debian-archive-keyring</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">debian-archive-keyring</emphasis></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><filename>/etc/apt/sources.list</filename></primary>"
+#, no-c-format
 msgid "<primary><filename>/etc/apt/trusted.gpg.d/</filename></primary>"
-msgstr "<primary><filename>/etc/apt/sources.list</filename></primary>"
+msgstr "<primary><filename>/etc/apt/trusted.gpg.d/</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><filename>Sources.gz</filename></primary>"
+#, no-c-format
 msgid "<primary><filename>Release.gpg</filename></primary>"
-msgstr "<primary><filename>Sources.gz</filename></primary>"
+msgstr "<primary><filename>Release.gpg</filename></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2116,16 +2145,17 @@ msgstr ""
 msgid "<emphasis>IN PRACTICE</emphasis> Adding trusted keys"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>trusted key</primary>"
-msgstr ""
+msgstr "<primary>trusted key</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>key</primary><secondary>APT's authentication keys</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>key</primary><secondary>APT's authentication keys</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2137,10 +2167,11 @@ msgstr ""
 msgid "To add the key to the trusted keyring, the administrator can run <command>apt-key add &lt; key.asc</command>. Another way is to use the <command>synaptic</command> graphical interface: its “Authentication” tab in the <menuchoice><guimenu>Settings</guimenu> <guisubmenu>Repositories</guisubmenu></menuchoice> menu gives the possibility of importing a key from the <filename>key.asc</filename> file."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">gui-apt-key</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">gui-apt-key</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2197,10 +2228,11 @@ msgstr ""
 msgid "Another good habit which makes the upgrade easier (and shorter) is to tidy your installed packages and keep only the ones that are really needed. Helpful tools to do that include <command>aptitude</command>, <command>deborphan</command> and <command>debfoster</command> (see <xref linkend=\"sect.automatic-tracking\" />). For example, you can use the following command, and then use <command>aptitude</command>'s interactive mode to double check and fine-tune the scheduled removals:"
 msgstr ""
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid "# <userinput>deborphan | xargs aptitude --schedule-only remove</userinput>\n"
-msgstr ""
+msgstr "# <userinput>deborphan | xargs aptitude --schedule-only remove</userinput>\n"
 
 #. Tag: para
 #, no-c-format
@@ -2287,45 +2319,50 @@ msgstr ""
 msgid "Administrators in charge of several computers will no doubt appreciate being informed of pending upgrades, but the upgrades themselves are still as tedious as they used to be, which is where the <filename>/etc/cron.daily/apt</filename> script (in the <emphasis role=\"pkg\">apt</emphasis> package) comes in handy. This script is also run daily (and non-interactively) by <command>cron</command>. To control its behavior, use APT configuration variables (which are therefore stored in a file under <filename>/etc/apt/apt.conf.d/</filename>). The main variables are:"
 msgstr ""
 
+# mateunho
 #. Tag: term
 #, no-c-format
 msgid "<literal>APT::Periodic::Update-Package-Lists</literal>"
-msgstr ""
+msgstr "<literal>APT::Periodic::Update-Package-Lists</literal>"
 
 #. Tag: para
 #, no-c-format
 msgid "This option allows you to specify the frequency (in days) at which the package lists are refreshed. <command>apticron</command> users can do without this variable, since <command>apticron</command> already does this task."
 msgstr ""
 
+# mateunho
 #. Tag: term
 #, no-c-format
 msgid "<literal>APT::Periodic::Download-Upgradeable-Packages</literal>"
-msgstr ""
+msgstr "<literal>APT::Periodic::Download-Upgradeable-Packages</literal>"
 
 #. Tag: para
 #, no-c-format
 msgid "Again, this option indicates a frequency (in days), this time for the downloading of the actual packages. Again, <command>apticron</command> users won't need it."
 msgstr ""
 
+# mateunho
 #. Tag: term
 #, no-c-format
 msgid "<literal>APT::Periodic::AutocleanInterval</literal>"
-msgstr ""
+msgstr "<literal>APT::Periodic::AutocleanInterval</literal>"
 
 #. Tag: para
 #, no-c-format
 msgid "This option covers a feature that <command>apticron</command> doesn't have. It controls how often obsolete packages (those not referenced by any distribution anymore) are removed from the APT cache. This keeps the APT cache at a reasonable size and means that you don't need to worry about that task."
 msgstr ""
 
+# mateunho
 #. Tag: term
 #, no-c-format
 msgid "<literal>APT::Periodic::Unattended-Upgrade</literal>"
-msgstr ""
+msgstr "<literal>APT::Periodic::Unattended-Upgrade</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">unattended-upgrades</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">unattended-upgrades</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2337,11 +2374,11 @@ msgstr ""
 msgid "Other options can allow you to control the cache cleaning behavior with more precision. They are not listed here, but they are described in the <filename>/etc/cron.daily/apt</filename> script."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary><filename>Packages.gz</filename></primary>"
+#, no-c-format
 msgid "<primary><emphasis role=\"pkg\">gnome-packagekit</emphasis></primary>"
-msgstr "<primary><filename>Packages.gz</filename></primary>"
+msgstr "<primary><emphasis role=\"pkg\">gnome-packagekit</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2358,47 +2395,50 @@ msgstr ""
 msgid "Automatic Upgrades"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>section</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+#, no-c-format
 msgid "<primary>upgrade</primary><secondary>automatic system upgrade</secondary>"
-msgstr "<primary>Sekcja</primary><secondary><foreignphrase>main</foreignphrase></secondary>"
+msgstr "<primary>upgrade</primary><secondary>automatic system upgrade</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>source of packages</primary>"
+#, no-c-format
 msgid "<primary>automatic upgrade</primary>"
-msgstr "<primary>źródło pakietów</primary>"
+msgstr "<primary>automatic upgrade</primary>"
 
 #. Tag: para
 #, no-c-format
 msgid "Since Falcot Corp has many computers but only limited manpower, its administrators try to make upgrades as automatic as possible. The programs in charge of these processes must therefore run with no human intervention."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Configuring <command>dpkg</command>"
-msgstr ""
+msgstr "Konfigurowanie <command>dpkg</command>"
 
 #. Tag: para
 #, no-c-format
 msgid "As we have already mentioned (see sidebar <xref linkend=\"sidebar.questions-conffiles\" />), <command>dpkg</command> can be instructed not to ask for confirmation when replacing a configuration file (with the <literal>--force-confdef --force-confold</literal> options). Interactions can, however, have three other sources: some come from APT itself, some are handled by <command>debconf</command>, and some happen on the command line due to package configuration scripts."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Configuring APT"
-msgstr ""
+msgstr "Konfigurowanie APTa"
 
 #. Tag: para
 #, no-c-format
 msgid "The case of APT is simple: the <literal>-y</literal> option (or <literal>--assume-yes</literal>) tells APT to consider the answer to all its questions to be “yes”."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Configuring <command>debconf</command>"
-msgstr ""
+msgstr "Konfigurowanie <command>debconf</command>"
 
 #. Tag: para
 #, no-c-format
@@ -2445,12 +2485,15 @@ msgstr ""
 msgid "Non-interactive upgrade script"
 msgstr ""
 
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
 "export DEBIAN_FRONTEND=noninteractive\n"
 "yes '' | apt-get -y -o Dpkg::Options::=\"--force-confdef\" -o Dpkg::Options::=\"--force-confold\" dist-upgrade\n"
 msgstr ""
+"export DEBIAN_FRONTEND=noninteractive\n"
+"yes '' | apt-get -y -o Dpkg::Options::=\"--force-confdef\" -o Dpkg::Options::=\"--force-confold\" dist-upgrade\n"
 
 #. Tag: title
 #, no-c-format
@@ -2492,10 +2535,11 @@ msgstr ""
 msgid "The most trivial search possible is looking up an exact package name. If <command>apt-cache show <replaceable>package</replaceable></command> returns a result, then the package exists. Unfortunately, this requires knowing or even guessing the package name, which isn't always possible."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> Package naming conventions"
-msgstr ""
+msgstr "<emphasis>WSKAZÓWKA</emphasis> Konwencje nazewnictwa pakietów"
 
 #. Tag: para
 #, no-c-format
@@ -2565,16 +2609,17 @@ msgstr ""
 msgid "Browsing this classification can help you to search for a package which corresponds to known needs; even if it returns a (moderate) number of hits, the rest of the search can be done manually. To do that, you can use the <literal>~G</literal> search pattern in <command>aptitude</command>, but it is probably easier to simply navigate the site where tags are managed: <ulink type=\"block\" url=\"http://debtags.alioth.debian.org/cloud/\" />"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">debtags</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">debtags</emphasis></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>source of packages</primary>"
+#, no-c-format
 msgid "<primary>tag</primary>"
-msgstr "<primary>źródło pakietów</primary>"
+msgstr "<primary>tag</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2601,10 +2646,11 @@ msgstr ""
 msgid "when a tag-based search is needed, a good tool is <command>packagesearch</command>, a graphical interface dedicated to searching available packages along several criteria (including the names of the files that they contain). For usage on the command-line, <command>axi-cache</command> will fit the bill."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">packagesearch</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">packagesearch</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
