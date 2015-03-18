@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-17 23:40+0100\n"
+"PO-Revision-Date: 2015-03-18 23:44+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -1416,10 +1416,11 @@ msgstr "APT definiuje kilka domyślnych priorytetów. Każda zainstalowana wersj
 msgid "You can modify the priorities by adding entries in the <filename>/etc/apt/preferences</filename> file with the names of the affected packages, their version, their origin and their new priority."
 msgstr "Można zmodyfikować priorytety dodając w pliku <filename>/etc/apt/preferences</filename> wpisy z nazwami danych pakietów, ich wersją, źródłem i nowym priorytetem."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "APT will never install an older version of a package (that is, a package whose version number is lower than the one of the currently installed package) except if its priority is higher than 1000. APT will always install the highest priority package which follows this constraint. If two packages have the same priority, APT installs the newest one (whose version number is the highest). If two packages of same version have the same priority but differ in their content, APT installs the version that is not installed (this rule has been created to cover the case of a package update without the increment of the revision number, which is usually required)."
-msgstr ""
+msgstr "APT nigdy nie zainstaluje starej wersji pakietu (tzn. takiej, której numer wersji jest mniejszy niż aktualnie zainstalowany w systemie) z wyjątkiem przypadku kiedy jego priorytet jest wyższy niż 1000. APT zawsze zainstaluje pakiet o najwyższym priorytecie, który spełnia powyższy warunek. Jeżeli dwa pakiety maja taki sam priorytet, APT zainstaluje nowszy (ten, którego numer wersji jest wyższy). Jeżeli dwa pakiety tej samej wersji mają taki sam priorytet, ale różnią się zawartością, APT zainstaluje wersję, która nie jest jeszcze zainstalowana (ta zasada została stworzona dla pakietów, które zostały zaktualizowane bez zmieniania numeru wersji, który jest zazwyczaj wymagany)."
 
 #. Tag: para
 #, no-c-format
