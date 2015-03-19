@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-18 23:44+0100\n"
+"PO-Revision-Date: 2015-03-19 23:17+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -1422,15 +1422,17 @@ msgstr "Można zmodyfikować priorytety dodając w pliku <filename>/etc/apt/pref
 msgid "APT will never install an older version of a package (that is, a package whose version number is lower than the one of the currently installed package) except if its priority is higher than 1000. APT will always install the highest priority package which follows this constraint. If two packages have the same priority, APT installs the newest one (whose version number is the highest). If two packages of same version have the same priority but differ in their content, APT installs the version that is not installed (this rule has been created to cover the case of a package update without the increment of the revision number, which is usually required)."
 msgstr "APT nigdy nie zainstaluje starej wersji pakietu (tzn. takiej, której numer wersji jest mniejszy niż aktualnie zainstalowany w systemie) z wyjątkiem przypadku kiedy jego priorytet jest wyższy niż 1000. APT zawsze zainstaluje pakiet o najwyższym priorytecie, który spełnia powyższy warunek. Jeżeli dwa pakiety maja taki sam priorytet, APT zainstaluje nowszy (ten, którego numer wersji jest wyższy). Jeżeli dwa pakiety tej samej wersji mają taki sam priorytet, ale różnią się zawartością, APT zainstaluje wersję, która nie jest jeszcze zainstalowana (ta zasada została stworzona dla pakietów, które zostały zaktualizowane bez zmieniania numeru wersji, który jest zazwyczaj wymagany)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In more concrete terms, a package whose priority is less than 0 will never be installed. A package with a priority ranging between 0 and 100 will only be installed if no other version of the package is already installed. With a priority between 100 and 500, the package will only be installed if there is no other newer version installed or available in another distribution. A package of priority between 501 and 990 will only be installed if there is no newer version installed or available in the target distribution. With a priority between 990 and 1000, the package will be installed except if the installed version is newer. A priority greater than 1000 will always lead to the installation of the package even if it forces APT to downgrade to an older version."
-msgstr ""
+msgstr "Mówiąc bardziej konkretnie, pakiet, którego priorytet jest mniejszy niż 0 nigdy nie zostanie zainstalowany. Pakiet o priorytecie pomiędzy 0 i 100 zostanie zainstalowany tylko wtedy, kiedy żadna wersja tego pakietu nie jest aktualnie zainstalowana. Posiadając priorytet pomiędzy 100 i 500, pakiet zostanie zainstalowany pod warunkiem, że jego nowsza wersja nie jest zainstalowana lub nie ma jej w innej dystrybucji. Pakiet o priorytecie pomiędzy 500 i 990 zostanie zainstalowany pod warunkiem, że jego nowsza wersja nie jest zainstalowana lub nie ma jej w docelowej dystrybucji. Posiadając priorytet pomiędzy 990 i 1000, pakiet zostanie zainstalowany, z wyjątkiem przypadku, kiedy zainstalowana jest jego nowsza wersja. Priorytet większy niż 1000 zawsze spowoduje zainstalowanie pakietu, nawet jeżeli wymusza to zejście do jego starszej wersji."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "When APT checks <filename>/etc/apt/preferences</filename>, it first takes into account the most specific entries (often those specifying the concerned package), then the more generic ones (including for example all the packages of a distribution). If several generic entries exist, the first match is used. The available selection criteria include the package's name and the source providing it. Every package source is identified by the information contained in a <filename>Release</filename> file that APT downloads together with the <filename>Packages</filename> files. It specifies the origin (usually “Debian” for the packages of official mirrors, but it can also be a person's or an organization's name for third-parties repositories). It also gives the name of the distribution (usually <emphasis role=\"distribution\">Stable</emphasis>, <emphasis role=\"distribution\">Testing</emphasis>, <emphasis role=\"distribution\">Unstable</emphasis> or <emphasis role=\"distribution\">Experimental</emphasis> for the standard distributions provided by Debian) together with its version (for example 5.0 for Debian <emphasis role=\"distribution\">Lenny</emphasis>). Let's have a look at its syntax through some realistic case studies of this mechanism."
-msgstr ""
+msgstr "Kiedy APT sprawdza plik <filename>/etc/apt/preferences</filename> najpierw bierze pod uwagę najbardziej szczegółowe wpisy (zazwyczaj opisujące konkretne pakiety), następnie te ogólne (przykładowo: zawierające wszystkie pakiety danej dystrybucji). Jeżeli istnieje kilka ogólnych wpisów, dopasowywany jest pierwszy z nich. Dostępne kryteria wyboru zawierają nazwę pakietu i źródło jego pochodzenia. Każde źródło pakietu jest identyfikowane za pomocą informacji zawartej w pliku <filename>Release</filename>, który jest pobierany przez APTa z plikami <filename>Packages</filename>. Opisuje ona pochodzenie (zazwyczaj \"Debian\", dla pakietów z oficjalnego serwera lustrzanego, ale może być to również imię osoby lub nazwa organizacji w przypadku innych repozytoriów). Zawiera też nazwę dystrybucji (zazwyczaj  <emphasis role=\"distribution\">Stabilny</emphasis>, <emphasis role=\"distribution\">Testowy</emphasis>, <emphasis role=\"distribution\">Niestabilny</emphasis> lub <emphasis role=\"distribution\">Eksperymentalny</emphasis> w przypadku standardowych dystrybucji dostarczanych przez Debiana) oraz jej wersję (na przykład 5.0 dla Debiana <emphasis role=\"distribution\">Lenny</emphasis>). Przyjrzyjmy się zatem nieco bliżej samej składni na przykładzie realistycznego studium przypadku tego mechanizmu."
 
 # mateunho
 #. Tag: title
@@ -1438,10 +1440,11 @@ msgstr ""
 msgid "<emphasis>SPECIFIC CASE</emphasis> Priority of <emphasis role=\"distribution\">experimental</emphasis>"
 msgstr "<emphasis>SZCZEGÓLNY PRZYPADEK</emphasis> Priorytet <emphasis role=\"distribution\">eksperymentalnego</emphasis>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "If you listed <emphasis role=\"distribution\">Experimental</emphasis> in your <filename>sources.list</filename> file, the corresponding packages will almost never be installed because their default APT priority is 1. This is of course a specific case, designed to keep users from installing <emphasis role=\"distribution\">Experimental</emphasis> packages by mistake. The packages can only be installed by typing <command>aptitude install <replaceable>package</replaceable>/experimental</command> — users typing this command can only be aware of the risks that they take. It is still possible (though <emphasis>not</emphasis> recommended) to treat packages of <emphasis role=\"distribution\">Experimental</emphasis> like those of other distributions by giving them a priority of 500. This is done with a specific entry in <filename>/etc/apt/preferences</filename>:"
-msgstr ""
+msgstr "Jeżeli w pliku <filename>sources.list</filename> został wymieniony <emphasis role=\"distribution\">Eksperymentalny</emphasis>, to jego pakiety prawie nidgy nie zostaną zainstalowane, ponieważ ich domyślny priorytet wynosi 1. Jest to oczywiście szczególny przypadek, zaprojektowany, aby uchronić użytkowników przed przypadkowym zainstalowaniem <emphasis role=\"distribution\">Eksperymentalnych</emphasis> pakietów. Pakiety te mogą być zainstalowane tylko poprzez wpisanie <command>aptitude install <replaceable>pakiet</replaceable>/experimental</command> — użytkownicy wpisujący tę komendę powinni być świadomi zagrożenia, którego się podejmują. Jest nadal możliwe (ale <emphasis>nie</emphasis> zalecane), aby traktować pakiety <emphasis role=\"distribution\">Eksperymentalne</emphasis> tak jak te z innych dystrybucji, poprzez nadanie im priorytetu 500. Można to osiągnąć przez dodanie specjalnego wpisu w <filename>/etc/apt/preferences</filename>:"
 
 # mateunho
 #. Tag: programlisting
