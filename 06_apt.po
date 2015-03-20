@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-19 23:17+0100\n"
+"PO-Revision-Date: 2015-03-20 19:02+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -1566,30 +1566,35 @@ msgstr ""
 msgid "Working with Several Distributions"
 msgstr "Praca z Kilkoma Dystrybucjami"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>apt-get</command> being such a marvelous tool, it is tempting to pick packages coming from other distributions. For example, after having installed a <emphasis role=\"distribution\">Stable</emphasis> system, you might want to try out a software package available in <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis> without diverging too much from the system's initial state."
-msgstr ""
+msgstr "To genialne narzędzie, jakim jest <command>apt-get</command>, pozwala wybierać pakiety pochodzące z innych dystrybucji. Jeżeli chciałbyś na przykład po zainstalowaniu systemu <emphasis role=\"distribution\">Stabilnego</emphasis> przetestować pakiety dostępne w  <emphasis role=\"distribution\">Testowym</emphasis> lub <emphasis role=\"distribution\">Niestabilnym</emphasis> nie odbiegając zbytnio od początkowego stanu systemu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Even if you will occasionally encounter problems while mixing packages from different distributions, <command>apt-get</command> manages such coexistence very well and limits risks very effectively. The best way to proceed is to list all distributions used in <filename>/etc/apt/sources.list</filename> (some people always put the three distributions, but remember that <emphasis role=\"distribution\">Unstable</emphasis> is reserved for experienced users) and to define your reference distribution with the <literal>APT::Default-Release</literal> parameter (see <xref linkend=\"sect.apt-upgrade\" />)."
-msgstr ""
+msgstr "Nawet jeżeli sporadycznie wystąpią problemy związane z mieszaniem pakietów z różnych dystrybucji, <command>apt-get</command> bardzo dobrze zarządza ich współistnieniem i efektywnie ogranicza wynikające z tego zagrożenia. Najlepszym sposobem postępowania jest wylistowanie wszystkich dystrybucji występujących w pliku <filename>/etc/apt/sources.list</filename> (niektórzy zawsze umieszczają wszystkie trzy dystrybucje, ale należy pamiętać, że <emphasis role=\"distribution\">Niestabilny</emphasis> jest przeznaczony dla doświadczonych użytkowników) i zdefiniowanie przewodniej dystrybucji używając parametru <literal>APT::Default-Release</literal> (spójrz na <xref linkend=\"sect.apt-upgrade\" />)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Let's suppose that <emphasis role=\"distribution\">Stable</emphasis> is your reference distribution but that <emphasis role=\"distribution\">Testing</emphasis> and <emphasis role=\"distribution\">Unstable</emphasis> are also listed in your <filename>sources.list</filename> file. In this case, you can use <command>apt-get install <replaceable>package</replaceable>/testing</command> to install a package from <emphasis role=\"distribution\">Testing</emphasis>. If the installation fails due to some unsatisfiable dependencies, let it solve those dependencies within <emphasis role=\"distribution\">Testing</emphasis> by adding the <literal>-t testing</literal> parameter. The same obviously applies to <emphasis role=\"distribution\">Unstable</emphasis>."
-msgstr ""
+msgstr "Załóżmy, że <emphasis role=\"distribution\">Stabilny</emphasis> jest przewodnią dystrybucją, ale <emphasis role=\"distribution\">Testowy</emphasis> i <emphasis role=\"distribution\">Niestabilny</emphasis> są również wymienione w pliku <filename>sources.list</filename>. W takim przypadku można użyć <command>apt-get install <replaceable>pakiet</replaceable>/testing</command>, aby zainstalować pakiet z <emphasis role=\"distribution\">Testowego</emphasis>. Jeżeli instalacja nie powiedzie się z powodu niespełnionych zależności, można je spełnić w zakresie <emphasis role=\"distribution\">Testowego</emphasis> przez dodanie parametru <literal>-t testing</literal>. Oczywiście dla <emphasis role=\"distribution\">Niestabilnego</emphasis> sposób postępowania jest analogiczny."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In this situation, upgrades (<command>upgrade</command> and <command>dist-upgrade</command>) are done within <emphasis role=\"distribution\">Stable</emphasis> except for packages already upgraded to another distribution: those will follow updates available in the other distributions. We'll explain this behavior with the help of the default priorities set by APT below. Do not hesitate to use <command>apt-cache policy</command> (see sidebar) to verify the given priorities."
-msgstr ""
+msgstr "W tym przypadku modernizacje (<command>upgrade</command> i <command>dist-upgrade</command>) są wykonywane w zakresie <emphasis role=\"distribution\">Stabilnego</emphasis> z wyjątkiem pakietów, które już zostały zmodernizowane do innej dystrybucji: będą one używać aktualizacji z danej dystrybucji. Opisane zachowanie zostanie wyjaśnione poniżej, z użyciem domyślnych priorytetów ustawianych przez APTa. Nie wahaj się używać <command>apt-cache policy</command> (spójrz na fiszkę), aby zweryfikować wartości priorytetów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Everything centers around the fact that APT only considers packages of higher or equal version than the installed one (assuming that <filename>/etc/apt/preferences</filename> has not been used to force priorities higher than 1000 for some packages)."
-msgstr ""
+msgstr "Wszystko to jest związane z faktem, że APT rozpatruje tylko pakiety mające większy lub równy numer wersji w porównaniu z zainstalowanym (zakładając, że nie użyto <filename>/etc/apt/preferences</filename> do wymuszenia wartości priorytetów większych niż 1000)."
 
 # mateunho
 #. Tag: title
