@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-21 12:43+0100\n"
+"PO-Revision-Date: 2015-03-22 17:51+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 71,90,103,174,231,242,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 256,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1632,20 +1632,23 @@ msgstr ""
 "Pin: release a=unstable\n"
 "Pin-Priority: 490\n"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Tracking Automatically Installed Packages"
-msgstr ""
+msgstr "Śledzenie Automatycznie Zainstalowanych Pakietów"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "One of the essential functionalities of <command>apt-get</command> (which was initially specific to <command>aptitude</command>) is the tracking of packages installed only through dependencies. These packages are called “automatic”, and often include libraries for instance."
-msgstr ""
+msgstr "Jedną z podstawowych funkcjonalności <command>apt-get</command> (początkowo jedynie w <command>aptitude</command>) jest śledzenie pakietów zainstalowanych tylko jako zależności. Te pakiety są nazywane \"automatycznymi\" i zawierają na przykład biblioteki."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "With this information, when packages are removed, the package managers can compute a list of automatic packages that are no longer needed (because there's no “manually installed” packages depending on them). <command>apt-get autoremove</command> will get rid of those packages. <command>aptitude</command> does not have this command because it removes them automatically as soon as they are identified. Both programs include a clear message listing the affected packages."
-msgstr ""
+msgstr "Posiadając tą informację, po usunięciu pakietów, zarządcy pakietów mogą wyznaczyć listę automatycznych pakietów, które nie są już potrzebne (ponieważ nie ma już \"ręcznie zainstalowanych\" pakietów, które ich wymagają). <command>apt-get autoremove</command> służy do pozbycia się tych pakietów. <command>aptitude</command> nie posiada odpowiednika tej komendy, ponieważ usuwa je automatycznie jak tylko zostaną wykryte. Oba programy pokazują wiadomość z listą pakietów, których to dotyczy."
 
 # mateunho
 #. Tag: indexterm
@@ -1671,10 +1674,11 @@ msgstr "<primary><command>aptitude markauto</command></primary>"
 msgid "<primary><command>aptitude unmarkauto</command></primary>"
 msgstr "<primary><command>aptitude unmarkauto</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "It is a good habit to mark as automatic any package that you don't need directly so that they are automatically removed when they aren't necessary anymore. <command>apt-mark auto <replaceable>package</replaceable></command> will mark the given package as automatic whereas <command>apt-mark manual <replaceable>package</replaceable></command> does the opposite. <command>aptitude markauto</command> and <command>aptitude unmarkauto</command> work in the same way although they offer more features for marking many packages at once (see <xref linkend=\"sect.aptitude\" />). The console-based interactive interface of <command>aptitude</command> also makes it easy to review the “automatic flag” on many packages."
-msgstr ""
+msgstr "Dobrym nawykiem jest zaznaczanie jako automatycznych tych pakietów, które nie są bezpośrednio wymagane, dzięki czemu są one automatycznie usuwane w momencie, kiedy nie są już potrzebne. <command>apt-mark auto <replaceable>pakiet</replaceable></command> zaznaczy pakiet jako automatyczny, podczas gdy <command>apt-mark manual <replaceable>pakiet</replaceable></command> działa przeciwnie. <command>aptitude markauto</command> i <command>aptitude unmarkauto</command> działają w ten sam sposób, niemniej jednak oferują więcej możliwości zaznaczania wielu pakietów naraz (patrz <xref linkend=\"sect.aptitude\" />). Interaktywny, konsolowy interfejs <command>aptitude</command> również pozwala na łatwy przegląd \"flag automatyczności\" wielu pakietów."
 
 # mateunho
 #. Tag: indexterm
@@ -1682,11 +1686,13 @@ msgstr ""
 msgid "<primary><command>aptitude why</command></primary>"
 msgstr "<primary><command>aptitude why</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "People might want to know why an automatically installed package is present on the system. To get this information from the command line, you can use <command>aptitude why <replaceable>package</replaceable></command> (<command>apt-get</command> has no similar feature):"
-msgstr ""
+msgstr "Niektórzy mogą być ciekawi, dlaczego pewien automatycznie zainstalowany pakiet jest obecny w systemie. W celu uzyskania tej informacji w linii komend można użyć <command>aptitude why <replaceable>pakiet</replaceable></command> (<command>apt-get</command> nie posiada analogicznej opcji):"
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid ""
@@ -1695,6 +1701,10 @@ msgid ""
 "i A apt-xapian-index Depends    python-debian (&gt;= 0.1.15)\n"
 "      "
 msgstr ""
+"$ <userinput>aptitude why python-debian</userinput>\n"
+"i   aptitude         Poleca apt-xapian-index         \n"
+"i A apt-xapian-index Wymaga python-debian (&gt;= 0.1.15)\n"
+"      "
 
 # mateunho
 #. Tag: title
