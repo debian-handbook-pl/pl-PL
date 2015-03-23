@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-22 17:51+0100\n"
+"PO-Revision-Date: 2015-03-23 21:15+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 256,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 266,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1724,20 +1724,23 @@ msgstr "<primary><command>deborphan</command></primary>"
 msgid "<primary><command>debfoster</command></primary>"
 msgstr "<primary><command>debfoster</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In days where <command>apt-get</command> and <command>aptitude</command> were not able to track automatic packages, there were two utilities producing lists of unnecessary packages: <command>deborphan</command> and <command>debfoster</command>."
-msgstr ""
+msgstr "W czasach, kiedy komendy <command>apt-get</command> i <command>aptitude</command> nie były w stanie śledzić automatycznych pakietów, istniały dwa narzędzia służące do tworzenia list niepotrzebnych pakietów: <command>deborphan</command> i <command>debfoster</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>deborphan</command> is the most rudimentary of both. It simply scans the <literal>libs</literal> and <literal>oldlibs</literal> sections (in the absence of supplementary instructions) looking for the packages that are currently installed and that no other packages depends on. The resulting list can then serve as a basis to remove unneeded packages."
-msgstr ""
+msgstr "<command>deborphan</command> jest najbardziej podstawowe. Zwyczajnie skanuje sekcje <literal>libs</literal> i <literal>oldlibs</literal> (z braku dopełniających instrukcji) szukając aktualnie zainstalowanych pakietów, od których nie są zależne inne pakiety. Stworzona w ten sposób lista może służyć jako punkt wyjścia do usunięcia niepotrzebnych pakietów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>debfoster</command> has a more elaborate approach, very similar to APT's one: it maintains a list of packages that have been explicitly installed, and remembers what packages are really required between each invocation. If new packages appear on the system and if <command>debfoster</command> doesn't know them as required packages, they will be shown on the screen together with a list of their dependencies. The program then offers a choice: remove the package (possibly together with those that depend on it), mark it as explicitly required, or ignore it temporarily."
-msgstr ""
+msgstr "<command>debfoster</command> stosuje bardziej złożone podejście, bardzo podobne do APTa: zarządza listą pakietów, które zostały bezpośrednio zainstalowane i zapamiętuje pakiety, które są naprawdę wymagane pomiędzy kolejnymi wywołaniami. Jeżeli w systemie pojawią się nowe pakiety i <command>debfoster</command> nie rozpozna ich jako wymagane pakiety, to zostaną wyświetlone na ekranie razem z listą ich zależności. W takiej sytuacji program oferuje wybór: usunięcie pakietu (prawdopodobnie razem z pakietem, który od niego zależy), oznaczenie go jako bezpośrednio wymagany lub tymczasowe zignorowanie."
 
 # mateunho
 #. Tag: title
@@ -1775,10 +1778,11 @@ msgstr "<primary>search of packages</primary>"
 msgid "<primary>package</primary><secondary>search</secondary>"
 msgstr "<primary>package</primary><secondary>search</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The <command>apt-cache</command> command can display much of the information stored in APT's internal database. This information is a sort of cache since it is gathered from the different sources listed in the <filename>sources.list</filename> file. This happens during the <command>apt-get update</command> operation."
-msgstr ""
+msgstr "Komenda <command>apt-cache</command> posiada możliwość wyświetlenia wielu informacji z wewnętrznej bazy APTa. Informacje te są rodzajem pamięci podręcznej, ponieważ są zebrane z różnych źródeł zawartych w pliku <filename>sources.list</filename>. Operacja ta wykonywana jest podczas <command>apt-get update</command>."
 
 # mateunho
 #. Tag: title
