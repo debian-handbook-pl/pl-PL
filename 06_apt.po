@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-23 21:15+0100\n"
+"PO-Revision-Date: 2015-03-24 14:25+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -102,9 +102,9 @@ msgstr "<primary><filename>Źródła.gz</filename></primary>"
 
 # mateunho
 #. Tag: title
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> <command>gzip</command>, <command>bzip2</command>, <command>LZMA</command> and <command>XZ</command> Compression"
-msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> <command>gzip</command>, <command>bzip2</command>, <command>LZMA</command> and <command>XZ</command> Kompresja"
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Kompresja <command>gzip</command>, <command>bzip2</command>, <command>LZMA</command> i <command>XZ</command>"
 
 # mateunho
 #. Tag: indexterm
@@ -132,7 +132,7 @@ msgstr "<primary><command>xz</command></primary>"
 
 # mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "A <filename>.gz</filename> extension refers to a file compressed with the <command>gzip</command> utility. <command>gzip</command> is the fast and efficient traditional Unix utility to compress files. Newer tools achieve better rates of compression but require more resources (computation time and memory) to compress and uncompress a file. Among them, and by order of appearance, there are <command>bzip2</command> (generating files with a <filename>.bz2</filename> extension), <command>lzma</command> (generating <filename>.lzma</filename> files) and <command>xz</command> (generating <filename>.xz</filename> files)."
 msgstr "Rozszerzenie <filename>.gz</filename> oznacza plik skompresowany za pomocą narzędzia <command>gzip</command>. <command>gzip</command> jest szybkim i efektywnym tradycyjnym narzędziem Uniksa do kompresji plików. Nowsze narzędzia osiągają lepsze wskaźniki kompresji, ale wymagają więcej zasobów (czasu obliczeniowego i pamięci) do kompresowania i dekompresowania plików. Wśród nich, oraz w kolejności występowania, są <command>bzip2</command> (tworzący pliki z rozszerzeniem <filename>.bz2</filename>), <command>lzma</command> (tworzący pliki <filename>.lzma</filename>) oraz <command>xz</command> (tworzący pliki <filename>.xz</filename>)."
 
@@ -150,13 +150,13 @@ msgstr "<primary><filename>sources.list</filename></primary>"
 
 # mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary>source</primary><secondary>of packages</secondary>"
 msgstr "<primary>source</primary><secondary>of packages</secondary>"
 
 # mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary>package</primary><secondary>source of</secondary>"
 msgstr "<primary>package</primary><secondary>source of</secondary>"
 
@@ -200,7 +200,7 @@ msgstr "“<literal>deb-src</literal>” dla pakietów źródłowych."
 #. Tag: para
 #, no-c-format
 msgid "The second field gives the base URL of the source (combined with the filenames present in the <filename>Packages.gz</filename> files, it must give a full and valid URL): this can consist in a Debian mirror or in any other package archive set up by a third party. The URL can start with <literal>file://</literal> to indicate a local source installed in the system's file hierarchy, with <literal>http://</literal> to indicate a source accessible from a web server, or with <literal>ftp://</literal> for a source available on an FTP server. The URL can also start with <literal>cdrom://</literal> for CD-ROM/DVD-ROM/Blu-ray disc based installations, although this is less frequent, since network-based installation methods are more and more common."
-msgstr "Drugie pole zawiera bazowy URL źródła (w połączeniu z nazwami w pliku <filename>Pakiety.gz</filename>, stanowi pełny i prawomocny adres URL): może on znajdować się na serwerze lustrzanym Debiana lub w innym archiwum pakietu utworzonego przez stronę trzecią. URL może rozpoczynać się od <literal>file://</literal> wskazując lokalne źródło zainstalowane w systemowej hierarchii plików, <literal>http://</literal> wskazując źródło dostępne z serwera WWW, lub <literal>ftp://</literal> dla źródła dostępnego na serwerze FTP. Adres URL może również rozpoczynać się od <literal>cdrom://</literal> dla instalacji z płyty CD-ROM/DVD-ROM/Blu-ray, chociaż ten jest rzadziej spotykany, ponieważ metody instalacji oparte na sieci są coraz bardziej powszechne."
+msgstr "Drugie pole zawiera bazowy URL źródła (w połączeniu z nazwami w pliku <filename>Packages.gz</filename>, stanowi pełny i prawomocny adres URL): może on znajdować się na serwerze lustrzanym Debiana lub w innym archiwum pakietu utworzonego przez stronę trzecią. URL może rozpoczynać się od <literal>file://</literal> wskazując lokalne źródło zainstalowane w systemowej hierarchii plików, <literal>http://</literal> wskazując źródło dostępne z serwera WWW, lub <literal>ftp://</literal> dla źródła dostępnego na serwerze FTP. Adres URL może również rozpoczynać się od <literal>cdrom://</literal> dla instalacji z płyty CD-ROM/DVD-ROM/Blu-ray, chociaż ten jest rzadziej spotykany, ponieważ metody instalacji oparte na sieci są coraz bardziej powszechne."
 
 # mateunho
 #. Tag: para
@@ -686,13 +686,13 @@ msgstr "Załączenie <emphasis role=\"distribution\">Stabilnego</emphasis> jest 
 #. Tag: title
 #, no-c-format
 msgid "The <emphasis role=\"distribution\">Experimental</emphasis> Repository"
-msgstr "Repozytorium <emphasis role=\"distribution\">Eksperymentalne</emphasis>"
+msgstr "Repozytorium <emphasis role=\"distribution\">Eksperymentalnego</emphasis>"
 
 # mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"distribution\">Experimental</emphasis></primary>"
-msgstr "<primary><emphasis role=\"distribution\">Eksperymentalne</emphasis></primary>"
+msgstr "<primary><emphasis role=\"distribution\">Experimental</emphasis></primary>"
 
 # mateunho
 # ref: http://pl.wikipedia.org/wiki/Cykl_%C5%BCycia_programu
@@ -705,7 +705,7 @@ msgstr "Archiwum pakietów <emphasis role=\"distribution\">Eksperymentalnych</em
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"distribution\">Experimental</emphasis> is generally used by users who do not mind breaking their system and then repairing it. This distribution gives the possibility to import a package which a user wants to try or use as the need arises. That is exactly how Debian approaches it, since adding it in APT's <filename>sources.list</filename> file does not lead to the systematic use of its packages. The line to be added is:"
-msgstr "<emphasis role=\"distribution\">Eksperymentalne</emphasis> jest używane głównie przez użytkowników, którym nie przeszkadza ciągłe psucie i naprawianie ich systemu. Taki podział pozwala w razie potrzeby na zaimportowanie pakietu, którego użytkownik chciałby wypróbować lub używać. Jest to również standardowe podejściem Debiana z nim związane, ponieważ dodanie go w pliku APTa <filename>sources.list</filename> nie powoduje systematycznego korzystania z jego pakietów. Linia, którą należy dodać to:"
+msgstr "<emphasis role=\"distribution\">Eksperymentalny</emphasis> jest używany głównie przez użytkowników, którym nie przeszkadza ciągłe psucie i naprawianie ich systemu. Taki podział pozwala w razie potrzeby na zaimportowanie pakietu, którego użytkownik chciałby wypróbować lub używać. Jest to również standardowe podejściem Debiana z nim związane, ponieważ dodanie go w pliku APTa <filename>sources.list</filename> nie powoduje systematycznego korzystania z jego pakietów. Linia, którą należy dodać to:"
 
 # mateunho
 #. Tag: programlisting
@@ -717,7 +717,7 @@ msgstr "deb http://ftp.debian.org/debian experimental main contrib non-free\n"
 #. Tag: title
 #, no-c-format
 msgid "Non-Official Resources: <literal>apt-get.org</literal> and <literal>mentors.debian.net</literal>"
-msgstr "Non-oficjalne zasoby: <literal>apt-get.org</literal> i <literal>mentors.debian.net</literal>"
+msgstr "Nieoficjalne zasoby: <literal>apt-get.org</literal> i <literal>mentors.debian.net</literal>"
 
 # mateunho
 #. Tag: indexterm
@@ -747,7 +747,7 @@ msgstr "Strona <literal>mentors.debian.net</literal> jest również interesując
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>COMMUNITY</emphasis> The <literal>debian.net</literal> sites"
-msgstr "<emphasis>Społeczność</emphasis> Strony <literal>debian.net</literal>"
+msgstr "<emphasis>SPOŁECZNOŚĆ</emphasis> Strony <literal>debian.net</literal>"
 
 # mateunho
 #. Tag: indexterm
@@ -795,7 +795,7 @@ msgstr "Nowy serwis (wprowadzony w kwietniu 2010) może być użyty do \"podró�
 #. Tag: title
 #, no-c-format
 msgid "Caching Proxy for Debian Packages"
-msgstr "Cache'ujący Serwer Proxy dla Pakietów Debiana"
+msgstr "Buforujący Pośrednik dla Pakietów Debiana"
 
 # mateunho
 #. Tag: indexterm
@@ -813,13 +813,13 @@ msgstr "<primary>cache, proxy</primary>"
 #. Tag: para
 #, no-c-format
 msgid "When an entire network of machines is configured to use the same remote server to download the same updated packages, any administrator knows that it would be beneficial to have an intermediate proxy acting as a network-local cache (see sidebar <xref linkend=\"sidebar.cache\" />)."
-msgstr "Kiedy cała sieć maszyn jest skonfigurowana, aby używać tego samego zdalnego serwera w celu pobierania tych samych zaktualizowanych pakiety, każdy administrator wie, że korzystnie byłoby mieć pośredni serwer proxy działający jako lokalny cache (spójrz na fiszkę <xref linkend=\"sidebar.cache\" />)."
+msgstr "Kiedy cała sieć maszyn jest skonfigurowana, aby używać tego samego zdalnego serwera w celu pobierania tych samych zaktualizowanych pakiety, każdy administrator wie, że korzystnie byłoby mieć pośrednika działającego jako lokalna pamięć podręczna (spójrz na fiszkę <xref linkend=\"sidebar.cache\" />)."
 
 # mateunho
 #. Tag: para
 #, no-c-format
 msgid "You can configure APT to use a \"standard\" proxy (see <xref linkend=\"sect.apt-config\" /> for the APT side, and <xref linkend=\"sect.http-ftp-proxy\" /> for the proxy side), but the Debian ecosystem offers better options to solve this problem. The dedicated software presented in this section are smarter than a plain proxy cache because they can rely on the specific structure of APT repositories (for instance they know when individual files are obsolete or not, and thus adjust the time during which they are kept)."
-msgstr "Można skonfigurować APT, żeby używał \"standardowego\" proxy (spójrz na fiszkę <xref linkend=\"sect.apt-config\" /> dotyczącą APTa i <xref linkend=\"sect.http-ftp-proxy\" /> dotyczące proxy), ale ekosystem Debiana oferuje lepsze rozwiązania tego problemu. Przeznaczone do tego oprogramowanie, zaprezentowane w tej sekcji, jest lepsze od zwykłego proxy, ponieważ może używać specyficznej struktury repozytorium APTa (np.: wie, czy konkretne pliki są przestarzałe, czy nie i odpowiednio dopasowuje czas ich przetrzymywania)."
+msgstr "Można skonfigurować APT, żeby używał \"standardowego\" pośrednika (spójrz na fiszkę <xref linkend=\"sect.apt-config\" /> dotyczącą APTa i <xref linkend=\"sect.http-ftp-proxy\" /> dotyczące pośrednika), ale ekosystem Debiana oferuje lepsze rozwiązania tego problemu. Przeznaczone do tego oprogramowanie, zaprezentowane w tej sekcji, jest lepsze od zwykłego pośrednika, ponieważ może używać specyficznej struktury repozytorium APTa (np.: wie, czy konkretne pliki są przestarzałe, czy nie i odpowiednio dopasowuje czas ich przetrzymywania)."
 
 # mateunho
 #. Tag: indexterm
@@ -837,7 +837,7 @@ msgstr "<primary><emphasis role=\"pkg\">apt-cacher-ng</emphasis></primary>"
 #. Tag: para
 #, no-c-format
 msgid "<emphasis role=\"pkg\">apt-cacher</emphasis> and <emphasis role=\"pkg\">apt-cacher-ng</emphasis> work like usual proxy cache servers. APT's <filename>sources.list</filename> is left unchanged, but APT is configured to use them as proxy for outgoing requests."
-msgstr "<emphasis role=\"pkg\">apt-cacher</emphasis> i <emphasis role=\"pkg\">apt-cacher-ng</emphasis> działają jak zwykłe cache serwery proxy. Plik <filename>sources.list</filename> nie jest zmieniany, ale APT jest skonfigurowany, aby używać ich jako proxy dla wychodzących zapytań."
+msgstr "<emphasis role=\"pkg\">apt-cacher</emphasis> i <emphasis role=\"pkg\">apt-cacher-ng</emphasis> działają jak zwykłe pośredniczące serwery buforowe. Plik <filename>sources.list</filename> nie jest zmieniany, ale APT jest skonfigurowany, aby używać ich jako pośredników dla wychodzących zapytań."
 
 # mateunho
 #. Tag: indexterm
@@ -926,7 +926,7 @@ msgstr "Inicjalizacja"
 #. Tag: para
 #, no-c-format
 msgid "For any work with APT, the list of available packages needs to be updated; this can be done simply through <command>apt-get update</command>. Depending on the speed of your connection, the operation can take a while since it involves downloading a certain number of <filename>Packages</filename>/<filename>Sources</filename>/<filename>Translation-<replaceable>language-code</replaceable></filename> files, which have gradually become bigger and bigger as Debian has developed (at least 10 MB of data for the <literal>main</literal> section). Of course, installing from a CD-ROM set does not require any downloading — in this case, the operation is very fast."
-msgstr "Do każdej pracy z APTem trzeba zaktualizować listę dostępnych pakietów; może to zrobić przez wpisanie <command>apt-get update</command>. Zależnie od dostępnej prędkości połączenia, operacja ta może chwilę zająć, ponieważ składa się na nią pobieranie pewnej liczby plików <filename>Pakietów</filename>/<filename>Źródeł</filename>/<filename>Tłumaczenie-<replaceable>kod-języka</replaceable></filename>, które stopniowo stawały się coraz większe razem z rozwojem Debiana (przynajmniej 10MB danych dla sekcji <literal>main</literal>). Oczywiście podczas instalacji z płyt CD-ROM nie jest wymagane żadne pobieranie — w takim przypadku ta operacja jest bardzo szybka."
+msgstr "Do każdej pracy z APTem trzeba zaktualizować listę dostępnych pakietów; może to zrobić przez wpisanie <command>apt-get update</command>. Zależnie od dostępnej prędkości połączenia, operacja ta może chwilę zająć, ponieważ składa się na nią pobieranie pewnej liczby plików <filename>Packages</filename>/<filename>Sources</filename>/<filename>Tłumaczenie-<replaceable>kod-języka</replaceable></filename>, które stopniowo stawały się coraz większe razem z rozwojem Debiana (przynajmniej 10MB danych dla sekcji <literal>main</literal>). Oczywiście podczas instalacji z płyt CD-ROM nie jest wymagane żadne pobieranie — w takim przypadku ta operacja jest bardzo szybka."
 
 # mateunho
 #. Tag: indexterm
@@ -1228,7 +1228,7 @@ msgstr "Jak zostało wyjaśnione wcześniej, celem komendy <command>apt-get upda
 #. Tag: para
 #, no-c-format
 msgid "To speed up the process APT can download “diff” files containing the changes since the previous update, as opposed to the entire file. To achieve this, official Debian mirrors distribute different files which list the differences between one version of the <filename>Packages</filename> file and the following version. They are generated at each update of the archives and a history of one week is kept. Each of these “diff” files only takes a few dozen kilobytes for <emphasis role=\"distribution\">Unstable</emphasis>, so that the amount of data downloaded by a weekly <command>aptitude update</command> is often divided by 10. For distributions like <emphasis role=\"distribution\">Stable</emphasis> and <emphasis role=\"distribution\">Testing</emphasis>, which change less, the gain is even more noticeable."
-msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", zawierające zmiany od poprzedniej aktualizacji, zamiast całego pliku. Aby to osiągnąć, oficjalne serwery lustrzane Debiana rozprowadzają różne pliki zawierające listę różnic pomiędzy jedną wersją pliku <filename>Pakiety</filename> i jej następną wersją. Są one tworzone przy każdej aktualizacji archiwów i przetrzymywane do tygodnia wstecz. Każdy z plików \"diff\" zajmuje tylko kilka kilobajtów dla wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>, więc ilość danych pobieranych podczas cotygodniowego <command>aptitude update</command> jest zazwyczaj 10 razy mniejsza. Dla dystrybucji takich jak <emphasis role=\"distribution\">Stabilna</emphasis> i <emphasis role=\"distribution\">Testowa</emphasis>, które podlegają mniejszym zmianom, ten zysk jest nawet bardziej zauważalny."
+msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", zawierające zmiany od poprzedniej aktualizacji, zamiast całego pliku. Aby to osiągnąć, oficjalne serwery lustrzane Debiana rozprowadzają różne pliki zawierające listę różnic pomiędzy jedną wersją pliku <filename>Packages</filename> i jej następną wersją. Są one tworzone przy każdej aktualizacji archiwów i przetrzymywane do tygodnia wstecz. Każdy z plików \"diff\" zajmuje tylko kilka kilobajtów dla wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>, więc ilość danych pobieranych podczas cotygodniowego <command>aptitude update</command> jest zazwyczaj 10 razy mniejsza. Dla dystrybucji takich jak <emphasis role=\"distribution\">Stabilny</emphasis> i <emphasis role=\"distribution\">Testowy</emphasis>, które podlegają mniejszym zmianom, ten zysk jest nawet bardziej zauważalny."
 
 # mateunho
 #. Tag: para
@@ -1788,17 +1788,19 @@ msgstr "Komenda <command>apt-cache</command> posiada możliwość wyświetlenia 
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>VOCABULARY</emphasis> Cache"
-msgstr "<emphasis>SŁOWNIK</emphasis> Cache"
+msgstr "<emphasis>SŁOWNIK</emphasis> Pamięć podręczna"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "A cache is a temporary storage system used to speed up frequent data access when the usual access method is expensive (performance-wise). This concept can be applied in numerous situations and at different scales, from the core of microprocessors up to high-end storage systems."
-msgstr ""
+msgstr "Pamięć podręczna jest rodzajem tymczasowego systemu magazynowania używanym w celu przyspieszenia dostępu do często używanych danych, podczas gdy zwykłe sposoby dostępu są kosztowne (wydajnościowo). Ten sposób może być stosowany w wielu sytuacjach i na różną skalę, od rdzeni mikroprocesorów do zaawansowanych systemów magazynowania."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In the case of APT, the reference <filename>Packages</filename> files are those located on Debian mirrors. That said, it would be very ineffective to go through the network for every search that we might want to do in the database of available packages. That is why APT stores a copy of those files (in <filename>/var/lib/apt/lists/</filename>) and searches are done within those local files. Similarly, <filename>/var/cache/apt/archives/</filename> contains a cache of already downloaded packages to avoid downloading them again if you need to reinstall them after a removal."
-msgstr ""
+msgstr "W przypadku APTa, referencyjne pliki <filename>Packages</filename> to te znajdujące się na serwerach lustrzanych Debiana. W związku z tym byłoby bardzo nieefektywne, aby przy każdym wyszukiwaniu wykorzystywać sieć do przeszukiwania bazy danych dostępnych pakietów. Właśnie dlatego APT przechowuje kopię tych plików (w <filename>/var/lib/apt/lists/</filename>) i wyszukiwania są wykonywane na tych lokalnych plikach. Podobnie, <filename>/var/cache/apt/archives/</filename> zawiera pamięć podręczną już pobranych pakietów, aby uniknąć ich ponownego pobierania w celu reinstalacji po usunięciu."
 
 # mateunho
 #. Tag: indexterm
@@ -1824,10 +1826,11 @@ msgstr "<primary><command>aptitude show</command></primary>"
 msgid "<primary><command>aptitude search</command></primary>"
 msgstr "<primary><command>aptitude search</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The <command>apt-cache</command> command can do keyword-based package searches with <command>apt-cache search <replaceable>keyword</replaceable></command>. It can also display the headers of the package's available versions with <command>apt-cache show <replaceable>package</replaceable></command>. This command provides the package's description, its dependencies, the name of its maintainer, etc. Note that <command>aptitude search</command> and <command>aptitude show</command> work in the same way."
-msgstr ""
+msgstr "Komenda <command>apt-cache</command> potrafi wyszukiwać pakiety bazując na słowach kluczowych za pomocą <command>apt-cache search <replaceable>słowo_kluczowe</replaceable></command>. Może również wyświetlać nagłówki dostępnych pakietów za pomocą <command>apt-cache show <replaceable>pakiet</replaceable></command>. Komenda ta dostarcza opis pakietu, jego zależności, imię jego opiekuna, itd. Zauważ, że <command>aptitude search</command> i <command>aptitude show</command> działają w ten sam sposób."
 
 # mateunho
 #. Tag: title
@@ -1847,15 +1850,17 @@ msgstr "<primary><command>axi-cache</command></primary>"
 msgid "<primary><emphasis role=\"pkg\">apt-xapian-index</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">apt-xapian-index</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>apt-cache search</command> is a very rudimentary tool, basically implementing <command>grep</command> on package's descriptions. It often returns too many results or none at all when you include too many keywords."
-msgstr ""
+msgstr "<command>apt-cache search</command> jest bardzo prostym narzędziem, właściwie stosuje komendę <command>grep</command> dla opisu pakietu. Często zwraca zbyt wiele wyników albo wcale, jeżeli zostanie zawarte zbyt wiele słów kluczowych."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>axi-cache search <replaceable>term</replaceable></command>, on the other hand, provides better results, sorted by relevancy. It uses the <emphasis>Xapian</emphasis> search engine and is part of the <emphasis role=\"pkg\">apt-xapian-index</emphasis> package whichs indexes all package information (and more, like the <filename>.desktop</filename> files from all Debian packages). It knows about tags (see sidebar <xref linkend=\"sidebar.debtags\" />) and returns results in a matter of milliseconds."
-msgstr ""
+msgstr "Z drugiej strony <command>axi-cache search <replaceable>określenie</replaceable></command> dostarcza lepsze wyniki, posortowane względem trafności. Używa silnika wyszukiwania <emphasis>Xapian</emphasis> i jest częścią pakietu <emphasis role=\"pkg\">apt-xapian-index</emphasis>, który indeksuje wszystkie informacje pakietu (i nawet więcej, jak pliki <filename>.desktop</filename> ze wszystkich pakietów Debiana). Rozróżnia także znaczniki (spójrz na fiszkę <xref linkend=\"sidebar.debtags\" />) i zwraca wyniki w ciągu milisekund."
 
 #. Tag: screen
 #, no-c-format
@@ -1876,6 +1881,21 @@ msgid ""
 "`axi-cache more' will give more results\n"
 "      "
 msgstr ""
+"$ <userinput>axi-cache search package use::searching</userinput>\n"
+"105 results found.\n"
+"Results 1-20:\n"
+"100% packagesearch - GUI for searching packages and viewing package information\n"
+"98% debtags - Enables support for package tags\n"
+"94% debian-goodies - Small toolbox-style utilities \n"
+"93% dpkg-awk - Gawk script to parse /var/lib/dpkg/{status,available} and Packages\n"
+"93% goplay - games (and more) package browser using DebTags\n"
+"[...]\n"
+"87% apt-xapian-index - maintenance and search tools for a Xapian index of Debian packages\n"
+"[...]\n"
+"More terms: search debian searching strigi debtags bsearch libbsearch\n"
+"More tags: suite::debian works-with::software:package role::program interface::commandline implemented-in::c++ admin::package-management use::analysing\n"
+"`axi-cache more' will give more results\n"
+"      "
 
 # mateunho
 #. Tag: indexterm
@@ -1895,10 +1915,11 @@ msgstr "<primary><command>apt-cache dumpavail</command></primary>"
 msgid "<primary><command>apt-cache pkgnames</command></primary>"
 msgstr "<primary><command>apt-cache pkgnames</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Some features are more rarely used. For instance, <command>apt-cache policy</command> displays the priorities of package sources as well as those of individual packages. Another example is <command>apt-cache dumpavail</command> which displays the headers of all available versions of all packages. <command>apt-cache pkgnames</command> displays the list of all the packages which appear at least once in the cache."
-msgstr ""
+msgstr "Niektóre funkcje są rzadziej używane. Na przykład <command>apt-cache policy</command> wyświetla zarówno priorytety źródeł pakietów i pojedynczych pakietów. Kolejnym przykładem jest <command>apt-cache dumpavail</command>, która wyświetla nagłówki wszystkich dostępnych wersji wszystkich pakietów. <command>apt-cache pkgnames</command> wyświetla listę wszystkich pakietów, które choć raz pojawiają się w pamięci podręcznej."
 
 #. Tag: title
 #, no-c-format
