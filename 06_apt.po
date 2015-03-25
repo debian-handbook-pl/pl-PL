@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-24 14:25+0100\n"
+"PO-Revision-Date: 2015-03-25 17:01+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 266,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 292,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1921,10 +1921,11 @@ msgstr "<primary><command>apt-cache pkgnames</command></primary>"
 msgid "Some features are more rarely used. For instance, <command>apt-cache policy</command> displays the priorities of package sources as well as those of individual packages. Another example is <command>apt-cache dumpavail</command> which displays the headers of all available versions of all packages. <command>apt-cache pkgnames</command> displays the list of all the packages which appear at least once in the cache."
 msgstr "Niektóre funkcje są rzadziej używane. Na przykład <command>apt-cache policy</command> wyświetla zarówno priorytety źródeł pakietów i pojedynczych pakietów. Kolejnym przykładem jest <command>apt-cache dumpavail</command>, która wyświetla nagłówki wszystkich dostępnych wersji wszystkich pakietów. <command>apt-cache pkgnames</command> wyświetla listę wszystkich pakietów, które choć raz pojawiają się w pamięci podręcznej."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Frontends: <command>aptitude</command>, <command>synaptic</command>"
-msgstr ""
+msgstr "Interfejsy: <command>aptitude</command>, <command>synaptic</command>"
 
 # mateunho
 #. Tag: indexterm
@@ -1938,10 +1939,11 @@ msgstr "<primary><command>synaptic</command></primary>"
 msgid "<primary>APT</primary><secondary>interfaces</secondary>"
 msgstr "<primary>APT</primary><secondary>interfaces</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "APT is a C++ program whose code mainly resides in the <command>libapt-pkg</command> shared library. Using a shared library facilitates the creation of user interfaces (front-ends), since the code contained in the library can easily be reused. Historically, <command>apt-get</command> was only designed as a test front-end for <command>libapt-pkg</command> but its success tends to obscure this fact."
-msgstr ""
+msgstr "APT jest programem w języku C++, którego kod zawiera się głównie we współdzielonej bibliotece <command>libapt-pkg</command>. Używanie biblioteki współdzielonej ułatwia tworzenie interfejsów użytkownika, ponieważ jej kod jest łatwy do wykorzystania. Z historycznego punktu widzenia <command>apt-get</command> był zaprojektowany wyłącznie jako testowy interfejs dla <command>libapt-pkg</command>, ale jego sukces przyćmił ten fakt."
 
 # mateunho
 #. Tag: title
@@ -1949,10 +1951,11 @@ msgstr ""
 msgid "<command>aptitude</command>"
 msgstr "<command>aptitude</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>aptitude</command> is an interactive program that can be used in semi-graphical mode on the console. You can browse the list of installed and available packages, look up all the available information, and select packages to install or remove. The program is designed specifically to be used by administrators, so that its default behaviors are much more intelligent than <command>apt-get</command>'s, and its interface much easier to understand."
-msgstr ""
+msgstr "<command>aptitude</command> jest interaktywnym programem, który może być używany w semigraficznym trybie konsolowym. Pozwala na przeglądanie listy zainstalowanych pakietów, wyszukiwanie wszystkich dostępnych informacji i wybieranie pakietów do instalacji lub usunięcia. Został on zaprojektowany szczególnie z myślą o administratorach, dlatego jego zachowanie jest dużo bardziej inteligentne w porównaniu do <command>apt-get</command>, a jego interfejs łatwiejszy w zrozumieniu."
 
 # mateunho
 #. Tag: title
@@ -1960,10 +1963,11 @@ msgstr ""
 msgid "The <command>aptitude</command> package manager"
 msgstr "Menedżer pakietów <command>aptitude</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "When it starts, <command>aptitude</command> shows a list of packages sorted by state (installed, non-installed, or installed but not available on the mirrors — other sections display tasks, virtual packages, and new packages that appeared recently on mirrors). To facilitate thematic browsing, other views are available. In all cases, <command>aptitude</command> displays a list combining categories and packages on the screen. Categories are organized through a tree structure, whose branches can respectively be unfolded or closed with the <keycombo><keycap>Enter</keycap></keycombo>, <keycombo><keycap>[</keycap></keycombo> and <keycombo><keycap>]</keycap></keycombo> keys. <keycombo><keycap>+</keycap></keycombo> should be used to mark a package for installation, <keycombo><keycap>-</keycap></keycombo> to mark it for removal and <keycombo><keycap>_</keycap></keycombo> to purge it (note than these keys can also be used for categories, in which case the corresponding actions will be applied to all the packages of the category). <keycombo><keycap>u</keycap></keycombo> updates the lists of available packages and <keycombo action=\"simul\"><keycap>Shift</keycap><keycap>u</keycap></keycombo> prepares a global system upgrade. <keycombo><keycap>g</keycap></keycombo> switches to a summary view of the requested changes (and typing <keycombo><keycap>g</keycap></keycombo> again will apply the changes), and <keycombo><keycap>q</keycap></keycombo> quits the current view. If you are in the initial view, this will effectively close <command>aptitude</command>."
-msgstr ""
+msgstr "Po uruchomieniu <command>aptitude</command> pokazuje listę pakietów posortowaną według stanu (zainstalowane, niezainstalowane lub zainstalowane, ale niedostępne na serwerach lustrzanych — inne sekcje wyświetlają zadania, wirtualne pakiety i nowe pakiety, które niedawno pojawiły się na serwerach lustrzanych). W celu ułatwienia przeglądania tematycznego dostępne są inne widoki. We wszystkich przypadkach <command>aptitude</command> wyświetla na ekranie listę łączącą kategorie i pakiety. Kategorie są zorganizowane w strukturę drzewa, którego gałęzie mogą być odpowiednio rozwijane i zamykane za pomocą klawiszy <keycombo><keycap>Enter</keycap></keycombo>, <keycombo><keycap>[</keycap></keycombo> i <keycombo><keycap>]</keycap></keycombo>. <keycombo><keycap>+</keycap></keycombo> jest używany do oznaczania pakietów do instalacji, <keycombo><keycap>-</keycap></keycombo> do usunięcia, a <keycombo><keycap>_</keycap></keycombo> do całkowitej likwidacji (zauważ, że można ich również używać w stosunku do kategorii, wtedy odpowiednie akcje zostaną zastosowane do wszystkich pakietów danej kategorii). <keycombo><keycap>u</keycap></keycombo> pozwala zaktualizować listę dostępnych pakietów, a <keycombo action=\"simul\"><keycap>Shift</keycap><keycap>u</keycap></keycombo> przygotowuje całkowite uaktualnienie systemu. <keycombo><keycap>g</keycap></keycombo> przełącza do widoku podsumowania żądanych zmian (ponowne wpisanie <keycombo><keycap>g</keycap></keycombo> zatwierdza zmiany), a <keycombo><keycap>q</keycap></keycombo> zamyka aktualny widok. Użycie go w przypadku początkowego widoku spowoduje zamknięcie <command>aptitude</command>."
 
 # mateunho
 #. Tag: title
