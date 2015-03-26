@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-25 17:01+0100\n"
+"PO-Revision-Date: 2015-03-26 17:12+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 292,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 302,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -1975,20 +1975,23 @@ msgstr "Po uruchomieniu <command>aptitude</command> pokazuje listę pakietów po
 msgid "<emphasis>DOCUMENTATION</emphasis> <command>aptitude</command>"
 msgstr "<emphasis>DOKUMENTACJA</emphasis> <command>aptitude</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "This section does not cover the finer details of using <command>aptitude</command>, it rather focuses on giving you a survival kit to use it. <command>aptitude</command> is rather well documented and we advise you to use its complete manual available in the <emphasis role=\"pkg\">aptitude-doc-en</emphasis> package. <ulink type=\"block\" url=\"file:///usr/share/doc/aptitude/html/en/index.html\" />"
-msgstr ""
+msgstr "Ta sekcja nie opisuje szczegółów użytkowania <command>aptitude</command>, ale raczej skupia się na dostarczeniu minimum do przetrwania. <command>aptitude</command> posiada dość dobrą dokumentację i zalecane jest używanie jego pełnego podręcznika dostępnego w pakiecie <emphasis role=\"pkg\">aptitude-doc-en</emphasis>. <ulink type=\"block\" url=\"file:///usr/share/doc/aptitude/html/en/index.html\" />"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To search for a package, you can type <keycombo><keycap>/</keycap></keycombo> followed by a search pattern. This pattern matches the name of the package, but can also be applied to the description (if preceded by <literal>~d</literal>), to the section (with <literal>~s</literal>) or to other characteristics detailed in the documentation. The same patterns can filter the list of displayed packages: type the <keycombo><keycap>l</keycap></keycombo> key (as in <foreignphrase>limit</foreignphrase>) and enter the pattern."
-msgstr ""
+msgstr "W celu wyszukania pakietu należy wpisać <keycombo><keycap>/</keycap></keycombo>, a następnie wyszukiwany wzorzec. Wzorzec zostanie dopasowany do nazwy pakietu, ale poprzedzając go <literal>~d</literal> zostanie zastosowany również do opisu, natomiast używając <literal>~s</literal> do sekcji, wyszukiwanie innych cech zostało szerzej opisane w dokumentacji. Te same wzorce mogą być też używane do filtrowania listy wyświetlanych pakietów: należy wprowadzić literę <keycombo><keycap>l</keycap></keycombo> (jako <foreignphrase>limit</foreignphrase>), a następnie szukany wzorzec."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Managing the “automatic flag” of Debian packages (see <xref linkend=\"sect.automatic-tracking\" />) is a breeze with <command>aptitude</command>. It is possible to browse the list of installed packages and mark packages as automatic with <keycombo action=\"simul\"><keycap>Shift</keycap> <keycap>m</keycap></keycombo> or to remove the mark with the <keycombo><keycap>m</keycap></keycombo> key. “Automatic packages” are tagged with an “A” in the list of packages. This feature also offers a simple way to visualize the packages in use on a machine, without all the libraries and dependencies that you don't really care about. The related pattern that can be used with <keycombo><keycap>l</keycap></keycombo> (to activate the filter mode) is <literal>~i!~M</literal>. It specifies that you only want to see installed packages (<literal>~i</literal>) not marked as automatic (<literal>!~M</literal>)."
-msgstr ""
+msgstr "Zarządzanie \"flagami automatyczności\" pakietów Debiana (spójrz na fiszkę <xref linkend=\"sect.automatic-tracking\" />) z użyciem <command>aptitude</command> jest błahostką. Podczas przeglądania listy zainstalowanych pakietów można je zaznaczyć jako automatyczne używając <keycombo action=\"simul\"><keycap>Shift</keycap> <keycap>m</keycap></keycombo> albo usunąć znacznik używając <keycombo><keycap>m</keycap></keycombo>. \"Automatyczne pakiety\" na liście pakietów posiadają etykietę \"A\". Dzięki temu można w łatwy sposób przeglądać używane pakiety, pomijając wszystkie biblioteki i zależności, które nie są przedmiotem zainteresowania. Wspomniany wzorzec, używany z <keycombo><keycap>l</keycap></keycombo> (w celu wejścia w tryb filtrowania) to <literal>~i!~M</literal>. Wyszczególnia on tylko zainstalowane pakiety (<literal>~i</literal>), które nie są zaznaczone jako automatyczne (<literal>!~M</literal>)."
 
 # mateunho
 #. Tag: title
@@ -1996,30 +1999,35 @@ msgstr ""
 msgid "<emphasis>TOOL</emphasis> Using <command>aptitude</command> on the command-line interface"
 msgstr "<emphasis>NARZĘDZIE</emphasis> Używanie <command>aptitude</command> w linii komend"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Most of <command>aptitude</command>'s features are accessible via the interactive interface as well as via command-lines. These command-lines will seem familiar to regular users of <command>apt-get</command> and <command>apt-cache</command>."
-msgstr ""
+msgstr "Większość opcji <command>aptitude</command> jest dostępna zarówno przez interaktywny interfejs i w linii komend. Opisane polecenia powinny być znajome stałym użytkownikom <command>apt-get</command> i <command>apt-cache</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The advanced features of <command>aptitude</command> are also available on the command-line. You can use the same package search patterns as in the interactive version. For example, if you want to cleanup the list of “manually installed” packages, and if you know that none of the locally installed programs require any particular libraries or Perl modules, you can mark the corresponding packages as automatic with a single command:"
-msgstr ""
+msgstr "Zaawansowane opcje <command>aptitude</command> są również dostępne w linii komend. Można używać tych samych wzorców wyszukiwania, co w wersji interaktywnej. Na przykład, jeżeli celem jest oczyszczenie listy \"ręcznie zainstalowanych\" pakietów i wiadomo, że żaden z lokalnie zainstalowanych programów nie wymaga jakichś konkretnych bibliotek modułów Perla, można oznaczyć wspomniane pakiety jako automatyczne za pomocą pojedynczej komendy:"
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid "<computeroutput># </computeroutput><userinput>aptitude markauto '~slibs|~sperl'</userinput>\n"
-msgstr ""
+msgstr "<computeroutput># </computeroutput><userinput>aptitude markauto '~slibs|~sperl'</userinput>\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here, you can clearly see the power of the search pattern system of <command>aptitude</command>, which enables the instant selection of all the packages in the <literal>libs</literal> and <literal>perl</literal> sections."
-msgstr ""
+msgstr "Na przykładzie tej komendy można zauważyć prawdziwą potęgę systemu wzorców wyszukiwania <command>aptitude</command>, która pozwala natychmiastowo zaznaczyć wszystkie pakiety w sekcjach <literal>libs</literal> i <literal>perl</literal>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Beware, if some packages are marked as automatic and if no other package depends on them, they will be removed immediately (after a confirmation request)."
-msgstr ""
+msgstr "Należy jednak uważać, ponieważ jeżeli jakieś pakiety zostaną oznaczone jako automatyczne i nie są wymagane przez żaden inny pakiet, to zostaną natychmiast usunięte (po prośbie o potwierdzenie)."
 
 #. Tag: title
 #, no-c-format
