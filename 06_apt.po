@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-28 21:55+0100\n"
+"PO-Revision-Date: 2015-03-29 22:07+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2059,30 +2059,35 @@ msgstr "Sugestie pomiędzy pakietami również są brane pod uwagę, ale w spos�
 msgid "In the same spirit, remember that <command>aptitude</command> makes intelligent use of the concept of task. Since tasks are displayed as categories in the screens of packages lists, you can either select a full task for installation or removal, or browse the list of packages included in the task to select a smaller subset."
 msgstr "W tym samym duchu, należy pamiętać, że <command>aptitude</command> inteligentnie wykorzystuje koncepcję zadań. Ze względu na to, że zadania są wyświetlane jako kategorie na ekranie list pakietów, możliwe jest zaznaczenia całego zadania do instalacji lub usunięcia, lub przeglądanie listy pakietów zawartych w zadaniu, aby zaznaczyć mniejszy podzbiór."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Better Solver Algorithms"
-msgstr ""
+msgstr "Lepsze Algorytmy Analityczne"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To conclude this section, let's note that <command>aptitude</command> has more elaborate algorithms compared to <command>apt-get</command> when it comes to resolving difficult situations. When a set of actions is requested and when these combined actions would lead to an incoherent system, <command>aptitude</command> evaluates several possible scenarios and presents them in order of decreasing relevance. However, these algorithms are not failproof. Fortunately there is always the possibility to manually select the actions to perform. When the currently selected actions lead to contradictions, the upper part of the screen indicates a number of “broken” packages (and you can directly navigate to those packages by pressing <keycombo><keycap>b</keycap></keycombo>). It is then possible to manually build a solution for the problems found. In particular, you can get access to the different available versions by simply selecting the package with <keycombo><keycap>Enter</keycap></keycombo>. If the selection of one of these versions solves the problem, you should not hesitate to use the function. When the number of broken packages gets down to zero, you can safely go to the summary screen of pending actions for a last check before you apply them."
-msgstr ""
+msgstr "W celu podsumowania tej sekcji należy zauważyć, że <command>aptitude</command> do rozwiązywania problemów używa bardziej zaawansowanych algorytmów w porównaniu z <command>apt-get</command>. Kiedy żądany zbiór akcji w połączeniu prowadziłby do rozbieżnego działania systemu <command>aptitude</command> ocenia kilka możliwych scenariuszy i prezentuje je w kolejności malejącej ważności. Algorytmy te nie są jednak niezawodne. Na szczęście zawsze istnieje możliwość ręcznego wybrania pożądanych akcji. W przypadku, gdy aktualnie zaznaczone akcje prowadzą do sprzeczności, górna część ekranu wskazuje liczbę \"zepsutych\" pakietów (można przejść do nich bezpośrednio po naciśnięciu <keycombo><keycap>b</keycap></keycombo>). Można wtedy ręcznie stworzyć rozwiązanie dla znalezionych problemów. W szczególności można uzyskać dostęp do różnych dostępnych wersji poprzez wybranie pakietu za pomocą klawisza <keycombo><keycap>Enter</keycap></keycombo>. Jeżeli wybranie jednej z tych wersji rozwiązuje problem, to użycie tej funkcji jest najprostszym rozwiązaniem. Kiedy już liczba zepsutych pakietów spadnie do zera, można bezpiecznie przejść do ekranu oczekujących akcji i jeszcze raz je sprawdzić przed zatwierdzeniem."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>NOTE</emphasis> <command>aptitude</command>'s log"
-msgstr ""
+msgstr "<emphasis>ZAUWAŻ</emphasis> Dziennik <command>aptitude</command>'a"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Like <command>dpkg</command>, <command>aptitude</command> keeps a trace of executed actions in its logfile (<filename>/var/log/aptitude</filename>). However, since both commands work at a very different level, you cannot find the same information in their respective logfiles. While <command>dpkg</command> logs all the operations executed on individual packages step by step, <command>aptitude</command> gives a broader view of high-level operations like a system-wide upgrade."
-msgstr ""
+msgstr "Podobnie do <command>dpkg</command>, <command>aptitude</command> przechowuje listęp wykonanych akcji w pliku dziennika (<filename>/var/log/aptitude</filename>). Jednakże ze względu na to, że obie komendy działają na zupełnie innym poziomie, w ich plikach dziennika znajdują się różne informacje. Podczas, gdy <command>dpkg</command> zapisuje wszystkie operacje wykonywane krok po kroku dla każdego pakietu, <command>aptitude</command> daje bardziej ogólny widok na wysokopoziomowe operacje, takie jak uaktualnienie systemu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Beware, this logfile only contains a summary of operations performed by <command>aptitude</command>. If other front-ends (or even <command>dpkg</command> itself) are occasionally used, then <command>aptitude</command>'s log will only contain a partial view of the operations, so you can't rely on it to build a trustworthy history of the system."
-msgstr ""
+msgstr "Należy jednak mieć na uwadze, że plik dziennika zawiera tylko podsumowanie operacji wykonanych przez <command>aptitude</command>. Jeżeli używane są inne interfejsy (lub nawet sam <command>dpkg</command>), to dzienniki <command>aptitude</command> będą zawierać jedynie częściowy zapis operacji, więc nie należy na nim polegać w celu tworzenia wiarygodnej historii systemu."
 
 # mateunho
 #. Tag: title
@@ -2090,10 +2095,11 @@ msgstr ""
 msgid "<command>synaptic</command>"
 msgstr "<command>synaptic</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>synaptic</command> is a graphical package manager for Debian which features a clean and efficient graphical interface based on GTK+/GNOME. Its many ready-to-use filters give fast access to newly available packages, installed packages, upgradable packages, obsolete packages and so on. If you browse through these lists, you can select the operations to be done on the packages (install, upgrade, remove, purge); these operations are not performed immediately, but put into a task list. A single click on a button then validates the operations, and they are performed in one go."
-msgstr ""
+msgstr "<command>synaptic</command> jest graficznym menedżerem pakietów dla Debiana, który posiada wydajny i prosty interfejs graficzny bazujący na GTK+/GNOME. Posiada wbudowane filtry pozwalające na szybki dostęp do nowych pakietów, zainstalowanych pakietów, pakietów do uaktualnienia, przestarzałych pakietów, itd. Po przejrzeniu tych list można wybrać operacje do wykonania na pakietach (instalacja, uaktualnienie, usunięcie, wyczyszczenie); operacje te nie są wykonywane natychmiast, ale dodawane do listy zadań. Pojedyncze naciśnięcie przycisku sprawdza listę operacji, które są następnie wykonane za jednym razem."
 
 # mateunho
 #. Tag: title
