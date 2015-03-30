@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-29 22:07+0100\n"
+"PO-Revision-Date: 2015-03-30 21:26+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 307,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 327,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2107,10 +2107,11 @@ msgstr "<command>synaptic</command> jest graficznym menedżerem pakietów dla De
 msgid "<command>synaptic</command> package manager"
 msgstr "Menedżer pakietów <command>synaptic</command>"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Checking Package Authenticity"
-msgstr ""
+msgstr "Sprawdzanie Autentyczności Pakietów"
 
 # mateunho
 #. Tag: indexterm
@@ -2142,15 +2143,17 @@ msgstr "<primary>signature</primary><secondary>package signature</secondary>"
 msgid "<primary>authentication</primary><secondary>package authentication</secondary>"
 msgstr "<primary>authentication</primary><secondary>package authentication</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Security is very important for Falcot Corp administrators. Accordingly, they need to ensure that they only install packages which are guaranteed to come from Debian with no tampering on the way. A computer cracker could try to add malicious code to an otherwise legitimate package. Such a package, if installed, could do anything the cracker designed it to do, including for instance disclosing passwords or confidential information. To circumvent this risk, Debian provides a tamper-proof seal to guarantee — at install time — that a package really comes from its official maintainer and hasn't been modified by a third party."
-msgstr ""
+msgstr "Dla administratorów Falcot Corp bezpieczeństwo jest bardzo ważne. Zgodnie z tym założeniem, muszą być pewni, że instalują tylko pakiety, których pochodzenie od Debiana jest gwarantowane, które nie były zmieniane przez osoby trzecie. Włamywacz komputerowy mógłby bowiem próbować dodać szkodliwy kod do wiarygodnego pakietu. Po zainstalowaniu, taki pakiet mógłby robić cokolwiek, do czego włamywacz go zaprojektował, włączając w to na przykład kradzież haseł lub poufnych informacji. W celu przeciwdziałania takim zagrożeniom, Debian stosuje pieczęci zabezpieczające, aby zagwarantować — w czasie instalacji — że pakiet naprawdę pochodzi od jego opiekuna i nie był modyfikowany przez osoby trzecie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The seal works with a chain of cryptographical hashes and a signature. The signed file is the <filename>Release</filename> file, provided by the Debian mirrors. It contains a list of the <filename>Packages</filename> files (including their compressed forms, <filename>Packages.gz</filename> and <filename>Packages.bz2</filename>, and the incremental versions), along with their MD5, SHA1 and SHA256 hashes, which ensures that the files haven't been tampered with. These <filename>Packages</filename> files contain a list of the Debian packages available on the mirror, along with their hashes, which ensures in turn that the contents of the packages themselves haven't been altered either."
-msgstr ""
+msgstr "Wspomniana pieczęć składa się z łańcucha kryptograficznych funkcji skrótu i podpisu. Podpisanym plikiem jest plik <filename>Release</filename>, dostarczany przez serwery lustrzane Debiana. Zawiera on listę plików <filename>Packages</filename> (włączając ich skompresowane wersje, <filename>Packages.gz</filename> i <filename>Packages.bz2</filename> oraz wersje przyrostowe) razem z ich skrótami MD5, SHA1 i SHA256, które zapewniają, że pliki nie zostały zmodyfikowane. Pliki <filename>Packages</filename> zawierają listę pakietów Debiana dostępnych na serwerze lustrzanym razem z ich skrótami, które to z kolei zapewniają, że zawartość samych pakietów również nie była zmieniana."
 
 # mateunho
 #. Tag: indexterm
@@ -2210,10 +2213,11 @@ msgid ""
 "uid                  Wheezy Stable Release Key &lt;debian-release@lists.debian.org&gt;\n"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>IN PRACTICE</emphasis> Adding trusted keys"
-msgstr ""
+msgstr "<emphasis>W PRAKTYCE</emphasis> Dodawanie zaufanych kluczy"
 
 # mateunho
 #. Tag: indexterm
