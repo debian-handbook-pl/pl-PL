@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-03-30 21:26+0100\n"
+"PO-Revision-Date: 2015-03-31 23:51+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2464,10 +2464,11 @@ msgstr ""
 msgid "Upgrading with <command>gpk-update-viewer</command>"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Automatic Upgrades"
-msgstr ""
+msgstr "Automatyczne Uaktualnienia"
 
 # mateunho
 #. Tag: indexterm
@@ -2544,10 +2545,11 @@ msgstr ""
 msgid "The common approach is to suppress the standard input by redirecting the empty content of <filename>/dev/null</filename> into it with <command><replaceable>command</replaceable> &lt;/dev/null</command>, or to feed it with an endless stream of newlines. None of these methods are 100 % reliable, but they generally lead to the default answers being used, since most scripts consider a lack of reply as an acceptance of the default value."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "The Miracle Combination"
-msgstr ""
+msgstr "Cudowne Połączenie"
 
 #. Tag: para
 #, no-c-format
@@ -2594,10 +2596,11 @@ msgstr ""
 msgid "In the lab, the few computers using <emphasis role=\"distribution\">Testing</emphasis> — to take advantage of the latest software versions — are not upgraded automatically either. Administrators only configure APT to prepare the upgrades but not enact them; when they decide to upgrade (manually), the tedious parts of refreshing package lists and downloading packages will be avoided, and administrators can focus on the really useful part."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Searching for Packages"
-msgstr ""
+msgstr "Wyszukiwanie Pakietów"
 
 #. Tag: para
 #, no-c-format
