@@ -5,14 +5,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-01-11 22:20+0100\n"
+"PO-Revision-Date: 2015-04-03 00:21+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #. Tag: keyword
 #, no-c-format
@@ -462,12 +462,12 @@ msgstr "Konfiguracja klawiatury"
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>keyboard layout</primary>"
-msgstr ""
+msgstr "<primary>układ klawiatury</primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>layout, keyboard</primary>"
-msgstr ""
+msgstr "<primary>układ, klawiatura</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -479,21 +479,28 @@ msgid ""
 "reconfigure keyboard-configuration</command> command can be used at any time "
 "to reset the keyboard layout."
 msgstr ""
+"Nawet gdy zarządzanie układem klawiatury odbywa się oddzielnie dla trybu "
+"tekstowego (wiersz poleceń) i graficznego, Debian oferuje jeden wspólny "
+"interfejs służący do konfiguracji obu trybów: jest on oparty na narzędziu "
+"debconf i zaimplementowany w pakiecie <emphasis role=\"pkg\">keyboard-"
+"configuration</emphasis>. Dzięki temu polecenie <command>dpkg-reconfigure "
+"keyboard-configuration</command> może zostać w każdej chwili użyte do "
+"zresetowania układu klawiatury."
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis>console-data</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis>console-data</emphasis></primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis>console-tools</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis>console-tools</emphasis></primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis>keyboard-configuration</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis>keyboard-configuration</emphasis></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -510,7 +517,7 @@ msgid ""
 "UTF-8/Compose</filename> file (or another file, determined according to the "
 "current locale indicated by <filename>/usr/share/X11/locale/compose.dir</"
 "filename>)."
-msgstr ""
+msgstr "<indexterm><primary><literal>azerty</literal></primary></indexterm>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -541,11 +548,17 @@ msgid ""
 "have their own configuration. Some additional options regarding the behavior "
 "of some particular keys are also available in these control panels."
 msgstr ""
+"Należy mieć na uwadze, że opisana tutaj konfiguracja klawiatury dla trybu "
+"graficznego dotyczy jedynie domyślnego układu; środowiska GNOME i KDE oraz "
+"inne posiadają w swoich ustawieniach panel sterowania klawiatury "
+"umożliwiający każdemu użytkownikowi na określenie swojej własnej "
+"konfiguracji. W panelach tych są również dostępne różne dodatkowe opcje "
+"dotyczące zachowania niektórych poszczególnych klawiszy."
 
 #. Tag: title
 #, no-c-format
 msgid "Migrating to UTF-8"
-msgstr ""
+msgstr "Migracja do UTF-8"
 
 #. Tag: para
 #, no-c-format
@@ -560,6 +573,18 @@ msgid ""
 "the other on filenames. Fortunately, the bulk of this migration has been "
 "completed and we discuss it largely for reference."
 msgstr ""
+"Ogólność kodowania UTF-8 była długo oczekiwanym rozwiązaniem licznych "
+"trudności związanych ze współpracą systemów o dmiennych konfiguracjach oraz "
+"z komunikacją osób, firm i organizacji posługujących się różnymi językami. "
+"UTF-8 ułatwia międzynarodową wymianę informacji i eliminuje niewygodne "
+"ograniczenia związane z niemożnością użycia pewnych znaków w dokumentach "
+"tekstowych. Niedogodnością związaną z wprowadzeniem UTF-8 była dość "
+"kłopotliwa faza przejściowa, w trakcie której UTF-8 stopniowo zastępowało "
+"lokalne strony kodowe. Proces ten nie mógł nastąpić jednocześnie na całym "
+"świecie, w związku z czym został podzielony na dwie zasadnicze operacje: "
+"przekodowanie zawartości plików oraz przekodowanie nazw plików. Na szczęście "
+"dla czytelnika, ogrom tej pracy został już wykonany i całe zagadnienie jest "
+"tutaj omawiane wyłącznie dla celów poglądowych."
 
 #. Tag: title
 #, no-c-format
@@ -567,6 +592,8 @@ msgid ""
 "<emphasis>CULTURE</emphasis> <foreignphrase>Mojibake</foreignphrase> and "
 "interpretation errors"
 msgstr ""
+"<emphasis>KULTURA</emphasis> <foreignphrase>Mojibake</foreignphrase> oraz "
+"błędy interpretacji."
 
 #. Tag: para
 #, no-c-format
@@ -580,6 +607,16 @@ msgid ""
 "bytes are mis-interpreted, and you get, at best, errors on some characters, "
 "or, at worst, something completely illegible."
 msgstr ""
+"Gdy tekst jest wysyłany bądź przechowywany bez informacji kodowania, "
+"odbiorca nie zawsze jest w stanie stwierdzić z pewnością jakiego kodowania, "
+"konwencji bądź protokołu powinien użyć aby określić znaczenie surowego "
+"zbioru bajtów. Pewne wskazówki można uzyskać tworząc i analizując rozkład "
+"częstości występowania poszczególnych wartości (znaków) w tekście, ale to "
+"nie zawsze daje pewną i ostateczną odpowiedź. Gdy do zapisu i odczytu pliku "
+"zostaną użyte różne systemy kodowania, dochodzi do błędnej interpretacji "
+"bajtów. W najlepszym przypadku prowadzi to do przekłamania niektórych "
+"pojedynczych znaków, a w najgorszym czyni cały tekst kompletnie "
+"niezrozumiałym."
 
 #. Tag: para
 #, no-c-format
@@ -594,6 +631,18 @@ msgid ""
 "letter — it is likely that your installation is already configured for UTF-8 "
 "and that you have been sent a document encoded in Western ISO."
 msgstr ""
+"Zatem, jeśli tekst w języku francuskim wygląda normalnie za wyjątkiem np. "
+"liter z zaznaczonym akcentem i niektórych innych symboli, które zostały "
+"zastąpione przez takie ciągi znaków jak “Ã©” czy Ã¨” bądź “Ã§”, to "
+"najprawdopodobniej mamy do czynienia z plikiem zakodowanym w UTF-8, który "
+"został odczytany jako np. ISO-8859-2 albo ISO-8859-15. Jest to oznaka, że "
+"lokalna instalacja systemu nie została jeszcze przekonfigurowana na UTF-8. "
+"Jeśli zamiast liter z zaznaczonym akcentem widnieją znaki zapytania - nawet "
+"jeśli znaki zapytania zdają się zastępować również litery, które powinny "
+"były pojawić się bezpośrednio po literach zaakcentowanych - wówczas zapewne "
+"zachodzi sytuacja odwrotna, tzn. nasz system jest poprawnie ustawiony na "
+"kodowanie UTF-8, natomiast plik, którego odczytu dokonujemy jest zapisany w "
+"zachodnim ISO."
 
 #. Tag: para
 #, no-c-format
@@ -604,6 +653,11 @@ msgid ""
 "which allows recognition of parts of the text even when some characters are "
 "missing."
 msgstr ""
+"To tyle jeśli chodzi o \"proste\" przypadki. Mamy z nimi do czynienia "
+"jedynie w zachodniej  kulturze, jako, że standard Unicode został "
+"zaprojektowany tak, by maksymalnie pokrywał się ze starszymi kodowaniami "
+"języków zachodnich opartych na łacińskim alfabecie, co umożliwia poprawne "
+"odczytanie części tekstu nawet gdy brakuje pojedynczych znaków."
 
 #. Tag: para
 #, no-c-format
@@ -617,6 +671,15 @@ msgid ""
 "describe this phenomenon. When it appears, diagnosis is more complex and the "
 "simplest solution is often to simply migrate to UTF-8 on both sides."
 msgstr ""
+"W bardziej złożonych sytuacjach, przykładowo przy kontakcie dwóch systemów "
+"bądź środowisk używających języków opartych na różnych alfabetach, rezultaty "
+"często mogą być całkowicie nieczytelne - ciągi abstrakcyjnych symboli nie "
+"powiązanych ze sobą w żaden logiczny sposób. Jest to szczególnie powszechna "
+"sytuacja w przypadku języków azjatyckich, z uwagi na mnogość i zróżnicowanie "
+"ich systemów pisma. W języku japońskim narodziło się nawet specjalne "
+"określenie na to zjawisko - <foreignphrase>mojibake</foreignphrase>. Gdy do "
+"niego dochodzi, najprostszym rozwiązaniem jest zazwyczaj  po prostu migracja "
+"systemu do UTF-8."
 
 #. Tag: para
 #, no-c-format
@@ -629,6 +692,14 @@ msgid ""
 "illustrates a UTF-8 environment containing directory names encoded in "
 "ISO-8859-15, and the use of <command>convmv</command> to rename them."
 msgstr ""
+"Jeśli chodzi o nazwy plików, migracja jest względnie prostym procesem. "
+"Specjalnie do tego zastosowania zostało stworzone narzędzie <command>convmv</"
+"command>, będące częścią pakietu o tej samej nazwie; pozwala ono konwertować "
+"nazwy plików z jednego kodowania na drugie. Użycie tego narzędzia jest "
+"relatywnie proste, ale zalecamy podział całej procedury na dwa etapy w celu "
+"uniknięcia niespodzianek. Następujący przykład ilustruje konwersję nazw "
+"katalogów zakodowanych w ISO-8859-15 przy użyciu narzędzia <command>convmv</"
+"command> w systemie ustawionym na UTF-8."
 
 #. Tag: screen
 #, no-c-format
