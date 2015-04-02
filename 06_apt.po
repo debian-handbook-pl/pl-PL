@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-01 19:35+0100\n"
+"PO-Revision-Date: 2015-04-02 22:12+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 337,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 341,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2287,25 +2287,29 @@ msgstr "Dla tych, którzy potrzebowaliby osobnej aplikacji i więcej szczegół�
 msgid "Once the appropriate keys are in the keyring, APT will check the signatures before any risky operation, so that front-ends will display a warning if asked to install a package whose authenticity can't be ascertained."
 msgstr "Kiedy już odpowiednie klucze znajdą się w bazie, APT będzie sprawdzał ich podpisy przed każdą ryzykowną operacją, dzięki temu interfejsy wyświetlą ostrzeżenie w przypadku gdy zażądano instalacji pakietu, którego wiarygodność nie może zostać ustalona."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Upgrading from One Stable Distribution to the Next"
-msgstr ""
+msgstr "Uaktualnienie z Jednej Stabilnej Dystrybucji do Następnej"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "One of the best-known features of Debian is its ability to upgrade an installed system from one stable release to the next: <foreignphrase>dist-upgrade</foreignphrase> — a well-known phrase — has largely contributed to the project's reputation. With a few precautions, upgrading a computer can take as little as a few minutes, or a few dozen minutes, depending on the download speed from the package repositories."
-msgstr ""
+msgstr "Jedna z najbardziej rozpoznawalnych funkcji Debiana jest jego zdolność uaktualniania całego systemu z jednego stabilnego wydania do następnego: <foreignphrase>dist-upgrade</foreignphrase> — dobrze znana fraza — znacznie przyczyniła się do reputacji projektu. Przy zachowaniu odpowiedniej troski, uaktualnienie może zająć zaledwie kilka minut lub kilkanaście minut, zależnie od prędkości pobierania z repozytoriów pakietów."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Recommended Procedure"
-msgstr ""
+msgstr "Zalecana Procedura"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Since Debian has quite some time to evolve in-between stable releases, you should read the release notes before upgrading."
-msgstr ""
+msgstr "W związku z tym, że Debian ma sporo czasu do ewolucji pomiędzy stabilnymi wydaniami, przed uaktualnieniem należy przeczytać informacje o wydaniu."
 
 #. Tag: title
 #, no-c-format
