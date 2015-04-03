@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-02 22:12+0100\n"
+"PO-Revision-Date: 2015-04-03 23:48+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2311,25 +2311,28 @@ msgstr "Zalecana Procedura"
 msgid "Since Debian has quite some time to evolve in-between stable releases, you should read the release notes before upgrading."
 msgstr "W związku z tym, że Debian ma sporo czasu do ewolucji pomiędzy stabilnymi wydaniami, przed uaktualnieniem należy przeczytać informacje o wydaniu."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Release notes"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Informacje o wydaniu"
 
 #. Tag: para
 #, no-c-format
 msgid "The release notes for an operating system (and, more generally, for any software) are a document giving an overview of the software, with some details concerning the particularities of one version. These documents are generally short compared to the complete documentation, and they usually list the features which have been introduced since the previous version. They also give details on upgrading procedures, warnings for users of previous versions, and sometimes errata."
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Release notes are available online: the release notes for the current stable release have a dedicated URL, while older release notes can be found with their codenames: <ulink type=\"block\" url=\"http://www.debian.org/releases/stable/releasenotes\" /> <ulink type=\"block\" url=\"http://www.debian.org/releases/squeeze/releasenotes\" />"
-msgstr ""
+msgstr "Informacje o wydaniu są dostępne online: informacje o aktualnym wydaniu posiadają osobny adres URL, podczas gdy informacje o starszych wydaniach można znaleźć według ich nazwy kodowej: <ulink type=\"block\" url=\"http://www.debian.org/releases/stable/releasenotes\" /> <ulink type=\"block\" url=\"http://www.debian.org/releases/squeeze/releasenotes\" />"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In this section, we will focus on upgrading a <emphasis role=\"distribution\">Squeeze</emphasis> system to <emphasis role=\"distribution\">Wheezy</emphasis>. This is a major operation on a system; as such, it is never 100% risk-free, and should not be attempted before all important data has been backed up."
-msgstr ""
+msgstr "W tej sekcji zostanie położony nacisk na uaktualnienie z systemu <emphasis role=\"distribution\">Squeeze</emphasis> do <emphasis role=\"distribution\">Wheezy</emphasis>. W związku z tym, że jest to znacząca zmiana systemu, nigdy nie jest w 100% wolna od ryzyka i nie powinna być podejmowana bez uprzedniego wykonania kopii zapasowej wszystkich ważnych danych."
 
 #. Tag: para
 #, no-c-format
