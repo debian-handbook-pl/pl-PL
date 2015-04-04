@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-03 23:48+0100\n"
+"PO-Revision-Date: 2015-04-04 17:43+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 341,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 350,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2317,10 +2317,11 @@ msgstr "W związku z tym, że Debian ma sporo czasu do ewolucji pomiędzy stabil
 msgid "<emphasis>BACK TO BASICS</emphasis> Release notes"
 msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Informacje o wydaniu"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The release notes for an operating system (and, more generally, for any software) are a document giving an overview of the software, with some details concerning the particularities of one version. These documents are generally short compared to the complete documentation, and they usually list the features which have been introduced since the previous version. They also give details on upgrading procedures, warnings for users of previous versions, and sometimes errata."
-msgstr ""
+msgstr "Informacje o wydaniu dotyczące systemu operacyjnego (oraz ogólnie oprogramowania) to dokument ukazujący przegląd oprogramowania, z uwzględnieniem szczegółów konkretnej wersji. Dokumenty te są zazwyczaj krótkie, w porównaniu do pełnej dokumentacji, oraz zawierają listę nowych funkcji wprowadzonych od czasu poprzedniej wersji. Często opisują też procedurę uaktualnienia, ostrzeżenia dla użytkowników poprzednich wersji, a czasami wykaz błędów."
 
 # mateunho
 #. Tag: para
@@ -2334,10 +2335,11 @@ msgstr "Informacje o wydaniu są dostępne online: informacje o aktualnym wydani
 msgid "In this section, we will focus on upgrading a <emphasis role=\"distribution\">Squeeze</emphasis> system to <emphasis role=\"distribution\">Wheezy</emphasis>. This is a major operation on a system; as such, it is never 100% risk-free, and should not be attempted before all important data has been backed up."
 msgstr "W tej sekcji zostanie położony nacisk na uaktualnienie z systemu <emphasis role=\"distribution\">Squeeze</emphasis> do <emphasis role=\"distribution\">Wheezy</emphasis>. W związku z tym, że jest to znacząca zmiana systemu, nigdy nie jest w 100% wolna od ryzyka i nie powinna być podejmowana bez uprzedniego wykonania kopii zapasowej wszystkich ważnych danych."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Another good habit which makes the upgrade easier (and shorter) is to tidy your installed packages and keep only the ones that are really needed. Helpful tools to do that include <command>aptitude</command>, <command>deborphan</command> and <command>debfoster</command> (see <xref linkend=\"sect.automatic-tracking\" />). For example, you can use the following command, and then use <command>aptitude</command>'s interactive mode to double check and fine-tune the scheduled removals:"
-msgstr ""
+msgstr "Kolejnym dobrym zwyczajem ułatwiającym uaktualnienie (i skracającym je) jest porządkowanie zainstalowanych pakietów i zachowywanie tylko tych, które są naprawdę wymagane. Pomocnymi narzędziami do tego celu mogą być <command>aptitude</command>, <command>deborphan</command> i <command>debfoster</command> (spójrz na fiszkę <xref linkend=\"sect.automatic-tracking\" />). Na przykład można użyć jednej ze wspomnianych komend, a następnie użyć trybu interaktywnego <command>aptitude</command> w celu sprawdzenia i dopracowania zaplanowanych usunięć:"
 
 # mateunho
 #. Tag: screen
@@ -2345,20 +2347,23 @@ msgstr ""
 msgid "# <userinput>deborphan | xargs aptitude --schedule-only remove</userinput>\n"
 msgstr "# <userinput>deborphan | xargs aptitude --schedule-only remove</userinput>\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Now for the upgrading itself. First, you need to change the <filename>/etc/apt/sources.list</filename> file to tell APT to get its packages from <emphasis role=\"distribution\">Wheezy</emphasis> instead of <emphasis role=\"distribution\">Squeeze</emphasis>. If the file only contains references to <emphasis role=\"distribution\">Stable</emphasis> rather than explicit codenames, the change isn't even required, since <emphasis role=\"distribution\">Stable</emphasis> always refers to the latest released version of Debian. In both cases, the database of available packages must be refreshed (with the <command>apt-get update</command> command or the refresh button in <command>synaptic</command>)."
-msgstr ""
+msgstr "Przechodząc do samego uaktualnienia. Najpierw należy zmienić plik <filename>/etc/apt/sources.list</filename>, aby APT wiedział, że musi pobierać pakiety dla <emphasis role=\"distribution\">Wheezy</emphasis> zamiast <emphasis role=\"distribution\">Squeeze</emphasis>. Jeżeli plik zawiera tylko odwołania do <emphasis role=\"distribution\">Stabilnego</emphasis> zamiast bezpośrednich nazw kodowych, to zmiana nie jest nawet wymagana, ponieważ <emphasis role=\"distribution\">Stabilny</emphasis> zawsze odnosi się do najnowszej wydanej wersji Debiana. W obu przypadkach baza dostępnych pakietów musi zostać odświeżona (za pomocą komendy <command>apt-get update</command> lub przycisku odświeżania w <command>synaptic</command>)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Once these new package sources are registered, you should first do a minimal upgrade with <command>apt-get upgrade</command>. By doing the upgrade in two steps, we ease the job of the package management tools and often ensure that we have the latest versions of those, which might have accumulated bugfixes and improvements required to complete the full distribution upgrade."
-msgstr ""
+msgstr "Kiedy już nowe źródła pakietów zostaną zarejestrowane, należy najpierw wykonać minimalne uaktualnienie za pomocą <command>apt-get upgrade</command>. Wykonywanie uaktualnienia w dwóch krokach ułatwia pracę narzędziom zarządzającym pakietami i często zapewnia, że używane są ich najnowsze wersje, mogące posiadać poprawki błędów i ulepszenia wymagane do wykonania pełnego uaktualnienia dystrybucji."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Once this first upgrade is done, it is time to handle the upgrade itself, either with <command>apt-get dist-upgrade</command>, <command>aptitude</command>, or <command>synaptic</command>. You should carefully check the suggested actions before applying them: you might want to add suggested packages or deselect packages which are only recommended and known not to be useful. In any case, the front-end should come up with a scenario ending in a coherent and up-to-date <emphasis role=\"distribution\">Wheezy</emphasis> system. Then, all you need is to do is wait while the required packages are downloaded, answer the Debconf questions and possibly those about locally modified configuration files, and sit back while APT does its magic."
-msgstr ""
+msgstr "Po wykonaniu pierwszego uaktualnienia nadchodzi czas na zrobienie właściwego uaktualnienia za pomocą <command>apt-get dist-upgrade</command>, <command>aptitude</command>, lub <command>synaptic</command>. Należy przy tym starannie sprawdzić sugerowane akcje przed ich zastosowaniem: może być pożądane dodanie sugerowanych pakietów lub odznaczenie pakietów, które są tylko rekomendowane, ale nie będą używane. W każdym razie użycie interfejsu powinno zakończyć się otrzymaniem spójnego i aktualnego systemu <emphasis role=\"distribution\">Wheezy</emphasis>. Następnie jedyne co trzeba zrobić, to poczekać, aż zostaną pobrane wymagane pakiety, odpowiedzieć na pytania Debconfa oraz te dotyczące modyfikowanych lokalnie plików konfiguracyjnych, a potem usiąść wygodnie, podczas gdy APT będzie czynił swoją magię."
 
 #. Tag: title
 #, no-c-format
