@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-05 11:09+0100\n"
+"PO-Revision-Date: 2015-04-06 23:02+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 359,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 364,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2419,30 +2419,35 @@ msgstr "W zależności od dotkliwości błędu, nowa wersja pakietu mogła zosta
 msgid "Sometimes the fixed package isn't available in this section yet because it is pending a validation by the Stable Release Managers. You can verify if that's the case on their web page. Packages listed there aren't available yet, but at least you know that the publication process is ongoing. <ulink type=\"block\" url=\"http://release.debian.org/proposed-updates/stable.html\" />"
 msgstr "Czasami naprawiony pakiet nie jest jeszcze dostępny w tej sekcji, ponieważ czeka na zatwierdzenie przez Menedzerów Stabilnego Wydania (Stable Release Managers). Można to sprawdzić na ich stronie internetowej. Pakiety na znajdującej się tam liście nie sa jeszcze dostępne, ale przynajmniej wiadomo, że trwa proces ich publikacji. <ulink type=\"block\" url=\"http://release.debian.org/proposed-updates/stable.html\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Keeping a System Up to Date"
-msgstr ""
+msgstr "Utrzymywanie Aktualności Systemu"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The Debian distribution is dynamic and changes continually. Most of the changes are in the <emphasis role=\"distribution\">Testing</emphasis> and <emphasis role=\"distribution\">Unstable</emphasis> versions, but even <emphasis role=\"distribution\">Stable</emphasis> is updated from time to time, mostly for security-related fixes. Whatever version of Debian a system runs, it is generally a good idea to keep it up to date, so that you can get the benefit of recent evolutions and bug fixes."
-msgstr ""
+msgstr "Debian jest dynamiczną dystrybucją, która nieustannie się zmienia. Większość zmian zawiera się w <emphasis role=\"distribution\">Testowym</emphasis> i <emphasis role=\"distribution\">Niestabilnym</emphasis>, ale nawet <emphasis role=\"distribution\">Stabilny</emphasis> jest od czasu do czasu aktualizowany, głównie w związku z poprawkami bezpieczeństwa. Niezależnie od wersji Debiana, pod którą działa system, przyjętą regułą jest utrzymywanie go w stanie zaktualizowanym tak, aby czerpać korzyści z najnowszych zmian i poprawek błędów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "While it is of course possible to periodically run a tool to check for available updates and run the upgrades, such a repetitive task is tedious, especially when it needs to be performed on several machines. Fortunately, like many repetitive tasks, it can be partly automated, and a set of tools have already been developed to that effect."
-msgstr ""
+msgstr "Biorąc pod uwagę, że możliwe jest okresowe uruchamianie narzędzi do sprawdzania dostępnych aktualizacji i przeprowadzania uaktualnienia, takie powtarzalne zadanie jest uciążliwe, zwłaszcza w przypadku, gdy należy je wykonać na kilku maszynach. Na szczęście, podobnie do innych powtarzalnych zadań, może być częściowo zautomatyzowane, a w tym celu stworzono odpowiedni zestaw narzędzi."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The first of these tools is <command>apticron</command>, in the package of the same name. Its main effect is to run a script daily (via <command>cron</command>). The script updates the list of available packages, and, if some installed packages are not in the latest available version, it sends an email with a list of these packages along with the changes that have been made in the new versions. Obviously, this package mostly targets users of Debian <emphasis role=\"distribution\">Stable</emphasis>, since the daily emails would be very long for the faster paced versions of Debian. When updates are available, <command>apticron</command> automatically downloads them. It does not install them — the administrator will still do it — but having the packages already downloaded and available locally (in APT's cache) makes the job faster."
-msgstr ""
+msgstr "Pierwszym ze wspomnianych narzędzi jest <command>apticron</command>, z pakietu o tej samej nazwie. Jego głównym działaniem jest codzienne uruchamianie skryptu (poprzez <command>cron</command>). Skrypt ten aktualizuje listę dostępnych pakietów i jeżeli któreś z zainstalowanych pakietów nie są w najnowszej wersji, wysyła wiadomość e-mail z listą tych pakietów oraz zmianami wprowadzonymi w ich nowych wersjach. Oczywiście pakiet ten jest kierowany głównie do użytkowników Debiana <emphasis role=\"distribution\">Stabilnego</emphasis>, ponieważ dla szybciej postępujących wersji Debiana codzienne e-maile byłyby bardzo długie. Kiedy sa dostępne aktualizacje, <command>apticron</command> pobiera je automatycznie. Nie instaluje ich — zadanie to nadal pozostaje dla administratora — ale posiadanie pobranych pakietów dostępnych lokalnie (w pamięci podręcznej APTa) przyspiesza pracę."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Administrators in charge of several computers will no doubt appreciate being informed of pending upgrades, but the upgrades themselves are still as tedious as they used to be, which is where the <filename>/etc/cron.daily/apt</filename> script (in the <emphasis role=\"pkg\">apt</emphasis> package) comes in handy. This script is also run daily (and non-interactively) by <command>cron</command>. To control its behavior, use APT configuration variables (which are therefore stored in a file under <filename>/etc/apt/apt.conf.d/</filename>). The main variables are:"
-msgstr ""
+msgstr "Administratorzy mający pod opieką kilka komputerów z pewnością docenią informacje o oczekujących uaktualnieniach, ale same uaktualnienia nadal są tak samo uciążliwe, jak były wcześniej, dlatego z pomocą przychodzi skrypt <filename>/etc/cron.daily/apt</filename> (z pakietu <emphasis role=\"pkg\">apt</emphasis>). Skrypt ten również uruchamiany jest codziennie (bez trybu interaktywnego) przez <command>cron</command>. W celu kontroli jego zachowania można użyć zmiennych konfiguracyjnych APTa (zapisanych w pliku, w katalogu <filename>/etc/apt/apt.conf.d/</filename>). Głównymi zmiennymi są:"
 
 # mateunho
 #. Tag: term
