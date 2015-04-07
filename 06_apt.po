@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-06 23:02+0100\n"
+"PO-Revision-Date: 2015-04-07 21:20+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 364,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 380,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2455,10 +2455,11 @@ msgstr "Administratorzy mający pod opieką kilka komputerów z pewnością doce
 msgid "<literal>APT::Periodic::Update-Package-Lists</literal>"
 msgstr "<literal>APT::Periodic::Update-Package-Lists</literal>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "This option allows you to specify the frequency (in days) at which the package lists are refreshed. <command>apticron</command> users can do without this variable, since <command>apticron</command> already does this task."
-msgstr ""
+msgstr "Ta opcja pozwala ustawić częstotliwość (w dniach) odświeżania listy pakietów. Użytkownicy <command>apticron</command> mogą pominąć tą zmienną, ponieważ <command>apticron</command> sam ustawia to zadanie."
 
 # mateunho
 #. Tag: term
@@ -2466,10 +2467,11 @@ msgstr ""
 msgid "<literal>APT::Periodic::Download-Upgradeable-Packages</literal>"
 msgstr "<literal>APT::Periodic::Download-Upgradeable-Packages</literal>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Again, this option indicates a frequency (in days), this time for the downloading of the actual packages. Again, <command>apticron</command> users won't need it."
-msgstr ""
+msgstr "Podobnie, ta opcja wskazuje częstotliwość (w dniach), ale tym razem pobierania pakietów. Znowu, użytkownicy <command>apticron</command> nie będą jej potrzebować."
 
 # mateunho
 #. Tag: term
@@ -2477,10 +2479,11 @@ msgstr ""
 msgid "<literal>APT::Periodic::AutocleanInterval</literal>"
 msgstr "<literal>APT::Periodic::AutocleanInterval</literal>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "This option covers a feature that <command>apticron</command> doesn't have. It controls how often obsolete packages (those not referenced by any distribution anymore) are removed from the APT cache. This keeps the APT cache at a reasonable size and means that you don't need to worry about that task."
-msgstr ""
+msgstr "Ta opcja udostępnia funkcję, której nie ma <command>apticron</command>. Kontroluje, jak często przestarzałe pakiety (te, do których nie odwołuje się już żadna dystrybucja) są usuwane z pamięci podręcznej APTa. Pozwala to utrzymać rozsądny rozmiar pamięci podręcznej APTa, dzięki czemu nie trzeba się już przejmować ręcznym wykonywaniem tego zadania."
 
 # mateunho
 #. Tag: term
@@ -2494,15 +2497,17 @@ msgstr "<literal>APT::Periodic::Unattended-Upgrade</literal>"
 msgid "<primary><emphasis role=\"pkg\">unattended-upgrades</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">unattended-upgrades</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "When this option is enabled, the daily script will execute <command>unattended-upgrade</command> (from the <emphasis role=\"pkg\">unattended-upgrades</emphasis> package) which — as its name suggest — can automatize the upgrade process for some packages (by default it only takes care of security updates, but this can be customized in <filename>/etc/apt/apt.conf.d/50unattended-upgrades</filename>). Note that this option can be set with the help of debconf by running <command>dpkg-reconfigure -plow unattended-upgrades</command>."
-msgstr ""
+msgstr "Kiedy włączona jest ta opcja, codzienny skrypt będzie uruchamiał <command>unattended-upgrade</command> (z pakietu <emphasis role=\"pkg\">unattended-upgrades</emphasis>), który — jak sama nazwa wskazuje — może zautomatyzować uaktualnianie niektórych pakietów (domyślnie zajmuje się tylko aktualizacjami bezpieczeństwa, ale można to dostosować w <filename>/etc/apt/apt.conf.d/50unattended-upgrades</filename>). Należy zauważyć, ze ta opcja może być ustawiona przy pomocy debconfa po uruchomieniu <command>dpkg-reconfigure -plow unattended-upgrades</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Other options can allow you to control the cache cleaning behavior with more precision. They are not listed here, but they are described in the <filename>/etc/cron.daily/apt</filename> script."
-msgstr ""
+msgstr "Inne opcje pozwalają bardziej precyzyjnie kontrolować czyszczenie pamięci podręcznej. Chociaż nie są tutaj wymienione, to są opisane w skrypcie <filename>/etc/cron.daily/apt</filename>."
 
 # mateunho
 #. Tag: indexterm
@@ -2510,15 +2515,17 @@ msgstr ""
 msgid "<primary><emphasis role=\"pkg\">gnome-packagekit</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">gnome-packagekit</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "These tools work very well for servers, but desktop users generally prefer a more interactive system. That is why the “Graphical desktop environment” task installs <emphasis role=\"pkg\">gnome-packagekit</emphasis>. It provides an icon in the notification area of desktop environments when updates are available; clicking on this icon then runs <command>gpk-update-viewer</command>, a simplified interface to perform updates. You can browse through available updates, read the short description of the relevant packages and the corresponding <filename>changelog</filename> entries, and select whether to apply the update or not on a case-by-case basis."
-msgstr ""
+msgstr "Wspomniane narzędzia sprawdzają się bardzo dobrze w przypadku serwerów, ale użytkownicy domowi częściej wybierają bardziej interaktywny system. Z tego powodu zadanie \"Graphical desktop environment\" instaluje <emphasis role=\"pkg\">gnome-packagekit</emphasis>. Pokazuje on ikonę, w obszarze powiadomień środowisk graficznych, kiedy są dostępne aktualizacje; kliknięcie tej ikony uruchamia <command>gpk-update-viewer</command>, uproszczony interfejs do wykonywania aktualizacji. Można przeglądać dostępne aktualizacje, czytać krótkie opisy powiązanych pakietów i odpowiadające wpisy <filename>changelog</filename>, a następnie po kolei zaznaczać, czy zastosować aktualizację, czy nie."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Upgrading with <command>gpk-update-viewer</command>"
-msgstr ""
+msgstr "Uaktualnianie z użyciem <command>gpk-update-viewer</command>"
 
 # mateunho
 #. Tag: title
