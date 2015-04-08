@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-07 21:20+0100\n"
+"PO-Revision-Date: 2015-04-08 23:26+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2545,10 +2545,11 @@ msgstr "<primary>upgrade</primary><secondary>automatic system upgrade</secondary
 msgid "<primary>automatic upgrade</primary>"
 msgstr "<primary>automatic upgrade</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Since Falcot Corp has many computers but only limited manpower, its administrators try to make upgrades as automatic as possible. The programs in charge of these processes must therefore run with no human intervention."
-msgstr ""
+msgstr "W związku z tym, że Falcot Corp posiada wiele komputerów, ale ograniczoną siłę roboczą, jego administratorzy starają się jak najbardziej zautomatyzować proces uaktualniania. Dlatego programy zarządzające tym procesem powinny działać bez interwencji człowieka."
 
 # mateunho
 #. Tag: title
@@ -2556,10 +2557,11 @@ msgstr ""
 msgid "Configuring <command>dpkg</command>"
 msgstr "Konfigurowanie <command>dpkg</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "As we have already mentioned (see sidebar <xref linkend=\"sidebar.questions-conffiles\" />), <command>dpkg</command> can be instructed not to ask for confirmation when replacing a configuration file (with the <literal>--force-confdef --force-confold</literal> options). Interactions can, however, have three other sources: some come from APT itself, some are handled by <command>debconf</command>, and some happen on the command line due to package configuration scripts."
-msgstr ""
+msgstr "Jak już zostało wspomniane (spójrz na fiszkę <xref linkend=\"sidebar.questions-conffiles\" />), <command>dpkg</command> może zostać poinstruowany, aby pytać o potwierdzenie w przypadku zastępowania plików konfiguracyjnych (z opcjami <literal>--force-confdef --force-confold</literal>). Jednakże interakcje mogą mieć trzy inne źródła: jedne pochodzą z samego APTa, inne są obsługiwane przez <command>debconf</command>, a niektóre występują w linii komend w powiązaniu do skryptów konfiguracyjnych pakietu."
 
 # mateunho
 #. Tag: title
@@ -2567,10 +2569,14 @@ msgstr ""
 msgid "Configuring APT"
 msgstr "Konfigurowanie APTa"
 
+# mateunho
+# nie wiem, czy w cudzysłowie powinno być "tak", czy "yes"
+# 1* wynikające z lokalizacji programu (polski interfejs zakłada "tak")
+# 2* kontekstowe, w przypadku opisywania wspomnianej wcześniej opcji programu
 #. Tag: para
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "The case of APT is simple: the <literal>-y</literal> option (or <literal>--assume-yes</literal>) tells APT to consider the answer to all its questions to be “yes”."
-msgstr ""
+msgstr "W przypadku APTa sprawa jest prosta: opcja <literal>-y</literal> (lub <literal>--assume-yes</literal>) mówi programowi, aby na wszystkie odpowiedzi odpowiadał \"tak\"."
 
 # mateunho
 #. Tag: title
