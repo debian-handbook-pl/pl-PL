@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-08 23:26+0100\n"
+"PO-Revision-Date: 2015-04-09 21:47+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 380,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 392,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2584,35 +2584,41 @@ msgstr "W przypadku APTa sprawa jest prosta: opcja <literal>-y</literal> (lub <l
 msgid "Configuring <command>debconf</command>"
 msgstr "Konfigurowanie <command>debconf</command>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The case of <command>debconf</command> deserves more details. This program was, from its inception, designed to control the relevance and volume of questions displayed to the user, as well as the way they are shown. That is why its configuration requests a minimal priority for questions; only questions above the minimal priority are displayed. <command>debconf</command> assumes the default answer (defined by the package maintainer) for questions which it decided to skip."
-msgstr ""
+msgstr "Omówienie przypadku <command>debconf</command> zasługuje na więcej uwagi. Od początku istnienia tego programu, był on projektowany do kontroli trafności i ilości pytań wyświetlanych użytkownikowi oraz sposobu w jaki są pokazywane. Z tego powodu jego konfiguracja wymaga nadania minimalnego priorytetu dla pytań; tylko pytania powyżej minimalnego priorytetu są wyświetlane. <command>debconf</command> zakłada domyślną odpowiedź (zdefiniowaną przez opiekuna pakietu) dla pytań, które zdecydował pominąć."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The other relevant configuration element is the interface used by the front-end. If you choose <literal>noninteractive</literal> out of the choices, all user interaction is disabled. If a package tries to display an informative note, it will be sent to the administrator by email."
-msgstr ""
+msgstr "Kolejnym znaczącym elementem konfiguracji jest sposób komunikacji używany przez interfejs. Jeżeli zostanie wybrany <literal>noninteractive</literal>, to wszystkie interakcje z użytkownikiem zostaną wyłączone. W przypadku, gdy pakiet będzie próbował wyświetlić informację, zostanie ona wysłana do administratora w wiadomości e-mail."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To reconfigure <command>debconf</command>, use the <command>dpkg-reconfigure</command> tool from the <emphasis role=\"pkg\">debconf</emphasis> package; the relevant command is <command>dpkg-reconfigure debconf</command>. Note that the configured values can be temporarily overridden with environment variables when needed (for instance, <varname>DEBIAN_FRONTEND</varname> controls the interface, as documented in the <citerefentry><refentrytitle>debconf</refentrytitle><manvolnum>7</manvolnum></citerefentry> manual page)."
-msgstr ""
+msgstr "W celu zmiany konfiguracji <command>debconf</command> należy użyć narzędzia <command>dpkg-reconfigure</command> z pakietu <emphasis role=\"pkg\">debconf</emphasis>; omawianą komendą jest <command>dpkg-reconfigure debconf</command>. Warto zauważyć, że w razie potrzeby wartości konfiguracyjne mogą być tymczasowo nadpisane zmiennymi środowiskowymi (przykładowo <varname>DEBIAN_FRONTEND</varname> kontroluje interfejs, co zostało opisane na stronach pomocy <citerefentry><refentrytitle>debconf</refentrytitle><manvolnum>7</manvolnum></citerefentry>)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Handling Command Line Interactions"
-msgstr ""
+msgstr "Obsługa Interakcji Linii Komend"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The last source of interactions, and the hardest to get rid of, is the configuration scripts run by <command>dpkg</command>. There is unfortunately no standard solution, and no answer is overwhelmingly better than another."
-msgstr ""
+msgstr "Ostatnim źródłem interakcji, najtrudniejszym do ominięcia, są skrypty konfiguracyjne uruchamiane przez <command>dpkg</command>. Niestety nie mają one standardowego rozwiązania, a żadna odpowiedź nie jest znacząco lepsza niż inne."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The common approach is to suppress the standard input by redirecting the empty content of <filename>/dev/null</filename> into it with <command><replaceable>command</replaceable> &lt;/dev/null</command>, or to feed it with an endless stream of newlines. None of these methods are 100 % reliable, but they generally lead to the default answers being used, since most scripts consider a lack of reply as an acceptance of the default value."
-msgstr ""
+msgstr "Najczęstszym podejściem jest tłumienie standardowego wejścia przez przekierowanie do niego pustej zawartości <filename>/dev/null</filename> za pomocą <command><replaceable>komenda</replaceable> &lt;/dev/null</command>, albo podanie niekończącego się strumienia nowych linii. Żadna z tych metod nie jest w 100% niezawodna, ale zazwyczaj prowadzą do użycia domyślnych odpowiedzi, ponieważ większość skryptów uważa brak odpowiedzi jako akceptację domyślnej wartości."
 
 # mateunho
 #. Tag: title
