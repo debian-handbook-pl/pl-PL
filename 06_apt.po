@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-09 21:47+0100\n"
+"PO-Revision-Date: 2015-04-10 23:06+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2626,15 +2626,17 @@ msgstr "Najczęstszym podejściem jest tłumienie standardowego wejścia przez p
 msgid "The Miracle Combination"
 msgstr "Cudowne Połączenie"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "By combining the previous elements, it is possible to design a small but rather reliable script which can handle automatic upgrades."
-msgstr ""
+msgstr "Poprzez połączenie wcześniej wspomnianych elementów możliwe jest zaprojektowanie małego, dosyć niezawodnego skryptu do wykonywania automatycznych uaktualnień."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Non-interactive upgrade script"
-msgstr ""
+msgstr "Skrypt uaktualniający bez interakcji"
 
 # mateunho
 #. Tag: programlisting
