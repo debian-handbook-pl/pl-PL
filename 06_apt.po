@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-10 23:06+0100\n"
+"PO-Revision-Date: 2015-04-11 19:47+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 392,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 402,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2648,30 +2648,35 @@ msgstr ""
 "export DEBIAN_FRONTEND=noninteractive\n"
 "yes '' | apt-get -y -o Dpkg::Options::=\"--force-confdef\" -o Dpkg::Options::=\"--force-confold\" dist-upgrade\n"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>IN PRACTICE</emphasis> The Falcot Corp case"
-msgstr ""
+msgstr "<emphasis>W PRAKTYCE</emphasis> Przypadek Falcot Corp"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Falcot computers are a heterogeneous system, with machines having various functions. Administrators will therefore pick the most relevant solution for each computer."
-msgstr ""
+msgstr "Komputery w Falcot składają się na zróżnicowany system, zawierający maszyny przeznaczone do różnych zadań. Z tego powodu dla każdego komputera administratorzy muszą wybrać najbardziej odpowiednie rozwiązanie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In practice, the servers running <emphasis role=\"distribution\">Wheezy</emphasis> are configured with the “miracle combination” above, and are kept up to date automatically. Only the most critical servers (the firewalls, for instances) are set up with <command>apticron</command>, so that upgrades always happen under the supervision of an administrator."
-msgstr ""
+msgstr "W praktyce, serwery działające pod kontrolą <emphasis role=\"distribution\">Wheezy</emphasis> są skonfigurowane opisanym wyżej \"cudownym połączeniem\", dzięki czemu automatycznie zachowują aktualność. Jedynie najbardziej krytyczne serwery (na przykład zapory sieciowe) używają <command>apticron</command>, po to żeby uaktualnienia zawsze przebiegały pod nadzorem administratorów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The office workstations in the administrative services also run <emphasis role=\"distribution\">Wheezy</emphasis>, but they are equipped with <emphasis role=\"pkg\">gnome-packagekit</emphasis>, so that users trigger the upgrades themselves. The rationale for this decision is that if upgrades happen without an explicit action, the behavior of the computer might change unexpectedly, which could cause confusion for the main users."
-msgstr ""
+msgstr "Biurowe stacje robocze w dziale administracji również działają pod kontrolą <emphasis role=\"distribution\">Wheezy</emphasis>, ale są wyposażone w  <emphasis role=\"pkg\">gnome-packagekit</emphasis>, żeby użytkownicy mogli sami wykowywać uaktualnienia. Powodem tej decyzji jest fakt, że jeżeli uaktualnienia uruchamiają się bez ostrzeżenia, to zachowanie komputera może się niespodziewanie zmienić, co zakłóca pracę najważniejszych użytkowników."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "In the lab, the few computers using <emphasis role=\"distribution\">Testing</emphasis> — to take advantage of the latest software versions — are not upgraded automatically either. Administrators only configure APT to prepare the upgrades but not enact them; when they decide to upgrade (manually), the tedious parts of refreshing package lists and downloading packages will be avoided, and administrators can focus on the really useful part."
-msgstr ""
+msgstr "W laboratorium, kilka komputerów używających <emphasis role=\"distribution\">Testowego</emphasis> — w celu wykorzystania najnowszych wersji oprogramowania — również nie jest uaktualnianych automatycznie. Administratorzy jedynie konfigurują APTa do przygotowania uaktualnienia, ale bez instalacji; kiedy już zdecydują o uaktualnieniu (ręcznym), uciążliwa część odświeżania list pakietów i pobierania pakietów zostanie pominięta, a administratorzy mogą w pełni skupić się na produktywnym działaniu."
 
 # mateunho
 #. Tag: title
