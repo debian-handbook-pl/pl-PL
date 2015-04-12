@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-11 19:47+0100\n"
+"PO-Revision-Date: 2015-04-12 21:52+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 402,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 408,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 # mateunho
 #. Tag: keyword
@@ -2684,15 +2684,17 @@ msgstr "W laboratorium, kilka komputerów używających <emphasis role=\"distrib
 msgid "Searching for Packages"
 msgstr "Wyszukiwanie Pakietów"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "With the large and ever-growing amount of software in Debian, there emerges a paradox: Debian usually has a tool for most tasks, but that tool can be very difficult to find amongst the myriad other packages. The lack of appropriate ways to search for (and to find) the right tool has long been a problem. Fortunately, this problem has almost entirely been solved."
-msgstr ""
+msgstr "W ogromnej, ciągle rosnącej bazie oprogramowania dla Debiana powstaje pewien paradoks: Debian zazwyczaj ma narzędzie do wykonywania większości zadań, ale to narzędzie może być bardzo trudne do znalezienia pośród niezliczonej liczby innych pakietów. Przez długi czas brak odpowiednich sposobów wyszukiwania (i znajdowania) właściwego narzędzia był problemem. Na szczęście ten problem został niemal w całości rozwiązany."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The most trivial search possible is looking up an exact package name. If <command>apt-cache show <replaceable>package</replaceable></command> returns a result, then the package exists. Unfortunately, this requires knowing or even guessing the package name, which isn't always possible."
-msgstr ""
+msgstr "Najprostszym możliwym sposobem jest wyszukiwanie dokładnej nazwy pakietu. Jeżeli <command>apt-cache show <replaceable>pakiet</replaceable></command> zwraca wynik, to dany pakiet istnieje. Niestety wymaga to znajomości lub nawet zgadywania nazwy pakietu, co nie zawsze jest możliwe."
 
 # mateunho
 #. Tag: title
@@ -2700,20 +2702,24 @@ msgstr ""
 msgid "<emphasis>TIP</emphasis> Package naming conventions"
 msgstr "<emphasis>WSKAZÓWKA</emphasis> Konwencje nazewnictwa pakietów"
 
+# mateunho
+# przyznaję, że nie wiem jak przetłumaczyc "upstream"
 #. Tag: para
 #, no-c-format
 msgid "Some categories of packages are named according to a conventional naming scheme; knowing the scheme can sometimes allow you to guess exact package names. For instance, for Perl modules, the convention says that a module called <literal>XML::Handler::Composer</literal> upstream should be packaged as <emphasis role=\"pkg\">libxml-handler-composer-perl</emphasis>. The library enabling the use of the <command>gconf</command> system from Python is packaged as <emphasis role=\"pkg\">python-gconf</emphasis>. It is unfortunately not possible to define a fully general naming scheme for all packages, even though package maintainers usually try to follow the choice of the upstream developers."
-msgstr ""
+msgstr "Niektóre kategorie pakietów są nazywane według konwencjonalnego schematu nazewnictwa; znajomość tego schematu pozwala czasami zgadnąć dokładne nazwy pakietów. Na przykład dla modułów Perla konwencja mówi, że moduł nazwany <literal>XML::Handler::Composer</literal> powinien być spakowany jako <emphasis role=\"pkg\">libxml-handler-composer-perl</emphasis>. Biblioteka umożliwiająca używanie systemu <command>gconf</command> z poziomu Pythona jest spakowana jako <emphasis role=\"pkg\">python-gconf</emphasis>. Niestety niemożliwe jest sformułowanie w pełni ogólnego schematu nazewnictwa pakietów, nawet jeżeli opiekunowie pakietów zazwyczaj starają się postępować zgodnie z wyborem deweloperów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "A slightly more successful searching pattern is a plain-text search in package names, but it remains very limited. You can generally find results by searching package descriptions: since each package has a more or less detailed description in addition to its package name, a keyword search in these descriptions will often be useful. <command>apt-cache</command> and <command>axi-cache</command> are the tools of choice for this kind of search; for instance, <command>apt-cache search video</command> will return a list of all packages whose name or description contains the keyword “video”."
-msgstr ""
+msgstr "Nieco bardziej pomyślnym szablonem wyszukiwania jest przeszukiwanie zwykłego tekstu w nazwach pakietów, ale jest ono bardzo ograniczone. Często można znaleźć wyniki przeszukując opisy pakietów: poza nazwą każdy pakiet ma bowiem mniej lub bardziej szczegółowy opis, wyszukiwanie słów kluczowych w tych opisach zazwyczaj również będzie użyteczne. <command>apt-cache</command> oraz <command>axi-cache</command> są typowymi narzędziami do tego typu szukania; na przykład <command>apt-cache search video</command> zwróci listę wszystkich pakietów, których nazwy lub opisy zawierają słowo kluczowe \"video\"."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "For more complex searches, a more powerful tool such as <command>aptitude</command> is required. <command>aptitude</command> allows you to search according to a logical expression based on the package's meta-data fields. For instance, the following command searches for packages whose name contains <literal>kino</literal>, whose description contains <literal>video</literal> and whose maintainer's name contains <literal>paul</literal>:"
-msgstr ""
+msgstr "Do bardziej złożonych wyszukiwań potrzebne jest potężniejsze narzędzie takie jak <command>aptitude</command>. <command>aptitude</command> pozwala na wyszukiwanie według wyrażeń logicznych bazujących na polach metadanych pakietu. Na przykład następująca komenda wyszukuje pakiety, których nazwy zawierają <literal>kino</literal>, opisy zawierają <literal>video</literal>, a imię opiekuna zawiera <literal>paul</literal>:"
 
 #. Tag: screen
 #, no-c-format
@@ -2753,10 +2759,11 @@ msgid ""
 "      works-with::video, x11::application\n"
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "The search only returns one package, <emphasis role=\"pkg\">kino</emphasis>, which satisfies all three criteria."
-msgstr ""
+msgstr "Wspomniane wyszukiwanie zwraca jeden pakiet, <emphasis role=\"pkg\">kino</emphasis>, który spełnia wszystkie trzy kryteria."
 
 #. Tag: para
 #, no-c-format
