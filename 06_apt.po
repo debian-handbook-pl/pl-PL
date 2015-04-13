@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-12 21:52+0100\n"
+"PO-Revision-Date: 2015-04-13 20:17+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2765,15 +2765,18 @@ msgstr ""
 msgid "The search only returns one package, <emphasis role=\"pkg\">kino</emphasis>, which satisfies all three criteria."
 msgstr "Wspomniane wyszukiwanie zwraca jeden pakiet, <emphasis role=\"pkg\">kino</emphasis>, który spełnia wszystkie trzy kryteria."
 
+# mateunho
+# http://pl.wikipedia.org/wiki/Klasyfikacja_fasetowa
 #. Tag: para
 #, no-c-format
 msgid "Even these multi-criteria searches are rather unwieldy, which explains why they are not used as much as they could. A new tagging system has therefore been developed, and it provides a new approach to searching. Packages are given tags that provide a thematical classification along several strands, known as a “facet-based classification”. In the case of <emphasis role=\"pkg\">kino</emphasis> above, the package's tags indicate that Kino is a Gnome-based software that works on video data and whose main purpose is editing."
-msgstr ""
+msgstr "Niemniej jednak wyszukiwania zawierające wiele kryteriów są dość niewygodne, co tłumaczy fakt dlaczego nie są tak często używane. Niejako w odpowiedzi został stworzony nowy system znakowania, który dostarcza nowy sposób wyszukiwania. Pakietom przypisane są znaczniki o charakterze tematycznym oraz inne powiązania, znane jako \"klasyfikacja fasetowa\". W przypadku powyższego <emphasis role=\"pkg\">kino</emphasis>, znaczniki pakietu wskazują, że Kino jest oprogramowaniem bazującym na Gnome, pracuje z danymi wideo, a jego głównym celem jest montaż."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Browsing this classification can help you to search for a package which corresponds to known needs; even if it returns a (moderate) number of hits, the rest of the search can be done manually. To do that, you can use the <literal>~G</literal> search pattern in <command>aptitude</command>, but it is probably easier to simply navigate the site where tags are managed: <ulink type=\"block\" url=\"http://debtags.alioth.debian.org/cloud/\" />"
-msgstr ""
+msgstr "Przeglądanie taj klasyfikacji może pomóc w znalezieniu pakietu, który spełnia wymagane potrzeby; nawet jeżeli zwróci (znaczną) ilość wyników, pozostała część wyszukiwania może być wykonana ręcznie. W tym celu można użyć wzorca wyszukiwania <literal>~G</literal> w <command>aptitude</command>, ale prawdopodobnie łatwiej jest przejrzeć stronę, na której odbywa się zarządzanie znacznikami: <ulink type=\"block\" url=\"http://debtags.alioth.debian.org/cloud/\" />"
 
 # mateunho
 #. Tag: indexterm
@@ -2787,10 +2790,11 @@ msgstr "<primary><emphasis role=\"pkg\">debtags</emphasis></primary>"
 msgid "<primary>tag</primary>"
 msgstr "<primary>tag</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Selecting the <literal>works-with::video</literal> and <literal>use::editing</literal> tags yields a handful of packages, including the <emphasis role=\"pkg\">kino</emphasis> and <emphasis role=\"pkg\">pitivi</emphasis> video editors. This system of classification is bound to be used more and more as time goes on, and package managers will gradually provide efficient search interfaces based on it."
-msgstr ""
+msgstr "Wybranie znaczników <literal>works-with::video</literal> i <literal>use::editing</literal> zwraca ledwie kilka pakietów, włączając w to edytory wideo <emphasis role=\"pkg\">kino</emphasis> i <emphasis role=\"pkg\">pitivi</emphasis>. Ta klasyfikacja z upływem czasu ma być coraz częściej stosowana, a zarządcy pakietów będą dostarczać bazujące na niej, efektywne interfejsy wyszukiwania."
 
 #. Tag: para
 #, no-c-format
