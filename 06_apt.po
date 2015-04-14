@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-13 20:17+0100\n"
+"PO-Revision-Date: 2015-04-14 23:12+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -2796,25 +2796,29 @@ msgstr "<primary>tag</primary>"
 msgid "Selecting the <literal>works-with::video</literal> and <literal>use::editing</literal> tags yields a handful of packages, including the <emphasis role=\"pkg\">kino</emphasis> and <emphasis role=\"pkg\">pitivi</emphasis> video editors. This system of classification is bound to be used more and more as time goes on, and package managers will gradually provide efficient search interfaces based on it."
 msgstr "Wybranie znaczników <literal>works-with::video</literal> i <literal>use::editing</literal> zwraca ledwie kilka pakietów, włączając w to edytory wideo <emphasis role=\"pkg\">kino</emphasis> i <emphasis role=\"pkg\">pitivi</emphasis>. Ta klasyfikacja z upływem czasu ma być coraz częściej stosowana, a zarządcy pakietów będą dostarczać bazujące na niej, efektywne interfejsy wyszukiwania."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "To sum up, the best tool for the job depends on the complexity of the search that you wish to do:"
-msgstr ""
+msgstr "Podsumowując, najlepsze narzędzie do wykonania zadania zależy od stopnia komplikacji danego wyszukiwania:"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>apt-cache</command> only allows searching in package names and descriptions, which is very convenient when looking for a particular package that matches a few target keywords;"
-msgstr ""
+msgstr "<command>apt-cache</command> pozwala tylko na wyszukiwanie w nazwach pakietów i ich opisach, co jest bardzo wygodne w przypadku szukania konkretnego pakietu, do którego pasuje kilka słów kluczowych;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "when the search criteria also include relationships between packages or other meta-data such as the name of the maintainer, <command>synaptic</command> will be more useful;"
-msgstr ""
+msgstr "kiedy kryteria wyszukiwania obejmują również powiązania pomiędzy pakietami lub inne metadane takie jak imię opiekuna, <command>synaptic</command> będzie bardziej użyteczny;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "when a tag-based search is needed, a good tool is <command>packagesearch</command>, a graphical interface dedicated to searching available packages along several criteria (including the names of the files that they contain). For usage on the command-line, <command>axi-cache</command> will fit the bill."
-msgstr ""
+msgstr "kiedy potrzebne jest wyszukiwanie oparte o znaczniki, dobrym narzędziem jest <command>packagesearch</command>, interfejs graficzny przeznaczony do przeszukiwania dostępnych pakietów według kilku kryteriów (włączając nazwy plików, które zawierają). W przypadku użycia linii komend najlepiej będzie pasował <command>axi-cache</command>."
 
 # mateunho
 #. Tag: indexterm
@@ -2822,7 +2826,8 @@ msgstr ""
 msgid "<primary><emphasis role=\"pkg\">packagesearch</emphasis></primary>"
 msgstr "<primary><emphasis role=\"pkg\">packagesearch</emphasis></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "finally, when the searches involve complex expressions with logic operations, the tool of choice will be <command>aptitude</command>'s search pattern syntax, which is quite powerful despite being somewhat obscure; it works in both the command-line and the interactive modes."
-msgstr ""
+msgstr "wreszcie, kiedy wyszukiwanie obejmuje wyrażenia złożone z operacjami logicznymi, najlepszym wyborem będzie <command>aptitude</command> i jego wzorce wyszukiwania, które są potężnym narzędziem, choć nie zawsze jasnym w użyciu; działa zarówno w trybie linii komend i interaktywnym."
