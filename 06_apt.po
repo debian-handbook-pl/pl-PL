@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-14 23:12+0100\n"
+"PO-Revision-Date: 2015-04-19 19:04+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -84,7 +84,7 @@ msgstr "Słowo <emphasis>źródło</emphasis> może być niejednoznaczne. Pakiet
 
 # mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "APT needs to be given a “list of package sources”: the file <filename>/etc/apt/sources.list</filename> will list the different repositories (or “sources”) that publish Debian packages. APT will then import the list of packages published by each of these sources. This operation is achieved by downloading <filename>Packages.{gz,bz2,lzma,xz}</filename> files (in case of a source of binary packages) and <filename>Sources.{gz,bz2,lzma,xz}</filename> (in case of a source of source packages) and by analyzing their contents. When an old copy of these files is already present, APT can update it by only downloading the differences (see sidebar <xref linkend=\"sidebar.apt-pdiff\" />)."
 msgstr "APTowi trzeba dostarczyć \"listę źródeł pakietów\": plik <filename>/etc/apt/sources.list</filename> będzie zawierał listę różnych repozytoriów (lub \"źródeł\"), które publikują pakiety Debiana. Wtedy APT zaimportuje listę pakietów opublikowanych przez każde ze źródeł. Operacja jest dokonywana przez pobranie plików <filename>Pakiety.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety binarne) i <filename>Źródła.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety źródłowe), a następnie analizę ich zawartość. Gdy stara kopia tych plików jest obecna w systemie, APT może zaktualizować ją przez pobranie jedynie różnic (spójrz na fiszkę <xref linkend=\"sidebar.apt-pdiff\" />)."
 
@@ -402,7 +402,7 @@ msgstr "Zauważ, że jeżeli pożądana wersja pakietu jest dostępna w kilku re
 # Stable jako Stabilny
 # Oldstable jako ... (no dupa) :-/
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "As a side note, most of what this section says about <emphasis role=\"distribution\">Stable</emphasis> applies equally well to <emphasis role=\"distribution\">Oldstable</emphasis> since the latter is just an older <emphasis role=\"distribution\">Stable</emphasis> that is maintained in parallel."
 msgstr "Tak na marginesie, większość wiadomości z tej sekcji na temat wydania <emphasis role=\"distribution\">Stabilnego</emphasis> równie dobrze stosuje się do <emphasis role=\"distribution\">Oldstable</emphasis>, ponieważ to tylko starsza wersja <emphasis role=\"distribution\">Stabilnego</emphasis>, która jest utrzymywana równolegle."
 
@@ -672,7 +672,7 @@ msgstr "Używając tego pliku <filename>sources.list</filename> APT będzie inst
 
 # mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "There are good reasons to include all those repositories, even though a single one should be enough. <emphasis role=\"distribution\">Testing</emphasis> users will appreciate the possibility to cherry-pick a fixed package from <emphasis role=\"distribution\">Unstable</emphasis> when the version in <emphasis role=\"distribution\">Testing</emphasis> is affected by an annoying bug. On the opposite, <emphasis role=\"distribution\">Unstable</emphasis> users bitten by unexpected regressions have the possibility to downgrade packages to their (supposedly working) <emphasis role=\"distribution\">Testing</emphasis> version."
 msgstr "Istnieją uzasadnione przyczyny, aby załączyć wszystkie te repozytoria, mimo że jedno powinno wystarczyć. Użytkownicy <emphasis role=\"distribution\">Testowego</emphasis> docenią możliwość wybrania naprawionych pakietów z <emphasis role=\"distribution\">Niestabilnego</emphasis> kiedy wersja w <emphasis role=\"distribution\">Testowym</emphasis> jest obarczona denerwującym błędem. Z drugiej strony, użytkownicy <emphasis role=\"distribution\">Niestabilnego</emphasis> nadgryzieni przez niespodziewane regresje mają możliwość pobrania starszych pakietów dla (rzekomo działającej) wersji <emphasis role=\"distribution\">Testowej</emphasis>."
 
@@ -697,7 +697,7 @@ msgstr "<primary><emphasis role=\"distribution\">Experimental</emphasis></primar
 # mateunho
 # ref: http://pl.wikipedia.org/wiki/Cykl_%C5%BCycia_programu
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "The archive of <emphasis role=\"distribution\">Experimental</emphasis> packages is present on all Debian mirrors, and contains packages which are not in the <emphasis role=\"distribution\">Unstable</emphasis> version yet because of their substandard quality — they are often software development versions or pre-versions (alpha, beta, release candidate…). A package can also be sent there after undergoing subsequent changes which can generate problems. The maintainer then tries to uncover them thanks to advanced users who can manage important issues. After this first stage, the package is moved into <emphasis role=\"distribution\">Unstable</emphasis>, where it reaches a much larger audience and where it will be tested in much more detail."
 msgstr "Archiwum pakietów <emphasis role=\"distribution\">Eksperymentalnych</emphasis> jest dostępne na każdym serwerze lustrzanym Debiana i zawiera pakiety, które jeszcze nie są w wersji <emphasis role=\"distribution\">Niestabilnej</emphasis> z powodu na ich niską jakość — jest to zazwyczaj oprogramowanie w wersji deweloperskiej lub wstępnej (alfa, beta, kandydat do wydania…). Pakiet może być tam również wysłany po przejściu pewnych zmian, które mogą spowodować problemy. Wtedy zarządca stara się je odkryć korzystając z pomocy zaawansowanych użytkowników, którzy dają sobie radę z trudnymi zadaniami. Po tym etapie pakiet jest przeniesiony do <emphasis role=\"distribution\">Niestabilnego</emphasis>, gdzie dociera do znacznie szerszego grona odbiorców i będzie dużo skrupulatniej przetestowany."
 
@@ -2574,7 +2574,7 @@ msgstr "Konfigurowanie APTa"
 # 1* wynikające z lokalizacji programu (polski interfejs zakłada "tak")
 # 2* kontekstowe, w przypadku opisywania wspomnianej wcześniej opcji programu
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "The case of APT is simple: the <literal>-y</literal> option (or <literal>--assume-yes</literal>) tells APT to consider the answer to all its questions to be “yes”."
 msgstr "W przypadku APTa sprawa jest prosta: opcja <literal>-y</literal> (lub <literal>--assume-yes</literal>) mówi programowi, aby na wszystkie odpowiedzi odpowiadał \"tak\"."
 
@@ -2721,6 +2721,7 @@ msgstr "Nieco bardziej pomyślnym szablonem wyszukiwania jest przeszukiwanie zwy
 msgid "For more complex searches, a more powerful tool such as <command>aptitude</command> is required. <command>aptitude</command> allows you to search according to a logical expression based on the package's meta-data fields. For instance, the following command searches for packages whose name contains <literal>kino</literal>, whose description contains <literal>video</literal> and whose maintainer's name contains <literal>paul</literal>:"
 msgstr "Do bardziej złożonych wyszukiwań potrzebne jest potężniejsze narzędzie takie jak <command>aptitude</command>. <command>aptitude</command> pozwala na wyszukiwanie według wyrażeń logicznych bazujących na polach metadanych pakietu. Na przykład następująca komenda wyszukuje pakiety, których nazwy zawierają <literal>kino</literal>, opisy zawierają <literal>video</literal>, a imię opiekuna zawiera <literal>paul</literal>:"
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid ""
@@ -2758,6 +2759,39 @@ msgid ""
 "      suite::gnome, uitoolkit::gtk, use::editing, \n"
 "      works-with::video, x11::application\n"
 msgstr ""
+"$ <userinput>aptitude search kino~dvideo~mpaul</userinput>\n"
+"p   kino  - Nieliniowy edytor danych Digital Video\n"
+"$ <userinput>aptitude show kino</userinput>\n"
+"Pakiet: kino                            \n"
+"Stan: niezainstalowany\n"
+"Wersja: 1.3.4-1.3\n"
+"Priorytet: dodatkowy\n"
+"Sekcja: video\n"
+"Opiekun: Paul Brossier &lt;piem@debian.org&gt;\n"
+"Architektura: amd64\n"
+"Rozmiar rozpakowanego: 7936 k\n"
+"Wymaga: libasound2 (&gt; 1.0.24.1), libatk1.0-0 (&gt;= 1.12.4),\n"
+"         libavc1394-0 (&gt;= 0.5.3), libavcodec53 (&gt;= 4:0.8~beta1~) |\n"
+"         libavcodec-extra-53 (&gt;= 4:0.8~beta1~), libavformat53\n"
+"         […]\n"
+"Poleca: ffmpeg, curl\n"
+"Sugeruje: udev | hotplug, vorbis-tools, sox, mjpegtools, lame, ffmpeg2theora\n"
+"W konflikcie z: kino-dvtitler, kino-timfx, kinoplus\n"
+"Zastępuje: kino-dvtitler, kino-timfx, kinoplus\n"
+"Udostępnia: kino-dvtitler, kino-timfx, kinoplus\n"
+"Opis: Nieliniowy edytor danych Digital Video\n"
+" Kino pozwala zapisywać, tworzyć, edytować i odtwarzać filmy zapisywane przy\n"
+" pomocy kamkorderów DV. Program używa wielu skrótów klawiszowych ułatwiających\n"
+" szybką nawigację i edycję filmów.\n"
+" \n"
+" kino-timfx, kino-dvtitler oraz zbiór wtyczek kinoplus, dystrybuowane dawniej\n"
+" jako oddzielne pakiety są teraz dostarczane razem z Kino.\n"
+"Strona internetowa: http://www.kinodv.org/\n"
+"\n"
+"Znaczniki: hardware::camera, implemented-in::c, implemented-in::c++,\n"
+"      interface::x11, role::program, scope::application,\n"
+"      suite::gnome, uitoolkit::gtk, use::editing, \n"
+"      works-with::video, x11::application\n"
 
 # mateunho
 #. Tag: para
