@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-04-19 19:04+0100\n"
+"PO-Revision-Date: 2015-04-19 19:25+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -86,7 +86,7 @@ msgstr "Słowo <emphasis>źródło</emphasis> może być niejednoznaczne. Pakiet
 #. Tag: para
 #, no-c-format
 msgid "APT needs to be given a “list of package sources”: the file <filename>/etc/apt/sources.list</filename> will list the different repositories (or “sources”) that publish Debian packages. APT will then import the list of packages published by each of these sources. This operation is achieved by downloading <filename>Packages.{gz,bz2,lzma,xz}</filename> files (in case of a source of binary packages) and <filename>Sources.{gz,bz2,lzma,xz}</filename> (in case of a source of source packages) and by analyzing their contents. When an old copy of these files is already present, APT can update it by only downloading the differences (see sidebar <xref linkend=\"sidebar.apt-pdiff\" />)."
-msgstr "APTowi trzeba dostarczyć \"listę źródeł pakietów\": plik <filename>/etc/apt/sources.list</filename> będzie zawierał listę różnych repozytoriów (lub \"źródeł\"), które publikują pakiety Debiana. Wtedy APT zaimportuje listę pakietów opublikowanych przez każde ze źródeł. Operacja jest dokonywana przez pobranie plików <filename>Pakiety.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety binarne) i <filename>Źródła.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety źródłowe), a następnie analizę ich zawartość. Gdy stara kopia tych plików jest obecna w systemie, APT może zaktualizować ją przez pobranie jedynie różnic (spójrz na fiszkę <xref linkend=\"sidebar.apt-pdiff\" />)."
+msgstr "APTowi trzeba dostarczyć \"listę źródeł pakietów\": plik <filename>/etc/apt/sources.list</filename> będzie zawierał listę różnych repozytoriów (lub \"źródeł\"), które publikują pakiety Debiana. Wtedy APT zaimportuje listę pakietów opublikowanych przez każde ze źródeł. Operacja jest dokonywana przez pobranie plików <filename>Packages.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety binarne) i <filename>Sources.{gz,bz2,lzma,xz}</filename> (w przypadku źródła dostarczającego pakiety źródłowe), a następnie analizę ich zawartość. Gdy stara kopia tych plików jest obecna w systemie, APT może zaktualizować ją przez pobranie jedynie różnic (spójrz na fiszkę <xref linkend=\"sidebar.apt-pdiff\" />)."
 
 # mateunho
 #. Tag: indexterm
@@ -98,7 +98,7 @@ msgstr "<primary><filename>Pakiety.gz</filename></primary>"
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>Sources.gz</filename></primary>"
-msgstr "<primary><filename>Źródła.gz</filename></primary>"
+msgstr "<primary><filename>Sources.gz</filename></primary>"
 
 # mateunho
 #. Tag: title
@@ -1186,7 +1186,7 @@ msgstr "APT przechowuje kopię każdego pobranego pliku <filename>.deb</filename
 #. Tag: title
 #, no-c-format
 msgid "System Upgrade"
-msgstr "Modernizacja systemu"
+msgstr "Uaktualnienie systemu"
 
 # mateunho
 #. Tag: indexterm
@@ -1210,19 +1210,19 @@ msgstr "<primary><command>aptitude safe-upgrade</command></primary>"
 #. Tag: para
 #, no-c-format
 msgid "Regular upgrades are recommended, because they include the latest security updates. To upgrade, use <command>apt-get upgrade</command> or <command>aptitude safe-upgrade</command> (of course after <command>apt-get update</command>). This command looks for installed packages which can be upgraded without removing any packages. In other words, the goal is to ensure the least intrusive upgrade possible. <command>apt-get</command> is slightly more demanding than <command>aptitude</command> because it will refuse to install packages which were not installed beforehand."
-msgstr "Zaleca się regularne modernizacje, ponieważ zawierają one najnowsze aktualizacje dotyczące bezpieczeństwa. W celu modernizacji należy użyć <command>apt-get upgrade</command> lub <command>aptitude safe-upgrade</command> ()oczywiście po <command>apt-get update</command>). Ta komenda wyszukuje pakiety, które mogą zostać zmodernizowane bez usuwania innych pakietów. Innymi słowy, celem jest zapewnienie jak najmniej inwazyjnej modernizacji. <command>apt-get</command> jest nieco bardziej restrykcyjny niż <command>aptitude</command>, ponieważ nie zezwoli na instalację pakietów, które nie były zainstalowane wcześniej."
+msgstr "Zaleca się regularne uaktualnienia, ponieważ zawierają one najnowsze aktualizacje dotyczące bezpieczeństwa. W celu uaktualnienia należy użyć <command>apt-get upgrade</command> lub <command>aptitude safe-upgrade</command> (oczywiście po <command>apt-get update</command>). Ta komenda wyszukuje pakiety, które mogą zostać uaktualnione bez usuwania innych pakietów. Innymi słowy, celem jest zapewnienie jak najmniej inwazyjnego uaktualnienia. <command>apt-get</command> jest nieco bardziej restrykcyjny niż <command>aptitude</command>, ponieważ nie zezwoli na instalację pakietów, które nie były zainstalowane wcześniej."
 
 # mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> Incremental upgrade"
-msgstr "<emphasis>WSKAZÓWKA</emphasis> Modernizacja przyrostowa"
+msgstr "<emphasis>WSKAZÓWKA</emphasis> Uaktualnienie przyrostowe"
 
 # mateunho
 #. Tag: para
 #, no-c-format
 msgid "As we explained earlier, the aim of the <command>apt-get update</command> command is to download for each package source the corresponding <filename>Packages</filename> (or <filename>Sources</filename>) file. However, even after a <command>bzip2</command> compression, these files can remain rather large (the <filename>Packages.bz2</filename> for the <foreignphrase>main</foreignphrase> section of <emphasis role=\"distribution\">Wheezy</emphasis> takes more than 5 MB). If you wish to upgrade regularly, these downloads can take up a lot of time."
-msgstr "Jak zostało wyjaśnione wcześniej, celem komendy <command>apt-get update</command> jest pobranie dla każdego źródła pakietów jego odpowiedniego pliku <filename>Pakiety</filename> (lub <filename>Źródła</filename>). Jednakże nawet po kompresji <command>bzip2</command> te pliki mogą być dość duże (plik <filename>Pakiety.bz2</filename> dla sekcji <foreignphrase>main</foreignphrase> wydania <emphasis role=\"distribution\">Wheezy</emphasis> zajmuje więcej niż 5 MB). Jeżeli chcesz regularnie dokonywać modernizacji, to pobieranie może zabierać dużo czasu."
+msgstr "Jak zostało wyjaśnione wcześniej, celem komendy <command>apt-get update</command> jest pobranie dla każdego źródła pakietów jego odpowiedniego pliku <filename>Packages</filename> (lub <filename>Sources</filename>). Jednakże nawet po kompresji <command>bzip2</command> te pliki mogą być dość duże (plik <filename>Packages.bz2</filename> dla sekcji <foreignphrase>main</foreignphrase> wydania <emphasis role=\"distribution\">Wheezy</emphasis> zajmuje więcej niż 5 MB). Jeżeli chcesz regularnie wykonywać uaktualnienia, to pobieranie może zabierać dużo czasu."
 
 # mateunho
 #. Tag: para
@@ -1234,7 +1234,7 @@ msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", z
 #. Tag: para
 #, no-c-format
 msgid "However, it can sometimes be of interest to force the download of the entire <filename>Packages</filename> file, especially when the last upgrade is very old and when the mechanism of incremental differences would not contribute much. This can also be interesting when network access is very fast but when the processor of the machine to upgrade is rather slow, since the time saved on the download is more than lost when the computer calculates the new versions of these files (starting with the older versions and applying the downloaded differences). To do that, you can use the configuration parameter <literal>Acquire::Pdiffs</literal> and set it to <literal>false</literal>."
-msgstr "Jednakże czasami pobranie całego pliku <filename>Packages</filename> jest pożądane, zwłaszcza jeżeli ostatnia modernizacja była bardzo dawno temu i mechanizm przyrostów różnicowych niewiele by wniósł. Może być to również interesujące w przypadku posiadania bardzo szybkiego połączenia z siecią w połączeniu ze stosunkowo wolnym procesorem modernizowanej maszyny, ponieważ więcej czasu będzie zaoszczędzone na pobieraniu w porównaniu z obliczaniem nowych wersji tych plików (zaczynając od starszych wersji i aplikując kolejne różnice). W tym celu należy użyć parametru konfiguracyjnego <literal>Acquire::Pdiffs</literal> ustawionego na <literal>false</literal>."
+msgstr "Jednakże czasami pobranie całego pliku <filename>Packages</filename> jest pożądane, zwłaszcza jeżeli ostatnie uaktualnienie było bardzo dawno temu i mechanizm przyrostów różnicowych niewiele by wniósł. Może być to również interesujące w przypadku posiadania bardzo szybkiego połączenia z siecią w połączeniu ze stosunkowo wolnym procesorem uaktualnianej maszyny, ponieważ więcej czasu będzie zaoszczędzone na pobieraniu w porównaniu z obliczaniem nowych wersji tych plików (zaczynając od starszych wersji i aplikując kolejne różnice). W tym celu należy użyć parametru konfiguracyjnego <literal>Acquire::Pdiffs</literal> ustawionego na <literal>false</literal>."
 
 # mateunho
 #. Tag: para
@@ -1270,7 +1270,7 @@ msgstr "<primary><command>aptitude full-upgrade</command></primary>"
 #. Tag: para
 #, no-c-format
 msgid "For more important upgrades, such as the change from one major Debian version to the next, you need to use <command>apt-get dist-upgrade</command> (“distribution upgrade”). With this instruction, <command>apt-get</command> will complete the upgrade even if it has to remove some obsolete packages or install new dependencies. This is also the command used by users who work daily with the Debian <emphasis role=\"distribution\">Unstable</emphasis> release and follow its evolution day by day. It is so simple that it hardly needs explanation: APT's reputation is based on this great functionality."
-msgstr "W celu ważniejszych modernizacji, takich jak zmiana na następną wersję Debiana, należy użyć <command>apt-get dist-upgrade</command> (\"modernizacja dystrybucji\"). Używając tej instrukcji <command>apt-get</command> dokona całkowitej modernizacji, nawet jeżeli będzie musiał usunąć przestarzałe pakiety lub zainstalować nowe zależności. Poza tym jest to komenda stosowana na co dzień przez użytkowników wydania Debiana <emphasis role=\"distribution\">Niestabilnego</emphasis>, która podąża za jego ewolucją z dnia na dzień. To jest tak proste, że mówi samo za siebie: reputacja APTa została zbudowana na tej genialnej funkcjonalności."
+msgstr "W celu ważniejszych uaktualnień, takich jak zmiana na następną wersję Debiana, należy użyć <command>apt-get dist-upgrade</command> (\"uaktualnienie dystrybucji\"). Używając tej instrukcji <command>apt-get</command> dokona całkowitego uaktualnienia, nawet jeżeli będzie musiał usunąć przestarzałe pakiety lub zainstalować nowe zależności. Poza tym jest to komenda stosowana na co dzień przez użytkowników wydania Debiana <emphasis role=\"distribution\">Niestabilnego</emphasis>, która podąża za jego ewolucją z dnia na dzień. To jest tak proste, że mówi samo za siebie: reputacja APTa została zbudowana na tej genialnej funkcjonalności."
 
 # mateunho
 #. Tag: para
@@ -1336,7 +1336,7 @@ msgstr "Katalogi zakończone przyrostkiem <filename>.d</filename> są coraz czę
 #. Tag: para
 #, no-c-format
 msgid "This structure brings some flexibility to the machine administrator and to the package maintainers. Indeed, the administrator can easily modify the configuration of the software by adding a ready-made file in the directory in question without having to change an existing file. Package maintainers use the same approach when they need to adapt the configuration of another software to ensure that it perfectly co-exists with theirs. The Debian policy explicitly forbids modifying configuration files of other packages — only users are allowed to do this. Remember that during a package upgrade, the user gets to choose the version of the configuration file that should be kept when a modification has been detected. Any external modification of the file would trigger that request, which would disturb the administrator, who is sure not to have changed anything."
-msgstr "Taka struktura zapewnia pewną elastyczność administratorowi maszyny oraz zarządcom pakietów. Rzeczywiście, administrator może z łatwością zmienić konfigurację oprogramowania dodając w tym katalogu przygotowany wcześniej plik, bez konieczności modyfikacji istniejących. Zarządcy pakietów używają tego samego podejścia kiedy muszą dopasować konfigurację innego oprogramowania, aby zapewnić ich bezproblemowe współistnienie. Polityka Debiana wyraźnie zakazuje modyfikacji plików konfiguracyjnych innych pakietów — tylko użytkownik ma takie prawo. Przypomnijmy, że podczas modernizacji pakietu użytkownik otrzymuje wybór, którą wersję pliku konfiguracyjnego należy zatrzymać w przypadku wykrycia zmian. Wszelkie zewnętrzne zmiany w pliku uruchomiłyby takie zapytanie, które zastanowiłoby administratora przekonanego o tym, że nic nie zmieniał."
+msgstr "Taka struktura zapewnia pewną elastyczność administratorowi maszyny oraz zarządcom pakietów. Rzeczywiście, administrator może z łatwością zmienić konfigurację oprogramowania dodając w tym katalogu przygotowany wcześniej plik, bez konieczności modyfikacji istniejących. Zarządcy pakietów używają tego samego podejścia kiedy muszą dopasować konfigurację innego oprogramowania, aby zapewnić ich bezproblemowe współistnienie. Polityka Debiana wyraźnie zakazuje modyfikacji plików konfiguracyjnych innych pakietów — tylko użytkownik ma takie prawo. Przypomnijmy, że podczas uaktualnienia pakietu użytkownik otrzymuje wybór, którą wersję pliku konfiguracyjnego należy zatrzymać w przypadku wykrycia zmian. Wszelkie zewnętrzne zmiany w pliku uruchomiłyby takie zapytanie, które zastanowiłoby administratora przekonanego o tym, że nic nie zmieniał."
 
 # mateunho
 #. Tag: para
@@ -1494,7 +1494,7 @@ msgstr "<literal>a=stable</literal> definiuje nazwę wybranej dystrybucji. <lite
 #. Tag: para
 #, no-c-format
 msgid "Let's now assume that you have a server with several local programs depending on the version 5.14 of Perl and that you want to ensure that upgrades will not install another version of it. You could use this entry:"
-msgstr "Załóżmy, że masz serwer z kilkoma lokalnymi programami zależnymi od wersji 5.14 Perla i chcesz upewnić się, że modernizacje nie zainstalują innej jego wersji. Możesz użyć takiego wpisu:"
+msgstr "Załóżmy, że masz serwer z kilkoma lokalnymi programami zależnymi od wersji 5.14 Perla i chcesz upewnić się, że uaktualnienia nie zainstalują innej jego wersji. Możesz użyć takiego wpisu:"
 
 # mateunho
 #. Tag: programlisting
@@ -1588,7 +1588,7 @@ msgstr "Załóżmy, że <emphasis role=\"distribution\">Stabilny</emphasis> jest
 #. Tag: para
 #, no-c-format
 msgid "In this situation, upgrades (<command>upgrade</command> and <command>dist-upgrade</command>) are done within <emphasis role=\"distribution\">Stable</emphasis> except for packages already upgraded to another distribution: those will follow updates available in the other distributions. We'll explain this behavior with the help of the default priorities set by APT below. Do not hesitate to use <command>apt-cache policy</command> (see sidebar) to verify the given priorities."
-msgstr "W tym przypadku modernizacje (<command>upgrade</command> i <command>dist-upgrade</command>) są wykonywane w zakresie <emphasis role=\"distribution\">Stabilnego</emphasis> z wyjątkiem pakietów, które już zostały zmodernizowane do innej dystrybucji: będą one używać aktualizacji z danej dystrybucji. Opisane zachowanie zostanie wyjaśnione poniżej, z użyciem domyślnych priorytetów ustawianych przez APTa. Nie wahaj się używać <command>apt-cache policy</command> (spójrz na fiszkę), aby zweryfikować wartości priorytetów."
+msgstr "W tym przypadku uaktualnienia (<command>upgrade</command> i <command>dist-upgrade</command>) są wykonywane w zakresie <emphasis role=\"distribution\">Stabilnego</emphasis> z wyjątkiem pakietów, które już zostały uaktualnione do innej dystrybucji: będą one używać aktualizacji z danej dystrybucji. Opisane zachowanie zostanie wyjaśnione poniżej, z użyciem domyślnych priorytetów ustawianych przez APTa. Nie wahaj się używać <command>apt-cache policy</command> (spójrz na fiszkę), aby zweryfikować wartości priorytetów."
 
 # mateunho
 #. Tag: para
