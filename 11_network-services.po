@@ -68,7 +68,7 @@ msgstr "Administratorzy z Falcon Corp wybrali Postfiksa na serwer poczty elektro
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>email</primary><secondary>server</secondary>"
-msgstr "<secondary>serwer</secondary><primary>poczty elektronicznej</primary>"
+msgstr "<primary>email</primary><secondary>server</secondary>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -123,12 +123,12 @@ msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> SMTP"
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>SMTP</primary>"
-msgstr "<primary>SMTP<primary>"
+msgstr "<primary>SMTP</primary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>Simple Mail Transfer Protocol</primary>"
-msgstr "<primary>Simple Mail Transfer Protocol<primary>"
+msgstr "<primary>Simple Mail Transfer Protocol</primary>"
 
 #. Tag: indexterm
 #, no-c-format
