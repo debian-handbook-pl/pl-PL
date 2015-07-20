@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-19 11:13+0100\n"
+"PO-Revision-Date: 2015-07-20 23:28+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 149,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 58,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. Tag: keyword
 #, no-c-format
@@ -351,6 +351,7 @@ msgstr ""
 "wskazuje wersję <filename>.deb</filename>użytego pliku (in 2013: "
 "version 2.0)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -360,7 +361,13 @@ msgid ""
 "is possible to install or uninstall it, for example according to the list of "
 "packages already on the machine."
 msgstr ""
+"<filename>control.tar.gz</filename>. To archiwum zawiera wszystkie dostępne "
+"meta-informacje, takie jak nazwa i wersja pakietu. Niektóre z tych meta-"
+"informacji pozwalają narzędziom zarządzającym pakietami na określenie, czy "
+"możliwe jest jego zainstalowanie lub odinstalowanie, na przykład zgodnie z "
+"listą pakietów znajdujących się na maszynie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -371,6 +378,12 @@ msgid ""
 "tar.bz2</filename> for bzip2, <filename>data.tar.xz</filename> for XZ, "
 "<filename>data.tar.lzma</filename> for LZMA)."
 msgstr ""
+"<filename>data.tar.gz</filename>. To archiwum zawiera wszystkie pliki do "
+"wypakowania z pakietu; tutaj przechowywane są pliki wykonywalne, "
+"dokumentacja, itd. Niektóre pakiety mogą używac innych formatów kompresji, w "
+"takim przypadku plik będzie nazwany inaczej (<filename>data.tar.bz2</"
+"filename> dla bzip2, <filename>data.tar.xz</filename> dla XZ, <filename>data."
+"tar.lzma</filename> dla LZMA)."
 
 #. Tag: title
 #, no-c-format
@@ -483,6 +496,7 @@ msgstr "<primary>RFC</primary>"
 msgid "<primary>Request For Comments</primary>"
 msgstr "<primary>Request For Comments</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -493,6 +507,12 @@ msgid ""
 "decides on the evolution of the status of these documents (proposed "
 "standard, draft standard, or standard)."
 msgstr ""
+"RFC jest skrótem od “Request For Comments” (Prośba o komentarze). RFC jest "
+"zazwyczaj technicznym dokumentem opisującym przyszły standard w Internecie. "
+"Przed ustandaryzowaniem i zamrożeniem, standardy te są przedstawione do "
+"publicznej oceny (stąd ich nazwa). IETF (Internet Engineering Task Force) "
+"decyduje o zmianie statusu tych dokumentów (proponowany standard, szkic "
+"standardu lub standard)."
 
 #. Tag: para
 #, no-c-format
@@ -645,24 +665,27 @@ msgid ""
 "to find another solution as a work-around."
 msgstr ""
 
+# mateunho
 #. Tag: title
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "<emphasis>DEBIAN POLICY</emphasis> <literal>Recommends</literal>, "
 "<literal>Suggests</literal>, and <literal>Enhances</literal> fields"
 msgstr ""
-"<emphasis>Polityka Debiana</emphasis> <literal>Rekomenduje</literal>, "
-"<literal>Proponuje</literal>, oraz <literal>poprawia</literal>pola"
+"<emphasis>POLITYKA DEBIANA</emphasis> Pola <literal>Recommends</literal>, "
+"<literal>Suggests</literal> i <literal>Enhances</literal>"
 
+# mateunho
 #. Tag: indexterm
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "<primary><literal>Recommends</literal>, header field</primary>"
-msgstr "<primary><literal>Rekomenduje</literal>, Pola nagłówków</primary>"
+msgstr "<primary><literal>Recommends</literal>, header field</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "<primary><literal>Suggests</literal>, header field</primary>"
-msgstr "<primary><literal>Proponuje</literal>, Pole nagłówka</primary>"
+msgstr "<primary><literal>Suggests</literal>, header field</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -676,6 +699,7 @@ msgid ""
 "perfectly reasonable to install one without the others."
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -683,9 +707,9 @@ msgid ""
 "exactly why you do not need them. Conversely, it is not necessary to install "
 "“suggested” packages unless you know why you need them."
 msgstr ""
-"Powinieneś zawsze instalować rekomendowane pakiety, chyba że wiesz dokładnie "
-"dlaczego ich nie potrzebujesz. Nie jest wtedy wymagane instalowania "
-"sugerowanych pakietów chyba że wiesz że ich potrzebujesz."
+"Powinieneś zawsze instalować pakiety \"rekomendowane\", chyba że dokładnie "
+"wiesz, dlaczego ich nie potrzebujesz. Przeciwnie, nie jest wymagane "
+"instalowanie \"sugerowanych\", chyba że wiesz, że ich potrzebujesz."
 
 #. Tag: indexterm
 #, no-c-format
@@ -708,20 +732,23 @@ msgid ""
 "suggestions — found in the <literal>Suggests</literal> field."
 msgstr ""
 
+# mateunho
 #. Tag: title
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Conflicts: the <literal>Conflicts</literal> field"
-msgstr "Konflikt <literal>Konflikt</literal> Pola"
+msgstr "Konflikty: pole <literal>Conflicts</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>conflicts</primary>"
-msgstr "<primary>conflicts</primary>"
+msgstr "<primary>konflikty</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "<primary><literal>Conflicts</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Conflicts</literal>, header field</primary>"
 
 # mateunho
 #. Tag: indexterm
@@ -729,6 +756,7 @@ msgstr ""
 msgid "<primary>package</primary><secondary>conflict</secondary>"
 msgstr "<primary>pakiet</primary><secondary>konflikt</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -737,7 +765,13 @@ msgid ""
 "that both packages include a file of the same name, or provide the same "
 "service on the same TCP port, or would hinder each other's operation."
 msgstr ""
+"Pole <literal>Konflikty</literal> wskazuje przypadek, kiedy pakiet nie może "
+"być zainstalowany równocześnie z innym. Najczęstszymi powodami takich "
+"sytuacji jest plik o tej samej nazwie zawierany przez oba pakiety lub taka "
+"sama usługa na tym samym porcie TCP, lub wzajemne utrudnianie sobie "
+"działania."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -749,11 +783,19 @@ msgid ""
 "choose to install a new package, it will automatically offer to uninstall "
 "the package that poses a problem."
 msgstr ""
+"<command>dpkg</command> odmówi zainstalowania pakietu, jeżeli wywołuje on "
+"konflikt z aktualnie zainstalowanym pakietem, chyba że nowy pakiet wskaże, "
+"że \"zastępuje\" zainstalowany pakiet, w takim przypadku <command>dpkg</"
+"command> wybierze stary pakiet do zastąpienia nowym. <command>apt-get</"
+"command> zawsze śledzi instrukcje: jeżeli postanowisz zainstalować nowy "
+"pakiet, automatycznie zaproponuje odinstalowanie pakietu, który stwarza "
+"problemy."
 
+# mateunho
 #. Tag: title
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Incompatibilities: the <literal>Breaks</literal> Field"
-msgstr ""
+msgstr "Niekompatybilności: pole <literal>Breaks</literal>"
 
 # mateunho
 #. Tag: indexterm
@@ -766,10 +808,11 @@ msgstr "<primary>niekompatybilności</primary>"
 msgid "<primary><literal>Breaks</literal>, header field</primary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>incompatibility</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>niekompatybilność</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -1282,31 +1325,35 @@ msgid ""
 "replaceable></command>."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Package Removal"
-msgstr "Usuwanie pakietów"
+msgstr "Usuwanie pakietu"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here is what happens during a package removal:"
-msgstr "O to co zachodzi podczas usuwania pakietów:"
+msgstr "O to, co zachodzi podczas usuwania pakietu:"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>dpkg</command> calls <command>prerm remove</command>."
-msgstr ""
-"<command>dpkg</command> wywołuje komendę <command>prerm remove</command>."
+msgstr "<command>dpkg</command> wywołuje <command>prerm remove</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "<command>dpkg</command> removes all of the package's files, with the "
 "exception of the configuration files and configuration scripts."
 msgstr ""
-"<command>dpkg</command> usuwa wszystkie pliki pakietów, z wyjątkiem plików "
+"<command>dpkg</command> usuwa wszystkie pliki pakietu, z wyjątkiem plików "
 "konfiguracyjnych i skryptów konfiguracyjnych."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1314,10 +1361,11 @@ msgid ""
 "the configuration scripts, except <filename>postrm</filename>, are removed. "
 "If the user has not used the “purge” option, the process stops here."
 msgstr ""
-"<command>dpkg</command> uruchamia komendę <command>postrm remove</command>. "
-"Wszystkie skrypty konfiguracyjne, poza <filename>postrm</filename>, zostały "
-"usunięte. Jeśli użytkownik nie użył opcji \"purge\", proces dobiega końca."
+"<command>dpkg</command> wykonuje <command>postrm remove</command>. Wszystkie "
+"skrypty konfiguracyjne, poza <filename>postrm</filename>, zostają usunięte. "
+"Jeżeli użytkownik nie użył opcji \"purge\", proces dobiega końca."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1328,11 +1376,11 @@ msgid ""
 "and temporary files; <command>dpkg</command> then executes <command>postrm "
 "purge</command>."
 msgstr ""
-"Dla całkowitego skasowania pakietów (Wydanie polecenia <command>dpkg --"
-"purge</command> albo <command>dpkg -P</command>), w tym usunięciu również "
-"plików konfiguracyjnych, wraz z ustaloną liczbą ich kopii (<filename>*.dpkg-"
-"tmp</filename>, <filename>*.dpkg-old</filename>, <filename>*.dpkg-new</"
-"filename>) i plików tymczasowych;  <command>dpkg</command> następnie wykonaj "
+"Podczas całkowitego usuwania pakietów (po wykonaniu polecenia <command>dpkg "
+"--purge</command> lub <command>dpkg -P</command>), usuwane są również pliki "
+"konfiguracyjne, wraz z pewną liczbą ich kopii (<filename>*.dpkg-tmp</"
+"filename>, <filename>*.dpkg-old</filename>, <filename>*.dpkg-new</filename>) "
+"i plików tymczasowych; następnie <command>dpkg</command> wykonuje "
 "<command>postrm purge</command>."
 
 #. Tag: title
