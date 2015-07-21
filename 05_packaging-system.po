@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-20 23:28+0100\n"
+"PO-Revision-Date: 2015-07-21 23:35+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -400,6 +400,7 @@ msgstr "<primary>package meta-information</primary>"
 msgid "<primary>package</primary><secondary>meta-information</secondary>"
 msgstr "<primary>package</primary><secondary>meta-information</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -412,6 +413,14 @@ msgid ""
 "the packaged software, but are, within the package, what is called its “meta-"
 "information” (information about other information)."
 msgstr ""
+"Pakiet Debiana to nie tylko archiwum plików przeznaczonych do instalacji. "
+"Jest częścią większej całości, opisuje powiązania z innymi pakietami Debiana "
+"(zależności, konflikty, sugestie). Dostarcza również skrypty pozwalające "
+"wykonywać komendy w różnych etapach cyklu życia pakietu (instalacja, "
+"usuwanie, uaktualnienia). Opisywane dane, używane przez narzędzia "
+"zarządzające pakietami, nie są częścią oprogramowania danego pakietu, ale "
+"znajdują się wewnątrz pakietu jako jego \"meta-informacje\" (informacje o "
+"innych informacjach)."
 
 #. Tag: title
 #, no-c-format
@@ -608,6 +617,7 @@ msgstr ""
 msgid "<primary>meta-package</primary>"
 msgstr "<primary>meta-package</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -621,6 +631,15 @@ msgid ""
 "emphasis>, <emphasis role=\"pkg\">kde-full</emphasis> and <emphasis role="
 "\"pkg\">linux-image-amd64</emphasis> packages are examples of meta-packages."
 msgstr ""
+"System zależności to dobry mechanizm gwarantujący działanie programu, ale "
+"jest również przydatny w \"meta-pakietach\". Są to puste pakiety, które "
+"jedynie opisują zależności. Ułatwiają one instalację spójnej grupy programów "
+"wyselekcjonowanych przez opiekuna meta-pakietu; w związku z tym as such, "
+"<command>apt-get install <replaceable>meta-pakiet</replaceable></command> "
+"automatycznie zainstaluje wszystkie te programy używając zależności meta-"
+"pakietu. Przykładami meta-pakietów są <emphasis role=\"pkg\">gnome</"
+"emphasis>, <emphasis role=\"pkg\">kde-full</emphasis> i <emphasis role=\"pkg"
+"\">linux-image-amd64</emphasis>."
 
 #. Tag: title
 #, no-c-format
@@ -866,20 +885,23 @@ msgid ""
 "a substitution package without having to use the same package name."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>VOCABULARY</emphasis> Meta-package and virtual package"
-msgstr ""
+msgstr "<emphasis>SŁOWNIK</emphasis> Meta-pakiet i pakiet wirtualny"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>virtual package</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>pakiet wirtualny</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>virtual package</primary>"
-msgstr ""
+msgstr "<primary>pakiet wirtualny</primary>"
 
 #. Tag: para
 #, no-c-format
