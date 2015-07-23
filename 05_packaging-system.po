@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-22 12:35+0100\n"
+"PO-Revision-Date: 2015-07-23 22:20+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -683,7 +683,7 @@ msgid "<primary><literal>Pre-Depends</literal>, header field</primary>"
 msgstr "<primary><literal>Pre-Depends</literal>, header field</primary>"
 
 #. Tag: indexterm
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "<primary>pre-dependency</primary>"
 msgstr "<primary>pre-dependency</primary>"
 
@@ -971,11 +971,13 @@ msgid ""
 "technique will prohibit the installation of two mail servers side by side."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>DEBIAN POLICY</emphasis> List of virtual packages"
-msgstr ""
+msgstr "<emphasis>POLITYKA DEBIANA</emphasis> Lista pakietów wirtualnych"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -990,13 +992,26 @@ msgid ""
 "(<command>xterm</command>), and <emphasis role=\"pkg\">x-window-manager</"
 "emphasis> for window managers."
 msgstr ""
+"Aby wirtualne pakiety były przydatne, wszyscy muszą zgadzać się odnośnie ich "
+"nazw. Z tego powodu są one ustandaryzowane w Polityce Debiana. Lista "
+"obejmuje między innymi <emphasis role=\"pkg\">mail-transport-agent</"
+"emphasis> dla serwerów poczty, <emphasis role=\"pkg\">c-compiler</emphasis> "
+"dla kompilatorów języka C, <emphasis role=\"pkg\">www-browser</emphasis> dla "
+"przeglądarek internetowych, <emphasis role=\"pkg\">httpd</emphasis> dla "
+"serwerów internetowych, <emphasis role=\"pkg\">ftp-server</emphasis> dla "
+"serwerów FTP, <emphasis role=\"pkg\">x-terminal-emulator</emphasis> dla "
+"emulatorów terminala w trybie graficznym (<command>xterm</command>) i "
+"<emphasis role=\"pkg\">x-window-manager</emphasis> dla menedżerów okien"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "The full list can be found on the Web. <ulink type=\"block\" url=\"http://"
 "www.debian.org/doc/packaging-manuals/virtual-package-names-list.txt\" />"
 msgstr ""
+"Pełną listę można znaleźć w Sieci. <ulink type=\"block\" url=\"http://www."
+"debian.org/doc/packaging-manuals/virtual-package-names-list.txt\" />"
 
 #. Tag: title
 #, no-c-format
