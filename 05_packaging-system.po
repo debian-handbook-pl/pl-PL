@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-23 22:20+0100\n"
+"PO-Revision-Date: 2015-07-24 21:33+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -1013,10 +1013,11 @@ msgstr ""
 "Pełną listę można znaleźć w Sieci. <ulink type=\"block\" url=\"http://www."
 "debian.org/doc/packaging-manuals/virtual-package-names-list.txt\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Interchangeability with Another Package"
-msgstr ""
+msgstr "Wymienność z innymi pakietami"
 
 #. Tag: para
 #, no-c-format
@@ -1048,20 +1049,23 @@ msgid ""
 "renaming, and other automatic replacement, of obsolete software."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Perl, a programming language"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Perl, język programowania"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>Perl</primary>"
-msgstr ""
+msgstr "<primary>Perl</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>CPAN</primary>"
-msgstr ""
+msgstr "<primary>CPAN</primary>"
 
 #. Tag: para
 #, no-c-format
