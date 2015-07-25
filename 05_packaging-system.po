@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-24 21:33+0100\n"
+"PO-Revision-Date: 2015-07-25 21:03+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 58,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 58,106,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. Tag: keyword
 #, no-c-format
@@ -1086,11 +1086,13 @@ msgid ""
 "scripts”."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Current Limitations"
-msgstr ""
+msgstr "Aktualne ograniczenia"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1102,11 +1104,19 @@ msgid ""
 "satisfied. Unaware of this, the package system chooses the least risky "
 "option, assuming that the versions do not match."
 msgstr ""
+"Wirtualne pakiety cierpią z powodu pewnych ograniczeń, z których "
+"najważniejszym jest brak numeru wersji. Wracając do poprzedniego przykładu, "
+"zależność taka jak <literal>Depends: libdigest-md5-perl (&gt;= 1.6)</"
+"literal>, pomimo obecności Perla 5.10, nigdy nie będzie uznana za spełnioną "
+"przez system pakietowania — podczas, gdy faktycznie najprawdopodobniej jest "
+"spełniona. Niezależnie od tego system pakietowania wybierza najmniej "
+"ryzykowną opcję, zakładając, że wersje sa niezgodne."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> Virtual package versions"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Wersje pakietu wirtualnego"
 
 #. Tag: para
 #, no-c-format
