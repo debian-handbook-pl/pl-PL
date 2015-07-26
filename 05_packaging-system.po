@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-25 21:03+0100\n"
+"PO-Revision-Date: 2015-07-26 12:37+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -1067,6 +1067,7 @@ msgstr "<primary>Perl</primary>"
 msgid "<primary>CPAN</primary>"
 msgstr "<primary>CPAN</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1077,7 +1078,14 @@ msgid ""
 "packages. <ulink type=\"block\" url=\"http://www.perl.org/\" /> <ulink type="
 "\"block\" url=\"http://www.cpan.org/\" />"
 msgstr ""
+"Perl (Practical Extraction and Report Language) jest bardzo popularnym "
+"językiem programowania. Posiada wiele modułów gotowych do użycia, które "
+"pokrywają szerokie spektrum zastosowań i są rozprowadzane przez serwery CPAN "
+"(Comprehensive Perl Archive Network), rozległą sieć pakietów Perla. <ulink "
+"type=\"block\" url=\"http://www.perl.org/\" /> <ulink type=\"block\" url="
+"\"http://www.cpan.org/\" />"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1085,6 +1093,9 @@ msgid ""
 "require compilation prior to execution. This is why they are called “Perl "
 "scripts”."
 msgstr ""
+"W związku z tym, że jest to język interpretowany, program napisany w Perlu "
+"nie wymaga kompilacji przed wykonaniem. Dlatego nazywa się je \"skryptami "
+"Perla\"."
 
 # mateunho
 #. Tag: title
@@ -1118,6 +1129,7 @@ msgstr ""
 msgid "<emphasis>GOING FURTHER</emphasis> Virtual package versions"
 msgstr "<emphasis>IDĄC DALEJ</emphasis> Wersje pakietu wirtualnego"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1129,27 +1141,40 @@ msgid ""
 "indicate that a package provides the same functionality as <emphasis role="
 "\"pkg\">libstorable-perl</emphasis> in its 1.7 version."
 msgstr ""
+"Pomimo tego, że dzisiaj wirtualne pakiety nie mogą mieć wersji, "
+"niekoniecznie będzie tak w przyszłości. Właściwie, <command>apt</command> "
+"jest już zdolny do zarządzania wersjami wirtualnych pakietów i "
+"prawdopodobnie niedługo <command>dpkg</command> też będzie posiadał taką "
+"możliwość. Będziemy wtedy mogli zapisywać pola takie jak <literal>Provides: "
+"libstorable-perl (= 1.7)</literal>, żeby zaznaczyć, że pakiet dostarcza taką "
+"samą funkcjonalność jak <emphasis role=\"pkg\">libstorable-perl</emphasis> w "
+"wersji 1.7."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Replacing Files: The <literal>Replaces</literal> Field"
-msgstr ""
+msgstr "Zastępowanie plików: pole <literal>Replaces</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>replacement</primary>"
-msgstr ""
+msgstr "<primary>zastąpienie</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Replaces</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Replaces</literal>, pole nagłówka</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>replacement</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>zastąpienie</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1162,7 +1187,16 @@ msgid ""
 "potential problems and requires the maintainer to study the matter prior to "
 "choosing whether to add such a field."
 msgstr ""
+"Pole <literal>Replaces</literal> wskazuje, że dany pakiet zawiera pliki, "
+"które są również obecne w innym pakiecie, ale dany pakiet ma prawo je "
+"zastąpić. Bez tej specyfikacji, <command>dpkg</command> zakończy się "
+"niepowodzeniem informując, że nie może nadpisać plików innego pakietu (w "
+"praktyce możliwe jest wymuszenie tego działania za pomocą opcji <literal>--"
+"force-overwrite</literal>). Pomaga to zidentyfikować potencjalne problemy i "
+"wymaga od opiekuna zbadania tej kwestii przed wyborem, czy dodać takie pole, "
+"czy nie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1172,7 +1206,13 @@ msgid ""
 "produced from the same source package: a replaced file no longer belongs to "
 "the old package, but only to the new one."
 msgstr ""
+"Użycie tego pola jest uprawnione kiedy zmienia się nazwa pakietu lub jeden "
+"pakiet jest zawarty w innym. Zdarza się to również, gdy opiekun decyduje się "
+"na różne rozprowadzanie plików pośród różnych pakietów binarnych "
+"wytworzonych z tego samego pakietu źródłowego: zastąpiony plik nie należy "
+"już do starego pakietu, ale tylko do nowego."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1181,6 +1221,9 @@ msgid ""
 "<command>dpkg</command> to remove the replaced package where there is a "
 "conflict."
 msgstr ""
+"Jeżeli wszystkie pliki w zainstalowanym pakiecie zostały zastąpione, pakiet "
+"uważa się za usunięty. Ostatecznie, użycie tego pola zachęca <command>dpkg</"
+"command> do usunięcia zastąpionego pakietu, w którym występuje konflikt."
 
 #. Tag: title
 #, no-c-format
