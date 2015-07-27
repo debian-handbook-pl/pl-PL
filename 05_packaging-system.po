@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-26 12:37+0100\n"
+"PO-Revision-Date: 2015-07-27 13:50+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -683,7 +683,7 @@ msgid "<primary><literal>Pre-Depends</literal>, header field</primary>"
 msgstr "<primary><literal>Pre-Depends</literal>, header field</primary>"
 
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary>pre-dependency</primary>"
 msgstr "<primary>pre-dependency</primary>"
 
@@ -713,7 +713,7 @@ msgstr ""
 
 # mateunho
 #. Tag: title
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "<emphasis>DEBIAN POLICY</emphasis> <literal>Recommends</literal>, "
 "<literal>Suggests</literal>, and <literal>Enhances</literal> fields"
@@ -723,15 +723,15 @@ msgstr ""
 
 # mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary><literal>Recommends</literal>, header field</primary>"
-msgstr "<primary><literal>Recommends</literal>, header field</primary>"
+msgstr "<primary><literal>Recommends</literal>, pole nagłówkowe</primary>"
 
 # mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary><literal>Suggests</literal>, header field</primary>"
-msgstr "<primary><literal>Suggests</literal>, header field</primary>"
+msgstr "<primary><literal>Suggests</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -780,7 +780,7 @@ msgstr ""
 
 # mateunho
 #. Tag: title
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Conflicts: the <literal>Conflicts</literal> field"
 msgstr "Konflikty: pole <literal>Conflicts</literal>"
 
@@ -792,9 +792,9 @@ msgstr "<primary>konflikty</primary>"
 
 # mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<primary><literal>Conflicts</literal>, header field</primary>"
-msgstr "<primary><literal>Conflicts</literal>, header field</primary>"
+msgstr "<primary><literal>Conflicts</literal>, pole nagłówkowe</primary>"
 
 # mateunho
 #. Tag: indexterm
@@ -839,7 +839,7 @@ msgstr ""
 
 # mateunho
 #. Tag: title
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Incompatibilities: the <literal>Breaks</literal> Field"
 msgstr "Niekompatybilności: pole <literal>Breaks</literal>"
 
@@ -1319,11 +1319,11 @@ msgstr "<emphasis>IDĄC DALEJ</emphasis> Baza danych <command>dpkg</command>"
 msgid "<primary><filename>/var/lib/dpkg/</filename></primary>"
 msgstr "<primary><filename>/var/lib/dpkg/</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid "<primary>dpkg</primary><secondary>database</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>dpkg</primary><secondary>baza danych</secondary>"
 
 # mateunho
 #. Tag: para
@@ -1430,13 +1430,15 @@ msgstr ""
 msgid "Installation and Upgrade"
 msgstr "Instalacja i uaktualnieni"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary><command>dpkg</command></primary><secondary>internal operation</"
 "secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr ""
+"<primary><command>dpkg</command></primary><secondary>wewnętrzne działanie</"
+"secondary>"
 
 # mateunho
 #. Tag: para
@@ -1994,11 +1996,11 @@ msgstr "Struktura Pakietu Źródłowego"
 msgid "<primary>package</primary><secondary>source package</secondary>"
 msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>source</primary><secondary>package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>źródło</primary><secondary>pakiet</secondary>"
 
 #. Tag: title
 #, no-c-format
@@ -2248,23 +2250,23 @@ msgstr ""
 msgid "<primary><command>dpkg-source</command></primary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>decompressing, source package</primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>dekompresja, pakiet źródłowy</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>uncompressing, source package</primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>odkompresowanie, pakiet źródłowy</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>unpacking</primary><secondary>source package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>odpakowywanie</primary><secondary>pakiet źródłowy</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2368,12 +2370,12 @@ msgstr ""
 msgid "Installing Packages"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary>installation</primary><secondary>package installation</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>instalacja</primary><secondary>instalacja pakietu</secondary>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -2444,11 +2446,11 @@ msgstr ""
 msgid "<primary>package</primary><secondary>unpacking</secondary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid "<primary>unpacking</primary><secondary>binary package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>odpakowywanie</primary><secondary>pakiet binarny</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2911,12 +2913,14 @@ msgstr ""
 msgid "<primary>Multi-Arch</primary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary>architecture</primary><secondary>multi-arch support</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr ""
+"<primary>architektura</primary><secondary>wsparcie wielu architektur</"
+"secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -3111,26 +3115,31 @@ msgid ""
 "“<literal>Multi-Arch: allowed</literal>”."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Coexistence with Other Packaging Systems"
-msgstr ""
+msgstr "Współistnienie z innymi systemami pakietowania"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>RPM</primary>"
-msgstr ""
+msgstr "<primary>RPM</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>Red Hat Package Manager</primary>"
-msgstr ""
+msgstr "<primary>Red Hat Package Manager</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>alien</command></primary>"
-msgstr ""
+msgstr "<primary><command>alien</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -3140,7 +3149,13 @@ msgid ""
 "distribution. It is thus common for software provided by third parties to be "
 "offered as RPM packages rather than Debian."
 msgstr ""
+"Pakiety Debiana nie są jedynymi pakietami używanymi w świecie Wolnego "
+"oprogramowania. Głównym konkurentem jest format RPM używany w dystrybucji "
+"Red Hat Linuks i jego pochodnych. Red Hat jest bardzo popularną, komercyjną "
+"dystrybucją. Z tego powodu oprogramowanie dostarczane przez inne firmy "
+"często jest oferowane jako pakiety RPM, a nie Debiana."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -3153,20 +3168,35 @@ msgid ""
 "from those of native software (such as <command>dpkg</command>). This is why "
 "it is not possible to ensure a stable coexistence of two packaging systems."
 msgstr ""
+"W tym przypadku należy zdawać sobie sprawę, że program <command>rpm</"
+"command>, obsługujący pakiety RPM, jest dostępny jako pakiet Debiana, więc "
+"możliwe jest używanie tego formatu pakietów w Debianie. Niemniej jednak "
+"trzeba uważać i ograniczyć te manipulacje do wydobycia informacji z pakietu "
+"lub sprawdzenia jego spójności. Prawdę mówiąc, używanie <command>rpm</"
+"command> do instalacji RPM w Debianie jest nierozsądne; RPM używa własnej "
+"bazy danych, oddzielnej od rodzimego oprogramowania (takiego jak "
+"<command>dpkg</command>). Z tego powodu zapewnienie współistnienia dwóch "
+"systemów pakietowania jest niemożliwe."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "On the other hand, the <emphasis role=\"pkg\">alien</emphasis> utility can "
 "convert RPM packages into Debian packages, and vice versa."
 msgstr ""
+"Z drugiej strony, narzędzie <emphasis role=\"pkg\">alien</emphasis> pozwala "
+"konwertować pakiety RPM na pakiety Debiana i vice versa."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>COMMUNITY</emphasis> Encouraging the adoption of <filename>.deb</"
 "filename>"
 msgstr ""
+"<emphasis>SPOŁECZNOŚĆ</emphasis> Zachęcanie do przyjęcia <filename>.deb</"
+"filename>"
 
 #. Tag: para
 #, no-c-format
