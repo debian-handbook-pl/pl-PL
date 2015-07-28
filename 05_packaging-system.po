@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-07-27 13:50+0100\n"
+"PO-Revision-Date: 2015-07-28 16:11+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
@@ -16,12 +16,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-Bookmarks: 58,106,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 227,106,114,-1,-1,-1,-1,-1,-1,-1\n"
 
+# mateunho
 #. Tag: keyword
 #, no-c-format
 msgid "Binary package"
-msgstr "Pakiet Binarny"
+msgstr "Pakiet binarny"
 
 #. Tag: keyword
 #, no-c-format
@@ -38,15 +39,17 @@ msgstr "dpkg"
 msgid "dependencies"
 msgstr "zależności"
 
+# mateunho
 #. Tag: keyword
 #, no-c-format
 msgid "conflict"
-msgstr "Konflikt"
+msgstr "konflikt"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Packaging System: Tools and Fundamental Principles"
-msgstr "System Pakowania: Fundamentalne zasady oraz narzędzia"
+msgstr "System pakietowania: narzędzia oraz podstawowe zasady"
 
 #. Tag: para
 #, no-c-format
@@ -62,6 +65,7 @@ msgstr ""
 "(aplikacje, dokumentacja, itp), których instalacja i konserwacja ułatwiają "
 "pracę. Dobrym pomysłem jest wiedzieć, czym one są i jak z nich korzystać."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -71,24 +75,27 @@ msgid ""
 "as instructions for building binary packages."
 msgstr ""
 "Ten rozdział opisuje strukturę i zawartość pakietów \"binarnych\" oraz "
-"\"źródłowych\". Z końcówką <filename>.deb</filename> pliki te wykorzystujemy "
-"używając <command>dpkg</command>, a drugi zawiera kod źródłowy, jak również "
-"instrukcje do budowania pakietów binarnych."
+"\"źródłowych\". Pierwsze z nich, pliki <filename>.deb</filename>. są "
+"bezpośrednio używane przez <command>dpkg</command>, natomiast ostatnie "
+"zawierają kod źródłowy, jak również instrukcje do budowania pakietów "
+"binarnych."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Structure of a Binary Package"
-msgstr "Struktura pakietów Binarnych"
+msgstr "Struktura pakietu binarnego"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>binary package</secondary>"
 msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>ar</command></primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary><command>ar</command></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -133,14 +140,15 @@ msgstr ""
 "trzeba tylko skopiować brakujący program z innego systemu (ponieważ każdy z "
 "nich działa w sposób całkowicie autonomiczny, wystarczy jedynie skopiować)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>TOOLS</emphasis> <command>dpkg</command>, <command>APT</command> "
 "and <command>ar</command>"
 msgstr ""
-"<emphasis>TOOLS</emphasis> <command>dpkg</command>, <command>APT</command> "
-"and <command>ar</command>"
+"<emphasis>NARZĘDZIA</emphasis> <command>dpkg</command>, <command>APT</"
+"command> i <command>ar</command>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -411,20 +419,23 @@ msgstr ""
 "filename> dla bzip2, <filename>data.tar.xz</filename> dla XZ, <filename>data."
 "tar.lzma</filename> dla LZMA)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Package Meta-Information"
-msgstr "Pakiet Informacji Meta"
+msgstr "Meta-informacje pakietu"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package meta-information</primary>"
-msgstr "<primary>package meta-information</primary>"
+msgstr "<primary>meta-informacje pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>meta-information</secondary>"
-msgstr "<primary>package</primary><secondary>meta-information</secondary>"
+msgstr "<primary>pakiet</primary><secondary>meta-informacje</secondary>"
 
 # mateunho
 #. Tag: para
@@ -448,10 +459,11 @@ msgstr ""
 "znajdują się wewnątrz pakietu jako jego \"meta-informacje\" (informacje o "
 "innych informacjach)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Description: the <filename>control</filename> File"
-msgstr "Opis pliku <filename>control</filename> File"
+msgstr "Opis: plik <filename>control</filename>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -516,10 +528,11 @@ msgid ""
 "computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> RFC — Internet standards"
-msgstr "<emphasis>Powrót do podstaw</emphasis> RFC — Internetowy Standard"
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> RFC — internetowe standardy"
 
 #. Tag: indexterm
 #, no-c-format
@@ -558,10 +571,11 @@ msgstr ""
 "RFC 2026 definiuje proces standaryzacji protokołów internetowych<ulink type="
 "\"block\" url=\"http://www.faqs.org/rfcs/rfc2026.html\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Dependencies: the <literal>Depends</literal> Field"
-msgstr "Zależności <literal>Depends</literal>Pola"
+msgstr "Zależności: pole <literal>Depends</literal>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -594,34 +608,39 @@ msgid ""
 "comparison operators are as follows:"
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&lt;&lt;</command>: less than;"
-msgstr "<command>&lt;&lt;</command>: mniejsza od"
+msgstr "<command>&lt;&lt;</command>: mniejsza;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&lt;=</command>: less than or equal to;"
-msgstr "<command>&lt;=</command>: mniejsza od bądź równa do"
+msgstr "<command>&lt;=</command>: mniejsza bądź równa;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "<command>=</command>: equal to (note that “<literal>2.6.1</literal>” is not "
 "equal to “<literal>2.6.1-1</literal>”);"
 msgstr ""
-"<command>=</command>: równa się (note that “<literal>2.6.1</literal>”nie "
-"równa się “<literal>2.6.1-1</literal>”);"
+"<command>=</command>: równa (zauważ, że “<literal>2.6.1</literal>” nie jest "
+"równa “<literal>2.6.1-1</literal>”);"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&gt;=</command>: greater than or equal to;"
-msgstr "<command>&gt;=</command>: większa bądz równa do"
+msgstr "<command>&gt;=</command>: większa bądź równa;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&gt;&gt;</command>: greater than."
-msgstr "<command>&gt;&gt;</command>: większa od"
+msgstr "<command>&gt;&gt;</command>: większa."
 
 #. Tag: para
 #, no-c-format
@@ -680,7 +699,7 @@ msgstr ""
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Pre-Depends</literal>, header field</primary>"
-msgstr "<primary><literal>Pre-Depends</literal>, header field</primary>"
+msgstr "<primary><literal>Pre-Depends</literal>, pole nagłówkowe</primary>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -757,10 +776,11 @@ msgstr ""
 "wiesz, dlaczego ich nie potrzebujesz. Przeciwnie, nie jest wymagane "
 "instalowanie \"sugerowanych\", chyba że wiesz, że ich potrzebujesz."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Enhances</literal>, header field</primary>"
-msgstr "<primary><literal>Enhances</literal>, header field</primary>"
+msgstr "<primary><literal>Enhances</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -849,10 +869,11 @@ msgstr "Niekompatybilności: pole <literal>Breaks</literal>"
 msgid "<primary>incompatibilities</primary>"
 msgstr "<primary>niekompatybilności</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Breaks</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Breaks</literal>, pole nagłówkowe</primary>"
 
 # mateunho
 #. Tag: indexterm
@@ -890,15 +911,17 @@ msgid ""
 "user from running into these problems."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Provided Items: the <literal>Provides</literal> Field"
-msgstr ""
+msgstr "Dostarczone elementy: pole <literal>Provides</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Provides</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Provides</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1166,7 +1189,7 @@ msgstr "<primary>zastąpienie</primary>"
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Replaces</literal>, header field</primary>"
-msgstr "<primary><literal>Replaces</literal>, pole nagłówka</primary>"
+msgstr "<primary><literal>Replaces</literal>, pole nagłówkowe</primary>"
 
 # mateunho
 #. Tag: indexterm
@@ -1225,10 +1248,11 @@ msgstr ""
 "uważa się za usunięty. Ostatecznie, użycie tego pola zachęca <command>dpkg</"
 "command> do usunięcia zastąpionego pakietu, w którym występuje konflikt."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> The <literal>Tag</literal> field"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Pole <literal>Tag</literal>"
 
 #. Tag: para
 #, no-c-format
@@ -1649,8 +1673,9 @@ msgstr ""
 "<primary><filename>config</filename>, <command>debconf</command> script</"
 "primary>"
 
+# mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "The four scripts detailed above are complemented by a <filename>config</"
 "filename> script, provided by packages using <command>debconf</command> to "
@@ -1663,15 +1688,15 @@ msgid ""
 "process. The pre- and post-installation scripts can then use this "
 "information to operate according to the user's wishes."
 msgstr ""
-"Opisane powyżej cztery skrypty są uzupełnione przez skrypt<filename>config</"
-"filename>, dostarczanym poprzez używanie pakietu <command>debconf</command> "
-"w celu nabycia potrzebnych do konfiguracji informacji od użytkownika. "
-"Podczas instalacji, skrypt ten dokładnie określa zapytania zadane przez "
-"<command>debconf</command>. Zapytanie jest zapisane w bazie danych komendy "
-"<command>debconf</command> dla przyszłego odniesienia. Ten skrypt jest na "
-"ogół wykonywany przez <command>apt</command> najpierw instalując pakiety "
-"jeden po drugim, w porządku grupującym wszystkie zapytania, zadając je "
-"wszystkie użytkownikowi na początku procesu. Skrypty przed- i po- "
+"Opisane powyżej cztery skrypty są uzupełnione skryptem <filename>config</"
+"filename>, dostarczanym przez pakiety używające <command>debconf</command> w "
+"celu uzyskania informacji konfiguracyjnych od użytkownika. Podczas "
+"instalacji, skrypt ten szczegółowo definiuje pytania zadawane przez "
+"<command>debconf</command>. Odpowiedzi są zapisywane w bazie danych "
+"<command>debconf</command> dla przyszłego odniesienia. Ten skrypt jest "
+"zazwyczaj wykonywany przez <command>apt</command> przed instalacją pakietów "
+"jeden po drugim, w celu zgrupowania wszystkich pytań i zadania ich "
+"użytkownikowi wszystkich na raz na początku procesu. Skrypty przed- i po-"
 "instalacyjne mogą wtedy użyć tych informacji do działania zgodnie z "
 "życzeniem użytkownika."
 
@@ -2071,7 +2096,7 @@ msgstr ""
 msgid "A <filename>.dsc</filename> file"
 msgstr "Plik <filename>.dsc</filename>"
 
-# tutaj
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -2119,11 +2144,55 @@ msgid ""
 "=qnbh\n"
 "-----END PGP SIGNATURE-----\n"
 msgstr ""
+"\n"
+"-----BEGIN PGP SIGNED MESSAGE-----\n"
+"Hash: SHA256\n"
+"\n"
+"Format: 3.0 (quilt)\n"
+"Source: zim\n"
+"Binary: zim\n"
+"Architecture: all\n"
+"Version: 0.48-1\n"
+"Maintainer: Emfox Zhou &lt;emfox@debian.org&gt;\n"
+"Uploaders: Raphaël Hertzog &lt;hertzog@debian.org&gt;\n"
+"Homepage: http://zim-wiki.org\n"
+"Standards-Version: 3.9.0\n"
+"Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/zim/trunk?"
+"op=log\n"
+"Vcs-Svn: svn://svn.debian.org/collab-maint/deb-maint/zim/trunk\n"
+"Build-Depends: debhelper (&gt;= 7.4.12), python-support (&gt;= 0.8), xdg-"
+"utils, python (&gt;= 2.5), libgtk2.0-0 (&gt;= 2.6), python-gtk2, python-xdg, "
+"python-simplejson | python (&gt;= 2.6)\n"
+"Checksums-Sha1: \n"
+" bd84fa5104de5ed85a49723d26b350856de93217 966899 zim_0.48.orig.tar.gz\n"
+" 352111ff372a20579664416c9abd4970839835b3 9615 zim_0.48-1.debian.tar.gz\n"
+"Checksums-Sha256: \n"
+" 77d8df7dc89b233fdc3aab1a8ad959c6888881ae160770f50bf880a56e02f895 966899 "
+"zim_0.48.orig.tar.gz\n"
+" 0fceab5d3b099075cd38c225fa4002d893c1cdf4bbcc51d1391a34248e1e1a22 9615 "
+"zim_0.48-1.debian.tar.gz\n"
+"Files: \n"
+" 88cfc18c0c7339528d5f5f463647bb5f 966899 zim_0.48.orig.tar.gz\n"
+" 608b6e74aa14252dfc6236ab184bdb0c 9615 zim_0.48-1.debian.tar.gz\n"
+"\n"
+"-----BEGIN PGP SIGNATURE-----\n"
+"Version: GnuPG v1.4.10 (GNU/Linux)\n"
+"Comment: Signed by Raphael Hertzog\n"
+"\n"
+"iQEcBAEBCAAGBQJMSUAfAAoJEAOIHavrwpq5qjUIAKmM8p86GcHYTxMmKENoBUoW\n"
+"UPi5R7DzrLMbFrUXKgXWLvEKQTXpmkJhh2aSWq2iY+5piBSHwMiITfaBTpdTRvzU\n"
+"5nT/n9MlF8sJFESet/NgZaMPFDzWUbIy5aYbuG1TXmn/7XiDrBaQGiVqKkVLPrqc\n"
+"yWhsotn3JNKIjbPDW/DjImYyKD5RZpXrbVjuIgDT1E6yxtNYwUyBlK0cx/GITNep\n"
+"uV48hsT8cj0paqVXl5+P9Ww8XIE3clxNpE/45/tvKvkqGOeysc6OPAqsIw6HYFY9\n"
+"0EnvMTfMpeQOA68ZqsNpUjomv5r/EGwdCbAWo5iJDsZzXQ1Feh6iSNrjv3yeRzg=\n"
+"=qnbh\n"
+"-----END PGP SIGNATURE-----\n"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Build-Depends</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Build-Depends</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2349,13 +2418,17 @@ msgid ""
 "everything as automatically as possible."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>NOTE</emphasis> <command>dpkg</command> or <command>apt-get</"
 "command>?"
 msgstr ""
+"<emphasis>ZAUWAŻ</emphasis> <command>dpkg</command> czy <command>apt-get</"
+"command>?"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2364,11 +2437,16 @@ msgid ""
 "limitations of the former. These tools work together, each one with its "
 "particularities, suited to specific tasks."
 msgstr ""
+"<command>dpkg</command> powinien być postrzegany jako narzędzie systemowe "
+"(backend), a <command>apt-get</command> jako narzędzie bliższe "
+"użytkownikowi, które przezwycięża ograniczenia pierwszego. Narzędzia te "
+"współpracują, każde mając swoją specyfikę dostosowaną do określonych zadań."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Installing Packages"
-msgstr ""
+msgstr "Instalowanie pakietów"
 
 # mateunho
 #. Tag: indexterm
@@ -2377,11 +2455,13 @@ msgid ""
 "<primary>installation</primary><secondary>package installation</secondary>"
 msgstr "<primary>instalacja</primary><secondary>instalacja pakietu</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>installation</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>instalacja</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2390,11 +2470,15 @@ msgid ""
 "this, we use its <literal>-i</literal> or <literal>--install</literal> "
 "option."
 msgstr ""
+"<command>dpkg</command> jest przede wszystkim narzędziem do instalowania już "
+"dostępnych pakietów Debiana (ponieważ nic nie pobiera). W tym celu należy "
+"użyć opcji <literal>-i</literal> lub <literal>--install</literal>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Installation of a package with <command>dpkg</command>"
-msgstr ""
+msgstr "Instalowanie pakietu z <command>dpkg</command>"
 
 #. Tag: screen
 #, no-c-format
@@ -2421,10 +2505,11 @@ msgid ""
 "of the database in memory, especially the list of already installed files)."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Separate unpacking and configuration"
-msgstr ""
+msgstr "Osobne odpakowywanie i konfiguracja"
 
 #. Tag: screen
 #, no-c-format
@@ -2441,10 +2526,11 @@ msgid ""
 "Building database of manual pages ...</computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>unpacking</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>odpakowywanie</secondary>"
 
 # mateunho
 #. Tag: indexterm
@@ -2497,16 +2583,19 @@ msgid ""
 "stability of your system."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>CAUTION</emphasis> Effective use of <literal>--force-*</literal>"
 msgstr ""
+"<emphasis>UWAGA</emphasis> Efektywne użycie <literal>--force-*</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>broken dependency</primary>"
-msgstr ""
+msgstr "<primary>uszkodzona zależność</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2560,25 +2649,29 @@ msgid ""
 "<xref linkend=\"sect.backports\" />)."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>removing a package</primary>"
-msgstr ""
+msgstr "<primary>usuwanie pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>purging a package</primary>"
-msgstr ""
+msgstr "<primary>całkowite usuwanie pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>removal</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>usuwanie</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>purge</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>całkowite usuwanie</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2594,10 +2687,11 @@ msgid ""
 "option, followed by the package name."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Removal and purge of the <emphasis>debian-cd</emphasis> package"
-msgstr ""
+msgstr "Usunięcie i całkowite usunięcie pakietu <emphasis>debian-cd</emphasis>"
 
 #. Tag: screen
 #, no-c-format
@@ -2620,25 +2714,28 @@ msgid ""
 "filename> Files"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>status</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>stan</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>file list</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>lista plików</secondary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>content inspection</secondary>"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Option syntax"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Składnia dla opcji"
 
 #. Tag: para
 #, no-c-format
@@ -2670,10 +2767,11 @@ msgid ""
 "literal>), which displays the headers of this Debian package."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Various queries with <command>dpkg</command>"
-msgstr ""
+msgstr "Różne zapytania z <command>dpkg</command>"
 
 #. Tag: screen
 #, no-c-format
@@ -2811,20 +2909,23 @@ msgid ""
 "[...]</computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> Comparison of versions"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Porównywanie wersji"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>version, comparison</primary>"
-msgstr ""
+msgstr "<primary>wersja, porównanie</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>comparison of versions</primary>"
-msgstr ""
+msgstr "<primary>porównywanie wersji</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2873,6 +2974,7 @@ msgid ""
 "that it is a pre-release, we use the tilde character, “<literal>~</literal>”:"
 msgstr ""
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid ""
@@ -2882,6 +2984,11 @@ msgid ""
 "<computeroutput>$ </computeroutput><userinput>echo $?</userinput>\n"
 "<computeroutput>0</computeroutput>\n"
 msgstr ""
+"\n"
+"<computeroutput>$ </computeroutput><userinput>dpkg --compare-versions "
+"2.6.0~pre3-1 lt 2.6.0-1</userinput>\n"
+"<computeroutput>$ </computeroutput><userinput>echo $?</userinput>\n"
+"<computeroutput>0</computeroutput>\n"
 
 #. Tag: title
 #, no-c-format
@@ -3042,10 +3149,11 @@ msgid ""
 "hack that repackaged 32 bit libraries in an “amd64” package."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">ia32-libs</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">ia32-libs</emphasis></primary>"
 
 #. Tag: title
 #, no-c-format
