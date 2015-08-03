@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-01-11 00:04+0100\n"
-"Last-Translator:  <mw.marcinwilk@gmail.com>\n"
+"PO-Revision-Date: 2015-07-28 16:11+0100\n"
+"Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-"
 "handbook/05_packaging-system/pl/>\n"
 "Language: pl_PL\n"
@@ -15,12 +15,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Bookmarks: 227,106,114,-1,-1,-1,-1,-1,-1,-1\n"
 
+# mateunho
 #. Tag: keyword
 #, no-c-format
 msgid "Binary package"
-msgstr "Pakiet Binarny"
+msgstr "Pakiet binarny"
 
 #. Tag: keyword
 #, no-c-format
@@ -37,15 +39,17 @@ msgstr "dpkg"
 msgid "dependencies"
 msgstr "zależności"
 
+# mateunho
 #. Tag: keyword
 #, no-c-format
 msgid "conflict"
-msgstr "Konflikt"
+msgstr "konflikt"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Packaging System: Tools and Fundamental Principles"
-msgstr "System Pakowania: Fundamentalne zasady oraz narzędzia"
+msgstr "System pakietowania: narzędzia oraz podstawowe zasady"
 
 #. Tag: para
 #, no-c-format
@@ -61,6 +65,7 @@ msgstr ""
 "(aplikacje, dokumentacja, itp), których instalacja i konserwacja ułatwiają "
 "pracę. Dobrym pomysłem jest wiedzieć, czym one są i jak z nich korzystać."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -70,24 +75,27 @@ msgid ""
 "as instructions for building binary packages."
 msgstr ""
 "Ten rozdział opisuje strukturę i zawartość pakietów \"binarnych\" oraz "
-"\"źródłowych\". Z końcówką <filename>.deb</filename> pliki te "
-"wykorzystujemy używając <command>dpkg</command>, a drugi zawiera kod "
-"źródłowy, jak również instrukcje do budowania pakietów binarnych."
+"\"źródłowych\". Pierwsze z nich, pliki <filename>.deb</filename>. są "
+"bezpośrednio używane przez <command>dpkg</command>, natomiast ostatnie "
+"zawierają kod źródłowy, jak również instrukcje do budowania pakietów "
+"binarnych."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Structure of a Binary Package"
-msgstr "Struktura pakietów Binarnych"
+msgstr "Struktura pakietu binarnego"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>binary package</secondary>"
 msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>ar</command></primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary><command>ar</command></primary>"
 
 #. Tag: para
 #, no-c-format
@@ -124,22 +132,23 @@ msgstr ""
 "command> program i w ten sposób nie możesz instalować pakietów Debiana. "
 "<command> dpkg </command> jest pakietem Debiana samym w sobie, wydaje się "
 "wieć, że system będzie gotowy do... Na szczęście, znasz, format pakietu "
-"dlatego możesz pobierać pliki <filename> .deb </filename> z <emphasis role"
-"=\"pkg \"> dpkg </emphasis>  i zainstalować go ręcznie (patrz \"Narzędzia"
-"\" w ramce). Jeśli jakimś nieszczęśliwym trafem jednen lub więcej programów  "
+"dlatego możesz pobierać pliki <filename> .deb </filename> z <emphasis role="
+"\"pkg \"> dpkg </emphasis>  i zainstalować go ręcznie (patrz \"Narzędzia\" w "
+"ramce). Jeśli jakimś nieszczęśliwym trafem jednen lub więcej programów  "
 "<command> ar </command>, <command> tar </command> lub <command> gzip </"
 "command> / <command> xz </command> / <command> bzip2 </command> zniknęły, "
 "trzeba tylko skopiować brakujący program z innego systemu (ponieważ każdy z "
 "nich działa w sposób całkowicie autonomiczny, wystarczy jedynie skopiować)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>TOOLS</emphasis> <command>dpkg</command>, <command>APT</command> "
 "and <command>ar</command>"
 msgstr ""
-"<emphasis>TOOLS</emphasis> <command>dpkg</command>, <command>APT</command> "
-"and <command>ar</command>"
+"<emphasis>NARZĘDZIA</emphasis> <command>dpkg</command>, <command>APT</"
+"command> i <command>ar</command>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -173,6 +182,7 @@ msgstr ""
 "pakietu (utrzymując jednocześnie wszystkie zależności) aktualizację systemu "
 "Lista dostępnych pakietów, etc."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -193,6 +203,23 @@ msgid ""
 "extract the content from the <filename>data.tar.gz</filename> archive in the "
 "system's root (<filename>/</filename>):"
 msgstr ""
+"<indexterm><primary><command>ar</command></primary></indexterm> Jeżeli mowa "
+"o <command>ar</command>, to jest to program pozwalający obsługiwać pliki o "
+"tej samej nazwie: <command>ar t <replaceable>archiwum</replaceable></"
+"command> wyświetla listę plików znajdujących się w archiwum, <command>ar x "
+"<replaceable>archiwum</replaceable></command> wypakowuje pliki z archiwum do "
+"bieżącego katalogu roboczego, <command>ar d <replaceable>archiwum</"
+"replaceable> <replaceable>plik</replaceable></command> usuwa plik z "
+"archiwum, itd. Jego strona w podręczniku systemowym "
+"(<citerefentry><refentrytitle>ar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>) zawiera dokumentację wszystkich innych funkcji. <command>ar</"
+"command> jest podstawowym narzędziem, choć rzadko używanym przez "
+"administratorów Uniksa, w przeciwieństwie do <command>tar</command>, który "
+"jest bardziej zaawansowanym programem do zarządzania archiwami i plikami. "
+"Biorąc to pod uwagę, przywracanie pomyłkowo usuniętego <command>dpkg</"
+"command> jest dość łatwe. Wystarczy pobrać pakiet Debiana i wypakować "
+"zawartość archiwum <filename>data.tar.gz</filename> do katalogu głównego "
+"(<filename>/</filename>):"
 
 #. Tag: screen
 #, no-c-format
@@ -227,6 +254,7 @@ msgstr ""
 "citerefentry>” w literaturze. Na ogół jest to wygodnym środkiem powołując "
 "się na stronie podręcznika  <literal>ar</literal> iw sekcji 1"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -238,6 +266,13 @@ msgid ""
 "can also be referred to as <citerefentry><refentrytitle>printf</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgstr ""
+"Czasami ta notacja może być używana do unikania nieporozumień, na przykład "
+"żeby rozróżnić komendę <command>printf</command>, która może być również "
+"wskazywana jako <citerefentry><refentrytitle>printf</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> od funkcji "
+"<function>printf</function> w języku programowania C, do której można się "
+"odnosić przez <citerefentry><refentrytitle>printf</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 
 #. Tag: para
 #, no-c-format
@@ -350,6 +385,7 @@ msgstr ""
 "wskazuje wersję <filename>.deb</filename>użytego pliku (in 2013: "
 "version 2.0)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -359,7 +395,13 @@ msgid ""
 "is possible to install or uninstall it, for example according to the list of "
 "packages already on the machine."
 msgstr ""
+"<filename>control.tar.gz</filename>. To archiwum zawiera wszystkie dostępne "
+"meta-informacje, takie jak nazwa i wersja pakietu. Niektóre z tych meta-"
+"informacji pozwalają narzędziom zarządzającym pakietami na określenie, czy "
+"możliwe jest jego zainstalowanie lub odinstalowanie, na przykład zgodnie z "
+"listą pakietów znajdujących się na maszynie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -370,22 +412,32 @@ msgid ""
 "tar.bz2</filename> for bzip2, <filename>data.tar.xz</filename> for XZ, "
 "<filename>data.tar.lzma</filename> for LZMA)."
 msgstr ""
+"<filename>data.tar.gz</filename>. To archiwum zawiera wszystkie pliki do "
+"wypakowania z pakietu; tutaj przechowywane są pliki wykonywalne, "
+"dokumentacja, itd. Niektóre pakiety mogą używac innych formatów kompresji, w "
+"takim przypadku plik będzie nazwany inaczej (<filename>data.tar.bz2</"
+"filename> dla bzip2, <filename>data.tar.xz</filename> dla XZ, <filename>data."
+"tar.lzma</filename> dla LZMA)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Package Meta-Information"
-msgstr "Pakiet Informacji Meta"
+msgstr "Meta-informacje pakietu"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package meta-information</primary>"
-msgstr "<primary>package meta-information</primary>"
+msgstr "<primary>meta-informacje pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>meta-information</secondary>"
-msgstr "<primary>package</primary><secondary>meta-information</secondary>"
+msgstr "<primary>pakiet</primary><secondary>meta-informacje</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -398,11 +450,20 @@ msgid ""
 "the packaged software, but are, within the package, what is called its “meta-"
 "information” (information about other information)."
 msgstr ""
+"Pakiet Debiana to nie tylko archiwum plików przeznaczonych do instalacji. "
+"Jest częścią większej całości, opisuje powiązania z innymi pakietami Debiana "
+"(zależności, konflikty, sugestie). Dostarcza również skrypty pozwalające "
+"wykonywać komendy w różnych etapach cyklu życia pakietu (instalacja, "
+"usuwanie, uaktualnienia). Opisywane dane, używane przez narzędzia "
+"zarządzające pakietami, nie są częścią oprogramowania danego pakietu, ale "
+"znajdują się wewnątrz pakietu jako jego \"meta-informacje\" (informacje o "
+"innych informacjach)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Description: the <filename>control</filename> File"
-msgstr "Opis pliku <filename>control</filename> File"
+msgstr "Opis: plik <filename>control</filename>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -417,8 +478,8 @@ msgid ""
 "<filename>control</filename> file looks like the following:"
 msgstr ""
 "Plik ten wykorzystuje strukturę podobną do nagłówków e-mail (jak "
-"zdefiniowano w dokumencie RFC 2822). Na przykład dla <emphasis role=\"pkg"
-"\"> apt </emphasis>, <filename> control </filename> wygląda następująco:"
+"zdefiniowano w dokumencie RFC 2822). Na przykład dla <emphasis role=\"pkg\"> "
+"apt </emphasis>, <filename> control </filename> wygląda następująco:"
 
 #. Tag: screen
 #, no-c-format
@@ -467,10 +528,11 @@ msgid ""
 "computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> RFC — Internet standards"
-msgstr "<emphasis>Powrót do podstaw</emphasis> RFC — Internetowy Standard"
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> RFC — internetowe standardy"
 
 #. Tag: indexterm
 #, no-c-format
@@ -482,6 +544,7 @@ msgstr "<primary>RFC</primary>"
 msgid "<primary>Request For Comments</primary>"
 msgstr "<primary>Request For Comments</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -492,6 +555,12 @@ msgid ""
 "decides on the evolution of the status of these documents (proposed "
 "standard, draft standard, or standard)."
 msgstr ""
+"RFC jest skrótem od “Request For Comments” (Prośba o komentarze). RFC jest "
+"zazwyczaj technicznym dokumentem opisującym przyszły standard w Internecie. "
+"Przed ustandaryzowaniem i zamrożeniem, standardy te są przedstawione do "
+"publicznej oceny (stąd ich nazwa). IETF (Internet Engineering Task Force) "
+"decyduje o zmianie statusu tych dokumentów (proponowany standard, szkic "
+"standardu lub standard)."
 
 #. Tag: para
 #, no-c-format
@@ -502,10 +571,11 @@ msgstr ""
 "RFC 2026 definiuje proces standaryzacji protokołów internetowych<ulink type="
 "\"block\" url=\"http://www.faqs.org/rfcs/rfc2026.html\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Dependencies: the <literal>Depends</literal> Field"
-msgstr "Zależności <literal>Depends</literal>Pola"
+msgstr "Zależności: pole <literal>Depends</literal>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -522,6 +592,7 @@ msgstr "<primary><literal>Depends</literal>, header field</primary>"
 msgid "<primary>package</primary><secondary>dependency</secondary>"
 msgstr "<primary>package</primary><secondary>dependency</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -537,34 +608,39 @@ msgid ""
 "comparison operators are as follows:"
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&lt;&lt;</command>: less than;"
-msgstr "<command>&lt;&lt;</command>: mniejsza od"
+msgstr "<command>&lt;&lt;</command>: mniejsza;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&lt;=</command>: less than or equal to;"
-msgstr "<command>&lt;=</command>: mniejsza od bądź równa do"
+msgstr "<command>&lt;=</command>: mniejsza bądź równa;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "<command>=</command>: equal to (note that “<literal>2.6.1</literal>” is not "
 "equal to “<literal>2.6.1-1</literal>”);"
 msgstr ""
-"<command>=</command>: równa się (note that “<literal>2.6.1</literal>”nie "
-"równa się “<literal>2.6.1-1</literal>”);"
+"<command>=</command>: równa (zauważ, że “<literal>2.6.1</literal>” nie jest "
+"równa “<literal>2.6.1-1</literal>”);"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&gt;=</command>: greater than or equal to;"
-msgstr "<command>&gt;=</command>: większa bądz równa do"
+msgstr "<command>&gt;=</command>: większa bądź równa;"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>&gt;&gt;</command>: greater than."
-msgstr "<command>&gt;&gt;</command>: większa od"
+msgstr "<command>&gt;&gt;</command>: większa."
 
 #. Tag: para
 #, no-c-format
@@ -587,6 +663,7 @@ msgstr ""
 msgid "<primary>meta-package</primary>"
 msgstr "<primary>meta-package</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -600,6 +677,15 @@ msgid ""
 "emphasis>, <emphasis role=\"pkg\">kde-full</emphasis> and <emphasis role="
 "\"pkg\">linux-image-amd64</emphasis> packages are examples of meta-packages."
 msgstr ""
+"System zależności to dobry mechanizm gwarantujący działanie programu, ale "
+"jest również przydatny w \"meta-pakietach\". Są to puste pakiety, które "
+"jedynie opisują zależności. Ułatwiają one instalację spójnej grupy programów "
+"wyselekcjonowanych przez opiekuna meta-pakietu; w związku z tym as such, "
+"<command>apt-get install <replaceable>meta-pakiet</replaceable></command> "
+"automatycznie zainstaluje wszystkie te programy używając zależności meta-"
+"pakietu. Przykładami meta-pakietów są <emphasis role=\"pkg\">gnome</"
+"emphasis>, <emphasis role=\"pkg\">kde-full</emphasis> i <emphasis role=\"pkg"
+"\">linux-image-amd64</emphasis>."
 
 #. Tag: title
 #, no-c-format
@@ -613,7 +699,7 @@ msgstr ""
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Pre-Depends</literal>, header field</primary>"
-msgstr "<primary><literal>Pre-Depends</literal>, header field</primary>"
+msgstr "<primary><literal>Pre-Depends</literal>, pole nagłówkowe</primary>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -644,24 +730,27 @@ msgid ""
 "to find another solution as a work-around."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>DEBIAN POLICY</emphasis> <literal>Recommends</literal>, "
 "<literal>Suggests</literal>, and <literal>Enhances</literal> fields"
 msgstr ""
-"<emphasis>Polityka Debiana</emphasis> <literal>Rekomenduje</literal>, "
-"<literal>Proponuje</literal>, oraz <literal>poprawia</literal>pola"
+"<emphasis>POLITYKA DEBIANA</emphasis> Pola <literal>Recommends</literal>, "
+"<literal>Suggests</literal> i <literal>Enhances</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Recommends</literal>, header field</primary>"
-msgstr "<primary><literal>Rekomenduje</literal>, Pola nagłówków</primary>"
+msgstr "<primary><literal>Recommends</literal>, pole nagłówkowe</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Suggests</literal>, header field</primary>"
-msgstr "<primary><literal>Proponuje</literal>, Pole nagłówka</primary>"
+msgstr "<primary><literal>Suggests</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -675,6 +764,7 @@ msgid ""
 "perfectly reasonable to install one without the others."
 msgstr ""
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -682,14 +772,15 @@ msgid ""
 "exactly why you do not need them. Conversely, it is not necessary to install "
 "“suggested” packages unless you know why you need them."
 msgstr ""
-"Powinieneś zawsze instalować rekomendowane pakiety, chyba że wiesz dokładnie "
-"dlaczego ich nie potrzebujesz. Nie jest wtedy wymagane instalowania "
-"sugerowanych pakietów chyba że wiesz że ich potrzebujesz."
+"Powinieneś zawsze instalować pakiety \"rekomendowane\", chyba że dokładnie "
+"wiesz, dlaczego ich nie potrzebujesz. Przeciwnie, nie jest wymagane "
+"instalowanie \"sugerowanych\", chyba że wiesz, że ich potrzebujesz."
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Enhances</literal>, header field</primary>"
-msgstr "<primary><literal>Enhances</literal>, header field</primary>"
+msgstr "<primary><literal>Enhances</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -707,26 +798,31 @@ msgid ""
 "suggestions — found in the <literal>Suggests</literal> field."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Conflicts: the <literal>Conflicts</literal> field"
-msgstr "Konflikt <literal>Konflikt</literal> Pola"
+msgstr "Konflikty: pole <literal>Conflicts</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>conflicts</primary>"
-msgstr "<primary>conflicts</primary>"
+msgstr "<primary>konflikty</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Conflicts</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Conflicts</literal>, pole nagłówkowe</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>conflict</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>konflikt</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -735,7 +831,13 @@ msgid ""
 "that both packages include a file of the same name, or provide the same "
 "service on the same TCP port, or would hinder each other's operation."
 msgstr ""
+"Pole <literal>Konflikty</literal> wskazuje przypadek, kiedy pakiet nie może "
+"być zainstalowany równocześnie z innym. Najczęstszymi powodami takich "
+"sytuacji jest plik o tej samej nazwie zawierany przez oba pakiety lub taka "
+"sama usługa na tym samym porcie TCP, lub wzajemne utrudnianie sobie "
+"działania."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -747,26 +849,37 @@ msgid ""
 "choose to install a new package, it will automatically offer to uninstall "
 "the package that poses a problem."
 msgstr ""
+"<command>dpkg</command> odmówi zainstalowania pakietu, jeżeli wywołuje on "
+"konflikt z aktualnie zainstalowanym pakietem, chyba że nowy pakiet wskaże, "
+"że \"zastępuje\" zainstalowany pakiet, w takim przypadku <command>dpkg</"
+"command> wybierze stary pakiet do zastąpienia nowym. <command>apt-get</"
+"command> zawsze śledzi instrukcje: jeżeli postanowisz zainstalować nowy "
+"pakiet, automatycznie zaproponuje odinstalowanie pakietu, który stwarza "
+"problemy."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Incompatibilities: the <literal>Breaks</literal> Field"
-msgstr ""
+msgstr "Niekompatybilności: pole <literal>Breaks</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>incompatibilities</primary>"
-msgstr ""
+msgstr "<primary>niekompatybilności</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Breaks</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Breaks</literal>, pole nagłówkowe</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>incompatibility</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>niekompatybilność</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -798,15 +911,17 @@ msgid ""
 "user from running into these problems."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Provided Items: the <literal>Provides</literal> Field"
-msgstr ""
+msgstr "Dostarczone elementy: pole <literal>Provides</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Provides</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Provides</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -820,20 +935,23 @@ msgid ""
 "a substitution package without having to use the same package name."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>VOCABULARY</emphasis> Meta-package and virtual package"
-msgstr ""
+msgstr "<emphasis>SŁOWNIK</emphasis> Meta-pakiet i pakiet wirtualny"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>virtual package</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>pakiet wirtualny</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>virtual package</primary>"
-msgstr ""
+msgstr "<primary>pakiet wirtualny</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -876,11 +994,13 @@ msgid ""
 "technique will prohibit the installation of two mail servers side by side."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>DEBIAN POLICY</emphasis> List of virtual packages"
-msgstr ""
+msgstr "<emphasis>POLITYKA DEBIANA</emphasis> Lista pakietów wirtualnych"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -895,18 +1015,32 @@ msgid ""
 "(<command>xterm</command>), and <emphasis role=\"pkg\">x-window-manager</"
 "emphasis> for window managers."
 msgstr ""
+"Aby wirtualne pakiety były przydatne, wszyscy muszą zgadzać się odnośnie ich "
+"nazw. Z tego powodu są one ustandaryzowane w Polityce Debiana. Lista "
+"obejmuje między innymi <emphasis role=\"pkg\">mail-transport-agent</"
+"emphasis> dla serwerów poczty, <emphasis role=\"pkg\">c-compiler</emphasis> "
+"dla kompilatorów języka C, <emphasis role=\"pkg\">www-browser</emphasis> dla "
+"przeglądarek internetowych, <emphasis role=\"pkg\">httpd</emphasis> dla "
+"serwerów internetowych, <emphasis role=\"pkg\">ftp-server</emphasis> dla "
+"serwerów FTP, <emphasis role=\"pkg\">x-terminal-emulator</emphasis> dla "
+"emulatorów terminala w trybie graficznym (<command>xterm</command>) i "
+"<emphasis role=\"pkg\">x-window-manager</emphasis> dla menedżerów okien"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "The full list can be found on the Web. <ulink type=\"block\" url=\"http://"
 "www.debian.org/doc/packaging-manuals/virtual-package-names-list.txt\" />"
 msgstr ""
+"Pełną listę można znaleźć w Sieci. <ulink type=\"block\" url=\"http://www."
+"debian.org/doc/packaging-manuals/virtual-package-names-list.txt\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Interchangeability with Another Package"
-msgstr ""
+msgstr "Wymienność z innymi pakietami"
 
 #. Tag: para
 #, no-c-format
@@ -938,21 +1072,25 @@ msgid ""
 "renaming, and other automatic replacement, of obsolete software."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Perl, a programming language"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Perl, język programowania"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>Perl</primary>"
-msgstr ""
+msgstr "<primary>Perl</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>CPAN</primary>"
-msgstr ""
+msgstr "<primary>CPAN</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -963,7 +1101,14 @@ msgid ""
 "packages. <ulink type=\"block\" url=\"http://www.perl.org/\" /> <ulink type="
 "\"block\" url=\"http://www.cpan.org/\" />"
 msgstr ""
+"Perl (Practical Extraction and Report Language) jest bardzo popularnym "
+"językiem programowania. Posiada wiele modułów gotowych do użycia, które "
+"pokrywają szerokie spektrum zastosowań i są rozprowadzane przez serwery CPAN "
+"(Comprehensive Perl Archive Network), rozległą sieć pakietów Perla. <ulink "
+"type=\"block\" url=\"http://www.perl.org/\" /> <ulink type=\"block\" url="
+"\"http://www.cpan.org/\" />"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -971,12 +1116,17 @@ msgid ""
 "require compilation prior to execution. This is why they are called “Perl "
 "scripts”."
 msgstr ""
+"W związku z tym, że jest to język interpretowany, program napisany w Perlu "
+"nie wymaga kompilacji przed wykonaniem. Dlatego nazywa się je \"skryptami "
+"Perla\"."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Current Limitations"
-msgstr ""
+msgstr "Aktualne ograniczenia"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -988,12 +1138,21 @@ msgid ""
 "satisfied. Unaware of this, the package system chooses the least risky "
 "option, assuming that the versions do not match."
 msgstr ""
+"Wirtualne pakiety cierpią z powodu pewnych ograniczeń, z których "
+"najważniejszym jest brak numeru wersji. Wracając do poprzedniego przykładu, "
+"zależność taka jak <literal>Depends: libdigest-md5-perl (&gt;= 1.6)</"
+"literal>, pomimo obecności Perla 5.10, nigdy nie będzie uznana za spełnioną "
+"przez system pakietowania — podczas, gdy faktycznie najprawdopodobniej jest "
+"spełniona. Niezależnie od tego system pakietowania wybierza najmniej "
+"ryzykowną opcję, zakładając, że wersje sa niezgodne."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> Virtual package versions"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Wersje pakietu wirtualnego"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1005,27 +1164,40 @@ msgid ""
 "indicate that a package provides the same functionality as <emphasis role="
 "\"pkg\">libstorable-perl</emphasis> in its 1.7 version."
 msgstr ""
+"Pomimo tego, że dzisiaj wirtualne pakiety nie mogą mieć wersji, "
+"niekoniecznie będzie tak w przyszłości. Właściwie, <command>apt</command> "
+"jest już zdolny do zarządzania wersjami wirtualnych pakietów i "
+"prawdopodobnie niedługo <command>dpkg</command> też będzie posiadał taką "
+"możliwość. Będziemy wtedy mogli zapisywać pola takie jak <literal>Provides: "
+"libstorable-perl (= 1.7)</literal>, żeby zaznaczyć, że pakiet dostarcza taką "
+"samą funkcjonalność jak <emphasis role=\"pkg\">libstorable-perl</emphasis> w "
+"wersji 1.7."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Replacing Files: The <literal>Replaces</literal> Field"
-msgstr ""
+msgstr "Zastępowanie plików: pole <literal>Replaces</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>replacement</primary>"
-msgstr ""
+msgstr "<primary>zastąpienie</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Replaces</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Replaces</literal>, pole nagłówkowe</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>replacement</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>zastąpienie</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1038,7 +1210,16 @@ msgid ""
 "potential problems and requires the maintainer to study the matter prior to "
 "choosing whether to add such a field."
 msgstr ""
+"Pole <literal>Replaces</literal> wskazuje, że dany pakiet zawiera pliki, "
+"które są również obecne w innym pakiecie, ale dany pakiet ma prawo je "
+"zastąpić. Bez tej specyfikacji, <command>dpkg</command> zakończy się "
+"niepowodzeniem informując, że nie może nadpisać plików innego pakietu (w "
+"praktyce możliwe jest wymuszenie tego działania za pomocą opcji <literal>--"
+"force-overwrite</literal>). Pomaga to zidentyfikować potencjalne problemy i "
+"wymaga od opiekuna zbadania tej kwestii przed wyborem, czy dodać takie pole, "
+"czy nie."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1048,7 +1229,13 @@ msgid ""
 "produced from the same source package: a replaced file no longer belongs to "
 "the old package, but only to the new one."
 msgstr ""
+"Użycie tego pola jest uprawnione kiedy zmienia się nazwa pakietu lub jeden "
+"pakiet jest zawarty w innym. Zdarza się to również, gdy opiekun decyduje się "
+"na różne rozprowadzanie plików pośród różnych pakietów binarnych "
+"wytworzonych z tego samego pakietu źródłowego: zastąpiony plik nie należy "
+"już do starego pakietu, ale tylko do nowego."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1057,11 +1244,15 @@ msgid ""
 "<command>dpkg</command> to remove the replaced package where there is a "
 "conflict."
 msgstr ""
+"Jeżeli wszystkie pliki w zainstalowanym pakiecie zostały zastąpione, pakiet "
+"uważa się za usunięty. Ostatecznie, użycie tego pola zachęca <command>dpkg</"
+"command> do usunięcia zastąpionego pakietu, w którym występuje konflikt."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> The <literal>Tag</literal> field"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Pole <literal>Tag</literal>"
 
 #. Tag: para
 #, no-c-format
@@ -1080,36 +1271,43 @@ msgid ""
 "\"block\" url=\"http://debtags.alioth.debian.org/\" />"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Configuration Scripts"
-msgstr ""
+msgstr "Skrypty konfiguracyjne"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>postinst</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>postinst</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>preinst</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>preinst</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>postrm</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>postrm</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>prerm</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>prerm</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>control.tar.gz</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>control.tar.gz</filename></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1123,23 +1321,35 @@ msgid ""
 "canceling the installation or removal in progress (insofar as it is "
 "possible)."
 msgstr ""
+"W dodatku do pliku <filename>control</filename>, archiwum <filename>control."
+"tar.gz</filename> dla każdego pakietu Debiana może zawierać wiele skryptów, "
+"wywoływanych przez <command>dpkg</command> na różnych etapach przetwarzania "
+"pakietu. Polityka Debiana szczegółowo opisuje możliwe przypadki, wskazując "
+"wywoływane skrypty oraz argumenty, które mogą przyjmować. Mogą to być "
+"skomplikowane sekwencje, ponieważ jeżeli jeden skrypt zakończy się "
+"niepowodzeniem, <command>dpkg</command> będzie próbował powrócić do "
+"prawidłowego stanu poprzez anulowanie postępu instalacji lub usuwania "
+"(jeżeli tylko będzie to możliwe)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> <command>dpkg</command>'s database"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Baza danych <command>dpkg</command>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>/var/lib/dpkg/</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/var/lib/dpkg/</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid "<primary>dpkg</primary><secondary>database</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>dpkg</primary><secondary>baza danych</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1149,7 +1359,13 @@ msgid ""
 "the <filename>.list</filename> extension for each package, containing the "
 "list of files that belong to that package."
 msgstr ""
+"Wszystkie skrypty konfiguracyjne dla zainstalowanych pakietów są "
+"przechowywane w katalogu <filename>/var/lib/dpkg/info/</filename>, w formie "
+"pliku z przedrostkiem wskazującym nazwę pakietu. Katalog ten dla każdego "
+"pakietu zawiera również plik z rozszerzeniem <filename>.list</filename>, "
+"zawierający listę plików należących do danego pakietu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1158,7 +1374,12 @@ msgid ""
 "status of each package. The information from the <filename>control</"
 "filename> file of the installed packages is also replicated there."
 msgstr ""
+"Plik <filename>/var/lib/dpkg/status</filename> zawiera szereg bloków danych "
+"(w formacie sławnych nagłówków pocztowych, RFC 2822) opisujących status "
+"każdego pakietu. Jest tam również powielona informacja z pliku "
+"<filename>control</filename> zainstalowanych pakietów."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1171,12 +1392,21 @@ msgid ""
 "here, but we will discuss the most common two: an installation/update and a "
 "removal."
 msgstr ""
+"Ogólnie, skrypt <filename>preinst</filename> jest wykonywany przed "
+"instalacją pakietu, podczas gdy <filename>postinst</filename> następuje po "
+"niej. Podobnie, <filename>prerm</filename> jest wywoływany przez usunięciem "
+"pakietu, a <filename>postrm</filename> po nim. Aktualizacja pakietu jest "
+"równoznaczna z usunięciem poprzedniej wersji i instalacją nowej. Nie możliwe "
+"jest opisanie tutaj wszystkich możliwych scenariuszy, ale zostaną omówione "
+"dwa najczęściej występujące: instalacja/aktualizacja oraz usunięcie."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>CAUTION</emphasis> Symbolic names of the scripts"
-msgstr ""
+msgstr "<emphasis>UWAGA</emphasis> Symboliczne nazwy skryptów"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1187,12 +1417,20 @@ msgid ""
 "update) and the <command>postinst</command> script contained in the new "
 "version (installed by the update)."
 msgstr ""
+"Sekwencje opisane w tej sekcji wywołują skrypty konfiguracyjne używając "
+"specyficznych nazw, takich jak <command>old-prerm</command> lub <command>new-"
+"postinst</command>. Są to, odpowiednio, skrypt <command>prerm</command> "
+"zawarty w starej wersji pakietu (zainstalowanej przed aktualizacją) i skrypt "
+"<command>postinst</command> zawarty w nowej wersji (zainstalowany przez "
+"aktualizację)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>TIP</emphasis> State diagrams"
-msgstr ""
+msgstr "<emphasis>WSKAZÓWKA</emphasis> Diagramy stanów"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1203,32 +1441,46 @@ msgid ""
 "debian.org/~srivasta/MaintainerScripts.html\" /> <ulink type=\"block\" url="
 "\"http://wiki.debian.org/MaintainerScripts\" />"
 msgstr ""
+"Manoj Srivastava stworzył te diagramy wyjaśniające w jaki sposób skrypty "
+"konfiguracyjne są wywoływane przez <command>dpkg</command>. Podobne diagramy "
+"zostały stworzone przez Projekt Kobiety Debian; są nieco łatwiejsze do "
+"zrozumienia, ale mniej kompletne. <ulink type=\"block\" url=\"http://people."
+"debian.org/~srivasta/MaintainerScripts.html\" /> <ulink type=\"block\" url="
+"\"http://wiki.debian.org/MaintainerScripts\" />"
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Installation and Upgrade"
-msgstr ""
+msgstr "Instalacja i uaktualnieni"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary><command>dpkg</command></primary><secondary>internal operation</"
 "secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr ""
+"<primary><command>dpkg</command></primary><secondary>wewnętrzne działanie</"
+"secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here is what happens during an installation (or an update):"
-msgstr ""
+msgstr "Oto, co dzieje się podczas instalacji (lub aktualizacji):"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "For an update, <command>dpkg</command> calls the <command>old-prerm upgrade "
 "<replaceable>new-version</replaceable></command>."
 msgstr ""
+"W celu aktualizacji, <command>dpkg</command> wywołuje <command>old-prerm "
+"upgrade <replaceable>nowa-wersja</replaceable></command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1239,21 +1491,34 @@ msgid ""
 "been installed and removed since (but not purged, the configuration files "
 "having been retained)."
 msgstr ""
+"Nadal w przypadku aktualizacji, <command>dpkg</command> wywołuje "
+"<command>new-preinst upgrade <replaceable>stara-wersja</replaceable></"
+"command>; w przypadku pierwszej instalacji wywołuje <command>new-preinst "
+"install</command>. Może dodać starą wersję jako ostatni parametr, jeżeli "
+"pakiet był wcześniej zainstalowany i usunięty (ale nie całkowicie, gdyż "
+"zostały zatrzymane pliki konfiguracyjne)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "The new package files are then unpacked. If a file already exists, it is "
 "replaced, but a backup copy is temporarily made."
 msgstr ""
+"Nowe pliki pakietu są wtedy rozpakowywane. Jeżeli plik już istnieje, zostaje "
+"zastąpiony, ale jest tworzona tymczasowa kopia zapasowa."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "For an update, <command>dpkg</command> executes <command>old-postrm upgrade "
 "<replaceable>new-version</replaceable></command>."
 msgstr ""
+"W przypadku aktualizacji, <command>dpkg</command> wykonuje <command>old-"
+"postrm upgrade <replaceable>nowa-wersja</replaceable></command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1262,7 +1527,12 @@ msgid ""
 "This is the point of no return: <command>dpkg</command> no longer has access "
 "to all of the elements necessary to return to the previous state."
 msgstr ""
+"<command>dpkg</command> aktualizuje wszystkie wewnętrzne dane (listę plików, "
+"skrypty konfiguracyjne, itd.) i usuwa kopie zapasowe zastąpionych plików. "
+"Jest to punkt bez powrotu: <command>dpkg</command> nie ma już dostępu do "
+"wszystkich elementów niezbędnych do przywrócenia poprzedniego stanu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1270,7 +1540,12 @@ msgid ""
 "to decide if it is unable to automatically manage this task. The details of "
 "this procedure are discussed in <xref linkend=\"sect.conffiles\" />."
 msgstr ""
+"<command>dpkg</command> zaktualizuje pliki konfiguracyjne, pytając "
+"użytkownika o decyzje, jeżeli nie jest w stanie automatycznie wykonać tego "
+"zadania. Szczegóły tej procedury zostały omówione w <xref linkend=\"sect."
+"conffiles\" />."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1278,32 +1553,39 @@ msgid ""
 "<command>new-postinst configure <replaceable>last-version-configured</"
 "replaceable></command>."
 msgstr ""
+"Ostatecznie, <command>dpkg</command> konfiguruje pakiet poprzez wykonanie "
+"<command>new-postinst configure <replaceable>ostatnia-wersja-configured</"
+"replaceable></command>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Package Removal"
-msgstr "Usuwanie pakietów"
+msgstr "Usuwanie pakietu"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here is what happens during a package removal:"
-msgstr "O to co zachodzi podczas usuwania pakietów:"
+msgstr "O to, co zachodzi podczas usuwania pakietu:"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid "<command>dpkg</command> calls <command>prerm remove</command>."
-msgstr ""
-"<command>dpkg</command> wywołuje komendę <command>prerm remove</command>."
+msgstr "<command>dpkg</command> wywołuje <command>prerm remove</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "<command>dpkg</command> removes all of the package's files, with the "
 "exception of the configuration files and configuration scripts."
 msgstr ""
-"<command>dpkg</command> usuwa wszystkie pliki pakietów, z wyjątkiem plików "
+"<command>dpkg</command> usuwa wszystkie pliki pakietu, z wyjątkiem plików "
 "konfiguracyjnych i skryptów konfiguracyjnych."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1311,10 +1593,11 @@ msgid ""
 "the configuration scripts, except <filename>postrm</filename>, are removed. "
 "If the user has not used the “purge” option, the process stops here."
 msgstr ""
-"<command>dpkg</command> uruchamia komendę <command>postrm remove</command>. "
-"Wszystkie skrypty konfiguracyjne, poza <filename>postrm</filename>, zostały "
-"usunięte. Jeśli użytkownik nie użył opcji \"purge\", proces dobiega końca."
+"<command>dpkg</command> wykonuje <command>postrm remove</command>. Wszystkie "
+"skrypty konfiguracyjne, poza <filename>postrm</filename>, zostają usunięte. "
+"Jeżeli użytkownik nie użył opcji \"purge\", proces dobiega końca."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1325,11 +1608,11 @@ msgid ""
 "and temporary files; <command>dpkg</command> then executes <command>postrm "
 "purge</command>."
 msgstr ""
-"Dla całkowitego skasowania pakietów (Wydanie polecenia <command>dpkg --"
-"purge</command> albo <command>dpkg -P</command>), w tym usunięciu również "
-"plików konfiguracyjnych, wraz z ustaloną liczbą ich kopii (<filename>*.dpkg-"
-"tmp</filename>, <filename>*.dpkg-old</filename>, <filename>*.dpkg-new</"
-"filename>) i plików tymczasowych;  <command>dpkg</command> następnie wykonaj "
+"Podczas całkowitego usuwania pakietów (po wykonaniu polecenia <command>dpkg "
+"--purge</command> lub <command>dpkg -P</command>), usuwane są również pliki "
+"konfiguracyjne, wraz z pewną liczbą ich kopii (<filename>*.dpkg-tmp</"
+"filename>, <filename>*.dpkg-old</filename>, <filename>*.dpkg-new</filename>) "
+"i plików tymczasowych; następnie <command>dpkg</command> wykonuje "
 "<command>postrm purge</command>."
 
 #. Tag: title
@@ -1342,6 +1625,7 @@ msgstr "<emphasis>SŁOWNIK</emphasis> Purge, całkowite usunięcie"
 msgid "<primary>purge of a package</primary>"
 msgstr "<primary>całkowite usunięcie pakietów</primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1350,11 +1634,12 @@ msgid ""
 "by a daemon (such as the content of an LDAP server directory, or the content "
 "of a database for an SQL server) are usually retained."
 msgstr ""
-"Podczas gdy pakiet Debiana jest usuwany, pliki konfiguracyjne są "
-"zatrzymywane w porządku ułatwiającym ich możliwą ponowną instalacje. "
-"Podobnie, dane generowane przez demona (takie jak zawartość katalogu serwera "
-"LDAP, albo zawartość bazy danych serwera SQL) są zwykle zatrzymywane."
+"Kiedy pakiet Debiana jest usuwany, pliki konfiguracyjne są zatrzymywane w "
+"celu ułatwienia ich prawdopodobnej reinstalacji. Podobnie, dane generowane "
+"przez demona (takie jak zawartość katalogu serwera LDAP, albo zawartość bazy "
+"danych serwera SQL) są zwykle zatrzymywane."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1364,11 +1649,11 @@ msgid ""
 "<replaceable>package</replaceable></command> or <command>aptitude purge "
 "<replaceable>package</replaceable></command>."
 msgstr ""
-"Do usunięcia wszystkich danych skojarzonych z pakietem, niezbędne jest "
-"\"całkowite usunięcie\" pakietu komendą, <command>dpkg -P <replaceable>nazwa "
-"pakietu</replaceable></command>, <command>apt-get remove --purge "
-"<replaceable>nazwa pakietu</replaceable></command> albo <command>aptitude "
-"purge <replaceable>nazwa pakietu</replaceable></command>."
+"Do usunięcia wszystkich danych powiązanych z pakietem niezbędne jest "
+"\"całkowite usunięcie\" (purge) pakietu komendą, <command>dpkg -P "
+"<replaceable>pakiet</replaceable></command>, <command>apt-get remove --purge "
+"<replaceable>pakiet</replaceable></command> lub <command>aptitude purge "
+"<replaceable>pakiet</replaceable></command>."
 
 #. Tag: para
 #, no-c-format
@@ -1388,8 +1673,9 @@ msgstr ""
 "<primary><filename>config</filename>, <command>debconf</command> script</"
 "primary>"
 
+# mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "The four scripts detailed above are complemented by a <filename>config</"
 "filename> script, provided by packages using <command>debconf</command> to "
@@ -1402,15 +1688,15 @@ msgid ""
 "process. The pre- and post-installation scripts can then use this "
 "information to operate according to the user's wishes."
 msgstr ""
-"Opisane powyżej cztery skrypty są uzupełnione przez skrypt<filename>config</"
-"filename>, dostarczanym poprzez używanie pakietu <command>debconf</command> "
-"w celu nabycia potrzebnych do konfiguracji informacji od użytkownika. "
-"Podczas instalacji, skrypt ten dokładnie określa zapytania zadane przez "
-"<command>debconf</command>. Zapytanie jest zapisane w bazie danych komendy "
-"<command>debconf</command> dla przyszłego odniesienia. Ten skrypt jest na "
-"ogół wykonywany przez <command>apt</command> najpierw instalując pakiety "
-"jeden po drugim, w porządku grupującym wszystkie zapytania, zadając je "
-"wszystkie użytkownikowi na początku procesu. Skrypty przed- i po- "
+"Opisane powyżej cztery skrypty są uzupełnione skryptem <filename>config</"
+"filename>, dostarczanym przez pakiety używające <command>debconf</command> w "
+"celu uzyskania informacji konfiguracyjnych od użytkownika. Podczas "
+"instalacji, skrypt ten szczegółowo definiuje pytania zadawane przez "
+"<command>debconf</command>. Odpowiedzi są zapisywane w bazie danych "
+"<command>debconf</command> dla przyszłego odniesienia. Ten skrypt jest "
+"zazwyczaj wykonywany przez <command>apt</command> przed instalacją pakietów "
+"jeden po drugim, w celu zgrupowania wszystkich pytań i zadania ich "
+"użytkownikowi wszystkich na raz na początku procesu. Skrypty przed- i po-"
 "instalacyjne mogą wtedy użyć tych informacji do działania zgodnie z "
 "życzeniem użytkownika."
 
@@ -1424,6 +1710,7 @@ msgstr "<emphasis>NARZĘDZIE</emphasis> <command>debconf</command>"
 msgid "<primary><command>debconf</command></primary>"
 msgstr "<primary><command>debconf</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1438,15 +1725,16 @@ msgid ""
 "the <command>debconf</command> tool."
 msgstr ""
 "<command>debconf</command> został stworzony, żeby rozwiązać powtarzające się "
-"problemy z Debianem. Wszystkie pakiety Debiana nie są zdolne funkcjonować "
-"bez minimalnej konfiguracji zadając zazwyczaj zapytania z użyciem komend "
-"<command>echo</command> oraz <command>read</command> w <filename>postinst</"
-"filename> skryptach powłoki (i w innych podobnych skryptach). Ale to także "
-"oznacza że podczas większej instalacji albo aktualizacji użytkownik musi "
-"przebywać przed komputerem odpowiadając na przeróżne zapytania, które mogą "
-"się pojawić w każdej chwili. Te ręczne interakcje  zostały niemal całkowicie "
-"rozwiązane, dzięki użyciu narzędzia jakim jest <command>debconf</command>."
+"problemy Debiana. Wszystkie pakiety Debiana nie są zdolne do funkcjonowania "
+"bez chociażby minimalnej konfiguracji, która zazwyczaj zadaje pytania przy "
+"użyciu komend <command>echo</command> oraz <command>read</command> w "
+"skryptach <filename>postinst</filename> (i innych podobnych skryptach). Ale "
+"oznacza to także, że podczas większej instalacji lub aktualizacji użytkownik "
+"musi zostać przed komputerem odpowiadając na przeróżne pytania, mogące "
+"pojawić się w każdej chwili. Tych ręcznych interakcji można teraz niemal "
+"całkowicie uniknąć dzięki użyciu narzędzia <command>debconf</command>."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1463,18 +1751,18 @@ msgid ""
 "the system handles the installation on its own, without having to stay there "
 "staring at the screen waiting for questions."
 msgstr ""
-"<command>debconf</command> ma wiele interesujących cech: wymaga on od "
-"programisty sprecyzowania interakcji z użytkownikiem; pozwala wyświetlić "
-"użytkownikowi lokalizacje wszystkich ciągów znaków (wszystkie tłumaczenia są "
-"przechowywane w plikach tymczasowych opisujących interakcje); posiada różne "
-"interfejsy do wyświetlania zapytań skierowanych do użytkownika (tryb "
-"tekstowy, tryb graficzny, nie-interaktywny ); i umożliwia stworzenie "
-"centralnej bazy danych odpowiedzi w celu dzielenia tych samych konfiguracji "
-"na różnych komputerach... ale najważniejsze jest to że jest teraz możliwość "
-"przedstawienia wszystkich zapytań użytkownikowi w wierszu, przed "
-"rozpoczęciem długiej instalacji albo aktualizacji. Użytkownik może zająć się "
-"swoimi sprawami podczas gdy system sam sobie radzi z instalacją, bez "
-"konieczności wpatrywania się w ekran w oczekiwaniu na zapytanie."
+"<command>debconf</command> ma wiele interesujących cech: wymaga od "
+"dewelopera sprecyzowania interakcji z użytkownikiem; pozwala tłumaczyć "
+"wszystkie ciągi znaków wyświetlane użytkownikowi (wszystkie tłumaczenia są "
+"przechowywane w pliku <filename>templates</filename> opisującym interakcje); "
+"posiada różne interfejsy do wyświetlania pytań skierowanych do użytkownika "
+"(tryb tekstowy, graficzny, bez interaktywny); oraz umożliwia stworzenie "
+"centralnej bazy danych odpowiedzi w celu dzielenia tej samej konfiguracji na "
+"różnych komputerach... ale najważniejsze jest to, że teraz możliwe jest "
+"przedstawienia użytkownikowi wszystkich pytań na raz, przed rozpoczęciem "
+"długiej instalacji lub aktualizacji. Użytkownik może zająć się swoimi "
+"sprawami, podczas gdy system sam radzi sobie z instalacją, bez konieczności "
+"wpatrywania się w ekran w oczekiwaniu na pytanie."
 
 #. Tag: title
 #, no-c-format
@@ -1496,16 +1784,19 @@ msgstr "<primary><filename>conffiles</filename></primary>"
 msgid "<primary>checksums</primary>"
 msgstr "<primary>sumy kontrolne</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>files</primary><secondary>configuration files</secondary>"
-msgstr "<primary>Pliki</primary><secondary>Pliki konfiguracyjne</secondary>"
+msgstr "<primary>pliki</primary><secondary>pliki konfiguracyjne</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>configuration</primary><secondary>files</secondary>"
-msgstr "<primary>Konfiguracja</primary><secondary>Pliki</secondary>"
+msgstr "<primary>konfiguracyjne</primary><secondary>pliki</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1520,17 +1811,17 @@ msgid ""
 "command> will generate it dynamically at installation time (and store it in "
 "the dpkg database just like other control files)."
 msgstr ""
-"Oprócz zarządcy skryptów i kontroli danych wspomnianych już w poprzednich "
-"sekcjach, <filename>control.tar.gz</filename> archiwum pakietów Debiana może "
+"Oprócz skryptów opiekuna i danych kontrolnych wspomnianych w poprzednich "
+"sekcjach, archiwum <filename>control.tar.gz</filename> pakietu Debiana może "
 "zawierać inne interesujące pliki. Pierwszy , <filename>md5sums</filename>, "
-"zawiera MD5 sumy kontrolne dla wszystkich plików pakietu. Główną zaletą jest "
-"to, że umożliwia to narzędziom takim jak <command>debsums</command> (które "
-"będziemy badać w <xref linkend=\"sect.debsums\" />) sprawdzenie czy te pliki "
-"były modyfikowane od czasu ich instalacji. Zauważ, że kiedy ten plik nie "
-"istnieje, <command>dpkg</command> dynamicznie go wygeneruje podczas "
-"instalacji (i zostanie zachowany w bazie danych dpkg tak jak inne pliki "
-"kontrolne)."
+"zawiera sumy kontrolne MD5 dla wszystkich plików pakietu. Jego główną zaletą "
+"jest to, że umożliwia narzędziom takim jak <command>debsums</command> (które "
+"będzie omówione w <xref linkend=\"sect.debsums\" />) sprawdzenie, czy te "
+"pliki były modyfikowane od czasu ich instalacji. Zauważ, że kiedy ten plik "
+"nie istnieje, <command>dpkg</command> wygeneruje go dynamicznie w czasie "
+"instalacji (i zachowa w bazie danych dpkg, tak jak inne pliki kontrolne)."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1539,11 +1830,12 @@ msgid ""
 "administrator, and <command>dpkg</command> will try to preserve those "
 "changes during a package update."
 msgstr ""
-"<filename>conffiles</filename> zestawienia plików pakietowych, które muszą "
-"być obsługiwane jako pliki konfiguracyjne. Pliki konfiguracyjne mogą być "
-"modyfikowane przez administratora i <command>dpkg</command> spróbuje "
-"przechować zmiany podczas aktualizacji pakietów."
+"<filename>conffiles</filename> listuje pliki pakietów, które muszą być "
+"obsługiwane jako pliki konfiguracyjne. Pliki konfiguracyjne mogą być "
+"modyfikowane przez administratora, a <command>dpkg</command> spróbuje "
+"przechować zmiany podczas aktualizacji pakietu."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1567,31 +1859,31 @@ msgid ""
 "modifications (previously identified with <command>diff</command>)."
 msgstr ""
 "W istocie, w tej sytuacji <command>dpkg</command> zachowuje się na tyle "
-"inteligentnie na ile to jest możliwe; Jeśli standardowy plik konfiguracyjny "
-"nie został zmieniony pomiędzy dwoma wersjami, nie podejmuje żadnych działań. "
-"Jeśli jednak plik był modyfikowany spróbuje wtedy go uaktualnić. Są możliwe "
-"dwa przypadki: Albo administrator nie modyfikował tego pliku "
-"konfiguracyjnego, w takim razie <command>dpkg</command> automatycznie "
-"instaluje nową wersję; albo plik był zmieniany i w takim razie "
-"<command>dpkg</command> pyta administratora, którą wersję chciałby użyć "
-"(starą wersję ze zmianami albo nową dostarczoną wraz z pakietem). Dla "
-"ułatwienia podjęcia tej decyzji <command>dpkg</command> oferuje wyświetlenie "
-"“<command>diff</command>” który pokazuje różnice pomiędzy dwiema wersjami. "
-"Jeśli użytkownik postanowi zachować starą wersję, nowa wersja będzie "
-"przechowywana w tej samej lokalizacji, w pliku z rozszerzeniem  <filename>."
-"dpkg-dist</filename>. Jeśli użytkownik wybierze nową wersję, stara wersja "
-"będzie przechowywana w pliku o rozszerzeniu <filename>.dpkg-old</filename>. "
-"Inna dostępna akcja polega na chwilowym przerwaniu <command>dpkg</command> w "
-"celu edycji pliku i próby przeinstalowania odpowiednich modyfikacji "
-"(poprzednio zidentyfikowanych z pomocą <command>diff</command>)."
+"inteligentnie, na ile to możliwe: jeżeli standardowy plik konfiguracyjny nie "
+"został zmieniony pomiędzy dwoma wersjami, nie robi nic. Jeżeli jednak plik "
+"był modyfikowany, spróbuje go uaktualnić. Są możliwe dwa przypadki: albo "
+"administrator nie modyfikował tego pliku konfiguracyjnego, w tym przypadku "
+"<command>dpkg</command> automatycznie instaluje nową wersję; albo plik był "
+"modyfikowany, w tym przypadku <command>dpkg</command> pyta administratora, "
+"której wersji chciałby użyć (starą ze zmianami albo nową dostarczoną wraz z "
+"pakietem). Dla ułatwienia podjęcia tej decyzji <command>dpkg</command> "
+"oferuje wyświetlenie “<command>diff</command>”, który pokazuje różnice "
+"pomiędzy dwiema wersjami. Jeżeli użytkownik postanowi zachować starą wersję, "
+"nowa będzie zachowana w tej samej lokalizacji, w pliku o rozszerzeniu "
+"<filename>.dpkg-dist</filename>. Jeżeli użytkownik wybierze nową wersję, "
+"stara będzie zachowana w pliku o rozszerzeniu <filename>.dpkg-old</"
+"filename>. Inna możliwa akcja polega na chwilowym przerwaniu <command>dpkg</"
+"command> w celu modyfikacji pliku i próby dokonania odpowiednich zmian "
+"(poprzednio zidentyfikowanych za pomocą <command>diff</command>)."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>GOING FURTHER</emphasis> Avoiding the configuration file questions"
-msgstr ""
-"<emphasis>IDĄC DALEJ</emphasis> Unikanie zapytań pliku konfiguracyjnego"
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Unikanie pytań o pliki konfiguracyjne"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1610,19 +1902,20 @@ msgid ""
 "<command>--force-confold</command> for other cases."
 msgstr ""
 "<command>dpkg</command> obsługuje aktualizacje pliku konfiguracyjnego, ale w "
-"trakcie regularnie przerywa swoją pracę, żeby zapytam administratora o dane "
-"wejściowe. To czyni go mniej przyjemnym dla tych, którzy chcieliby uruchomić "
-"aktualizacje w sposób bez interaktywny. Dlatego właśnie program ten oferuje "
-"opcje pozwalające systemowi na automatyczne odpowiadanie zgodnie z tą samą "
-"logiką : <command>--force-confold</command>zatrzymuje starą wersję pliku; "
-"<command>--force-confnew</command>użyje nowej wersji programu (wybory te są "
-"respektowane, nawet jeśli plik nie został zmieniony przez administratora, "
-"który rzadko kiedy chce ich dokonywać). Dodanie opcji <command>--force-"
-"confdef</command> mówi <command>dpkg</command> żeby sam zdecydował kiedy "
-"jest to możliwe(inaczej mówiąc, kiedy oryginalny plik konfiguracyjny nie był "
-"modyfikowany), i użył tylko <command>--force-confnew</command> lub "
-"<command>--force-confold</command> dla innych przypadków."
+"trakcie działania regularnie przerywa pracę, żeby zapytać administratora o "
+"dane wejściowe. To czyni go mniej przyjemnym dla tych, którzy chcieliby "
+"uruchomić aktualizacje w sposób bez interaktywny. Właśnie dlatego program "
+"ten oferuje opcje pozwalające systemowi na automatyczne odpowiadanie zgodnie "
+"z tą samą logiką : <command>--force-confold</command> zatrzymuje starą "
+"wersję pliku; <command>--force-confnew</command> użyje nowej wersji pliku "
+"(wybory te są przestrzegane, nawet jeżeli plik nie został zmieniony przez "
+"administratora, które rzadko dają pożądany efekt). Dodanie opcji <command>--"
+"force-confdef</command> mówi <command>dpkg</command> żeby sam decydował, "
+"kiedy jest to możliwe (inaczej mówiąc, kiedy oryginalny plik konfiguracyjny "
+"nie był modyfikowany) i użył tylko <command>--force-confnew</command> lub "
+"<command>--force-confold</command> w innych przypadkach."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1632,11 +1925,11 @@ msgid ""
 "syntax used to indicate the options to pass to the <command>dpkg</command> "
 "command (their command line interfaces are very similar)."
 msgstr ""
-"Opcje te dotyczą <command>dpkg</command>, ale przez większą część czasu "
-"administrator będzie pracować bezpośrednio z programami <command>aptitude</"
-"command> albo <command>apt-get</command>. Niezbędna jest zatem znajomość "
-"składni używanej do wskazania opcji przekazywanych do komendy <command>dpkg</"
-"command> (ich interfejsy z wierszem poleceń są bardzo podobne do siebie)"
+"Opcje te stosują się do <command>dpkg</command>, ale przez większość czasu "
+"administrator będzie pracował bezpośrednio z <command>aptitude</command> "
+"albo <command>apt-get</command>. Niezbędna jest zatem znajomość składni "
+"używanej do wskazania opcji przekazywanych do komendy <command>dpkg</"
+"command> (ich interfejsy wiersza poleceń są bardzo podobne)."
 
 #. Tag: screen
 #, no-c-format
@@ -1651,6 +1944,7 @@ msgstr ""
 "force-confdef\" -o DPkg::options::=\"--force-confold\" dist-upgrade</"
 "userinput>\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1658,8 +1952,8 @@ msgid ""
 "configuration. To do so, simply write the following line in the <filename>/"
 "etc/apt/apt.conf.d/local</filename> file:"
 msgstr ""
-"Opcje te mogą być przechowywane bezpośrednio w konfiguracji  <command>apt</"
-"command>. Żeby to zrobić, po prostu wpisz do pliku <filename>/etc/apt/apt."
+"Opcje te mogą być przechowywane bezpośrednio w konfiguracji <command>apt</"
+"command>a. Żeby to zrobić, po prostu wpisz do pliku <filename>/etc/apt/apt."
 "conf.d/local</filename> następującą linię:"
 
 #. Tag: programlisting
@@ -1671,24 +1965,27 @@ msgstr ""
 "\n"
 "DPkg::options { \"--force-confdef\"; \"--force-confold\"; }\n"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "Including this option in the configuration file means that it will also be "
 "used in a graphical interface such as <command>aptitude</command>."
 msgstr ""
-"Załączenie tej opcji w pliku konfiguracyjnym oznacza, że będzie to także "
-"użyte w interfejsie graficznym jak na przykład <command>aptitude</command>."
+"Dołączenie tej opcji w pliku konfiguracyjnym oznacza, że będzie ona także "
+"użyta w interfejsie graficznym takim jak <command>aptitude</command>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>GOING FURTHER</emphasis> Force dpkg to ask configuration file "
 "questions"
 msgstr ""
-"<emphasis>IDĄC DALEJ</emphasis> Zmuszanie dpkg do zadawania pytań plikowi "
-"konfiguracyjnemu "
+"<emphasis>IDĄC DALEJ</emphasis> Wymuszanie pytań o pliki konfiguracyjne w "
+"dpkg"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1703,15 +2000,16 @@ msgid ""
 "as a form of legitimate modification, and, thus, doesn't install the desired "
 "configuration file."
 msgstr ""
-"Opcja <command>--force-confask</command> żąda od <command>dpkg</command> "
-"wyświetlenia zapytań dotyczących plików konfiguracyjnych, nawet w przypadku "
-"gdy nie są zwykle potrzebne. Więc, kiedy instalujemy ponownie pakiet z tą "
-"opcją, <command>dpkg</command> zapyta ponownie o wszystkie pliki "
-"konfiguracyjne zmodyfikowane przez administratora. To jest bardzo poręczne, "
-"zwłaszcza dla przeinstalowania oryginalnego pliku konfiguracyjnego, jeśli "
-"został on usunięty i nie jest dostępna żadna kopia: zwykła re-instalacja nie "
-"zadziała, ponieważ <command>dpkg</command> uważa usunięcia za formę zasadnej "
-"modyfikacji, zatem nie zainstaluje pożądanego pliku konfiguracyjnego. "
+"Opcja <command>--force-confask</command> wymaga od <command>dpkg</command> "
+"wyświetlenia pytań dotyczących plików konfiguracyjnych, nawet w przypadkach "
+"kiedy zwykl nie były by potrzebne. Więc, kiedy ponownie instalujemy pakiet z "
+"tą opcją, <command>dpkg</command> ponownie zapyta o wszystkie pliki "
+"konfiguracyjne zmodyfikowane przez administratora. To jest bardzo wygodne, "
+"szczególnie do przeinstalowania oryginalnego pliku konfiguracyjnego, jeżeli "
+"został on usunięty i nie jest dostępna żadna kopia: zwykłe przeinstalowanie "
+"nie zadziała, ponieważ <command>dpkg</command> uważa każde usunięcie za "
+"prawidłową formę modyfikacji, zatem nie zainstaluje pożądanego pliku "
+"konfiguracyjnego."
 
 #. Tag: title
 #, no-c-format
@@ -1723,37 +2021,42 @@ msgstr "Struktura Pakietu Źródłowego"
 msgid "<primary>package</primary><secondary>source package</secondary>"
 msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>source</primary><secondary>package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>źródło</primary><secondary>pakiet</secondary>"
 
 #. Tag: title
 #, no-c-format
 msgid "Format"
 msgstr "Format"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>DSC file</primary>"
-msgstr "<primary>Plik DSC </primary>"
+msgstr "<primary>Plik DSC</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>diff.gz</filename> file</primary>"
-msgstr "<primary>Plik <filename>diff.gz</filename></primary>"
+msgstr "<primary>plik <filename>diff.gz</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>debian.tar.gz</filename> file</primary>"
-msgstr "<primary>Plik <filename>debian.tar.gz</filename></primary>"
+msgstr "<primary>plik <filename>debian.tar.gz</filename></primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><filename>orig.tar.gz</filename> file</primary>"
-msgstr "<primary>Plik <filename>orig.tar.gz</filename></primary>"
+msgstr "<primary>plik <filename>orig.tar.gz</filename></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1764,13 +2067,13 @@ msgid ""
 "source code files of the program, which are written in a programming "
 "language."
 msgstr ""
-"Pakiet źródłowy zazwyczaj składa się z trzech plików <filename>.dsc</"
-"filename>,  <filename>.orig.tar.gz</filename>, oraz <filename>.debian.tar."
-"gz</filename> (albo <filename>.diff.gz</filename>). Pozwalają one na "
-"stworzenie binarnych pakietów (pliki <filename>.deb</filename> opisane "
-"powyżej) z plików kodu źródłowego programu, które są napisane w języku "
-"programowania."
+"Pakiet źródłowy zazwyczaj składa się z trzech plików, <filename>.dsc</"
+"filename>, <filename>.orig.tar.gz</filename> oraz <filename>.debian.tar.gz</"
+"filename> (albo <filename>.diff.gz</filename>). Pozwalają one na tworzenie "
+"pakietów binarnych (plików <filename>.deb</filename> opisanych powyżej) z "
+"plików kodu źródłowego programu, które są napisane w języku programowania."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -1784,17 +2087,16 @@ msgstr ""
 "Plik <filename>.dsc</filename> (Debian Source Control) jest krótkim plikiem "
 "tekstowym zawierającym nagłówek RFC 2882 (tak jak plik <filename>control</"
 "filename> omawiany w <xref linkend=\"sect.control\" />), który opisuje "
-"źródło pakietu i wskazuje, które inne pliki są jego częścią. Jest to "
-"podpisane przez opiekuna, który gwarantuje autentyczność. Więcej szczegółów "
-"tego tematu znajduje się pod tym linkiem <xref linkend=\"sect.package-"
-"authentication\" /> "
+"pakiet źródłowy i wskazuje, które inne pliki są jego częścią. Jest podpisany "
+"przez opiekuna, co gwarantuje jego autentyczność. Więcej szczegółów na ten "
+"temat znajduje się w <xref linkend=\"sect.package-authentication\" /> "
 
 #. Tag: title
 #, no-c-format
 msgid "A <filename>.dsc</filename> file"
 msgstr "Plik <filename>.dsc</filename>"
 
-# tutaj
+# mateunho
 #. Tag: programlisting
 #, no-c-format
 msgid ""
@@ -1842,11 +2144,55 @@ msgid ""
 "=qnbh\n"
 "-----END PGP SIGNATURE-----\n"
 msgstr ""
+"\n"
+"-----BEGIN PGP SIGNED MESSAGE-----\n"
+"Hash: SHA256\n"
+"\n"
+"Format: 3.0 (quilt)\n"
+"Source: zim\n"
+"Binary: zim\n"
+"Architecture: all\n"
+"Version: 0.48-1\n"
+"Maintainer: Emfox Zhou &lt;emfox@debian.org&gt;\n"
+"Uploaders: Raphaël Hertzog &lt;hertzog@debian.org&gt;\n"
+"Homepage: http://zim-wiki.org\n"
+"Standards-Version: 3.9.0\n"
+"Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/zim/trunk?"
+"op=log\n"
+"Vcs-Svn: svn://svn.debian.org/collab-maint/deb-maint/zim/trunk\n"
+"Build-Depends: debhelper (&gt;= 7.4.12), python-support (&gt;= 0.8), xdg-"
+"utils, python (&gt;= 2.5), libgtk2.0-0 (&gt;= 2.6), python-gtk2, python-xdg, "
+"python-simplejson | python (&gt;= 2.6)\n"
+"Checksums-Sha1: \n"
+" bd84fa5104de5ed85a49723d26b350856de93217 966899 zim_0.48.orig.tar.gz\n"
+" 352111ff372a20579664416c9abd4970839835b3 9615 zim_0.48-1.debian.tar.gz\n"
+"Checksums-Sha256: \n"
+" 77d8df7dc89b233fdc3aab1a8ad959c6888881ae160770f50bf880a56e02f895 966899 "
+"zim_0.48.orig.tar.gz\n"
+" 0fceab5d3b099075cd38c225fa4002d893c1cdf4bbcc51d1391a34248e1e1a22 9615 "
+"zim_0.48-1.debian.tar.gz\n"
+"Files: \n"
+" 88cfc18c0c7339528d5f5f463647bb5f 966899 zim_0.48.orig.tar.gz\n"
+" 608b6e74aa14252dfc6236ab184bdb0c 9615 zim_0.48-1.debian.tar.gz\n"
+"\n"
+"-----BEGIN PGP SIGNATURE-----\n"
+"Version: GnuPG v1.4.10 (GNU/Linux)\n"
+"Comment: Signed by Raphael Hertzog\n"
+"\n"
+"iQEcBAEBCAAGBQJMSUAfAAoJEAOIHavrwpq5qjUIAKmM8p86GcHYTxMmKENoBUoW\n"
+"UPi5R7DzrLMbFrUXKgXWLvEKQTXpmkJhh2aSWq2iY+5piBSHwMiITfaBTpdTRvzU\n"
+"5nT/n9MlF8sJFESet/NgZaMPFDzWUbIy5aYbuG1TXmn/7XiDrBaQGiVqKkVLPrqc\n"
+"yWhsotn3JNKIjbPDW/DjImYyKD5RZpXrbVjuIgDT1E6yxtNYwUyBlK0cx/GITNep\n"
+"uV48hsT8cj0paqVXl5+P9Ww8XIE3clxNpE/45/tvKvkqGOeysc6OPAqsIw6HYFY9\n"
+"0EnvMTfMpeQOA68ZqsNpUjomv5r/EGwdCbAWo5iJDsZzXQ1Feh6iSNrjv3yeRzg=\n"
+"=qnbh\n"
+"-----END PGP SIGNATURE-----\n"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><literal>Build-Depends</literal>, header field</primary>"
-msgstr ""
+msgstr "<primary><literal>Build-Depends</literal>, pole nagłówkowe</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -1973,23 +2319,23 @@ msgstr ""
 msgid "<primary><command>dpkg-source</command></primary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>decompressing, source package</primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>dekompresja, pakiet źródłowy</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>uncompressing, source package</primary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>odkompresowanie, pakiet źródłowy</primary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>source package</secondary>"
+#, no-c-format
 msgid "<primary>unpacking</primary><secondary>source package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet źródłowy</secondary>"
+msgstr "<primary>odpakowywanie</primary><secondary>pakiet źródłowy</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2072,13 +2418,17 @@ msgid ""
 "everything as automatically as possible."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>NOTE</emphasis> <command>dpkg</command> or <command>apt-get</"
 "command>?"
 msgstr ""
+"<emphasis>ZAUWAŻ</emphasis> <command>dpkg</command> czy <command>apt-get</"
+"command>?"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2087,24 +2437,31 @@ msgid ""
 "limitations of the former. These tools work together, each one with its "
 "particularities, suited to specific tasks."
 msgstr ""
+"<command>dpkg</command> powinien być postrzegany jako narzędzie systemowe "
+"(backend), a <command>apt-get</command> jako narzędzie bliższe "
+"użytkownikowi, które przezwycięża ograniczenia pierwszego. Narzędzia te "
+"współpracują, każde mając swoją specyfikę dostosowaną do określonych zadań."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Installing Packages"
-msgstr ""
+msgstr "Instalowanie pakietów"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary>installation</primary><secondary>package installation</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>instalacja</primary><secondary>instalacja pakietu</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>installation</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>instalacja</secondary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2113,11 +2470,15 @@ msgid ""
 "this, we use its <literal>-i</literal> or <literal>--install</literal> "
 "option."
 msgstr ""
+"<command>dpkg</command> jest przede wszystkim narzędziem do instalowania już "
+"dostępnych pakietów Debiana (ponieważ nic nie pobiera). W tym celu należy "
+"użyć opcji <literal>-i</literal> lub <literal>--install</literal>."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Installation of a package with <command>dpkg</command>"
-msgstr ""
+msgstr "Instalowanie pakietu z <command>dpkg</command>"
 
 #. Tag: screen
 #, no-c-format
@@ -2144,10 +2505,11 @@ msgid ""
 "of the database in memory, especially the list of already installed files)."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Separate unpacking and configuration"
-msgstr ""
+msgstr "Osobne odpakowywanie i konfiguracja"
 
 #. Tag: screen
 #, no-c-format
@@ -2164,16 +2526,17 @@ msgid ""
 "Building database of manual pages ...</computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>unpacking</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>odpakowywanie</secondary>"
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid "<primary>unpacking</primary><secondary>binary package</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr "<primary>odpakowywanie</primary><secondary>pakiet binarny</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2220,16 +2583,19 @@ msgid ""
 "stability of your system."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>CAUTION</emphasis> Effective use of <literal>--force-*</literal>"
 msgstr ""
+"<emphasis>UWAGA</emphasis> Efektywne użycie <literal>--force-*</literal>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>broken dependency</primary>"
-msgstr ""
+msgstr "<primary>uszkodzona zależność</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2283,25 +2649,29 @@ msgid ""
 "<xref linkend=\"sect.backports\" />)."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>removing a package</primary>"
-msgstr ""
+msgstr "<primary>usuwanie pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>purging a package</primary>"
-msgstr ""
+msgstr "<primary>całkowite usuwanie pakietu</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>removal</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>usuwanie</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>purge</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>całkowite usuwanie</secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2317,10 +2687,11 @@ msgid ""
 "option, followed by the package name."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Removal and purge of the <emphasis>debian-cd</emphasis> package"
-msgstr ""
+msgstr "Usunięcie i całkowite usunięcie pakietu <emphasis>debian-cd</emphasis>"
 
 #. Tag: screen
 #, no-c-format
@@ -2343,25 +2714,28 @@ msgid ""
 "filename> Files"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>status</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>stan</secondary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>file list</secondary>"
-msgstr ""
+msgstr "<primary>pakiet</primary><secondary>lista plików</secondary>"
 
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>package</primary><secondary>content inspection</secondary>"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>BACK TO BASICS</emphasis> Option syntax"
-msgstr ""
+msgstr "<emphasis>WRACAJĄC DO PODSTAW</emphasis> Składnia dla opcji"
 
 #. Tag: para
 #, no-c-format
@@ -2393,10 +2767,11 @@ msgid ""
 "literal>), which displays the headers of this Debian package."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Various queries with <command>dpkg</command>"
-msgstr ""
+msgstr "Różne zapytania z <command>dpkg</command>"
 
 #. Tag: screen
 #, no-c-format
@@ -2534,20 +2909,23 @@ msgid ""
 "[...]</computeroutput>\n"
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> Comparison of versions"
-msgstr ""
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Porównywanie wersji"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>version, comparison</primary>"
-msgstr ""
+msgstr "<primary>wersja, porównanie</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>comparison of versions</primary>"
-msgstr ""
+msgstr "<primary>porównywanie wersji</primary>"
 
 #. Tag: para
 #, no-c-format
@@ -2596,6 +2974,7 @@ msgid ""
 "that it is a pre-release, we use the tilde character, “<literal>~</literal>”:"
 msgstr ""
 
+# mateunho
 #. Tag: screen
 #, no-c-format
 msgid ""
@@ -2605,6 +2984,11 @@ msgid ""
 "<computeroutput>$ </computeroutput><userinput>echo $?</userinput>\n"
 "<computeroutput>0</computeroutput>\n"
 msgstr ""
+"\n"
+"<computeroutput>$ </computeroutput><userinput>dpkg --compare-versions "
+"2.6.0~pre3-1 lt 2.6.0-1</userinput>\n"
+"<computeroutput>$ </computeroutput><userinput>echo $?</userinput>\n"
+"<computeroutput>0</computeroutput>\n"
 
 #. Tag: title
 #, no-c-format
@@ -2636,12 +3020,14 @@ msgstr ""
 msgid "<primary>Multi-Arch</primary>"
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
-#, fuzzy, no-c-format
-#| msgid "<primary>package</primary><secondary>binary package</secondary>"
+#, no-c-format
 msgid ""
 "<primary>architecture</primary><secondary>multi-arch support</secondary>"
-msgstr "<primary>pakiet</primary><secondary>pakiet binarny</secondary>"
+msgstr ""
+"<primary>architektura</primary><secondary>wsparcie wielu architektur</"
+"secondary>"
 
 #. Tag: para
 #, no-c-format
@@ -2763,10 +3149,11 @@ msgid ""
 "hack that repackaged 32 bit libraries in an “amd64” package."
 msgstr ""
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"pkg\">ia32-libs</emphasis></primary>"
-msgstr ""
+msgstr "<primary><emphasis role=\"pkg\">ia32-libs</emphasis></primary>"
 
 #. Tag: title
 #, no-c-format
@@ -2836,26 +3223,31 @@ msgid ""
 "“<literal>Multi-Arch: allowed</literal>”."
 msgstr ""
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid "Coexistence with Other Packaging Systems"
-msgstr ""
+msgstr "Współistnienie z innymi systemami pakietowania"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>RPM</primary>"
-msgstr ""
+msgstr "<primary>RPM</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary>Red Hat Package Manager</primary>"
-msgstr ""
+msgstr "<primary>Red Hat Package Manager</primary>"
 
+# mateunho
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><command>alien</command></primary>"
-msgstr ""
+msgstr "<primary><command>alien</command></primary>"
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2865,7 +3257,13 @@ msgid ""
 "distribution. It is thus common for software provided by third parties to be "
 "offered as RPM packages rather than Debian."
 msgstr ""
+"Pakiety Debiana nie są jedynymi pakietami używanymi w świecie Wolnego "
+"oprogramowania. Głównym konkurentem jest format RPM używany w dystrybucji "
+"Red Hat Linuks i jego pochodnych. Red Hat jest bardzo popularną, komercyjną "
+"dystrybucją. Z tego powodu oprogramowanie dostarczane przez inne firmy "
+"często jest oferowane jako pakiety RPM, a nie Debiana."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
@@ -2878,20 +3276,35 @@ msgid ""
 "from those of native software (such as <command>dpkg</command>). This is why "
 "it is not possible to ensure a stable coexistence of two packaging systems."
 msgstr ""
+"W tym przypadku należy zdawać sobie sprawę, że program <command>rpm</"
+"command>, obsługujący pakiety RPM, jest dostępny jako pakiet Debiana, więc "
+"możliwe jest używanie tego formatu pakietów w Debianie. Niemniej jednak "
+"trzeba uważać i ograniczyć te manipulacje do wydobycia informacji z pakietu "
+"lub sprawdzenia jego spójności. Prawdę mówiąc, używanie <command>rpm</"
+"command> do instalacji RPM w Debianie jest nierozsądne; RPM używa własnej "
+"bazy danych, oddzielnej od rodzimego oprogramowania (takiego jak "
+"<command>dpkg</command>). Z tego powodu zapewnienie współistnienia dwóch "
+"systemów pakietowania jest niemożliwe."
 
+# mateunho
 #. Tag: para
 #, no-c-format
 msgid ""
 "On the other hand, the <emphasis role=\"pkg\">alien</emphasis> utility can "
 "convert RPM packages into Debian packages, and vice versa."
 msgstr ""
+"Z drugiej strony, narzędzie <emphasis role=\"pkg\">alien</emphasis> pozwala "
+"konwertować pakiety RPM na pakiety Debiana i vice versa."
 
+# mateunho
 #. Tag: title
 #, no-c-format
 msgid ""
 "<emphasis>COMMUNITY</emphasis> Encouraging the adoption of <filename>.deb</"
 "filename>"
 msgstr ""
+"<emphasis>SPOŁECZNOŚĆ</emphasis> Zachęcanie do przyjęcia <filename>.deb</"
+"filename>"
 
 #. Tag: para
 #, no-c-format
