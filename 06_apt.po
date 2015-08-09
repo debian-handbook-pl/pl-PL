@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2013-12-30 17:37+0100\n"
-"PO-Revision-Date: 2015-08-09 13:53+0100\n"
+"PO-Revision-Date: 2015-08-09 16:07+0100\n"
 "Last-Translator: Mateusz Kacprzak <mateusz.kacprzak@yandex.ru>\n"
 "Language-Team: Polish <http://debian.weblate.org/projects/debian-handbook/06_apt/pl/>\n"
 "Language: pl_PL\n"
@@ -188,7 +188,7 @@ msgstr "Składnia ostatniego pola zależy od struktury repozytorium. W najprosts
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>VOCABULARY</emphasis> The <literal>main</literal>, <literal>contrib</literal> and <literal>non-free</literal> archives"
-msgstr "<emphasis>SŁOWNICZEK</emphasis> Archiwa <literal>main</literal>, <literal>contrib</literal> i <literal>non-free</literal>."
+msgstr "<emphasis>SŁOWNICZEK</emphasis> Archiwa <literal>main</literal>, <literal>contrib</literal> i <literal>non-free</literal>"
 
 #. Tag: indexterm
 #, no-c-format
@@ -272,7 +272,7 @@ msgstr "Wpisy <literal>cdrom</literal> opisują CD/DVD-ROM-y, które posiadasz. 
 #. Tag: title
 #, no-c-format
 msgid "Repositories for <emphasis role=\"distribution\">Stable</emphasis> Users"
-msgstr "Repozytoria dla <emphasis role=\"distribution\">Stabilnych</emphasis> Użytkowników"
+msgstr "Repozytoria dla użytkowników <emphasis role=\"distribution\">Stabilnego</emphasis>"
 
 #. Tag: para
 #, no-c-format
@@ -282,7 +282,7 @@ msgstr "Poniżej jest standardowy plik <filename>sources.list</filename> dla sys
 #. Tag: title
 #, no-c-format
 msgid "<filename>/etc/apt/sources.list</filename> file for users of Debian Stable"
-msgstr "plik <filename>/etc/apt/sources.list</filename> dla użytkowników Stabilnego Debiana"
+msgstr "Plik <filename>/etc/apt/sources.list</filename> dla użytkowników Stabilnego Debiana"
 
 #. Tag: programlisting
 #, no-c-format
@@ -407,7 +407,7 @@ msgstr "Serwer może również hostować aktualizacje bezpieczeństwa dla <empha
 #. Tag: title
 #, no-c-format
 msgid "Stable Updates"
-msgstr "Stabilne aktualizacje"
+msgstr "Aktualizacje stabilne"
 
 #. Tag: indexterm
 #, no-c-format
@@ -437,12 +437,12 @@ msgstr "To repozytorium będzie zwykle zawierać poprawki błędów dla krytyczn
 #. Tag: para
 #, no-c-format
 msgid "In practice, this repository is a subset of the <literal>proposed-updates</literal> repository, carefully selected by the Stable Release Managers."
-msgstr "W praktyce, to repozytorium jest podzbiorem repozytorium <literal>proposed-updates</literal>, starannie wybranym przez Stable Release Managers."
+msgstr "W praktyce, to repozytorium jest podzbiorem repozytorium <literal>proposed-updates</literal>, starannie wybranym przez Stable Release Managers (Menedżerów Stabilnego Wydania)."
 
 #. Tag: title
 #, no-c-format
 msgid "Proposed Updates"
-msgstr "Proponowane Aktualizacje"
+msgstr "Aktualizacje proponowane"
 
 #. Tag: indexterm
 #, no-c-format
@@ -457,7 +457,7 @@ msgstr "<primary><literal>stable-proposed-updates</literal></primary>"
 #. Tag: para
 #, no-c-format
 msgid "Once published, the <emphasis role=\"distribution\">Stable</emphasis> distribution is only updated about once every 2 months. The <literal>proposed-updates</literal> repository is where the expected updates are prepared (under the supervision of the Stable Release Managers)."
-msgstr "Po opublikowaniu, <emphasis role=\"distribution\">Stabilna</emphasis> dystrybucja jest aktualizowana tylko raz na 2 miesiące. Repozytorium <literal>proposed-updates</literal> jest miejscem, gdzie są przygotowywane spodziewane aktualizacje (pod nadzorem Stable Release Managers)."
+msgstr "Po opublikowaniu, <emphasis role=\"distribution\">Stabilna</emphasis> dystrybucja jest aktualizowana tylko raz na 2 miesiące. Repozytorium <literal>proposed-updates</literal> jest miejscem, gdzie są przygotowywane spodziewane aktualizacje (pod nadzorem Menedżerów Stabilnego Wydania)."
 
 # mateunho
 #. Tag: para
@@ -479,7 +479,7 @@ msgstr "deb http://ftp.debian.org/debian wheezy-proposed-updates main contrib no
 #. Tag: title
 #, no-c-format
 msgid "Stable Backports"
-msgstr "Stabilne Wsteczne Łatki"
+msgstr "Stabilne wsteczne łatki"
 
 #. Tag: indexterm
 #, no-c-format
@@ -499,7 +499,7 @@ msgstr "<primary>updates</primary><secondary>backports</secondary>"
 #. Tag: para
 #, no-c-format
 msgid "The <literal>stable-backports</literal> repository hosts “package backports”. The term refers to a package of some recent software which has been recompiled for an older distribution, generally for <emphasis role=\"distribution\">Stable</emphasis>."
-msgstr "Repozytorium <literal>stable-backports</literal> hostuje \"wsteczne łatki pakietów\". Termin ten odnosi się do pakietu nowego oprogramowania, które zostało przekompilowane dla starszej dystrybucji, ogólnie dla <emphasis role=\"distribution\">Stabilnej</emphasis>."
+msgstr "Repozytorium <literal>stable-backports</literal> hostuje \"wsteczne łatki pakietów\". Termin ten odnosi się do pakietu nowego oprogramowania, które zostało przekompilowane dla starszej dystrybucji, ogólnie dla <emphasis role=\"distribution\">Stabilnego</emphasis>."
 
 # jest:
 # Kiedy dystrybucja staje się trochę podstarzała, wiele projektów związanych z oprogramowaniem wydało nowe wersje,
@@ -511,7 +511,7 @@ msgstr "Repozytorium <literal>stable-backports</literal> hostuje \"wsteczne łat
 #. Tag: para
 #, no-c-format
 msgid "When the distribution becomes a little dated, numerous software projects have released new versions that are not integrated into the current <emphasis role=\"distribution\">Stable</emphasis> (which is only modified to address the most critical problems, such as security problems). Since the <emphasis role=\"distribution\">Testing</emphasis> and <emphasis role=\"distribution\">Unstable</emphasis> distributions can be more risky, package maintainers sometimes offer recompilations of recent software applications for <emphasis role=\"distribution\">Stable</emphasis>, which has the advantage to limit potential instability to a small number of chosen packages. <ulink type=\"block\" url=\"http://backports.debian.org\" />"
-msgstr "Wraz ze starzeniem się dystrybucji, wiele projektów związanych z oprogramowaniem wydało nowe wersje, które nie są włączone do aktualnej <emphasis role=\"distribution\">Stabilnej</emphasis> (która jest modyfikowana wyłącznie w celu naprawienia krytycznych problemów, na przykład z bezpieczeństwem). Ponieważ <emphasis role=\"distribution\">Testowa</emphasis> i <emphasis role=\"distribution\">Niestabilna</emphasis> mogą być bardziej ryzykowne, zarządcy pakietów oferują czasem przekompilowane wersje nowych aplikacji dla <emphasis role=\"distribution\">Stabilnej</emphasis>, która ma tę zaletę, że ogranicza potencjalną niestabilność do małej liczby wybranych pakietów. <ulink type=\"block\" url=\"http://backports.debian.org\" />"
+msgstr "Wraz ze starzeniem się dystrybucji, wiele projektów związanych z oprogramowaniem wydało nowe wersje, które nie są włączone do aktualnego <emphasis role=\"distribution\">Stabilnego</emphasis> (który jest modyfikowany wyłącznie w celu naprawienia krytycznych problemów, na przykład z bezpieczeństwem). Ponieważ <emphasis role=\"distribution\">Testowy</emphasis> i <emphasis role=\"distribution\">Niestabilny</emphasis> mogą być bardziej ryzykowne, zarządcy pakietów oferują czasem przekompilowane wersje nowych aplikacji dla <emphasis role=\"distribution\">Stabilnego</emphasis>, który ma tę zaletę, że ogranicza potencjalną niestabilność do małej liczby wybranych pakietów. <ulink type=\"block\" url=\"http://backports.debian.org\" />"
 
 #. Tag: para
 #, no-c-format
@@ -569,18 +569,18 @@ msgstr ""
 #. Tag: title
 #, no-c-format
 msgid "Repositories for <emphasis role=\"distribution\">Testing</emphasis>/<emphasis role=\"distribution\">Unstable</emphasis> Users"
-msgstr "Repozytoria dla użytkowników <emphasis role=\"distribution\">Testowej</emphasis>/<emphasis role=\"distribution\">Niestabilnej</emphasis>"
+msgstr "Repozytoria dla użytkowników <emphasis role=\"distribution\">Testowego</emphasis>/<emphasis role=\"distribution\">Niestabilnego</emphasis>"
 
 # mateunho
 #. Tag: para
 #, no-c-format
 msgid "Here is a standard <filename>sources.list</filename> for a system running the <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis> version of Debian:"
-msgstr "Oto standardowy plik <filename>sources.list</filename> dla systemu działającego pod kontrolą <emphasis role=\"distribution\">Testowej</emphasis> lub <emphasis role=\"distribution\">Niestabilnej</emphasis> wersji Debiana:"
+msgstr "Oto standardowy plik <filename>sources.list</filename> dla systemu działającego pod kontrolą Debiana <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>:"
 
 #. Tag: title
 #, no-c-format
 msgid "<filename>/etc/apt/sources.list</filename> file for users of Debian <emphasis role=\"distribution\">Testing</emphasis>/<emphasis role=\"distribution\">Unstable</emphasis>"
-msgstr "plik <filename>/etc/apt/sources.list</filename> dla użytkowników <emphasis role=\"distribution\">Testowego</emphasis>/<emphasis role=\"distribution\">Niestabilnego</emphasis> Debiana"
+msgstr "Plik <filename>/etc/apt/sources.list</filename> dla użytkowników Debiana <emphasis role=\"distribution\">Testowego</emphasis>/<emphasis role=\"distribution\">Niestabilnego</emphasis>"
 
 #. Tag: programlisting
 #, no-c-format
@@ -627,7 +627,7 @@ msgstr ""
 #. Tag: para
 #, no-c-format
 msgid "With this <filename>sources.list</filename> file APT will install packages from <emphasis role=\"distribution\">Unstable</emphasis>. If that is not desired, use the <literal>APT::Default-Release</literal> setting (see <xref linkend=\"sect.apt-upgrade\" />) to instruct APT to pick packages from another distribution (most likely <emphasis role=\"distribution\">Testing</emphasis> in this case)."
-msgstr "Używając tego pliku <filename>sources.list</filename>, APT będzie instalował pakiety z wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>. Jeżeli nie jest to pożądane, należy użyć ustawienia <literal>APT::Default-Release</literal> (patrz <xref linkend=\"sect.apt-upgrade\" />), które poinstruuje APT-a, aby wybierał pakiety z innej dystrybucji (w tym przypadku najprawdopodobniej <emphasis role=\"distribution\">Testowej</emphasis>)."
+msgstr "Używając tego pliku <filename>sources.list</filename>, APT będzie instalował pakiety z wersji <emphasis role=\"distribution\">Niestabilnego</emphasis>. Jeżeli nie jest to pożądane, należy użyć ustawienia <literal>APT::Default-Release</literal> (patrz <xref linkend=\"sect.apt-upgrade\" />), które poinstruuje APT-a, aby wybierał pakiety z innej dystrybucji (w tym przypadku najprawdopodobniej <emphasis role=\"distribution\">Testowego</emphasis>)."
 
 # jest:
 # nadgryzieni
@@ -638,7 +638,7 @@ msgstr "Używając tego pliku <filename>sources.list</filename>, APT będzie ins
 #. Tag: para
 #, no-c-format
 msgid "There are good reasons to include all those repositories, even though a single one should be enough. <emphasis role=\"distribution\">Testing</emphasis> users will appreciate the possibility to cherry-pick a fixed package from <emphasis role=\"distribution\">Unstable</emphasis> when the version in <emphasis role=\"distribution\">Testing</emphasis> is affected by an annoying bug. On the opposite, <emphasis role=\"distribution\">Unstable</emphasis> users bitten by unexpected regressions have the possibility to downgrade packages to their (supposedly working) <emphasis role=\"distribution\">Testing</emphasis> version."
-msgstr "Istnieją uzasadnione przyczyny załączenia wszystkich tych repozytoriów, mimo że jedno powinno wystarczyć. Użytkownicy <emphasis role=\"distribution\">Testowego</emphasis> docenią możliwość wybrania naprawionych pakietów z <emphasis role=\"distribution\">Niestabilnego</emphasis> kiedy wersja w <emphasis role=\"distribution\">Testowym</emphasis> jest obarczona denerwującym błędem. Z drugiej strony, użytkownicy <emphasis role=\"distribution\">Niestabilnego</emphasis> nadgryzieni przez niespodziewane regresje mają możliwość pobrania starszych pakietów dla (rzekomo działającej) wersji <emphasis role=\"distribution\">Testowej</emphasis>."
+msgstr "Istnieją uzasadnione przyczyny załączenia wszystkich tych repozytoriów, mimo że jedno powinno wystarczyć. Użytkownicy <emphasis role=\"distribution\">Testowego</emphasis> docenią możliwość wybrania naprawionych pakietów z <emphasis role=\"distribution\">Niestabilnego</emphasis> kiedy wersja w <emphasis role=\"distribution\">Testowym</emphasis> jest obarczona denerwującym błędem. Z drugiej strony, użytkownicy <emphasis role=\"distribution\">Niestabilnego</emphasis> nadgryzieni przez niespodziewane regresje mają możliwość pobrania starszych pakietów dla (rzekomo działającej) wersji <emphasis role=\"distribution\">Testowego</emphasis>."
 
 # jest:
 # Załączenie <emphasis role=\"distribution\">Stabilnego</emphasis> jest bardziej dyskusyjne, ale zazwyczaj daje dostęp to pakietów
@@ -659,13 +659,13 @@ msgstr "Repozytorium <emphasis role=\"distribution\">Eksperymentalnego</emphasis
 #. Tag: indexterm
 #, no-c-format
 msgid "<primary><emphasis role=\"distribution\">Experimental</emphasis></primary>"
-msgstr "<primary><emphasis role=\"distribution\">Experimental</emphasis></primary>"
+msgstr "<primary><emphasis role=\"distribution\">Eksperymentalny</emphasis></primary>"
 
 # mateunho
 #. Tag: para
 #, no-c-format
 msgid "The archive of <emphasis role=\"distribution\">Experimental</emphasis> packages is present on all Debian mirrors, and contains packages which are not in the <emphasis role=\"distribution\">Unstable</emphasis> version yet because of their substandard quality — they are often software development versions or pre-versions (alpha, beta, release candidate…). A package can also be sent there after undergoing subsequent changes which can generate problems. The maintainer then tries to uncover them thanks to advanced users who can manage important issues. After this first stage, the package is moved into <emphasis role=\"distribution\">Unstable</emphasis>, where it reaches a much larger audience and where it will be tested in much more detail."
-msgstr "Archiwum pakietów <emphasis role=\"distribution\">Eksperymentalnych</emphasis> jest dostępne na każdym serwerze lustrzanym Debiana i zawiera pakiety, które jeszcze nie są w wersji <emphasis role=\"distribution\">Niestabilnej</emphasis> ze względu na ich niską jakość — jest to zazwyczaj oprogramowanie w wersji deweloperskiej lub wstępnej (alfa, beta, kandydat do wydania…). Pakiet może być wysłany tam również po przejściu pewnych zmian, które mogą spowodować problemy. Wtedy zarządca stara się je odkryć korzystając z pomocy zaawansowanych użytkowników, którzy dają sobie radę z trudnymi zadaniami. Po tym etapie pakiet jest przeniesiony do <emphasis role=\"distribution\">Niestabilnego</emphasis>, gdzie dociera do znacznie szerszego grona odbiorców i będzie przetestowany o wiele dokładniej."
+msgstr "Archiwum pakietów <emphasis role=\"distribution\">Eksperymentalnego</emphasis> jest dostępne na każdym serwerze lustrzanym Debiana i zawiera pakiety, które jeszcze nie są w <emphasis role=\"distribution\">Niestabilnym</emphasis> ze względu na ich niską jakość — jest to zazwyczaj oprogramowanie w wersji deweloperskiej lub wstępnej (alfa, beta, kandydat do wydania…). Pakiet może być wysłany tam również po przejściu pewnych zmian, które mogą spowodować problemy. Wtedy zarządca stara się je odkryć korzystając z pomocy zaawansowanych użytkowników, którzy dają sobie radę z trudnymi zadaniami. Po tym etapie pakiet jest przeniesiony do <emphasis role=\"distribution\">Niestabilnego</emphasis>, gdzie dociera do znacznie szerszego grona odbiorców i będzie przetestowany o wiele dokładniej."
 
 # jest:
 # <emphasis role=\"distribution\">Eksperymentalny</emphasis> jest używany
@@ -755,7 +755,7 @@ msgstr "Nowy serwis (wprowadzony w kwietniu 2010) może być użyty do \"podró�
 #. Tag: title
 #, no-c-format
 msgid "Caching Proxy for Debian Packages"
-msgstr "Buforujący Pośrednik dla Pakietów Debiana"
+msgstr "Buforujący pośrednik dla pakietów Debiana"
 
 #. Tag: indexterm
 #, no-c-format
@@ -777,7 +777,7 @@ msgstr "Kiedy cała sieć maszyn jest skonfigurowana, aby używać tego samego z
 #. Tag: para
 #, no-c-format
 msgid "You can configure APT to use a \"standard\" proxy (see <xref linkend=\"sect.apt-config\" /> for the APT side, and <xref linkend=\"sect.http-ftp-proxy\" /> for the proxy side), but the Debian ecosystem offers better options to solve this problem. The dedicated software presented in this section are smarter than a plain proxy cache because they can rely on the specific structure of APT repositories (for instance they know when individual files are obsolete or not, and thus adjust the time during which they are kept)."
-msgstr "Można skonfigurować APT, żeby używał \"standardowego\" pośrednika (spójrz na fiszkę <xref linkend=\"sect.apt-config\" /> dotyczącą APT-a i <xref linkend=\"sect.http-ftp-proxy\" /> dotyczące pośrednika), ale ekosystem Debiana oferuje lepsze rozwiązania tego problemu. Przeznaczone do tego oprogramowanie, zaprezentowane w tej sekcji, jest lepsze od zwykłego pośrednika, ponieważ może używać specyficznej struktury repozytorium APTa (np.: wie, czy konkretne pliki są przestarzałe, czy nie i odpowiednio dopasowuje czas ich przetrzymywania)."
+msgstr "Można skonfigurować APT, żeby używał \"standardowego\" pośrednika (spójrz na fiszkę <xref linkend=\"sect.apt-config\" /> dotyczącą APT-a i <xref linkend=\"sect.http-ftp-proxy\" /> dotyczące pośrednika), ale ekosystem Debiana oferuje lepsze rozwiązania tego problemu. Przeznaczone do tego oprogramowanie, zaprezentowane w tej sekcji, jest lepsze od zwykłego pośrednika, ponieważ może używać specyficznej struktury repozytorium APT-a (np.: wie, czy konkretne pliki są przestarzałe, czy nie i odpowiednio dopasowuje czas ich przetrzymywania)."
 
 #. Tag: indexterm
 #, no-c-format
@@ -1079,7 +1079,7 @@ msgstr "Należy uważać: używanie <command>apt-get --reinstall</command> w cel
 #. Tag: para
 #, no-c-format
 msgid "If the file <filename>sources.list</filename> mentions several distributions, it is possible to give the version of the package to install. A specific version number can be requested with <command>apt-get install <replaceable>package</replaceable>=<replaceable>version</replaceable></command>, but indicating its distribution of origin (<emphasis role=\"distribution\">Stable</emphasis>, <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis>) — with <command>apt-get install <replaceable>package</replaceable>/<replaceable>distribution</replaceable></command> — is usually preferred. With this command, it is possible to go back to an older version of a package (if for instance you know that it works well), provided that it is still available in one of the sources referenced by the <filename>sources.list</filename> file. Otherwise the <literal>snapshot.debian.org</literal> archive can come to the rescue (see sidebar <xref linkend=\"sidebar.snapshot.debian.org\" />)."
-msgstr "Jeżeli w pliku <filename>sources.list</filename> występuje kilka dystrybucji, możliwe jest wskazanie wersji pakietu do instalacji. Można zażądać konkretnej wersji, używając <command>apt-get install <replaceable>pakiet</replaceable>=<replaceable>wersja</replaceable></command>, ale zazwyczaj preferowane jest wskazanie dystrybucji jego pochodzenia (<emphasis role=\"distribution\">Stabilna</emphasis>, <emphasis role=\"distribution\">Testowa</emphasis> lub <emphasis role=\"distribution\">Niestabilna</emphasis>) — używając <command>apt-get install <replaceable>pakiet</replaceable>/<replaceable>dystrybucja</replaceable></command>. Za pomocą tej komendy możliwe jest wrócenie do starszej wersji pakietu (jeżeli wiadomo, że działa lepiej) – pod warunkiem że jest ciągle dostępna w jednym ze źródeł wskazanych w pliku <filename>sources.list</filename>. W przeciwnym razie z odsieczą przychodzi archiwum <literal>snapshot.debian.org</literal> (spójrz na fiszkę <xref linkend=\"sidebar.snapshot.debian.org\" />)."
+msgstr "Jeżeli w pliku <filename>sources.list</filename> występuje kilka dystrybucji, możliwe jest wskazanie wersji pakietu do instalacji. Można zażądać konkretnej wersji, używając <command>apt-get install <replaceable>pakiet</replaceable>=<replaceable>wersja</replaceable></command>, ale zazwyczaj preferowane jest wskazanie dystrybucji jego pochodzenia (<emphasis role=\"distribution\">Stabilny</emphasis>, <emphasis role=\"distribution\">Testowy</emphasis> lub <emphasis role=\"distribution\">Niestabilny</emphasis>) — używając <command>apt-get install <replaceable>pakiet</replaceable>/<replaceable>dystrybucja</replaceable></command>. Za pomocą tej komendy możliwe jest wrócenie do starszej wersji pakietu (jeżeli wiadomo, że działa lepiej) – pod warunkiem że jest ciągle dostępna w jednym ze źródeł wskazanych w pliku <filename>sources.list</filename>. W przeciwnym razie z odsieczą przychodzi archiwum <literal>snapshot.debian.org</literal> (spójrz na fiszkę <xref linkend=\"sidebar.snapshot.debian.org\" />)."
 
 #. Tag: title
 #, no-c-format
@@ -1094,7 +1094,7 @@ msgstr "<computeroutput># </computeroutput><userinput>apt-get install spamassass
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>GOING FURTHER</emphasis> The cache of <filename>.deb</filename> files"
-msgstr "<emphasis>IDĄC DALEJ</emphasis> Mechanizm cache plików <filename>.deb</filename>"
+msgstr "<emphasis>IDĄC DALEJ</emphasis> Mechanizm buforowania plików <filename>.deb</filename>"
 
 # mateunho
 #. Tag: para
@@ -1140,7 +1140,7 @@ msgstr "Jak zostało wyjaśnione wcześniej, celem komendy <command>apt-get upda
 #. Tag: para
 #, no-c-format
 msgid "To speed up the process APT can download “diff” files containing the changes since the previous update, as opposed to the entire file. To achieve this, official Debian mirrors distribute different files which list the differences between one version of the <filename>Packages</filename> file and the following version. They are generated at each update of the archives and a history of one week is kept. Each of these “diff” files only takes a few dozen kilobytes for <emphasis role=\"distribution\">Unstable</emphasis>, so that the amount of data downloaded by a weekly <command>aptitude update</command> is often divided by 10. For distributions like <emphasis role=\"distribution\">Stable</emphasis> and <emphasis role=\"distribution\">Testing</emphasis>, which change less, the gain is even more noticeable."
-msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", zawierające zmiany od poprzedniej aktualizacji, zamiast całego pliku. Aby to osiągnąć, oficjalne serwery lustrzane Debiana rozprowadzają różne pliki zawierające listę różnic pomiędzy jedną wersją pliku <filename>Packages</filename> i jej następną wersją. Są one tworzone przy każdej aktualizacji archiwów i przetrzymywane do tygodnia wstecz. Każdy z plików \"diff\" zajmuje tylko kilka kilobajtów dla wersji <emphasis role=\"distribution\">Niestabilnej</emphasis>, więc ilość danych pobieranych podczas cotygodniowego <command>aptitude update</command> jest zazwyczaj 10 razy mniejsza. Dla dystrybucji takich jak <emphasis role=\"distribution\">Stabilny</emphasis> i <emphasis role=\"distribution\">Testowy</emphasis>, które podlegają mniejszym zmianom, ten zysk jest nawet bardziej zauważalny."
+msgstr "W celu przyspieszenia tego procesu APT może pobierać pliki \"diff\", zawierające zmiany od poprzedniej aktualizacji, zamiast całego pliku. Aby to osiągnąć, oficjalne serwery lustrzane Debiana rozprowadzają różne pliki zawierające listę różnic pomiędzy jedną wersją pliku <filename>Packages</filename> i jej następną wersją. Są one tworzone przy każdej aktualizacji archiwów i przetrzymywane do tygodnia wstecz. Każdy z plików \"diff\" zajmuje tylko kilka kilobajtów dla <emphasis role=\"distribution\">Niestabilnego</emphasis>, więc ilość danych pobieranych podczas cotygodniowego <command>aptitude update</command> jest zazwyczaj 10 razy mniejsza. Dla dystrybucji takich jak <emphasis role=\"distribution\">Stabilny</emphasis> i <emphasis role=\"distribution\">Testowy</emphasis>, które podlegają mniejszym zmianom, ten zysk jest nawet bardziej zauważalny."
 
 #. Tag: para
 #, no-c-format
@@ -1150,7 +1150,7 @@ msgstr "Jednakże czasami pobranie całego pliku <filename>Packages</filename> j
 #. Tag: para
 #, no-c-format
 msgid "<command>apt-get</command> will generally select the most recent version number (except for packages from <emphasis role=\"distribution\">Experimental</emphasis> and <emphasis role=\"distribution\">stable-backports</emphasis>, which are ignored by default whatever their version number). If you specified <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis> in your <filename>sources.list</filename>, <command>apt-get upgrade</command> will switch most of your <emphasis role=\"distribution\">Stable</emphasis> system to <emphasis role=\"distribution\">Testing</emphasis> or <emphasis role=\"distribution\">Unstable</emphasis>, which might not be what you intended."
-msgstr "<command>apt-get</command> zazwyczaj wybierze najnowszy numer wersji (z wyjątkiem pakietów z <emphasis role=\"distribution\">Experymentalnego</emphasis> i <emphasis role=\"distribution\">stable-backports</emphasis>, które są domyślnie ignorowane bez względu na numer wersji). Jeżeli plik <filename>sources.list</filename> zawiera wpisy dla <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>, to <command>apt-get upgrade</command> zamieni większość Twojego <emphasis role=\"distribution\">Stabilnego</emphasis> systemu na <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>, co niekoniecznie było w zamyśle."
+msgstr "<command>apt-get</command> zazwyczaj wybierze najnowszy numer wersji (z wyjątkiem pakietów z <emphasis role=\"distribution\">Experymentalnego</emphasis> i <emphasis role=\"distribution\">stable-backports</emphasis>, które są domyślnie ignorowane bez względu na numer wersji). Jeżeli <emphasis role=\"distribution\">Testowy</emphasis> lub <emphasis role=\"distribution\">Niestabilny</emphasis> są zawarte w pliku <filename>sources.list</filename>, to <command>apt-get upgrade</command> zamieni większość Twojego <emphasis role=\"distribution\">Stabilnego</emphasis> systemu na <emphasis role=\"distribution\">Testowego</emphasis> lub <emphasis role=\"distribution\">Niestabilnego</emphasis>, co niekoniecznie było w zamyśle."
 
 # mateunho
 #. Tag: para
@@ -1252,7 +1252,7 @@ msgstr "W zależności od aplikacji, katalog <filename>.d</filename> jest używa
 #. Tag: title
 #, no-c-format
 msgid "Managing Package Priorities"
-msgstr "Zarządzanie Priorytetami Pakietów"
+msgstr "Zarządzanie priorytetami pakietów"
 
 # mateunho
 #. Tag: para
@@ -1328,13 +1328,13 @@ msgstr "Kiedy APT sprawdza plik <filename>/etc/apt/preferences</filename>, najpi
 #. Tag: title
 #, no-c-format
 msgid "<emphasis>SPECIFIC CASE</emphasis> Priority of <emphasis role=\"distribution\">experimental</emphasis>"
-msgstr "<emphasis>SZCZEGÓLNY PRZYPADEK</emphasis> Priorytet <emphasis role=\"distribution\">eksperymentalnego</emphasis>"
+msgstr "<emphasis>SZCZEGÓLNY PRZYPADEK</emphasis> Priorytet pakietów <emphasis role=\"distribution\">eksperymentalnych</emphasis>"
 
 # mateunho
 #. Tag: para
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "If you listed <emphasis role=\"distribution\">Experimental</emphasis> in your <filename>sources.list</filename> file, the corresponding packages will almost never be installed because their default APT priority is 1. This is of course a specific case, designed to keep users from installing <emphasis role=\"distribution\">Experimental</emphasis> packages by mistake. The packages can only be installed by typing <command>aptitude install <replaceable>package</replaceable>/experimental</command> — users typing this command can only be aware of the risks that they take. It is still possible (though <emphasis>not</emphasis> recommended) to treat packages of <emphasis role=\"distribution\">Experimental</emphasis> like those of other distributions by giving them a priority of 500. This is done with a specific entry in <filename>/etc/apt/preferences</filename>:"
-msgstr "Jeżeli w pliku <filename>sources.list</filename> został wymieniony <emphasis role=\"distribution\">Eksperymentalny</emphasis>, to jego pakiety prawie nigdy nie zostaną zainstalowane, ponieważ ich domyślny priorytet wynosi 1. Jest to oczywiście szczególny przypadek – zaprojektowany, aby uchronić użytkowników przed przypadkowym zainstalowaniem <emphasis role=\"distribution\">Eksperymentalnych</emphasis> pakietów. Pakiety te mogą być zainstalowane tylko poprzez wpisanie <command>aptitude install <replaceable>pakiet</replaceable>/experimental</command> — użytkownicy wpisujący tę komendę powinni być świadomi zagrożenia, którego się podejmują. Jest nadal możliwe (ale <emphasis>nie</emphasis> zalecane), aby traktować pakiety <emphasis role=\"distribution\">Eksperymentalne</emphasis> tak jak te z innych dystrybucji, poprzez nadanie im priorytetu 500. Można to osiągnąć przez dodanie specjalnego wpisu w <filename>/etc/apt/preferences</filename>:"
+msgstr "Jeżeli <emphasis role=\"distribution\">Eksperymentalny</emphasis> został wymieniony w pliku <filename>sources.list</filename>, to jego pakiety prawie nigdy nie zostaną zainstalowane, ponieważ ich domyślny priorytet wynosi 1. Jest to oczywiście szczególny przypadek – zaprojektowany, aby uchronić użytkowników przed przypadkowym zainstalowaniem pakietów <emphasis role=\"distribution\">Eksperymentalnego</emphasis>. Pakiety te mogą być zainstalowane tylko poprzez wpisanie <command>aptitude install <replaceable>pakiet</replaceable>/experimental</command> — użytkownicy wpisujący tę komendę powinni być świadomi zagrożenia, którego się podejmują. Jest nadal możliwe (ale <emphasis>nie</emphasis> zalecane), aby traktować pakiety <emphasis role=\"distribution\">Eksperymentalnego</emphasis> tak jak te z innych dystrybucji, poprzez nadanie im priorytetu 500. Można to osiągnąć przez dodanie specjalnego wpisu w <filename>/etc/apt/preferences</filename>:"
 
 #. Tag: programlisting
 #, no-c-format
@@ -1420,7 +1420,7 @@ msgstr "<primary><literal>Pin-Priority</literal></primary>"
 #. Tag: para
 #, no-c-format
 msgid "There is no official syntax to put comments in the <filename>/etc/apt/preferences</filename> file, but some textual descriptions can be provided by putting one or more “<literal>Explanation</literal>” fields at the start of each entry:"
-msgstr "Nie istnieje oficjalna składnia do umieszczania komentarzy w pliku <filename>/etc/apt/preferences</filename>, ale można wprowadzić pewne opisy tekstowe przez dodanie jednego lub więcej pól “<literal>Explanation</literal>” na początku każdego wpisu."
+msgstr "Nie istnieje oficjalna składnia do umieszczania komentarzy w pliku <filename>/etc/apt/preferences</filename>, ale można wprowadzić pewne opisy tekstowe przez dodanie jednego lub więcej pól “<literal>Explanation</literal>” na początku każdego wpisu:"
 
 #. Tag: programlisting
 #, no-c-format
@@ -1440,7 +1440,7 @@ msgstr ""
 #. Tag: title
 #, no-c-format
 msgid "Working with Several Distributions"
-msgstr "Praca z Kilkoma Dystrybucjami"
+msgstr "Praca z kilkoma dystrybucjami"
 
 # mateunho
 #. Tag: para
@@ -1506,7 +1506,7 @@ msgstr ""
 #. Tag: title
 #, no-c-format
 msgid "Tracking Automatically Installed Packages"
-msgstr "Śledzenie Automatycznie Zainstalowanych Pakietów"
+msgstr "Śledzenie automatycznie zainstalowanych pakietów"
 
 #. Tag: para
 #, no-c-format
@@ -1857,7 +1857,7 @@ msgstr "Należy jednak uważać, ponieważ jeżeli jakieś pakiety zostaną ozna
 #. Tag: title
 #, no-c-format
 msgid "Managing Recommendations, Suggestions and Tasks"
-msgstr "Zarządzanie Rekomendacjami, Sugestiami i Zadaniami"
+msgstr "Zarządzanie rekomendacjami, sugestiami i zadaniami"
 
 # mateunho
 #. Tag: para
@@ -1885,7 +1885,7 @@ msgstr "Analogicznie — należy pamiętać, że <command>aptitude</command> int
 #. Tag: title
 #, no-c-format
 msgid "Better Solver Algorithms"
-msgstr "Lepsze Algorytmy Analityczne"
+msgstr "Lepsze algorytmy analityczne"
 
 # mateunho
 #. Tag: para
@@ -1929,7 +1929,7 @@ msgstr "Menedżer pakietów <command>synaptic</command>"
 #. Tag: title
 #, no-c-format
 msgid "Checking Package Authenticity"
-msgstr "Sprawdzanie Autentyczności Pakietów"
+msgstr "Sprawdzanie autentyczności pakietów"
 
 #. Tag: indexterm
 #, no-c-format
@@ -1991,7 +1991,7 @@ msgstr "<primary><filename>Release.gpg</filename></primary>"
 #. Tag: para
 #, no-c-format
 msgid "The trusted keys are managed with the <command>apt-key</command> command found in the <emphasis role=\"pkg\">apt</emphasis> package. This program maintains a keyring of GnuPG public keys, which are used to verify signatures in the <filename>Release.gpg</filename> files available on the mirrors. It can be used to add new keys manually (when non-official mirrors are needed). Generally however, only the official Debian keys are needed. These keys are automatically kept up-to-date by the <emphasis role=\"pkg\">debian-archive-keyring</emphasis> package (which puts the corresponding keyrings in <filename>/etc/apt/trusted.gpg.d</filename>). However, the first installation of this particular package requires caution: even if the package is signed like any other, the signature cannot be verified externally. Cautious administrators should therefore check the fingerprints of imported keys before trusting them to install new packages:"
-msgstr "Zarządzanie zaufanymi kluczami odbywa się przez użycie komendy <command>apt-key</command> z pakietu <emphasis role=\"pkg\">apt</emphasis>. Program ten zarządza bazą kluczy publicznych GnuPG, które są używane do sprawdzania podpisów w plikach <filename>Release.gpg</filename>, dostępnych na serwerach lustrzanych. Może zostać użyty do ręcznego dodania nowych kluczy (kiedy wymagane są nieoficjalne serwery lustrzane). Jednakże zazwyczaj wymagane są tylko oficjalne klucze Debiana. Wspomniane klucze są automatycznie aktualizowane przez pakiet <emphasis role=\"pkg\">debian-archive-keyring</emphasis> (przechowuje on bazę kluczy w <filename>/etc/apt/trusted.gpg.d</filename>). Jednakże pierwsza instalacja tego pakietu wymaga zachowania ostrożności: nawet jeżeli pakiet jest podpisany tak jak pozostałe, jego podpis nie może być zweryfikowany zewnętrznie. Z tego powodu ostrożni administratorzy powinni sprawdzać skróty zaimportowanych kluczy przed zaufaniem im w kwestii instalacji nowych pakietów."
+msgstr "Zarządzanie zaufanymi kluczami odbywa się przez użycie komendy <command>apt-key</command> z pakietu <emphasis role=\"pkg\">apt</emphasis>. Program ten zarządza bazą kluczy publicznych GnuPG, które są używane do sprawdzania podpisów w plikach <filename>Release.gpg</filename>, dostępnych na serwerach lustrzanych. Może zostać użyty do ręcznego dodania nowych kluczy (kiedy wymagane są nieoficjalne serwery lustrzane). Jednakże zazwyczaj wymagane są tylko oficjalne klucze Debiana. Wspomniane klucze są automatycznie aktualizowane przez pakiet <emphasis role=\"pkg\">debian-archive-keyring</emphasis> (przechowuje on bazę kluczy w <filename>/etc/apt/trusted.gpg.d</filename>). Jednakże pierwsza instalacja tego pakietu wymaga zachowania ostrożności: nawet jeżeli pakiet jest podpisany tak jak pozostałe, jego podpis nie może być zweryfikowany zewnętrznie. Z tego powodu ostrożni administratorzy powinni sprawdzać skróty zaimportowanych kluczy przed zaufaniem im w kwestii instalacji nowych pakietów:"
 
 #. Tag: screen
 #, no-c-format
@@ -2093,7 +2093,7 @@ msgstr "Kiedy już odpowiednie klucze znajdą się w bazie, APT będzie sprawdza
 #. Tag: title
 #, no-c-format
 msgid "Upgrading from One Stable Distribution to the Next"
-msgstr "Uaktualnienie z Jednej Stabilnej Dystrybucji do Następnej"
+msgstr "Uaktualnienie z jednej stabilnej dystrybucji do następnej"
 
 # mateunho
 #. Tag: para
@@ -2104,7 +2104,7 @@ msgstr "Jedną z najbardziej rozpoznawalnych funkcji Debiana jest jego zdolnoś�
 #. Tag: title
 #, no-c-format
 msgid "Recommended Procedure"
-msgstr "Zalecana Procedura"
+msgstr "Zalecana procedura"
 
 #. Tag: para
 #, no-c-format
@@ -2164,7 +2164,7 @@ msgstr "Po wykonaniu pierwszego uaktualnienia nadchodzi czas na przeprowadzenia 
 #. Tag: title
 #, no-c-format
 msgid "Handling Problems after an Upgrade"
-msgstr "Obsługa Problemów po Uaktualnieniu"
+msgstr "Obsługa problemów po uaktualnieniu"
 
 # mateunho
 #. Tag: para
@@ -2215,7 +2215,7 @@ msgstr "Czasami naprawiony pakiet nie jest jeszcze dostępny w tej sekcji, ponie
 #. Tag: title
 #, no-c-format
 msgid "Keeping a System Up to Date"
-msgstr "Utrzymywanie Aktualności Systemu"
+msgstr "Utrzymywanie aktualności systemu"
 
 #. Tag: para
 #, no-c-format
@@ -2310,7 +2310,7 @@ msgstr "Uaktualnianie z użyciem <command>gpk-update-viewer</command>"
 #. Tag: title
 #, no-c-format
 msgid "Automatic Upgrades"
-msgstr "Automatyczne Uaktualnienia"
+msgstr "Automatyczne uaktualnienia"
 
 #. Tag: indexterm
 #, no-c-format
@@ -2392,7 +2392,7 @@ msgstr "Najczęściej stosowanym sposobem jest zagłuszenie standardowego wejśc
 #. Tag: title
 #, no-c-format
 msgid "The Miracle Combination"
-msgstr "Cudowne Połączenie"
+msgstr "Cudowne połączenie"
 
 #. Tag: para
 #, no-c-format
@@ -2444,7 +2444,7 @@ msgstr "W laboratorium kilka komputerów używających <emphasis role=\"distribu
 #. Tag: title
 #, no-c-format
 msgid "Searching for Packages"
-msgstr "Wyszukiwanie Pakietów"
+msgstr "Wyszukiwanie pakietów"
 
 # mateunho
 #. Tag: para
