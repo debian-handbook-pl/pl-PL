@@ -1,6 +1,6 @@
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-    ## The Debian Administrator's Handbook - Podręcznik Administratora Debiana ##
+    <strongThe Debian Administrator's Handbook - Podręcznik Administratora Debiana </strong>
 
 
     coordinator:    Mateusz Kacprzak <mateusz.kacprzak@yandex.com>
@@ -16,7 +16,7 @@
                     Michał Macioszek
                     Mikołaj Szczuraszek (reviewer)
                     Tomasz Kaczmarek
-			Stanisław Krukowski
+		                Stanisław Krukowski
 		    	
  
    Polish translation is maintained using git version control system.
@@ -31,3 +31,4 @@
     chief translator or chief reviewer.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+   
