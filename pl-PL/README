@@ -16,11 +16,13 @@
                     Michał Macioszek
                     Mikołaj Szczuraszek (reviewer)
                     Tomasz Kaczmarek
+		    Stanisław Krukowski
+ 
+   Polish translation is maintained using git version control system.
 
-
-    Polish translation is maintained using git version control system.
-    The official repository (updated each month or so) is:
+   The official repository (updated each month or so) is:
         alioth.debian.org/projects/debian-handbook
+
     daily progress can be found on team's repository:
         github.com/debian-handbook-pl
 
