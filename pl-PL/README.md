@@ -16,7 +16,7 @@
                     Michał Macioszek
                     Mikołaj Szczuraszek (reviewer)
                     Tomasz Kaczmarek
-										Stanisław Krukowski
+			Stanisław Krukowski
 		    	
  
    Polish translation is maintained using git version control system.
