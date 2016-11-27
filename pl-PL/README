@@ -1,30 +1,77 @@
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  
+             =================================================
 
-    The Debian Administrator's Handbook - Podręcznik Administratora Debiana
+   Podręcznik Administratora Debiana (ang. The Debian Administrator's Handbook) 
 
 
-    coordinator:    Mateusz Kacprzak <mateusz.kacprzak@yandex.com>
-    translators:    Alicja Wypych
-                    Anna Fałek (chief translator, reviewer)
-                    Ewa Godlewska (reviewer)
+   koordynator:    Mateusz Kacprzak <mateusz.kacprzak@yandex.com>
+
+   tłumacze:        Alicja Wypych
+                    Anna Fałek (główny tłumacz, recenzent)
+                    Ewa Godlewska (recenzent)
                     Jowita Paradowska
                     Maksymilian Bednarek
                     Marcin Wilk
-                    Marek Gubiec (chief reviewer)
-                    Mateusz Kroczyński (reviewer)
+                    Marek Gubiec (główny tłumacz)
+                    Mateusz Kroczyński (recenzent)
                     Michał Gębora
                     Michał Macioszek
-                    Mikołaj Szczuraszek (reviewer)
+                    Mikołaj Szczuraszek (recenzent)
                     Tomasz Kaczmarek
+                    Stanisław Krukowski
+
+                    		    	
+   Polskie tłumaczenie jest zarządzane za pomocą systemu kontroli wersji git.
+   
+   Oficjalne repozytorium Git (aktualizowane co miesiąc/dwa miesiące)
+   znajduje się tutaj:
+   https://alioth.debian.org/anonscm/git/debian-handbook/debian-handbook.git
+
+   Polska wersja debian-handbook (tłumaczenie niepełne) znajduje się tutaj:
+   https://debian-handbook.info/browse/pl-PL/stable/index.html
+
+   Codzienne postępy w tłumaczeniach można znaleźć albo na witrynie Weblate
+   (https://hosted.weblate.org) lub (rzadziej) w repozytorium zespołu:
+   https://github.com/debian-handbook-pl/pl-PL
+
+   Jeśli chcesz się przyłączyć do zespołu -- skontaktuj się z koordynatorem,
+   głównym tłumaczem lub głównym recenzentem.
+
+   Możesz też tłumaczyć bezpośrednio na Weblate. Tutaj możesz tłumaczyć
+   zaraz po rejestracji na witrynie; w tym przypadku dołączenie
+   do Zespołu nie jest wymagane (lecz mile widziane).
+
+	 
+          ====================================================
+		
+ 
+   Polish translation is maintained using git version control system.
+
+   Polish version of debian-handbook (translation incomplete) is at:
+   https://debian-handbook.info/browse/pl-PL/stable/index.html
+
+    Daily progress of the Polish translation can be found either at Weblate
+   (a web based translation tool with tight version control integration) at:
+   https://hosted.weblate.org
+
+   or (less often) in the repository team at:
+   https://github.com/debian-handbook-pl/pl-PL
+
+   The official Project Home Page is at: https://debian-handbook.info/
+	
+   There you can read online The Debian Administrator's Handbook or download
+   the electronic version of the book in three formats (PDF, EPUB, Mobipocket)
+   and multiple languages.
+
+   The official Git repository is at:
+   https://alioth.debian.org/anonscm/git/debian-handbook/debian-handbook.git
+
+       
+    
+   If you want to join the team feel free to contact either the coordinator,
+   chief translator or chief reviewer.
+
+	=========================================================
 
 
-    Polish translation is maintained using git version control system.
-    The official repository (updated each month or so) is:
-        alioth.debian.org/projects/debian-handbook
-    daily progress can be found on team's repository:
-        github.com/debian-handbook-pl
-
-    If you want to join the team feel free to contact either the coordinator,
-    chief translator or chief reviewer.
-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+   
